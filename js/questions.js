@@ -606,6 +606,83 @@
         return { isComplete: () => false, checkCorrect: () => false, reveal: () => {}, onExit: () => {} };
     }
   }
+  /* ============ LISTENING ============ */
+  function renderListening(container, q) {
+    const wrap = el('div', 'q-block');
+    wrap.appendChild(el('p', 'q-instruction', q.instruction));
+    
+    const audioBtn = el('button', 'icon-btn btn-audio', '🔊');
+    audioBtn.onclick = () => window.SpeechAPI.playAudio(q.audioText);
+    
+    const promptCard = el('div', 'q-prompt-card q-prompt-big');
+    promptCard.appendChild(audioBtn);
+    wrap.appendChild(promptCard);
 
+    const optionsWrap = el('div', 'options-list');
+    let selected = null;
+    const buttons = [];
+
+    q.options.forEach(opt => {
+      const b = el('button', 'option-btn option-btn-wide', opt);
+      b.onclick = () => {
+        buttons.forEach(x => x.classList.remove('option-selected'));
+        b.classList.add('option-selected');
+        selected = opt;
+        window.__onSelectionChange && window.__onSelectionChange();
+      };
+      buttons.push(b);
+      optionsWrap.appendChild(b);
+    });
+
+    wrap.appendChild(optionsWrap);
+    container.appendChild(wrap);
+
+    return {
+      isComplete: () => selected !== null,
+      checkCorrect: () => selected === q.answer,
+      reveal: (isCorrect) => {
+        buttons.forEach(b => {
+          if (b.textContent === q.answer) b.classList.add('option-correct');
+          else if (b.textContent === selected && !isCorrect) b.classList.add('option-wrong');
+        });
+      }
+    };
+  }
+
+  /* ============ SPEAKING ============ */
+  function renderSpeaking(container, q) {
+    const wrap = el('div', 'q-block');
+    wrap.appendChild(el('p', 'q-instruction', q.instruction));
+    wrap.appendChild(el('div', 'q-prompt-card q-prompt-big', q.prompt));
+    
+    const micBtn = el('button', 'btn btn-primary btn-lg btn-block', '🎙️ Ketuk untuk Bicara');
+    const resultText = el('p', 'speech-result', '');
+    let isCorrectSpeech = false;
+    let hasSpoken = false;
+
+    micBtn.onclick = () => {
+      micBtn.textContent = 'Mendengarkan...';
+      window.SpeechAPI.recognizeSpeech(q.expectedSpeech, (isCorrect, transcript) => {
+        hasSpoken = true;
+        isCorrectSpeech = isCorrect;
+        resultText.textContent = `Kamu mengucapkan: "${transcript}"`;
+        micBtn.textContent = '🎙️ Ulangi Bicara';
+        window.__onSelectionChange && window.__onSelectionChange();
+      });
+    };
+
+    wrap.appendChild(micBtn);
+    wrap.appendChild(resultText);
+    container.appendChild(wrap);
+
+    return {
+      isComplete: () => hasSpoken,
+      checkCorrect: () => isCorrectSpeech,
+      reveal: (isCorrect) => {
+        resultText.style.color = isCorrect ? 'var(--green)' : 'var(--red)';
+      }
+    };
+  }
+  
   global.QuestionRenderer = { renderQuestion };
 })(window);
