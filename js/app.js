@@ -102,15 +102,16 @@
     document.getElementById('quiz-lives').textContent = session.lives;
   }
 
+    const MAX_LIVES = 5; // Target: 5 nyawa sesuai instruksi
+  
   function handleCheckOrNext() {
     const checkBtn = document.getElementById('btn-quiz-check');
     if (!session.answeredCurrent) {
-      // periksa jawaban
       const isCorrect = session.controller.checkCorrect();
       session.controller.reveal(isCorrect);
       session.answeredCurrent = true;
-
       const feedback = document.getElementById('quiz-feedback');
+      
       if (isCorrect) {
         session.correct++;
         feedback.textContent = '✅ Benar sekali!';
@@ -119,19 +120,37 @@
       } else {
         session.wrong++;
         session.lives = Math.max(0, session.lives - 1);
-        feedback.textContent = '❌ Kurang tepat, tapi jangan menyerah!';
-        feedback.className = 'quiz-feedback feedback-wrong';
+        
+        // SPACED REPETITION: Masukkan soal salah ke akhir antrean
+        const currentQ = session.questions[session.index];
+        session.questions.push({ ...currentQ, isRepeat: true });
+        
+        // RENDER FEEDBACK BANTUAN
+        feedback.innerHTML = `
+          ❌ Kurang tepat. <br>
+          <div class="feedback-detail">
+            <strong>Arti:</strong> ${currentQ.feedback.arti}<br>
+            <strong>Grammar:</strong> ${currentQ.feedback.grammar}<br>
+            <strong>Alasan:</strong> ${currentQ.feedback.alasan}<br>
+            <strong>Contoh:</strong> ${currentQ.feedback.contoh}
+          </div>
+        `;
+        feedback.className = 'quiz-feedback feedback-wrong extended';
         SoundFx.playWrong();
-        document.getElementById('quiz-hearts').classList.add('shake-wrong');
-        setTimeout(() => document.getElementById('quiz-hearts').classList.remove('shake-wrong'), 400);
+        
+        // Simpan ke IndexedDB/LocalStorage untuk Review setelah 5 level
+        Storage.saveMistakeForReview(currentQ);
       }
+      
       updateQuizHeader();
-
       const isLast = session.index === session.questions.length - 1;
       checkBtn.textContent = isLast ? 'Lihat Hasil' : 'Lanjut';
       checkBtn.disabled = false;
     } else {
-      // lanjut ke soal berikutnya atau selesai
+      if (session.lives === 0) {
+        failLevel(); // Nyawa habis
+        return;
+      }
       session.index++;
       if (session.index >= session.questions.length) {
         finishLevel();
@@ -140,6 +159,7 @@
       }
     }
   }
+
 
   function finishLevel() {
     safeStopAudio(); // hentikan audio soal terakhir sebelum menampilkan hasil
