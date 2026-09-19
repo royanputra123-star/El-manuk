@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-<title>NihonGo! — Belajar Bahasa Jepang Bab 8 & Bab 7</title>
-<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 8 & Bab 7. 50 Level, TTS Web Speech API, progress tersimpan otomatis." />
+<title>NihonGo! — Belajar Bahasa Jepang Bab 9, Bab 8 & Bab 7</title>
+<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 9, Bab 8 & Bab 7. 50 Level per bab, TTS Web Speech API, progress tersimpan otomatis." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🀄</text></svg>" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -27,14 +27,15 @@
 
   <!-- Chapter Switcher -->
   <div class="chapter-switcher">
-    <button id="btn-chap-bab8" class="chap-btn active">Bab 8 (Baru)</button>
+    <button id="btn-chap-bab9" class="chap-btn active">Bab 9 (Baru)</button>
+    <button id="btn-chap-bab8" class="chap-btn">Bab 8</button>
     <button id="btn-chap-bab7" class="chap-btn">Bab 7</button>
   </div>
 
   <div class="home-hero">
-    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 8</div>
-    <h1 class="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 8</h1>
-    <p class="hero-sub">50 Level · 1000 Soal · Kata Sifat い/な · とても / あまり · ～が、～</p>
+    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 9</div>
+    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 9</h1>
+    <p class="hero-sub" id="hero-sub">50 Level · 1000 Soal · 好き / 嫌い · 上手 / 下手 · 分かります · どうして / から</p>
   </div>
 
   <div class="home-stats-row" id="home-stats-row">
@@ -57,7 +58,7 @@
   <div class="continue-card" id="continue-card">
     <div class="continue-info">
       <p class="continue-label">Lanjut dari Level terakhir</p>
-      <h2 id="continue-level-title">Level 1 (Bab 8)</h2>
+      <h2 id="continue-level-title">Level 1 (Bab 9)</h2>
       <div class="progress-bar-track">
         <div class="progress-bar-fill" id="continue-progress-fill" style="width:0%"></div>
       </div>
@@ -247,6 +248,8 @@
   </div>
 </div>
 
+<script src="js/data/vocab_bab9.js"></script>
+<script src="js/data/levels_bab9.js"></script>
 <script src="js/data/vocab_bab7.js"></script>
 <script src="js/data/levels_bab7.js"></script>
 <script src="js/data/vocab.js"></script>

@@ -1,6 +1,14 @@
-# NihonGo! — Belajar Bahasa Jepang (Minna no Nihongo Bab 8 & Bab 7)
+# NihonGo! — Belajar Bahasa Jepang (Minna no Nihongo Bab 9, Bab 8 & Bab 7)
 
-Website self-learning Bahasa Jepang bergaya Duolingo yang berfokus pada materi **Minna no Nihongo I Bab 8** (dan Bab 7), berisi **50 Level × 20 Soal (Total 1000 Soal Bab 8)**.
+Website self-learning Bahasa Jepang bergaya Duolingo yang berfokus pada materi **Minna no Nihongo I Bab 9** (Bab 8 & Bab 7 tetap tersedia), berisi **50 Level × 20 Soal (Total 1000 Soal per bab)**.
+
+## Pembaruan Bab 9
+
+1. **Chapter Switcher 3 Bab**: tombol `Bab 9 (Baru)` / `Bab 8` / `Bab 7` di halaman Home (default = Bab 9). Bab aktif disimpan di localStorage (`activeChapter`).
+2. **Bank Soal Bab 9 (`js/data/levels_bab9.js` + `js/data/vocab_bab9.js`)**: 53 kosakata resmi MNN I Bab 9 dan 1000 soal (`q_b9_1` … `q_b9_1000`) dengan 7 tipe soal: `complete`, `arrange`, `translate`, `match`, `choose_translation`, `listening`, `short_conversation`.
+3. **Pola Tata Bahasa Bab 9**: 好き / 嫌い / 上手 / 下手 / 分かります / あります, どうして (kata tanya sebab), から (sebab), そして, どんな, ですから, serta skala keterangan kadar (よく / だいたい / 少し / たくさん).
+4. **Progres Terpisah per Bab**: `levelsDone` dan `lastLevel` kini memiliki kunci `bab9`; data lama pengguna (sebelum Bab 9) tetap aman — kunci `bab9` otomatis ditambahkan tanpa menghapus progres Bab 7/Bab 8.
+5. **Badge Lintas Bab**: perhitungan badge (jumlah level lulus, skor 100%) kini menjumlahkan Bab 7 + Bab 8 + Bab 9.
 
 ## Fitur Utama & Pembaruan Bab 8
 
@@ -42,4 +50,10 @@ Untuk membuat ulang data Bab 8:
 
 ```bash
 node tools/generate.js
+```
+
+Untuk membuat ulang data Bab 9:
+
+```bash
+node tools/generate_bab9.js
 ```
