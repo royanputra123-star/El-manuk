@@ -2,6 +2,22 @@
 // Pengelolaan Tampilan UI Aplikasi (Home, Level Map, Stats, Badges, History, Chapter Switch)
 
 (function (global) {
+  // Daftar bab yang tersedia di aplikasi (Bab 9 = bab terbaru)
+  const CHAPTERS = [
+    { id: 'bab9', label: 'Bab 9',
+      sub: '50 Level · 1000 Soal · 好き / 嫌い · 上手 / 下手 · 分かります · どうして / から' },
+    { id: 'bab8', label: 'Bab 8',
+      sub: '50 Level · 1000 Soal · Kata Sifat い/な · とても / あまり · ～が、～' },
+    { id: 'bab7', label: 'Bab 7',
+      sub: '50 Level · 1000 Soal · あげます / もらいます · 貸します / 借ります · もう / まだ' }
+  ];
+
+  const DEFAULT_CHAPTER = 'bab9';
+
+  function getChapterMeta(chapterId) {
+    return CHAPTERS.find(c => c.id === chapterId) || CHAPTERS[0];
+  }
+
   function el(tag, cls, text) {
     const e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -10,13 +26,14 @@
   }
 
   function renderHomeScreen(progress) {
-    const activeChapter = progress.activeChapter || 'bab8';
+    const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
+    const meta = getChapterMeta(activeChapter);
 
-    // Highlight Chapter Toggle Buttons
-    const btnBab7 = document.getElementById('btn-chap-bab7');
-    const btnBab8 = document.getElementById('btn-chap-bab8');
-    if (btnBab7) btnBab7.classList.toggle('active', activeChapter === 'bab7');
-    if (btnBab8) btnBab8.classList.toggle('active', activeChapter === 'bab8');
+    // Highlight Chapter Toggle Buttons (Bab 9 / Bab 8 / Bab 7)
+    CHAPTERS.forEach(c => {
+      const btn = document.getElementById('btn-chap-' + c.id);
+      if (btn) btn.classList.toggle('active', activeChapter === c.id);
+    });
 
     // Stats row
     const statXp = document.getElementById('stat-xp');
@@ -33,10 +50,14 @@
     const continueTitle = document.getElementById('continue-level-title');
     const continueFill = document.getElementById('continue-progress-fill');
     const heroBadge = document.getElementById('hero-badge-ch');
+    const heroTitle = document.getElementById('hero-title');
+    const heroSub = document.getElementById('hero-sub');
 
-    if (continueTitle) continueTitle.textContent = `Level ${lastLvlNum} (${activeChapter === 'bab8' ? 'Bab 8' : 'Bab 7'})`;
+    if (continueTitle) continueTitle.textContent = `Level ${lastLvlNum} (${meta.label})`;
     if (continueFill) continueFill.style.width = `${bestScore}%`;
-    if (heroBadge) heroBadge.textContent = `Minna no Nihongo I — ${activeChapter === 'bab8' ? 'Bab 8' : 'Bab 7'}`;
+    if (heroBadge) heroBadge.textContent = `Minna no Nihongo I — ${meta.label}`;
+    if (heroTitle) heroTitle.innerHTML = `Kuasai Pola Kalimat<br/>Bahasa Jepang ${meta.label}`;
+    if (heroSub) heroSub.textContent = meta.sub;
   }
 
   function renderLevelMap(progress, onSelectLevel) {
@@ -45,7 +66,7 @@
 
     grid.innerHTML = '';
 
-    const activeChapter = progress.activeChapter || 'bab8';
+    const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
     const lvlScores = progress.levelsDone[activeChapter] || {};
 
     for (let l = 1; l <= 50; l++) {
@@ -84,7 +105,7 @@
   }
 
   function renderStatsScreen(progress) {
-    const activeChapter = progress.activeChapter || 'bab8';
+    const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
     const chDone = progress.levelsDone[activeChapter] || {};
 
     const levelsCompleted = Object.values(chDone).filter(s => s >= 60).length;
@@ -188,6 +209,8 @@
   }
 
   global.UIManager = {
+    CHAPTERS,
+    getChapterMeta,
     renderHomeScreen,
     renderLevelMap,
     renderStatsScreen,

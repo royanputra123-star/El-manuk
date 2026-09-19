@@ -1,5 +1,5 @@
 // js/app.js
-// Logika Aplikasi Utama & Kuis Belajar Bahasa Jepang (Minna no Nihongo Bab 8 & Bab 7)
+// Logika Aplikasi Utama & Kuis Belajar Bahasa Jepang (Minna no Nihongo Bab 9, Bab 8 & Bab 7)
 
 (function (global) {
   let activeScreen = 'screen-home';
@@ -12,16 +12,27 @@
   let currentController = null;
   let isAnswerChecked = false;
 
+  const DEFAULT_CHAPTER = 'bab9';
+
+  // Pemetaan bab -> data bank soal (Bab 9 = bab terbaru)
+  const CHAPTER_LEVEL_DATA = {
+    bab9: 'LEVELS_BAB9_DATA',
+    bab8: 'LEVELS_DATA',
+    bab7: 'LEVELS_BAB7_DATA'
+  };
+
   function getCurrentLevelData(chapter, levelNum) {
-    if (chapter === 'bab7') {
-      if (global.LEVELS_BAB7_DATA && global.LEVELS_BAB7_DATA[levelNum - 1]) {
-        return global.LEVELS_BAB7_DATA[levelNum - 1];
-      }
+    const key = CHAPTER_LEVEL_DATA[chapter] || CHAPTER_LEVEL_DATA[DEFAULT_CHAPTER];
+    const bank = global[key];
+
+    if (bank && bank[levelNum - 1]) return bank[levelNum - 1];
+
+    // Fallback: coba bab lain agar level tetap bisa dimainkan
+    for (const ch of Object.keys(CHAPTER_LEVEL_DATA)) {
+      const alt = global[CHAPTER_LEVEL_DATA[ch]];
+      if (alt && alt[levelNum - 1]) return alt[levelNum - 1];
     }
-    // Default to Bab 8
-    if (global.LEVELS_DATA && global.LEVELS_DATA[levelNum - 1]) {
-      return global.LEVELS_DATA[levelNum - 1];
-    }
+
     return null;
   }
 
@@ -54,7 +65,7 @@
 
   function startQuiz(levelNum) {
     const progress = StorageManager.getProgress();
-    const activeChapter = progress.activeChapter || 'bab8';
+    const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
     const levelData = getCurrentLevelData(activeChapter, levelNum);
 
     if (!levelData || !levelData.questions || levelData.questions.length === 0) {
@@ -166,7 +177,7 @@
     const xpGained = correctCount * 10 + (scorePct >= 80 ? 50 : 0);
 
     const progress = StorageManager.getProgress();
-    const activeChapter = progress.activeChapter || 'bab8';
+    const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
 
     const { earnedBadge } = StorageManager.markLevelComplete(
       activeChapter,
@@ -214,32 +225,26 @@
   function initApp() {
     const progress = StorageManager.getProgress();
 
-    // Event listeners untuk Chapter Switcher (Bab 7 & Bab 8)
-    const btnBab7 = document.getElementById('btn-chap-bab7');
-    const btnBab8 = document.getElementById('btn-chap-bab8');
+    // Event listeners untuk Chapter Switcher (Bab 9, Bab 8 & Bab 7)
+    const chapterList = (global.UIManager && UIManager.CHAPTERS) || [
+      { id: 'bab9', label: 'Bab 9' }, { id: 'bab8', label: 'Bab 8' }, { id: 'bab7', label: 'Bab 7' }
+    ];
 
-    if (btnBab7) {
-      btnBab7.addEventListener('click', () => {
-        StorageManager.setActiveChapter('bab7');
+    chapterList.forEach(c => {
+      const btn = document.getElementById('btn-chap-' + c.id);
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        StorageManager.setActiveChapter(c.id);
         const p = StorageManager.getProgress();
         UIManager.renderHomeScreen(p);
-        UIManager.showToast('Beralih ke Minna no Nihongo Bab 7');
+        UIManager.showToast(`Beralih ke Minna no Nihongo ${c.label}`);
       });
-    }
-
-    if (btnBab8) {
-      btnBab8.addEventListener('click', () => {
-        StorageManager.setActiveChapter('bab8');
-        const p = StorageManager.getProgress();
-        UIManager.renderHomeScreen(p);
-        UIManager.showToast('Beralih ke Minna no Nihongo Bab 8');
-      });
-    }
+    });
 
     // Navigasi Tombol Utama
     document.getElementById('btn-continue')?.addEventListener('click', () => {
       const p = StorageManager.getProgress();
-      const ch = p.activeChapter || 'bab8';
+      const ch = p.activeChapter || DEFAULT_CHAPTER;
       const lastLvl = p.lastLevel[ch] || 1;
       startQuiz(lastLvl);
     });

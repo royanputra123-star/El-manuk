@@ -7,17 +7,19 @@
 
   function getDefaultProgress() {
     return {
-      activeChapter: 'bab8',
+      activeChapter: 'bab9',
       xp: 0,
       totalCorrect: 0,
       totalWrong: 0,
       levelsDone: {
         bab7: {},
-        bab8: {}
+        bab8: {},
+        bab9: {}
       },
       lastLevel: {
         bab7: 1,
-        bab8: 1
+        bab8: 1,
+        bab9: 1
       },
       history: [],
       badges: []
@@ -29,9 +31,14 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return getDefaultProgress();
       const data = JSON.parse(raw);
-      if (!data.levelsDone) data.levelsDone = { bab7: {}, bab8: {} };
-      if (!data.lastLevel) data.lastLevel = { bab7: 1, bab8: 1 };
-      if (!data.activeChapter) data.activeChapter = 'bab8';
+      if (!data.levelsDone) data.levelsDone = { bab7: {}, bab8: {}, bab9: {} };
+      if (!data.lastLevel) data.lastLevel = { bab7: 1, bab8: 1, bab9: 1 };
+      if (!data.activeChapter) data.activeChapter = 'bab9';
+      // Data lama (sebelum Bab 9) tetap aman: lengkapi bab yang belum ada tanpa menghapus progres.
+      ['bab7', 'bab8', 'bab9'].forEach(ch => {
+        if (!data.levelsDone[ch]) data.levelsDone[ch] = {};
+        if (!data.lastLevel[ch]) data.lastLevel[ch] = 1;
+      });
       return data;
     } catch (e) {
       console.error('Error loading progress:', e);
@@ -49,7 +56,7 @@
 
   function markLevelComplete(chapter, levelNum, scorePercent, xpGained, correctCount, wrongCount) {
     const progress = getProgress();
-    const ch = chapter || progress.activeChapter || 'bab8';
+    const ch = chapter || progress.activeChapter || 'bab9';
 
     if (!progress.levelsDone[ch]) progress.levelsDone[ch] = {};
     const prevBest = progress.levelsDone[ch][levelNum] || 0;
@@ -92,8 +99,9 @@
 
     if (!progress.badges) progress.badges = [];
 
-    const totalLevelsDone = Object.values(progress.levelsDone.bab8 || {}).filter(s => s >= 60).length +
-                             Object.values(progress.levelsDone.bab7 || {}).filter(s => s >= 60).length;
+    const totalLevelsDone = ['bab7', 'bab8', 'bab9']
+      .map(ch => Object.values(progress.levelsDone[ch] || {}).filter(s => s >= 60).length)
+      .reduce((a, b) => a + b, 0);
 
     let newlyEarned = null;
 
@@ -107,8 +115,8 @@
       if (b.id === 'b_lv50' && totalLevelsDone >= 50) qualify = true;
       if (b.id === 'b_xp1000' && progress.xp >= 1000) qualify = true;
       if (b.id === 'b_perfect') {
-        const has100 = Object.values(progress.levelsDone.bab8 || {}).includes(100) ||
-                       Object.values(progress.levelsDone.bab7 || {}).includes(100);
+        const has100 = ['bab7', 'bab8', 'bab9']
+          .some(ch => Object.values(progress.levelsDone[ch] || {}).includes(100));
         if (has100) qualify = true;
       }
 
