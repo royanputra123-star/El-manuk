@@ -6,7 +6,10 @@
     const canvas = document.getElementById('confetti-canvas');
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    /* konteks 2D bisa tidak tersedia (mis. lingkungan tanpa canvas) — jangan
+     * sampai efek confetti menggagalkan tampilan layar hasil */
+    const ctx = canvas.getContext ? canvas.getContext('2d') : null;
+    if (!ctx) return;
     const width = (canvas.width = window.innerWidth);
     const height = (canvas.height = window.innerHeight);
 

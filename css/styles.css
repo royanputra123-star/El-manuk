@@ -6,7 +6,7 @@
   --bg-card: #ffffff;
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-muted: #64748b;
   --accent-color: #10b981;
   --accent-hover: #059669;
   --accent-light: #d1fae5;
@@ -15,6 +15,10 @@
   --success-color: #22c55e;
   --success-light: #dcfce7;
   --border-color: #e2e8f0;
+  /* warna aksen/status khusus untuk TEKS di atas latar terang */
+  --accent-text: #047857;
+  --success-text: #15803d;
+  --danger-text: #b91c1c;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
@@ -28,11 +32,177 @@ body.dark-theme {
   --bg-card: #1e293b;
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border-color: #334155;
-  --accent-light: rgba(16, 185, 129, 0.2);
-  --success-light: rgba(34, 197, 94, 0.2);
-  --danger-light: rgba(239, 68, 68, 0.2);
+  --accent-light: rgba(16, 185, 129, 0.25);
+  --success-light: rgba(34, 197, 94, 0.25);
+  --danger-light: rgba(239, 68, 68, 0.25);
+  /* aksen/status versi terang agar kontras di atas latar gelap */
+  --accent-text: #34d399;
+  --success-text: #86efac;
+  --danger-text: #fca5a5;
+  /* latar tombol/emblem sedikit lebih gelap supaya teks putih tetap kontras */
+  --accent-hover: #047857;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
+}
+
+/* ============================================================================
+   PERBAIKAN MODE GELAP — seluruh teks komponen kuis memakai --text-primary /
+   --text-secondary supaya tidak hitam di atas latar gelap.
+   Catatan: elemen <button> tidak mewarisi warna teks dari <body> secara
+   default, jadi warna ditulis eksplisit di sini.
+   ==========================================================================*/
+body.dark-theme .option-btn,
+body.dark-theme .conv-bubble,
+body.dark-theme .tile,
+body.dark-theme .match-item,
+body.dark-theme .q-instruction {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+}
+
+body.dark-theme .q-prompt-card,
+body.dark-theme .q-prompt-big .q-prompt-text,
+body.dark-theme .conv-box,
+body.dark-theme .conv-subquestion,
+body.dark-theme .listening-audio-panel,
+body.dark-theme .listening-result-panel,
+body.dark-theme .modal-box,
+body.dark-theme .tile-answer-zone,
+body.dark-theme .map-level-tile,
+body.dark-theme .menu-tile,
+body.dark-theme .icon-btn,
+body.dark-theme .btn-secondary,
+body.dark-theme .stat-chip,
+body.dark-theme .result-card,
+body.dark-theme .stats-card,
+body.dark-theme .badge-card,
+body.dark-theme .history-item,
+body.dark-theme .quiz-translation-panel {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+body.dark-theme .q-instruction {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+}
+
+body.dark-theme .q-prompt-sub,
+body.dark-theme .q-prompt-card .q-prompt-sub,
+body.dark-theme .listening-hint,
+body.dark-theme .listening-result-furigana,
+body.dark-theme .qtr-romaji,
+body.dark-theme .qtr-id {
+  color: var(--text-secondary);
+}
+
+body.dark-theme .tile-answer-placeholder,
+body.dark-theme .match-hint,
+body.dark-theme .level-tile-tag,
+body.dark-theme .listening-result-id,
+body.dark-theme .qtr-title,
+body.dark-theme .qtr-reading,
+body.dark-theme .qtr-note,
+body.dark-theme .history-info small,
+body.dark-theme .badge-desc,
+body.dark-theme .stats-card small,
+body.dark-theme .stat-chip-text small,
+body.dark-theme .result-card-label {
+  color: var(--text-muted);
+}
+
+/* status terpilih — spesifisitas harus mengalahkan aturan di atas */
+body.dark-theme .option-btn.option-selected,
+body.dark-theme .tile.tile-selected,
+body.dark-theme .match-item.selected {
+  border-color: var(--accent-color);
+  background-color: var(--accent-light);
+  color: var(--text-primary);
+}
+
+body.dark-theme .option-btn.option-correct {
+  border-color: var(--success-color);
+  background-color: var(--success-light);
+  color: var(--success-text);
+}
+
+body.dark-theme .option-btn.option-wrong {
+  border-color: var(--danger-color);
+  background-color: var(--danger-light);
+  color: var(--danger-text);
+}
+
+body.dark-theme .zone-correct {
+  border-color: var(--success-color);
+  background-color: var(--success-light);
+  color: var(--text-primary);
+}
+
+body.dark-theme .zone-wrong {
+  border-color: var(--danger-color);
+  background-color: var(--danger-light);
+  color: var(--text-primary);
+}
+
+body.dark-theme .tile.tile-selected,
+body.dark-theme .zone-correct .tile,
+body.dark-theme .zone-wrong .tile {
+  background-color: transparent;
+}
+
+body.dark-theme .feedback-correct {
+  background-color: var(--success-light);
+  border-color: var(--success-color);
+  color: var(--success-text);
+}
+
+body.dark-theme .feedback-wrong {
+  background-color: var(--danger-light);
+  border-color: var(--danger-color);
+  color: var(--danger-text);
+}
+
+body.dark-theme .answer-reveal { color: var(--danger-text); }
+
+body.dark-theme .hero-badge,
+body.dark-theme .chap-btn.active,
+body.dark-theme .level-tile-score,
+body.dark-theme .listening-audio-caption,
+body.dark-theme .listening-result-jp,
+body.dark-theme .badge-status,
+body.dark-theme .result-badge-earned,
+body.dark-theme .speaker-btn,
+body.dark-theme .qtr-speaker {
+  color: var(--accent-text);
+}
+
+body.dark-theme .result-badge-earned,
+body.dark-theme .hero-badge { background-color: var(--accent-light); }
+
+body.dark-theme .score-badge.pass { background-color: var(--success-light); color: var(--success-text); }
+body.dark-theme .score-badge.fail { background-color: var(--danger-light); color: var(--danger-text); }
+body.dark-theme .quiz-hearts { color: var(--danger-text); }
+body.dark-theme .link-danger { color: var(--danger-text); }
+body.dark-theme .modal-box { box-shadow: var(--shadow-md); }
+
+/* latar berisi teks putih: dipergelap di mode gelap agar rasio kontras ≥ 4.5 */
+body.dark-theme .btn-primary,
+body.dark-theme .brand-emblem,
+body.dark-theme .conv-avatar,
+body.dark-theme .result-score-circle {
+  background-color: var(--accent-hover);
+}
+
+body.dark-theme .btn-danger { background-color: #b91c1c; }
+
+body.dark-theme .continue-card {
+  background: linear-gradient(135deg, #047857, #065f46);
+  box-shadow: var(--shadow-md);
 }
 
 * {
@@ -132,6 +302,8 @@ body {
 /* Chapter Switcher Pills */
 .chapter-switcher {
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
   background: var(--border-color);
   border-radius: var(--radius-md);
   padding: 4px;
@@ -139,12 +311,14 @@ body {
 }
 
 .chap-btn {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   border: none;
   background: transparent;
-  padding: 8px 12px;
+  padding: 8px 4px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
   cursor: pointer;
@@ -153,7 +327,7 @@ body {
 
 .chap-btn.active {
   background: var(--bg-card);
-  color: var(--accent-color);
+  color: var(--accent-text);
   box-shadow: var(--shadow-sm);
 }
 
@@ -166,7 +340,7 @@ body {
 .hero-badge {
   display: inline-block;
   background-color: var(--accent-light);
-  color: var(--accent-color);
+  color: var(--accent-text);
   font-weight: 700;
   font-size: 0.85rem;
   padding: 4px 12px;
@@ -338,7 +512,7 @@ body {
 .link-danger {
   background: none;
   border: none;
-  color: var(--danger-color);
+  color: var(--danger-text);
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
@@ -389,6 +563,7 @@ body {
 }
 
 .map-level-tile {
+  color: var(--text-primary);
   aspect-ratio: 1;
   border-radius: 16px;
   border: 2px solid var(--border-color);
@@ -420,7 +595,7 @@ body {
 .level-tile-score {
   font-size: 0.65rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--accent-text);
 }
 
 .level-tile-tag {
@@ -452,7 +627,7 @@ body {
   align-items: center;
   gap: 4px;
   font-weight: 800;
-  color: var(--danger-color);
+  color: var(--danger-text);
 }
 
 .quiz-body {
@@ -474,22 +649,85 @@ body {
   margin-bottom: 12px;
   font-size: 0.95rem;
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
   visibility: hidden;
 }
+
+/* baris-baris di dalam kotak umpan balik (status + terjemahan + cara baca) */
+.fb-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.fb-emoji { font-size: 1.05rem; }
+
+.fb-row {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.fb-row-label {
+  flex: 0 0 auto;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.fb-row-text { flex: 1 1 auto; }
+.fb-jp { font-weight: 800; }
+.fb-romaji { font-style: italic; opacity: 0.85; }
+
+/* kartu terjemahan di bawah kotak umpan balik */
+.quiz-translation-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.qtr-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.qtr-line {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 0;
+  border-top: 1px dashed var(--border-color);
+}
+
+.qtr-jp { font-size: 1rem; font-weight: 800; color: var(--text-primary); }
+.qtr-speaker { color: var(--accent-text); }
+.qtr-reading { font-size: 0.8rem; color: var(--text-muted); }
+.qtr-romaji { font-size: 0.8rem; color: var(--text-secondary); font-style: italic; }
+.qtr-id { font-size: 0.88rem; color: var(--text-secondary); }
+.qtr-gloss { color: var(--text-muted); }
+.qtr-note { font-size: 0.7rem; color: var(--text-muted); font-style: italic; }
 
 .feedback-correct {
   visibility: visible;
   background-color: var(--success-light);
-  color: var(--success-color);
+  color: var(--success-text);
   border: 1px solid var(--success-color);
 }
 
 .feedback-wrong {
   visibility: visible;
   background-color: var(--danger-light);
-  color: var(--danger-color);
+  color: var(--danger-text);
   border: 1px solid var(--danger-color);
 }
 
@@ -536,7 +774,7 @@ body {
 .speaker-btn {
   background: var(--accent-light);
   border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  color: var(--accent-text);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -655,13 +893,13 @@ body {
 .option-correct {
   border-color: var(--success-color) !important;
   background-color: var(--success-light) !important;
-  color: var(--success-color) !important;
+  color: var(--success-text) !important;
 }
 
 .option-wrong {
   border-color: var(--danger-color) !important;
   background-color: var(--danger-light) !important;
-  color: var(--danger-color) !important;
+  color: var(--danger-text) !important;
 }
 
 /* Tiles & Arrange */
@@ -698,6 +936,7 @@ body {
   padding: 8px 14px;
   font-size: 1rem;
   font-weight: 700;
+  color: var(--text-primary); /* <button> tidak mewarisi warna teks body */
   cursor: pointer;
   box-shadow: 0 2px 0 var(--border-color);
 }
@@ -714,7 +953,7 @@ body {
 .answer-reveal {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--danger-color);
+  color: var(--danger-text);
   margin-top: 6px;
 }
 
@@ -738,6 +977,7 @@ body {
   padding: 12px;
   font-weight: 700;
   font-size: 0.95rem;
+  color: var(--text-primary); /* <button> tidak mewarisi warna teks body */
   cursor: pointer;
   text-align: center;
 }
@@ -787,7 +1027,7 @@ body {
 .listening-audio-caption {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--accent-text);
 }
 
 .listening-hint {
@@ -807,7 +1047,7 @@ body {
   gap: 4px;
 }
 
-.listening-result-jp { font-size: 1.1rem; font-weight: 800; color: var(--accent-color); }
+.listening-result-jp { font-size: 1.1rem; font-weight: 800; color: var(--accent-text); }
 .listening-result-furigana { font-size: 0.85rem; color: var(--text-secondary); }
 .listening-result-id { font-size: 0.85rem; color: var(--text-muted); }
 .reveal-audio-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
@@ -858,7 +1098,7 @@ body {
 
 .result-badge-earned {
   background: var(--accent-light);
-  color: var(--accent-color);
+  color: var(--accent-text);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -907,7 +1147,7 @@ body {
 .badge-icon { font-size: 2.2rem; margin-bottom: 6px; }
 .badge-name { font-size: 0.95rem; }
 .badge-desc { font-size: 0.75rem; color: var(--text-secondary); margin: 4px 0; }
-.badge-status { font-size: 0.65rem; font-weight: 800; color: var(--accent-color); }
+.badge-status { font-size: 0.65rem; font-weight: 800; color: var(--accent-text); }
 
 /* History Screen */
 .history-list { display: flex; flex-direction: column; gap: 10px; }
@@ -925,8 +1165,8 @@ body {
 .history-info small { color: var(--text-muted); font-size: 0.75rem; }
 .history-score { display: flex; align-items: center; gap: 8px; }
 .score-badge { padding: 4px 8px; border-radius: 8px; font-weight: 800; font-size: 0.85rem; }
-.score-badge.pass { background: var(--success-light); color: var(--success-color); }
-.score-badge.fail { background: var(--danger-light); color: var(--danger-color); }
+.score-badge.pass { background: var(--success-light); color: var(--success-text); }
+.score-badge.fail { background: var(--danger-light); color: var(--danger-text); }
 
 /* Modal / Dialog */
 .modal-overlay {
@@ -947,5 +1187,37 @@ body {
 }
 
 .modal-actions { display: flex; gap: 10px; margin-top: 16px; }
+
+/* Toast (dipakai UIManager.showToast) */
+.toast-root {
+  position: fixed;
+  top: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.toast-item {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  max-width: 90%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast-item.fade-out {
+  opacity: 0;
+  transform: translateY(-8px);
+}
 
 .hidden { display: none !important; }

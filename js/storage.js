@@ -4,22 +4,28 @@
 
 (function (global) {
   const STORAGE_KEY = 'nihongo_app_progress_v2';
+  /* Semua bab yang dikenal aplikasi. Data lama tetap aman: bab baru cukup
+   * ditambahkan ke daftar ini, progres bab lain tidak dihapus. */
+  const CHAPTERS = ['bab7', 'bab8', 'bab9', 'bab10'];
+  const DEFAULT_CHAPTER = 'bab10';
 
   function getDefaultProgress() {
     return {
-      activeChapter: 'bab9',
+      activeChapter: 'bab10',
       xp: 0,
       totalCorrect: 0,
       totalWrong: 0,
       levelsDone: {
         bab7: {},
         bab8: {},
-        bab9: {}
+        bab9: {},
+        bab10: {}
       },
       lastLevel: {
         bab7: 1,
         bab8: 1,
-        bab9: 1
+        bab9: 1,
+        bab10: 1
       },
       history: [],
       badges: []
@@ -31,11 +37,11 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return getDefaultProgress();
       const data = JSON.parse(raw);
-      if (!data.levelsDone) data.levelsDone = { bab7: {}, bab8: {}, bab9: {} };
-      if (!data.lastLevel) data.lastLevel = { bab7: 1, bab8: 1, bab9: 1 };
-      if (!data.activeChapter) data.activeChapter = 'bab9';
-      // Data lama (sebelum Bab 9) tetap aman: lengkapi bab yang belum ada tanpa menghapus progres.
-      ['bab7', 'bab8', 'bab9'].forEach(ch => {
+      if (!data.levelsDone) data.levelsDone = {};
+      if (!data.lastLevel) data.lastLevel = {};
+      if (!data.activeChapter || !CHAPTERS.includes(data.activeChapter)) data.activeChapter = DEFAULT_CHAPTER;
+      // Data lama (sebelum Bab 10) tetap aman: lengkapi bab yang belum ada tanpa menghapus progres.
+      CHAPTERS.forEach(ch => {
         if (!data.levelsDone[ch]) data.levelsDone[ch] = {};
         if (!data.lastLevel[ch]) data.lastLevel[ch] = 1;
       });
@@ -56,7 +62,7 @@
 
   function markLevelComplete(chapter, levelNum, scorePercent, xpGained, correctCount, wrongCount) {
     const progress = getProgress();
-    const ch = chapter || progress.activeChapter || 'bab9';
+    const ch = chapter || progress.activeChapter || DEFAULT_CHAPTER;
 
     if (!progress.levelsDone[ch]) progress.levelsDone[ch] = {};
     const prevBest = progress.levelsDone[ch][levelNum] || 0;
@@ -99,7 +105,7 @@
 
     if (!progress.badges) progress.badges = [];
 
-    const totalLevelsDone = ['bab7', 'bab8', 'bab9']
+    const totalLevelsDone = CHAPTERS
       .map(ch => Object.values(progress.levelsDone[ch] || {}).filter(s => s >= 60).length)
       .reduce((a, b) => a + b, 0);
 
@@ -115,7 +121,7 @@
       if (b.id === 'b_lv50' && totalLevelsDone >= 50) qualify = true;
       if (b.id === 'b_xp1000' && progress.xp >= 1000) qualify = true;
       if (b.id === 'b_perfect') {
-        const has100 = ['bab7', 'bab8', 'bab9']
+        const has100 = CHAPTERS
           .some(ch => Object.values(progress.levelsDone[ch] || {}).includes(100));
         if (has100) qualify = true;
       }
@@ -141,6 +147,7 @@
   }
 
   global.StorageManager = {
+    CHAPTERS,
     getProgress,
     saveProgress,
     markLevelComplete,
