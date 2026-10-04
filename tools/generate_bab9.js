@@ -59,6 +59,62 @@ function weightedPick(pairs, rnd) {
   return pairs[pairs.length - 1].v;
 }
 function capital(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+/* --- konverter kana -> romaji (untuk metadata "cara baca") ----------------- */
+const ROMAJI_TABLE = {
+  'あ': 'a', 'い': 'i', 'う': 'u', 'え': 'e', 'お': 'o',
+  'か': 'ka', 'き': 'ki', 'く': 'ku', 'け': 'ke', 'こ': 'ko',
+  'さ': 'sa', 'し': 'shi', 'す': 'su', 'せ': 'se', 'そ': 'so',
+  'た': 'ta', 'ち': 'chi', 'つ': 'tsu', 'て': 'te', 'と': 'to',
+  'な': 'na', 'に': 'ni', 'ぬ': 'nu', 'ね': 'ne', 'の': 'no',
+  'は': 'ha', 'ひ': 'hi', 'ふ': 'fu', 'へ': 'he', 'ほ': 'ho',
+  'ま': 'ma', 'み': 'mi', 'む': 'mu', 'め': 'me', 'も': 'mo',
+  'や': 'ya', 'ゆ': 'yu', 'よ': 'yo',
+  'ら': 'ra', 'り': 'ri', 'る': 'ru', 'れ': 're', 'ろ': 'ro',
+  'わ': 'wa', 'を': 'o', 'ん': 'n',
+  'が': 'ga', 'ぎ': 'gi', 'ぐ': 'gu', 'げ': 'ge', 'ご': 'go',
+  'ざ': 'za', 'じ': 'ji', 'ず': 'zu', 'ぜ': 'ze', 'ぞ': 'zo',
+  'だ': 'da', 'ぢ': 'ji', 'づ': 'zu', 'で': 'de', 'ど': 'do',
+  'ば': 'ba', 'び': 'bi', 'ぶ': 'bu', 'べ': 'be', 'ぼ': 'bo',
+  'ぱ': 'pa', 'ぴ': 'pi', 'ぷ': 'pu', 'ぺ': 'pe', 'ぽ': 'po',
+  'きゃ': 'kya', 'きゅ': 'kyu', 'きょ': 'kyo',
+  'しゃ': 'sha', 'しゅ': 'shu', 'しょ': 'sho',
+  'ちゃ': 'cha', 'ちゅ': 'chu', 'ちょ': 'cho',
+  'にゃ': 'nya', 'にゅ': 'nyu', 'にょ': 'nyo',
+  'ひゃ': 'hya', 'ひゅ': 'hyu', 'ひょ': 'hyo',
+  'みゃ': 'mya', 'みゅ': 'myu', 'みょ': 'myo',
+  'りゃ': 'rya', 'りゅ': 'ryu', 'りょ': 'ryo',
+  'ぎゃ': 'gya', 'ぎゅ': 'gyu', 'ぎょ': 'gyo',
+  'じゃ': 'ja', 'じゅ': 'ju', 'じょ': 'jo',
+  'びゃ': 'bya', 'びゅ': 'byu', 'びょ': 'byo',
+  'ぴゃ': 'pya', 'ぴゅ': 'pyu', 'ぴょ': 'pyo',
+  'ふぁ': 'fa', 'ふぃ': 'fi', 'ふぇ': 'fe', 'ふぉ': 'fo',
+};
+function toRomaji(kanaStr) {
+  let s = String(kanaStr).replace(/[\u30A1-\u30F6]/g, m =>
+    String.fromCharCode(m.charCodeAt(0) - 0x60));
+  s = s.replace(/(^|\s)は(?=\s|$)/g, '$1わ');
+  let out = '', dbl = false, lastVowel = '';
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i], next = s[i + 1];
+    if (ch === 'っ') { dbl = true; continue; }
+    if (ch === 'ー') { out += lastVowel || 'a'; continue; }
+    if (ch === ' ' || ch === '　') { out += ' '; continue; }
+    if ('。、？！・'.includes(ch)) { out += ' '; continue; }
+    let syll = null;
+    if (next && ROMAJI_TABLE[ch + next]) { syll = ROMAJI_TABLE[ch + next]; i++; }
+    else if (ROMAJI_TABLE[ch]) syll = ROMAJI_TABLE[ch];
+    else { out += ch; continue; }
+    if (dbl) { out += syll.charAt(0); dbl = false; }
+    out += syll;
+    lastVowel = /[aiueo]$/.test(syll) ? syll.slice(-1) : lastVowel;
+  }
+  return out.replace(/\s+/g, ' ').trim();
+}
+/* partikel yang menempel di akhir token dipisah supaya romaji mudah dibaca */
+function tokenRomaji(kana) {
+  return toRomaji(String(kana).replace(/(わ|を|が|に|の|と|や|へ|も)$/, ' $1'));
+}
 function T(s, r) { return { s, r }; }
 function joinS(toks) { return toks.map(t => t.s).join(''); }
 function joinR(toks) { return toks.map(t => t.r).join(''); }
@@ -214,6 +270,7 @@ function mkSent(tokens, extra) {
     tokens,
     jp: joinS(tokens),
     reading: joinR(tokens),
+    romaji: tokens.map(t => tokenRomaji(t.r)).join(' '),
     idn: extra.idn,
     pattern: extra.pattern,
     vocab: uniq((extra.vocab || []).filter(v => VALID_VOCAB.has(v))),
@@ -746,7 +803,9 @@ function genArrange(sentence, syl, rnd) {
     id: nextId(), type: 'arrange',
     instruction: 'Susun kata-kata berikut menjadi kalimat Bahasa Jepang yang benar.',
     tiles, answer: tokens,
+    translation: sentence.idn,
     reading: sentence.reading,
+    romaji: sentence.romaji,
     vocab: sentence.vocab,
     _sentJp: sentence.jp,
   };
@@ -761,7 +820,9 @@ function genTranslate(sentence, syl, rnd) {
     instruction: 'Terjemahkan kalimat berikut ke dalam Bahasa Jepang.',
     prompt: sentence.idn,
     tiles: shuffle(tokens, rnd), answer: tokens,
+    translation: sentence.idn,
     reading: sentence.reading,
+    romaji: sentence.romaji,
     vocab: sentence.vocab,
     _sentJp: sentence.jp,
   };
@@ -801,6 +862,8 @@ function genComplete(sentence, syl, rnd) {
       prompt: promptTokens.join(' '),
       translation: sentence.idn,
       options, answer: target,
+      reading: sentence.reading,
+      romaji: sentence.romaji,
       vocab: sentence.vocab,
       _sentJp: sentence.jp,
     };
@@ -816,6 +879,8 @@ function genComplete(sentence, syl, rnd) {
       prompt: promptTokens.join(' '),
       translation: sentence.idn,
       options, answer: target,
+      reading: sentence.reading,
+      romaji: sentence.romaji,
       vocab: sentence.vocab,
       _sentJp: sentence.jp,
     };
@@ -830,6 +895,8 @@ function genComplete(sentence, syl, rnd) {
       prompt: promptTokens.join(' '),
       translation: sentence.idn,
       options, answer: target,
+      reading: sentence.reading,
+      romaji: sentence.romaji,
       vocab: sentence.vocab,
       _sentJp: sentence.jp,
     };
@@ -846,6 +913,8 @@ function genComplete(sentence, syl, rnd) {
       prompt: promptTokens.join(' '),
       translation: sentence.idn,
       options, answer: target,
+      reading: sentence.reading,
+      romaji: sentence.romaji,
       vocab: sentence.vocab,
       _sentJp: sentence.jp,
     };
@@ -873,6 +942,8 @@ function genCompleteKara(sentence, syl, rnd) {
     prompt: `＿＿＿、 ${aStr}`,
     translation: sentence.idn,
     options, answer: reasonStr,
+    reading: sentence.reading,
+    romaji: sentence.romaji,
     vocab: sentence.vocab,
     _sentJp: sentence.jp,
   };
@@ -976,8 +1047,8 @@ function genMatch(syl, rnd, themeIdx) {
 /* --- 5) SHORT CONVERSATION ---------------------------------------------------
  * Template dialog 2-4 baris. family = tipe dialog (dipakai utk anti-repetisi
  * dalam satu level). build() dipanggil saat soal dibuat.                    */
-function A(t) { return { speaker: 'A', text: t }; }
-function B(t) { return { speaker: 'B', text: t }; }
+function A(t, id) { return { speaker: 'A', text: t, id }; }
+function B(t, id) { return { speaker: 'B', text: t, id }; }
 const CONV_INSTR = 'Bacalah percakapan pendek berikut lalu jawab pertanyaannya.';
 
 const D_TAKUSAN = '`ええ、${o.jp}は たくさん あります。`';
@@ -995,8 +1066,9 @@ function convTemplates(rnd) {
         const ansLine = yes
           ? `はい、とても ${o.jp}が 好きです。`
           : `いいえ、あまり ${o.jp}が 好きではありません。`;
+        const ansId = yes ? `Ya, sangat suka ${o.mean}.` : `Tidak, tidak begitu suka ${o.mean}.`;
         return {
-          dialogue: [A(`${name.jp}、${o.jp}は 好きですか。`), B('＿＿＿')],
+          dialogue: [A(`${name.jp}、${o.jp}は 好きですか。`, `${name.mean}, apakah suka ${o.mean}?`), B('＿＿＿', ansId)],
           question: `Pilih jawaban B yang tepat (${o.mean}${yes ? ' sangat disukai' : ' tidak begitu disukai'}):`,
           options: shuffle(uniq([
             ansLine,
@@ -1005,6 +1077,7 @@ function convTemplates(rnd) {
             `はい、${o.jp}が あります。`,
           ]), rnd),
           answer: ansLine,
+          answerId: ansId,
           vocab: [o.id, 'v_suki'],
         };
       });
@@ -1023,8 +1096,11 @@ function convTemplates(rnd) {
           ? `はい、${ADV_FREQ[adv].s} ${lang.jp}が 分かります。`
           : `いいえ、${ADV_FREQ[adv].s} ${lang.jp}が 分かりません。`;
         const deg = adv === 'yoku' ? 'dengan baik' : adv === 'daitai' ? 'kira-kira' : adv === 'sukoshi' ? 'sedikit' : adv === 'totemo' ? 'sangat' : adv === 'amari' ? 'tidak begitu' : 'sama sekali';
+        const ansId = pol === 'aff'
+          ? `Ya, ${deg} mengerti ${lang.mean}.`
+          : `Tidak, ${deg} mengerti ${lang.mean}.`;
         return {
-          dialogue: [A(`${name.jp}、${lang.jp}は 分かりますか。`), B('＿＿＿')],
+          dialogue: [A(`${name.jp}、${lang.jp}は 分かりますか。`, `${name.mean}, apakah mengerti ${lang.mean}?`), B('＿＿＿', ansId)],
           question: `Pilih jawaban B yang tepat (${lang.mean} ${deg} dimengerti):`,
           options: shuffle(uniq([
             ansLine,
@@ -1033,6 +1109,7 @@ function convTemplates(rnd) {
             `いいえ、${lang.jp}が あります。`,
           ]), rnd),
           answer: ansLine,
+          answerId: ansId,
           vocab: [lang.id, 'v_wakarimasu', 'adv_' + adv],
         };
       });
@@ -1049,8 +1126,9 @@ function convTemplates(rnd) {
         const ansLine = yes
           ? `ええ、${o.jp}は とても 上手です。`
           : `いいえ、${o.jp}は あまり 上手ではありません。`;
+        const ansId = yes ? `Ya, sangat pandai ${o.mean}.` : `Tidak, tidak begitu pandai ${o.mean}.`;
         return {
-          dialogue: [A(`${name.jp}、${o.jp}が 上手ですか。`), B('＿＿＿')],
+          dialogue: [A(`${name.jp}、${o.jp}が 上手ですか。`, `${name.mean}, apakah pandai ${o.mean}?`), B('＿＿＿', ansId)],
           question: `Pilih jawaban B yang tepat (${o.mean}${yes ? ' dikuasai dengan baik' : ' belum dikuasai'}):`,
           options: shuffle(uniq([
             ansLine,
@@ -1059,6 +1137,7 @@ function convTemplates(rnd) {
             dExtra,
           ]), rnd),
           answer: ansLine,
+          answerId: ansId,
           vocab: [o.id, 'v_jouzu'],
         };
       });
@@ -1076,11 +1155,12 @@ function convTemplates(rnd) {
         const reasonAsIs = joinS(p.rToks).replace(/、$/, '');
         const rBase = reasonAsIs.replace(/(から|ですから)$/, '');
         const ans = reasonAsIs + '。';
+        const ansId = `${capital(p.idnR)}.`;
         return {
           dialogue: [
-            A(`${name.jp}は ${action}。`),
-            A(`どうして ですか。`),
-            B('＿＿＿'),
+            A(`${name.jp}は ${action}。`, `${name.mean} ${p.idnA}.`),
+            A(`どうして ですか。`, 'Kenapa?'),
+            B('＿＿＿', ansId),
           ],
           question: `Pilih alasan B yang sesuai (${p.idnR}):`,
           options: shuffle(uniq([
@@ -1090,6 +1170,7 @@ function convTemplates(rnd) {
             `いいえ、${reasonAsIs}。`,
           ]), rnd),
           answer: ans,
+          answerId: ansId,
           vocab: p.vocab,
         };
       }, 31);
@@ -1103,23 +1184,33 @@ function convTemplates(rnd) {
       const item = useJisho ? 'この 辞書' : 'この 本';
       const itemVocab = useJisho ? 'n_jisho' : 'n_hon';
       const ok = syl.level >= 31 ? (rnd() < 0.5) : true; /* kara tier 4 */
-      const d1 = A(`${name.jp}、${item}を 貸してください。`);
+      const d1 = A(`${name.jp}、${item}を 貸してください。`,
+        `${name.mean}, tolong pinjamkan ${useJisho ? 'kamus' : 'buku'} ini.`);
       if (ok) {
         const ans = 'いいですよ。';
+        const ansId = 'Boleh.';
         return {
-          dialogue: [d1, B('＿＿＿'), A('ありがとう ございます。')],
+          dialogue: [d1, B('＿＿＿', ansId), A('ありがとう ございます。', 'Terima kasih.')],
           question: 'Pilih jawaban B yang sopan (memberi barang yang dipinjam):',
           options: shuffle(uniq([ans, 'いいえ、ありません。', '残念ですが、だめです。', 'どうして ですか。']), rnd),
           answer: ans,
+          answerId: ansId,
           vocab: ['e_kashitekudasai', 'e_iidesuyo', itemVocab],
         };
       }
       const ans = '残念ですが、細かい お金が ありません から、だめ です。';
+      const ansId = 'Sayang sekali, karena tidak ada uang receh, tidak bisa.';
       return {
-        dialogue: [d1, B('＿＿＿'), A('ああ。'), A('また 今度 お願いします。')],
+        dialogue: [
+          d1,
+          B('＿＿＿', ansId),
+          A('ああ。', 'Ah, begitu.'),
+          A('また 今度 お願いします。', 'Lain kali ya, tolong.'),
+        ],
         question: 'Pilih jawaban B yang sopan (menolak meminjamkan dengan alasan):',
         options: shuffle(uniq([ans, 'いいですよ。', '残念ですが、約束が あります。', 'どうして ですか。']), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: ['e_kashitekudasai', 'e_zannendesuga', 'n_komakaiokane', 'e_aa', 'e_matakondonegai', itemVocab],
       };
     });
@@ -1133,8 +1224,15 @@ function convTemplates(rnd) {
       const ans = ok
         ? 'いいですね。ありがとう ございます。'
         : '残念ですが、明日 約束が あります から、だめ です。';
+      const ansId = ok
+        ? 'Wah, bagus. Terima kasih.'
+        : 'Sayang sekali, karena besok ada janji, tidak bisa.';
       return {
-        dialogue: [A(`${name.jp}、明日 ${event}に 行きます。一緒に いかがですか。`), B('＿＿＿')],
+        dialogue: [
+          A(`${name.jp}、明日 ${event}に 行きます。一緒に いかがですか。`,
+            `${name.mean}, besok pergi ke ${event}. Bagaimana kalau bersama-sama?`),
+          B('＿＿＿', ansId),
+        ],
         question: 'Pilih jawaban B yang tepat:',
         options: shuffle(uniq([
           ans,
@@ -1143,6 +1241,7 @@ function convTemplates(rnd) {
           'はい、明日 あります。',
         ]), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: ['e_issyoniikaga', ok ? 'e_aa' : 'e_zannendesuga', 'n_yakusoku'],
       };
     });
@@ -1156,8 +1255,9 @@ function convTemplates(rnd) {
       const otherPool = ['n_jyazu', 'n_kurashikku', 'n_ongaku', 'n_karaoke'].filter(t => t !== xid);
       const y = NM[pick(otherPool, rnd)];
       const ans = `${x.jp}が 好きです。`;
+      const ansId = `Suka ${x.mean}.`;
       return {
-        dialogue: [A(`${name.jp}、どんな 音楽が 好きですか。`), B('＿＿＿')],
+        dialogue: [A(`${name.jp}、どんな 音楽が 好きですか。`, `${name.mean}, musik seperti apa yang disukai?`), B('＿＿＿', ansId)],
         question: `Pilih jawaban B yang sesuai (${x.mean} yang disukai):`,
         options: shuffle(uniq([
           ans,
@@ -1166,6 +1266,7 @@ function convTemplates(rnd) {
           `${x.jp}が あります。`,
         ]), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: [x.id, y.id, 'v_suki'],
       };
     });
@@ -1178,8 +1279,9 @@ function convTemplates(rnd) {
       const yid = pick(['n_ryouri', 'n_ryokou', 'n_konsaato', 'n_kabuki'], rnd);
       const x = NM[xid], y = NM[yid];
       const ans = `${x.jp}が 好きです。そして、${y.jp}も 好きです。`;
+      const ansId = `Suka ${x.mean}. Dan juga suka ${y.mean}.`;
       return {
-        dialogue: [A(`${name.jp}、好きな 音楽 と 趣味 は 何ですか。`), B('＿＿＿')],
+        dialogue: [A(`${name.jp}、好きな 音楽 と 趣味 は 何ですか。`, `${name.mean}, musik dan hobi yang disukai apa?`), B('＿＿＿', ansId)],
         question: `Pilih jawaban B yang benar (suka ${x.mean} dan juga ${y.mean}):`,
         options: shuffle(uniq([
           ans,
@@ -1188,6 +1290,7 @@ function convTemplates(rnd) {
           `${x.jp}が 分かります。そして、${y.jp}も 分かります。`,
         ]), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: [x.id, y.id, 'v_suki'],
       };
     }, 21);
@@ -1204,10 +1307,10 @@ function convTemplates(rnd) {
       const ans = `${y.jp}が 好きです。`;
       return {
         dialogue: [
-          A(`${n1.jp}、${x.jp}が 好きですか。`),
-          B(`いいえ、${y.jp}が 好きです。`),
-          A(`${n2.jp}、${y.jp}が 好きですか。`),
-          B(`はい、とても ${y.jp}が 好きです。`),
+          A(`${n1.jp}、${x.jp}が 好きですか。`, `${n1.mean}, apakah suka ${x.mean}?`),
+          B(`いいえ、${y.jp}が 好きです。`, `Tidak, suka ${y.mean}.`),
+          A(`${n2.jp}、${y.jp}が 好きですか。`, `${n2.mean}, apakah suka ${y.mean}?`),
+          B(`はい、とても ${y.jp}が 好きです。`, `Ya, sangat suka ${y.mean}.`),
         ],
         question: `Apa yang disukai oleh ${n2.mean}?`,
         options: shuffle(uniq([
@@ -1229,8 +1332,9 @@ function convTemplates(rnd) {
       add('aru_qa', () => {
         const yes = rnd() < 0.5;
         const ansLine = yes ? `はい、${o.jp}が あります。` : `いいえ、${o.jp}が ありません。`;
+        const ansId = yes ? `Ya, ada ${o.mean}.` : `Tidak, tidak ada ${o.mean}.`;
         return {
-          dialogue: [A(`${name.jp}、明日 ${o.jp}が あります か。`), B('＿＿＿')],
+          dialogue: [A(`${name.jp}、明日 ${o.jp}が あります か。`, `${name.mean}, besok ada ${o.mean}?`), B('＿＿＿', ansId)],
           question: `Pilih jawaban B yang tepat (besok ${yes ? 'ada' : 'tidak ada'} ${o.mean}):`,
           options: shuffle(uniq([
             ansLine,
@@ -1239,6 +1343,7 @@ function convTemplates(rnd) {
             `ええ、${o.jp}が 上手です。`,
           ]), rnd),
           answer: ansLine,
+          answerId: ansId,
           vocab: [o.id, 'v_arimasu'],
         };
       });
@@ -1249,8 +1354,9 @@ function convTemplates(rnd) {
   for (const name of pickN(NAMES, 5, rnd)) {
     add('desukara', () => {
       const ans = '日本の 音楽が 好きです から。';
+      const ansId = 'Karena suka musik Jepang.';
       return {
-        dialogue: [A(`${name.jp}、どうして 日本語が 上手ですか。`), B('＿＿＿')],
+        dialogue: [A(`${name.jp}、どうして 日本語が 上手ですか。`, `${name.mean}, kenapa pandai bahasa Jepang?`), B('＿＿＿', ansId)],
         question: 'Pilih alasan B yang sesuai (suka musik Jepang):',
         options: shuffle(uniq([
           ans,
@@ -1259,6 +1365,7 @@ function convTemplates(rnd) {
           '日本の 音楽が あります。',
         ]), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: ['n_ongaku', 'v_jouzu', 'v_suki', 'n_nihongo'],
       };
     }, 31);
@@ -1269,8 +1376,9 @@ function convTemplates(rnd) {
     add('heta_jouzu', () => {
       const o = pick([NM['n_dansu'], NM['n_yakyuu']], rnd);
       const ans = `いいえ、わたしは ${o.jp}が 上手です。`;
+      const ansId = `Tidak, saya pandai ${o.mean}.`;
       return {
-        dialogue: [A(`${name.jp}、${o.jp}が 下手ですね。`), B('＿＿＿')],
+        dialogue: [A(`${name.jp}、${o.jp}が 下手ですね。`, `${name.mean}, kurang pandai ${o.mean} ya.`), B('＿＿＿', ansId)],
         question: `Pilih jawaban B yang tepat (${name.mean} menjawab bahwa ia pandai):`,
         options: shuffle(uniq([
           ans,
@@ -1279,6 +1387,7 @@ function convTemplates(rnd) {
           `いいえ、${o.jp}が 分かります。`,
         ]), rnd),
         answer: ans,
+        answerId: ansId,
         vocab: [o.id, 'v_jouzu', 'v_heta'],
       };
     }, 21);
@@ -1288,11 +1397,13 @@ function convTemplates(rnd) {
   add('hayaku', () => {
     const name = pick(NAMES, rnd);
     const ans = 'はい、はやく 来ます。';
+    const ansId = 'Ya, akan datang lebih cepat.';
     return {
-      dialogue: [A(`${name.jp}、明日 の 約束、はやく 来ます か。`), B('＿＿＿')],
+      dialogue: [A(`${name.jp}、明日 の 約束、はやく 来ます か。`, `${name.mean}, untuk janji besok, datang lebih cepat?`), B('＿＿＿', ansId)],
       question: 'Pilih jawaban B yang tepat (akan datang lebih cepat):',
       options: shuffle(uniq([ans, 'はい、ゆっくり 行きます。', 'いいえ、ぜんぜん 分かります。', 'ええ、とても 好きです。']), rnd),
       answer: ans,
+      answerId: ansId,
       vocab: ['adv_hayaku', 'n_yakusoku'],
     };
   });
@@ -1301,11 +1412,13 @@ function convTemplates(rnd) {
   add('chotto_loan', () => {
     const name = pick(NAMES, rnd);
     const ans = 'いいですよ。';
+    const ansId = 'Boleh.';
     return {
-      dialogue: [A(`${name.jp}、ちょっと 本を 貸してください。`), B('＿＿＿')],
+      dialogue: [A(`${name.jp}、ちょっと 本を 貸してください。`, `${name.mean}, sebentar, tolong pinjamkan buku.`), B('＿＿＿', ansId)],
       question: 'Pilih jawaban B yang sopan (memberi buku):',
       options: shuffle(uniq([ans, 'どうして ですか。', '残念ですが、だめです。', 'はい、分かります。']), rnd),
       answer: ans,
+      answerId: ansId,
       vocab: ['adv_chotto', 'e_kashitekudasai', 'e_iidesuyo', 'n_hon'],
     };
   });
@@ -1321,13 +1434,24 @@ function genShortConversation(syl, rnd, templates, usedFamilies) {
   const q = tpl.build(syl);
   if (!q || !q.dialogue || !q.options) return null;
   usedFamilies.add(tpl.family);
+
+  /* terjemahan Bahasa Indonesia per baris (untuk panel terjemahan setelah
+   * menjawab). Baris tanpa terjemahan dibiarkan kosong → diisi glosarium. */
+  const dialogueId = q.dialogue.map(line =>
+    (line.id ? `${line.speaker}: ${line.id}` : ''));
+  const fullJp = q.dialogue.map(d => d.text.replace('＿＿＿', q.answer)).join(' ');
+
   return {
     id: nextId(), type: 'short_conversation',
     instruction: CONV_INSTR,
-    dialogue: q.dialogue,
+    dialogue: q.dialogue.map(d => ({ speaker: d.speaker, text: d.text })),
     question: q.question,
     options: q.options,
     answer: q.answer,
+    answerId: q.answerId || '',
+    translation: dialogueId.filter(Boolean).join(' — '),
+    dialogueId,
+    fullJp,
     vocab: q.vocab,
   };
 }
@@ -1430,6 +1554,9 @@ function genChooseTranslation(sentence, syl, rnd) {
     prompt: sentence.idn,
     options: shuffle(opts, rnd),
     answer: sentence.jp,
+    translation: sentence.idn,
+    reading: sentence.reading,
+    romaji: sentence.romaji,
     vocab: sentence.vocab,
     _sentJp: sentence.jp,
   };
@@ -1461,6 +1588,7 @@ function genListening(sentence, syl, rnd) {
         instruction: 'Dengarkan pertanyaan dan jawabannya, lalu susun jawaban yang kamu dengar.',
         audioText: qLine + ' ' + sentence.jp,
         reading: sentence.reading,
+        romaji: sentence.romaji,
         tiles: shuffle([...tokens, ...extras], rnd),
         answer: tokens,
         translation: sentence.idn,
@@ -1479,6 +1607,7 @@ function genListening(sentence, syl, rnd) {
       : 'Dengarkan audio, lalu susun kalimat yang kamu dengar.',
     audioText: sentence.jp,
     reading: sentence.reading,
+    romaji: sentence.romaji,
     tiles: shuffle([...tokens, ...extras], rnd),
     answer: tokens,
     translation: sentence.idn,

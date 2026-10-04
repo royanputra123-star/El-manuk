@@ -1,5 +1,5 @@
 // js/app.js
-// Logika Aplikasi Utama & Kuis Belajar Bahasa Jepang (Minna no Nihongo Bab 9, Bab 8 & Bab 7)
+// Logika Aplikasi Utama & Kuis Belajar Bahasa Jepang (Minna no Nihongo Bab 10, Bab 9, Bab 8 & Bab 7)
 
 (function (global) {
   let activeScreen = 'screen-home';
@@ -12,10 +12,11 @@
   let currentController = null;
   let isAnswerChecked = false;
 
-  const DEFAULT_CHAPTER = 'bab9';
+  const DEFAULT_CHAPTER = 'bab10';
 
-  // Pemetaan bab -> data bank soal (Bab 9 = bab terbaru)
+  // Pemetaan bab -> data bank soal (Bab 10 = bab terbaru)
   const CHAPTER_LEVEL_DATA = {
+    bab10: 'LEVELS_BAB10_DATA',
     bab9: 'LEVELS_BAB9_DATA',
     bab8: 'LEVELS_DATA',
     bab7: 'LEVELS_BAB7_DATA'
@@ -111,6 +112,12 @@
       feedbackEl.innerHTML = '';
     }
 
+    const translationPanel = document.getElementById('quiz-translation-panel');
+    if (translationPanel) {
+      translationPanel.innerHTML = '';
+      translationPanel.classList.add('hidden');
+    }
+
     if (btnCheck) {
       btnCheck.textContent = 'Periksa';
       btnCheck.disabled = true;
@@ -136,25 +143,32 @@
     if (!isAnswerChecked) {
       isAnswerChecked = true;
       const isCorrect = currentController.checkCorrect();
+      const q = currentQuestions[currentQuestionIdx];
+      const translationPanel = document.getElementById('quiz-translation-panel');
 
       currentController.reveal(isCorrect);
 
       if (isCorrect) {
         correctCount++;
         if (global.SoundFx) SoundFx.playCorrect();
-        if (feedbackEl) {
-          feedbackEl.className = 'quiz-feedback feedback-correct';
-          feedbackEl.innerHTML = '✨ <strong>Benar!</strong> Jawaban kamu tepat.';
-        }
       } else {
         wrongCount++;
         currentLives = Math.max(0, currentLives - 1);
         updateHeartsUI();
         if (global.SoundFx) SoundFx.playWrong();
-        if (feedbackEl) {
-          feedbackEl.className = 'quiz-feedback feedback-wrong';
-          feedbackEl.innerHTML = '❌ <strong>Kurang tepat.</strong> Perhatikan kembali.';
-        }
+      }
+
+      /* --- Tampilan terjemahan setelah menjawab -------------------------
+       * Kotak feedback : status + terjemahan Bahasa Indonesia + cara baca.
+       * Panel di bawahnya : rincian per baris untuk percakapan & susun kata. */
+      if (global.TranslationHelper) {
+        TranslationHelper.renderFeedback(feedbackEl, q, isCorrect);
+        TranslationHelper.renderDetail(translationPanel, q);
+      } else if (feedbackEl) {
+        feedbackEl.className = 'quiz-feedback ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
+        feedbackEl.innerHTML = isCorrect
+          ? '✨ <strong>Benar!</strong> Jawaban kamu tepat.'
+          : '❌ <strong>Kurang tepat.</strong> Perhatikan kembali.';
       }
 
       btnCheck.textContent = currentQuestionIdx === currentQuestions.length - 1 ? 'Selesai ▶' : 'Lanjut ▶';
@@ -213,8 +227,8 @@
     }
 
     if (scorePct >= 60) {
-      if (global.fireConfetti) fireConfetti();
-      if (global.SoundFx) SoundFx.playFanfare();
+      try { if (global.fireConfetti) fireConfetti(); } catch (e) { /* efek visual opsional */ }
+      try { if (global.SoundFx) SoundFx.playFanfare(); } catch (e) { /* audio opsional */ }
     }
 
     showScreen('screen-result');
@@ -225,9 +239,10 @@
   function initApp() {
     const progress = StorageManager.getProgress();
 
-    // Event listeners untuk Chapter Switcher (Bab 9, Bab 8 & Bab 7)
+    // Event listeners untuk Chapter Switcher (Bab 10, Bab 9, Bab 8 & Bab 7)
     const chapterList = (global.UIManager && UIManager.CHAPTERS) || [
-      { id: 'bab9', label: 'Bab 9' }, { id: 'bab8', label: 'Bab 8' }, { id: 'bab7', label: 'Bab 7' }
+      { id: 'bab10', label: 'Bab 10' }, { id: 'bab9', label: 'Bab 9' },
+      { id: 'bab8', label: 'Bab 8' }, { id: 'bab7', label: 'Bab 7' }
     ];
 
     chapterList.forEach(c => {

@@ -2,8 +2,10 @@
 // Pengelolaan Tampilan UI Aplikasi (Home, Level Map, Stats, Badges, History, Chapter Switch)
 
 (function (global) {
-  // Daftar bab yang tersedia di aplikasi (Bab 9 = bab terbaru)
+  // Daftar bab yang tersedia di aplikasi (Bab 10 = bab terbaru)
   const CHAPTERS = [
+    { id: 'bab10', label: 'Bab 10',
+      sub: '50 Level · 1000 Soal · あります / います · に / が / の · 上 / 下 / 隣 / 中 / 間 · どこ / だれ / 何' },
     { id: 'bab9', label: 'Bab 9',
       sub: '50 Level · 1000 Soal · 好き / 嫌い · 上手 / 下手 · 分かります · どうして / から' },
     { id: 'bab8', label: 'Bab 8',
@@ -12,7 +14,7 @@
       sub: '50 Level · 1000 Soal · あげます / もらいます · 貸します / 借ります · もう / まだ' }
   ];
 
-  const DEFAULT_CHAPTER = 'bab9';
+  const DEFAULT_CHAPTER = 'bab10';
 
   function getChapterMeta(chapterId) {
     return CHAPTERS.find(c => c.id === chapterId) || CHAPTERS[0];
