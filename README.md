@@ -8,7 +8,8 @@ Bab 9, Bab 8, dan Bab 7 tetap dapat dimainkan. Setiap bab berisi **50 Level × 2
 
 ### 1. Bab 10 — Bank Soal Baru (`js/data/levels_bab10.js` + `js/data/vocab_bab10.js`)
 
-Generator: **`tools/generate_bab10.js`** → 50 level, 1.000 soal (`q_b10_1` … `q_b10_1000`), 108 kosakata.
+Generator: **`tools/generate_bab10.js`** → 50 level, 1.000 soal (`q_b10_1` … `q_b10_1000`), 123 kosakata
+(kana + romaji + asal bab). Pemeriksa terpisah: **`tools/audit_bab10.js`**.
 
 **Tata bahasa (bunpou) yang dilatih**
 
@@ -22,29 +23,34 @@ Generator: **`tools/generate_bab10.js`** → 50 level, 1.000 soal (`q_b10_1` …
 | N1 や N2 (など) | 箱の 中に 鉛筆や 消しゴムなど あります |
 | Kata tanya どこ / だれ / 何 (+ だれが / 何が) | 駅は どこに ありますか |
 
-**Kosakata & kanji**: kanji standar N5/Bab 10 dipertahankan — あります, います, 上, 下, 前, 後ろ, 右, 左,
-中, 外, 隣, 近く, 間, 箱, 冷蔵庫, 棚, 窓, 机, 鍵, 公園, 喫茶店, 本屋, 乗り場, 電柱, 駅, 銀行, 郵便局,
-病院, 学校, 大学, 会社, 部屋, 教室, 事務所, 図書館, 庭, 台所, 犬, 猫, 鳥, 魚, 男の人, 女の人, 男の子,
-女の子, 学生, 会社員, dll. (108 entri, lengkap dengan kana + romaji di `vocab_bab10.js`).
+**Kosakata & kanji**: seluruh kosakata Bab 1–10 (tanpa Bab 11+) — あります, います, 11 kata posisi
+(上, 下, 前, 後ろ, 右, 左, 中, 外, 隣, 近く, 間), 箱, 冷蔵庫, 棚, 窓, テーブル, ベッド, ドア, スイッチ,
+電池, ポスト, 木, 物, フィルム, 公園, 喫茶店, 本屋, 乗り場, コンビニ, ビル, 駅, 銀行, 郵便局, 病院,
+学校, 大学, 会社, 部屋, 教室, 事務所, 図書館, 庭, 寮, うち, 国, 空港, 犬, 猫, 象, パンダ, 魚, 男の人,
+女の人, 男の子, 女の子, 先生, 学生, 会社員, 医者, 銀行員, 留学生, dst. (123 entri, lengkap dengan
+kana + romaji + asal bab di `vocab_bab10.js`).
 
 **Anti-monoton**
 
 - **5 tier kesulitan**: 1–10 Mudah, 11–20 Sedang, 21–30 Kalimat, 31–40 Campuran, 41–50 Acak.
 - **7 tipe soal** dipakai proporsional di *setiap* level (kuota largest-remainder, bukan acak murni):
   `arrange`, `translate`, `complete`, `match`, `short_conversation`, `choose_translation`, `listening`.
-- Subjek, lokasi, dan kata posisi dirotasi: 48 subjek unik (benda + makhluk hidup), 29 tempat,
-  11 posisi, diambil dari bank 2.319 kalimat yang tervalidasi.
+- Subjek, lokasi, dan kata posisi dirotasi: 40 kata benda + 21 makhluk hidup + 30 nama tempat,
+  11 kata posisi, diambil dari bank 2.621 kalimat yang tervalidasi.
 - **Filter kewajaran** supaya kalimat tidak janggal:
   - あります hanya untuk benda mati, います hanya untuk makhluk hidup (divalidasi untuk seluruh bank);
   - 上 / 下 hanya dengan acuan benda (机の上), 中 / 外 hanya dengan acuan wadah/ruang (箱の中, 教室の中);
   - benda dalam ruangan tidak dipasangkan dengan tempat luar ruangan (dan sebaliknya);
-  - 山 / 木 / 電柱 tidak dipakai di tempat sempit (庭, 乗り場), 国 / 町 tidak dipakai sebagai acuan posisi.
+  - 山 / 木 tidak dipakai di tempat sempit (庭, 乗り場), 国 / 町 tidak dipakai sebagai acuan posisi;
+  - kalimat negatif tidak memakai 国, 窓, dan ドア (「国に家族がいません」 dsb. terasa janggal).
 - `match` punya 9 tema berputar (posisi, benda, tempat, makhluk hidup, bacaan kanji, pola, tanya-jawab,
   ungkapan, posisi & tempat) — termasuk "jodohkan kanji dengan cara bacanya".
 
-**Validasi bawaan generator** (gagal = file tidak ditulis): id soal unik, token jawaban ada di `tiles`,
-jawaban ada di `options` (min. 3 opsi, tanpa duplikat), `vocabId` match unik, dialog punya tepat 1 rumpang,
-kesesuaian あります/います, kewajaran posisi, dan **setiap soal wajib punya metadata terjemahan**.
+**Validasi**: `node tools/audit_bab10.js` memeriksa struktur (50 × 20), id berurutan & unik, properti wajib
+tiap tipe, jawaban ada di opsi, opsi/tile/pasangan unik, tepat 1 rumpang, kesesuaian あります/います,
+kewajaran posisi, cakupan kosakata Bab 1–10 (seluruh teks Jepang didekomposisi), terjemahan Indonesia
+(tanpa kanji/spasi ganda), duplikat & near-duplicate, sebaran tipe soal, serta sebaran/cakupan 10 kelompok
+bunpou Bab 10 + 11 kata posisi. Generator juga punya validasi bawaan: bila gagal, file **tidak** ditulis.
 
 ### 2. Tampilan Terjemahan Setelah Menjawab (`js/translation.js`)
 
@@ -102,6 +108,7 @@ Membuat ulang data:
 
 ```bash
 node tools/generate_bab10.js   # → js/data/vocab_bab10.js & js/data/levels_bab10.js
+node tools/audit_bab10.js      # memeriksa hasil generate (exit 1 bila ada masalah)
 node tools/generate_bab9.js    # → js/data/vocab_bab9.js  & js/data/levels_bab9.js
 node tools/generate.js         # → js/data/vocab.js       & js/data/levels.js (Bab 8)
 ```
