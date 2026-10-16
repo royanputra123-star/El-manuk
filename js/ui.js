@@ -2,8 +2,10 @@
 // Pengelolaan Tampilan UI Aplikasi (Home, Level Map, Stats, Badges, History, Chapter Switch)
 
 (function (global) {
-  // Daftar bab yang tersedia di aplikasi (Bab 10 = bab terbaru)
+  // Daftar bab yang tersedia di aplikasi (Bab 11 = bab terbaru)
   const CHAPTERS = [
+    { id: 'bab11', label: 'Bab 11',
+      sub: '30 Level · 450 Soal · Counter ～つ / ～人 / ～枚 / ～台 · かかります · ～だけ · 全部で · Keluarga' },
     { id: 'bab10', label: 'Bab 10',
       sub: '50 Level · 1000 Soal · あります / います · に / が / の · 上 / 下 / 隣 / 中 / 間 · どこ / だれ / 何' },
     { id: 'bab9', label: 'Bab 9',
@@ -14,7 +16,23 @@
       sub: '50 Level · 1000 Soal · あげます / もらいます · 貸します / 借ります · もう / まだ' }
   ];
 
-  const DEFAULT_CHAPTER = 'bab10';
+  const DEFAULT_CHAPTER = 'bab11';
+
+  // Pemetaan bab -> data level (untuk jumlah level & tier peta)
+  const CHAPTER_LEVEL_DATA = {
+    bab11: 'LEVELS_BAB11_DATA',
+    bab10: 'LEVELS_BAB10_DATA',
+    bab9: 'LEVELS_BAB9_DATA',
+    bab8: 'LEVELS_DATA',
+    bab7: 'LEVELS_BAB7_DATA'
+  };
+  function chapterLevels(chapterId) {
+    const key = CHAPTER_LEVEL_DATA[chapterId];
+    return (key && global[key]) || [];
+  }
+  function chapterTotalLevels(chapterId) {
+    return chapterLevels(chapterId).length || (chapterId === 'bab11' ? 30 : 50);
+  }
 
   function getChapterMeta(chapterId) {
     return CHAPTERS.find(c => c.id === chapterId) || CHAPTERS[0];
@@ -62,6 +80,34 @@
     if (heroSub) heroSub.textContent = meta.sub;
   }
 
+  const TIER_LABEL = { mudah: 'Mudah', sedang: 'Sedang', kalimat: 'Kalimat', campuran: 'Campuran', acak: 'Acak' };
+
+  function renderMapLegend(activeChapter) {
+    const legend = document.getElementById('map-legend');
+    if (!legend) return;
+    const levels = chapterLevels(activeChapter);
+    if (!levels.length) return; /* biarkan legenda statis bila data absen */
+    /* hitung rentang level per tier dari data level aktual */
+    const runs = [];
+    levels.forEach((lvl, i) => {
+      const t = lvl.tier || 'mudah';
+      const last = runs[runs.length - 1];
+      if (last && last.tier === t && last.end === i) last.end = i + 1;
+      else runs.push({ tier: t, start: i + 1, end: i + 1 });
+    });
+    legend.innerHTML = '';
+    runs.forEach(r => {
+      const span = document.createElement('span');
+      span.className = 'legend-item';
+      const dot = document.createElement('i');
+      dot.className = 'dot dot-' + r.tier;
+      span.appendChild(dot);
+      span.appendChild(document.createTextNode(
+        ' ' + (r.start === r.end ? r.start : r.start + '–' + r.end) + ' ' + (TIER_LABEL[r.tier] || r.tier)));
+      legend.appendChild(span);
+    });
+  }
+
   function renderLevelMap(progress, onSelectLevel) {
     const grid = document.getElementById('level-map-grid');
     if (!grid) return;
@@ -70,17 +116,21 @@
 
     const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
     const lvlScores = progress.levelsDone[activeChapter] || {};
+    const levels = chapterLevels(activeChapter);
+    const totalLevels = chapterTotalLevels(activeChapter);
 
-    for (let l = 1; l <= 50; l++) {
+    renderMapLegend(activeChapter);
+
+    for (let l = 1; l <= totalLevels; l++) {
       const score = lvlScores[l];
       const isPassed = score !== undefined && score >= 60;
 
-      // Kategori warna level map
-      let tierClass = 'tier-mudah';
-      if (l > 10 && l <= 20) tierClass = 'tier-sedang';
-      else if (l > 20 && l <= 30) tierClass = 'tier-kalimat';
-      else if (l > 30 && l <= 40) tierClass = 'tier-campuran';
-      else if (l > 40) tierClass = 'tier-acak';
+      // Kategori warna level map dari field tier data level
+      const tier = (levels[l - 1] && levels[l - 1].tier) || 'mudah';
+      let tierClass = 'tier-' + tier;
+      if (!['tier-mudah', 'tier-sedang', 'tier-kalimat', 'tier-campuran', 'tier-acak'].includes(tierClass)) {
+        tierClass = 'tier-mudah';
+      }
 
       const tile = el('button', `map-level-tile ${tierClass} ${isPassed ? 'passed' : ''}`);
       tile.type = 'button';
@@ -122,7 +172,7 @@
     const elAcc = document.getElementById('stats-accuracy');
     const elXp = document.getElementById('stats-xp-total');
 
-    if (elDone) elDone.textContent = `${levelsCompleted} / 50`;
+    if (elDone) elDone.textContent = `${levelsCompleted} / ${chapterTotalLevels(activeChapter)}`;
     if (elCorrect) elCorrect.textContent = totalCorrect;
     if (elWrong) elWrong.textContent = totalWrong;
     if (elAcc) elAcc.textContent = `${accuracy}%`;

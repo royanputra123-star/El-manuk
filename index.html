@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-<title>NihonGo! — Belajar Bahasa Jepang Bab 10, Bab 9, Bab 8 & Bab 7</title>
-<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 10, Bab 9, Bab 8 & Bab 7. 50 Level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
+<title>NihonGo! — Belajar Bahasa Jepang Bab 11, 10, 9, 8 & 7</title>
+<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 11, 10, 9, 8 & 7. 30–50 level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🀄</text></svg>" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -27,15 +27,16 @@
 
   <!-- Chapter Switcher -->
   <div class="chapter-switcher">
-    <button id="btn-chap-bab10" class="chap-btn active">Bab 10 (Baru)</button>
+    <button id="btn-chap-bab11" class="chap-btn active">Bab 11 (Baru)</button>
+    <button id="btn-chap-bab10" class="chap-btn">Bab 10</button>
     <button id="btn-chap-bab9" class="chap-btn">Bab 9</button>
     <button id="btn-chap-bab8" class="chap-btn">Bab 8</button>
     <button id="btn-chap-bab7" class="chap-btn">Bab 7</button>
   </div>
 
   <div class="home-hero">
-    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 10</div>
-    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 10</h1>
+    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 11</div>
+    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 11</h1>
     <p class="hero-sub" id="hero-sub">50 Level · 1000 Soal · あります / います · に / が / の · 上 / 下 / 隣 / 間 · どこ / だれ / 何</p>
   </div>
 
@@ -59,7 +60,7 @@
   <div class="continue-card" id="continue-card">
     <div class="continue-info">
       <p class="continue-label">Lanjut dari Level terakhir</p>
-      <h2 id="continue-level-title">Level 1 (Bab 10)</h2>
+      <h2 id="continue-level-title">Level 1 (Bab 11)</h2>
       <div class="progress-bar-track">
         <div class="progress-bar-fill" id="continue-progress-fill" style="width:0%"></div>
       </div>
@@ -98,12 +99,11 @@
     <h2>Peta Level (Bebas Pilih)</h2>
     <span class="topbar-spacer"></span>
   </header>
-  <div class="map-legend">
+  <div class="map-legend" id="map-legend">
     <span class="legend-item"><i class="dot dot-mudah"></i> 1–10 Mudah</span>
     <span class="legend-item"><i class="dot dot-sedang"></i> 11–20 Sedang</span>
-    <span class="legend-item"><i class="dot dot-kalimat"></i> 21–30 Kalimat</span>
-    <span class="legend-item"><i class="dot dot-campuran"></i> 31–40 Campuran</span>
-    <span class="legend-item"><i class="dot dot-acak"></i> 41–50 Acak</span>
+    <span class="legend-item"><i class="dot dot-kalimat"></i> 21–25 Kalimat</span>
+    <span class="legend-item"><i class="dot dot-campuran"></i> 26–30 Campuran</span>
   </div>
   <div id="level-map-grid" class="level-map-grid"></div>
 </section>
@@ -251,6 +251,8 @@
   </div>
 </div>
 
+<script src="js/data/vocab_bab11.js"></script>
+<script src="js/data/levels_bab11.js"></script>
 <script src="js/data/vocab_bab10.js"></script>
 <script src="js/data/levels_bab10.js"></script>
 <script src="js/data/vocab_bab9.js"></script>

@@ -12,10 +12,11 @@
   let currentController = null;
   let isAnswerChecked = false;
 
-  const DEFAULT_CHAPTER = 'bab10';
+  const DEFAULT_CHAPTER = 'bab11';
 
   // Pemetaan bab -> data bank soal (Bab 10 = bab terbaru)
   const CHAPTER_LEVEL_DATA = {
+    bab11: 'LEVELS_BAB11_DATA',
     bab10: 'LEVELS_BAB10_DATA',
     bab9: 'LEVELS_BAB9_DATA',
     bab8: 'LEVELS_DATA',
@@ -241,7 +242,7 @@
 
     // Event listeners untuk Chapter Switcher (Bab 10, Bab 9, Bab 8 & Bab 7)
     const chapterList = (global.UIManager && UIManager.CHAPTERS) || [
-      { id: 'bab10', label: 'Bab 10' }, { id: 'bab9', label: 'Bab 9' },
+      { id: 'bab11', label: 'Bab 11' }, { id: 'bab10', label: 'Bab 10' }, { id: 'bab9', label: 'Bab 9' },
       { id: 'bab8', label: 'Bab 8' }, { id: 'bab7', label: 'Bab 7' }
     ];
 
@@ -288,7 +289,11 @@
     // Result Buttons
     document.getElementById('btn-result-retry')?.addEventListener('click', () => startQuiz(currentLevelNum));
     document.getElementById('btn-result-next')?.addEventListener('click', () => {
-      const nextLvl = Math.min(50, currentLevelNum + 1);
+      const p = StorageManager.getProgress();
+      const ch = p.activeChapter || DEFAULT_CHAPTER;
+      const bank = global[CHAPTER_LEVEL_DATA[ch]] || [];
+      const total = bank.length || 50;
+      const nextLvl = Math.min(total, currentLevelNum + 1);
       startQuiz(nextLvl);
     });
     document.getElementById('btn-result-home')?.addEventListener('click', () => showScreen('screen-home'));
