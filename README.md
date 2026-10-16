@@ -1,12 +1,61 @@
-# NihonGo! — Belajar Bahasa Jepang (Minna no Nihongo Bab 10, Bab 9, Bab 8 & Bab 7)
+# NihonGo! — Belajar Bahasa Jepang (Minna no Nihongo Bab 11, 10, 9, 8 & Bab 7)
 
-Website self-learning Bahasa Jepang bergaya Duolingo. Bab terbaru: **Minna no Nihongo I Bab 10**
-(あります / います + partikel に・が・は・の + posisi 上・下・前・後ろ・右・左・中・外・隣・近く・間).
-Bab 9, Bab 8, dan Bab 7 tetap dapat dimainkan. Setiap bab berisi **50 Level × 20 Soal (1.000 soal per bab)**.
+Website self-learning Bahasa Jepang bergaya Duolingo. Bab terbaru: **Minna no Nihongo I Bab 11**
+(Comprehensible Input: counter ～つ / ～人 / ～枚 / ～台 / ～回 …, かかります, ～だけ, 全部で,
+kosakata keluarga & kantor pos). Bab 10, 9, 8, dan 7 tetap dapat dimainkan.
+Bab 11 berisi **30 Level × 15 Soal (450 soal)**; bab lain **50 Level × 20 Soal (1.000 soal per bab)**.
 
 ## Pembaruan Terbaru
 
-### 1. Bab 10 — Bank Soal Baru (`js/data/levels_bab10.js` + `js/data/vocab_bab10.js`)
+### 1. Bab 11 (Comprehensible Input) — Bank Soal Baru (`js/data/levels_bab11.js` + `js/data/vocab_bab11.js`)
+
+Generator: **`tools/generate_bab11.js`** → 30 level, 450 soal (`q_b11_1` … `q_b11_450`), 211 kosakata
+(kana + romaji + asal bab). Pemeriksa terpisah: **`tools/audit_bab11.js`**. Laporan lengkap:
+**`LAPORAN_AUDIT_BAB11.md`**.
+
+**Tata bahasa (bunpou) yang dilatih** — 17 pola Bab 11
+
+| Pola | Contoh |
+| --- | --- |
+| Menghitung benda ～つ (ひとつ … とお) | 会議室に テーブルが 七つ あります |
+| Counter ～人 (ひとり・ふたり・～にん) | 教室に 学生が 五人 います |
+| Counter ～台 / ～枚 / ～回 / ～個・～本・～番・～分・～日 | 部屋に テレビが 二台 あります / 切手が 五枚 あります |
+| Counter durasi ～時間 / ～週間 / ～か月 / ～年 | 日本に 二年 います |
+| いくつ / 何人 | りんごは いくつ ありますか |
+| N を ～枚 と N を ～枚 ください | 切手を 五枚 と はがきを 二枚 ください |
+| 全部で | 全部で 五百円 です |
+| ～ぐらい / 何回 … ～ぐらい / どのぐらい | 一週間に 二回 ぐらい します / どのぐらい かかりますか |
+| ～だけ | 三日 だけ やすみます |
+| から ～まで … かかります | うちから 学校まで 一時間 かかります |
+| Keluarga + jumlah ～が ～人 います | 兄が 二人 と 姉が 一人 います |
+
+**Kosakata**: seluruh kosakata **Bab 1–11** dari Kotoba (tanpa Bab 12+), kana + romaji + asal bab.
+41 kosakata wajib masuk semua — かかります, いくつ, ひとり, ふたり, ～にん, ～だい, ～まい, ～かい,
+りんご, みかん, サンドイッチ, カレーライス, アイスクリーム, 切手, はがき, 封筒, 速達, 書留,
+エアメール（航空便）, 船便, 両親, 兄弟, 姉妹, 兄, お兄さん, 姉, お姉さん, 弟, 弟さん, 妹, 妹さん,
+外国, ～時間, ～週間 (ejaan lama ～習慣), ～か月, ～年, ～ぐらい, どのぐらい, 全部で, ～だけ —
+masing-masing muncul di **≥ 3 soal** dengan rotasi merata antar level.
+
+**Metode Comprehensible Input (CI)**
+
+- Aturan **i+1**: tiap kalimat soal memperkenalkan maksimal 1 kata konten baru Bab 11
+  (tebak dari konteks; angka + counter = satu unit pola).
+- Konteks nyata (kantor pos, sekolah, keluarga, toko, perjalanan), variasi pola, tanpa
+  duplikat & near-duplicate (variasi angka pada drill counter dan minimal pair
+  あります/ありません diizinkan dengan tujuan pembelajaran yang jelas).
+- **4 tier kesulitan**: 1–10 Mudah, 11–20 Sedang, 21–25 Kalimat, 26–30 Campuran
+  (peta 30 level + legenda dinamis, tanpa hardcode 50/20).
+- **7 tipe soal** existing dengan kuota largest-remainder per level
+  (complete 81, arrange 77, short_conversation 72, choose_translation 59, listening 58,
+  translate 58, match 45) — `js/questions.js` tidak berubah.
+
+**Validasi**: `node tools/generate_bab11.js` (validasi bawaan, gagal = file tidak ditulis) dan
+`node tools/audit_bab11.js` (struktur 30 × 15, id berurutan, properti per tipe, jawaban di opsi,
+opsi/pasangan unik, tepat 1 rumpang, あります/います, kosakata Bab 1–11 saja, terjemahan ada,
+duplikat/near-duplicate, sebaran tipe, cakupan 17 bunpou, rotasi 41 kosakata wajib, aturan i+1).
+Hasil audit: **LULUS — 0 masalah** (lihat `LAPORAN_AUDIT_BAB11.md`).
+
+### 2. Bab 10 — Bank Soal (`js/data/levels_bab10.js` + `js/data/vocab_bab10.js`)
 
 Generator: **`tools/generate_bab10.js`** → 50 level, 1.000 soal (`q_b10_1` … `q_b10_1000`), 123 kosakata
 (kana + romaji + asal bab). Pemeriksa terpisah: **`tools/audit_bab10.js`**.
@@ -52,7 +101,7 @@ kewajaran posisi, cakupan kosakata Bab 1–10 (seluruh teks Jepang didekomposisi
 (tanpa kanji/spasi ganda), duplikat & near-duplicate, sebaran tipe soal, serta sebaran/cakupan 10 kelompok
 bunpou Bab 10 + 11 kata posisi. Generator juga punya validasi bawaan: bila gagal, file **tidak** ditulis.
 
-### 2. Tampilan Terjemahan Setelah Menjawab (`js/translation.js`)
+### 3. Tampilan Terjemahan Setelah Menjawab (`js/translation.js`)
 
 Setelah pengguna menekan **Periksa** (benar maupun salah):
 
@@ -70,7 +119,7 @@ Sumber data terjemahan:
   (`VOCAB_BAB10_DATA` / `VOCAB_BAB9_DATA` / `VOCAB_BAB7_DATA` / `VOCAB_DATA`), diberi label
   "Kata kunci" agar tidak dikira terjemahan kalimat penuh.
 
-### 3. Perbaikan Mode Gelap (`css/styles.css`)
+### 4. Perbaikan Mode Gelap (`css/styles.css`)
 
 - Variabel `body.dark-theme` disesuaikan: `--text-muted: #94a3b8`, `--accent-light: rgba(16,185,129,.25)`,
   `--success-light: rgba(34,197,94,.25)`, `--danger-light: rgba(239,68,68,.25)`, plus `color-scheme: dark`.
@@ -86,7 +135,22 @@ Sumber data terjemahan:
 - Bonus: toast (`UIManager.showToast`) akhirnya punya gaya + animasi, dan `.chapter-switcher` dirapikan
   untuk 4 tombol bab.
 
-### 4. Integrasi Aplikasi
+### 5. Integrasi Aplikasi
+
+**Bab 11:**
+
+- `index.html`: tombol **Bab 11 (Baru)** (default aktif) di chapter switcher, hero, judul/meta,
+  legenda peta 4 tier, dan script `vocab_bab11.js` / `levels_bab11.js`.
+- `js/ui.js`: Bab 11 di `CHAPTERS` + `DEFAULT_CHAPTER = 'bab11'`; peta level & legenda dibuat
+  dinamis dari data level (30 level untuk bab11, 50 untuk bab lain — tanpa hardcode 50/20).
+- `js/app.js`: `CHAPTER_LEVEL_DATA.bab11 = LEVELS_BAB11_DATA`, `DEFAULT_CHAPTER = 'bab11'`,
+  tombol "level berikutnya" mengikuti jumlah level bab aktif.
+- `js/storage.js`: kunci progres `bab11` ditambahkan otomatis — progres Bab 7/8/9/10 pengguna
+  lama tidak hilang.
+- `js/translation.js`: `VOCAB_BAB11_DATA` masuk leksikon glosarium.
+- `js/questions.js` dan `css/styles.css` tidak diubah.
+
+**Bab 10:**
 
 - `index.html`: tombol **Bab 10 (Baru)** di chapter switcher, script `vocab_bab10.js` / `levels_bab10.js` /
   `translation.js`, dan kontainer `#quiz-translation-panel`.
@@ -107,6 +171,8 @@ python3 -m http.server 8080
 Membuat ulang data:
 
 ```bash
+node tools/generate_bab11.js   # → js/data/vocab_bab11.js & js/data/levels_bab11.js
+node tools/audit_bab11.js      # memeriksa hasil generate (exit 1 bila ada masalah)
 node tools/generate_bab10.js   # → js/data/vocab_bab10.js & js/data/levels_bab10.js
 node tools/audit_bab10.js      # memeriksa hasil generate (exit 1 bila ada masalah)
 node tools/generate_bab9.js    # → js/data/vocab_bab9.js  & js/data/levels_bab9.js

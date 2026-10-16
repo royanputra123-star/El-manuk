@@ -15,7 +15,7 @@
 //   - Metadata bawaan soal (translation / reading / romaji / dialogueId /
 //     answerId) yang dihasilkan tools/generate_bab10.js & tools/generate_bab9.js
 //   - Fallback: glosarium kata per kata yang dibangun dari data kosakata
-//     (window.VOCAB_BAB10_DATA / VOCAB_BAB9_DATA / VOCAB_BAB7_DATA / VOCAB_DATA)
+//     (window.VOCAB_BAB11_DATA / VOCAB_BAB10_DATA / VOCAB_BAB9_DATA / VOCAB_BAB7_DATA / VOCAB_DATA)
 //     untuk data bab lama yang belum menyimpan terjemahan kalimat.
 
 (function (global) {
@@ -60,7 +60,7 @@
       { jp: '近く', id: 'dekat' }, { jp: '間', id: 'di antara' },
     ];
     const map = new Map();
-    ['VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
+    ['VOCAB_BAB11_DATA', 'VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
       const arr = global[key];
       if (!Array.isArray(arr)) return;
       arr.forEach(v => {
