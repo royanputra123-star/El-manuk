@@ -192,3 +192,16 @@ node tools/generate.js         # → js/data/vocab.js       & js/data/levels.js 
   pembaruan Bab 10 dan masih terbuka.
 - Rasio kontras teks putih di atas tombol hijau `#10b981` pada **mode terang** masih ~2.5:1 (warna merek
   lama). Mode gelap sudah diperbaiki; mode terang sengaja tidak diubah agar identitas warna tetap.
+
+## Bab 12 — perbandingan dan perubahan waktu
+
+Bab 12 menambah 30 level × 15 soal (450), enam tipe latihan yang sudah didukung,
+ringkasan tata bahasa, pembahasan, kana, dan 30 pengenalan kasual. Kosakata memakai
+lampiran PDF Bab 1–12; progres menggunakan penyimpanan lama tanpa menghapus bab lain.
+
+- Generator: `node tools/generate_bab12.js`
+- Audit: `node tools/audit_bab12.js`
+- Browser end-to-end: `tools/test_bab12_browser.js` (dependensi test opsional)
+- Rincian hasil, pembagian level, cara menjalankan ulang, dan batasan:
+  [LAPORAN_AUDIT_BAB12.md](LAPORAN_AUDIT_BAB12.md)
+- Sumber kosakata: [tools/reference/README.md](tools/reference/README.md)
