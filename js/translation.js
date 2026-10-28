@@ -60,7 +60,7 @@
       { jp: '近く', id: 'dekat' }, { jp: '間', id: 'di antara' },
     ];
     const map = new Map();
-    ['VOCAB_BAB11_DATA', 'VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
+    ['VOCAB_BAB12_DATA', 'VOCAB_BAB11_DATA', 'VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
       const arr = global[key];
       if (!Array.isArray(arr)) return;
       arr.forEach(v => {
@@ -252,6 +252,13 @@
       const row = el('div', 'fb-row');
       row.appendChild(el('span', 'fb-row-label', '✅ Kalimat benar'));
       row.appendChild(el('span', 'fb-row-text fb-jp', info.jp));
+      feedbackEl.appendChild(row);
+    }
+
+    if (q.explanation) {
+      const row = el('div', 'fb-row');
+      row.appendChild(el('span', 'fb-row-label', '📖 Pembahasan'));
+      row.appendChild(el('span', 'fb-row-text', q.explanation));
       feedbackEl.appendChild(row);
     }
 

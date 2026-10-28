@@ -12,10 +12,11 @@
   let currentController = null;
   let isAnswerChecked = false;
 
-  const DEFAULT_CHAPTER = 'bab11';
+  const DEFAULT_CHAPTER = 'bab12';
 
   // Pemetaan bab -> data bank soal (Bab 10 = bab terbaru)
   const CHAPTER_LEVEL_DATA = {
+    bab12: 'LEVELS_BAB12_DATA',
     bab11: 'LEVELS_BAB11_DATA',
     bab10: 'LEVELS_BAB10_DATA',
     bab9: 'LEVELS_BAB9_DATA',
@@ -242,7 +243,7 @@
 
     // Event listeners untuk Chapter Switcher (Bab 10, Bab 9, Bab 8 & Bab 7)
     const chapterList = (global.UIManager && UIManager.CHAPTERS) || [
-      { id: 'bab11', label: 'Bab 11' }, { id: 'bab10', label: 'Bab 10' }, { id: 'bab9', label: 'Bab 9' },
+      { id: 'bab12', label: 'Bab 12' }, { id: 'bab11', label: 'Bab 11' }, { id: 'bab10', label: 'Bab 10' }, { id: 'bab9', label: 'Bab 9' },
       { id: 'bab8', label: 'Bab 8' }, { id: 'bab7', label: 'Bab 7' }
     ];
 

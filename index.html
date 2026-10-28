@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-<title>NihonGo! — Belajar Bahasa Jepang Bab 11, 10, 9, 8 & 7</title>
-<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 11, 10, 9, 8 & 7. 30–50 level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
+<title>NihonGo! — Belajar Bahasa Jepang Bab 12, 11, 10, 9, 8 & 7</title>
+<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 12, 11, 10, 9, 8 & 7. 30–50 level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🀄</text></svg>" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -27,7 +27,8 @@
 
   <!-- Chapter Switcher -->
   <div class="chapter-switcher">
-    <button id="btn-chap-bab11" class="chap-btn active">Bab 11 (Baru)</button>
+    <button id="btn-chap-bab12" class="chap-btn active">Bab 12 (Baru)</button>
+    <button id="btn-chap-bab11" class="chap-btn">Bab 11</button>
     <button id="btn-chap-bab10" class="chap-btn">Bab 10</button>
     <button id="btn-chap-bab9" class="chap-btn">Bab 9</button>
     <button id="btn-chap-bab8" class="chap-btn">Bab 8</button>
@@ -35,10 +36,28 @@
   </div>
 
   <div class="home-hero">
-    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 11</div>
-    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 11</h1>
-    <p class="hero-sub" id="hero-sub">50 Level · 1000 Soal · あります / います · に / が / の · 上 / 下 / 隣 / 間 · どこ / だれ / 何</p>
+    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 12</div>
+    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 12</h1>
+    <p class="hero-sub" id="hero-sub">30 Level · 450 Soal · Lampau & Negatif · より · どちら／どちらも · いちばん</p>
   </div>
+
+  <details id="bab12-material" class="q-prompt-card">
+    <summary><strong>📖 Ringkasan tata bahasa Bab 12</strong></summary>
+    <p><strong>Perubahan waktu dan negatif</strong> — pilih bentuk sesuai konteks, bukan hanya kata waktunya. Negatif lampau berarti “dulu tidak …”.</p>
+    <p>い: <ruby>寒<rt>さむ</rt></ruby>いです → 寒かったです → 寒くないです → 寒くなかったです。<br/>
+    Pengecualian: いいです → よかったです → よくないです → よくなかったです。</p>
+    <p>な: <ruby>簡単<rt>かんたん</rt></ruby>です → 簡単でした → 簡単ではありません → 簡単ではありませんでした。<br/>
+    Kata benda sama: <ruby>雨<rt>あめ</rt></ruby>です → 雨でした → 雨ではありません → 雨ではありませんでした。</p>
+    <p><strong>Dua hal</strong>: N1 は N2 より sifat です。より menandai pembanding.<br/>
+    このかばんはそのかばんより<ruby>重<rt>おも</rt></ruby>いです。— Tas ini lebih berat daripada tas itu.</p>
+    <p><strong>Memilih</strong>: N1 と N2 とどちらが sifat ですか。Jawab N のほうが sifat です, atau どちらも sifat です jika keduanya.<br/>
+    コーヒーと<ruby>紅茶<rt>こうちゃ</rt></ruby>とどちらがおいしいですか。— Kopi atau teh hitam, mana yang lebih enak?<br/>
+    どちらもおいしいです。— Keduanya enak. Bentuk lengkap: コーヒーと紅茶のどちらもおいしいです。</p>
+    <p><strong>Dalam kelompok</strong>: N のなかで kata tanya がいちばん sifat ですか。Jawab N がいちばん sifat です。<br/>
+    <ruby>春<rt>はる</rt></ruby>と<ruby>夏<rt>なつ</rt></ruby>と<ruby>冬<rt>ふゆ</rt></ruby>のなかでいつがいちばん<ruby>好<rt>す</rt></ruby>きですか。— Di antara musim semi, panas, dan dingin, musim mana yang paling disukai?<br/>
+    春がいちばん好きです。— Paling suka musim semi. Gunakan 何 untuk benda, だれ untuk orang, どこ untuk tempat, いつ untuk waktu.</p>
+    <p><strong>Pengenalan kasual (30 soal)</strong>: このかばん、重い？／昨日の試験、難しかった？ Tanpa です, memakai intonasi tanya. Lampau な: 簡単だった？ Fokus utama tetap bentuk sopan.</p>
+  </details>
 
   <div class="home-stats-row" id="home-stats-row">
     <div class="stat-chip">
@@ -60,7 +79,7 @@
   <div class="continue-card" id="continue-card">
     <div class="continue-info">
       <p class="continue-label">Lanjut dari Level terakhir</p>
-      <h2 id="continue-level-title">Level 1 (Bab 11)</h2>
+      <h2 id="continue-level-title">Level 1 (Bab 12)</h2>
       <div class="progress-bar-track">
         <div class="progress-bar-fill" id="continue-progress-fill" style="width:0%"></div>
       </div>
@@ -251,6 +270,8 @@
   </div>
 </div>
 
+<script src="js/data/vocab_bab12.js"></script>
+<script src="js/data/levels_bab12.js"></script>
 <script src="js/data/vocab_bab11.js"></script>
 <script src="js/data/levels_bab11.js"></script>
 <script src="js/data/vocab_bab10.js"></script>
