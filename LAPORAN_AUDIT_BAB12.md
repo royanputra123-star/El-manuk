@@ -29,9 +29,10 @@ Band 1–10 melatih keempat bentuk secara berselang, bukan hanya mengelompokkan 
 - Tiap pilihan ganda punya empat opsi unik dan kunci berada di opsi.
 - Rumpang tepat satu; tile dan jawaban konsisten; listening identik dengan jawaban.
 - Dialog dan jawaban sinkron; konteks pilihan selera diberikan, bukan ditebak.
-- 143 entri kata terkurasi divalidasi terhadap ekstraksi PDF Bab 1–12; teks Jepang dan distraktor dipindai memakai daftar kata + grammar allowlist yang eksplisit.
+- 156 entri kata terkurasi divalidasi terhadap ekstraksi PDF Bab 1–12; teks Jepang dan distraktor dipindai memakai daftar kata + grammar allowlist yang eksplisit.
 - Tipe: complete 101, choose_translation 70, translate 69, arrange 69, listening 70, short_conversation 71.
 - Topik: bentuk 162, より 86, どちら 86, いちばん 86, kasual 30.
+- Time signal Bab 4–5 divariasikan merata (bukan hanya 今日／昨日): おととい, 昨日, 今日, 明日, あさって, 今朝, 今晩, 毎朝, 毎晩, 毎日, 先週, 今週, 来週, 先月, 今月, 来月, 去年, 今年, 来年. Masing-masing ≥ 15 kemunculan; ke-19 kata muncul di semua 6 pita level; dipasangkan dengan kala yang sesuai (lampau hanya dengan おととい／昨日／今朝／先週／先月／去年; non-lampau dengan hari ini, kebiasaan, dan masa depan). Posisi jawaban pilihan ganda seimbang (A/B/C/D ≈ 61/60/61/60).
 
 Audit memastikan konsistensi struktur, daftar kosakata, dan kunci data; bukan pembuktian otomatis bahwa setiap kalimat sepenuhnya alami. Variasi pola/minimal pair sengaja dipertahankan untuk latihan konjugasi dan pembanding; pemeriksaan duplikat menguji teks lengkap, bukan menolak semua template serupa.
 
