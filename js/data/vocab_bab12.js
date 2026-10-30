@@ -226,6 +226,14 @@ window.VOCAB_BAB12_DATA = [
   },
   {
     "id": "b12_v29",
+    "jp": "おととい",
+    "kana": "おととい",
+    "id_mean": "kemarin lusa",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v30",
     "jp": "昨日",
     "kana": "きのう",
     "id_mean": "kemarin",
@@ -233,7 +241,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v30",
+    "id": "b12_v31",
     "jp": "今日",
     "kana": "きょう",
     "id_mean": "hari ini",
@@ -241,7 +249,23 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v31",
+    "id": "b12_v32",
+    "jp": "明日",
+    "kana": "あした",
+    "id_mean": "besok",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v33",
+    "jp": "あさって",
+    "kana": "あさって",
+    "id_mean": "besok lusa",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v34",
     "jp": "今朝",
     "kana": "けさ",
     "id_mean": "tadi pagi",
@@ -249,7 +273,39 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v32",
+    "id": "b12_v35",
+    "jp": "今晩",
+    "kana": "こんばん",
+    "id_mean": "malam ini",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v36",
+    "jp": "毎朝",
+    "kana": "まいあさ",
+    "id_mean": "setiap pagi",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v37",
+    "jp": "毎晩",
+    "kana": "まいばん",
+    "id_mean": "setiap malam",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v38",
+    "jp": "毎日",
+    "kana": "まいにち",
+    "id_mean": "setiap hari",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v39",
     "jp": "先週",
     "kana": "せんしゅう",
     "id_mean": "minggu lalu",
@@ -257,7 +313,23 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v33",
+    "id": "b12_v40",
+    "jp": "今週",
+    "kana": "こんしゅう",
+    "id_mean": "minggu ini",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v41",
+    "jp": "来週",
+    "kana": "らいしゅう",
+    "id_mean": "minggu depan",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v42",
     "jp": "先月",
     "kana": "せんげつ",
     "id_mean": "bulan lalu",
@@ -265,7 +337,23 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v34",
+    "id": "b12_v43",
+    "jp": "今月",
+    "kana": "こんげつ",
+    "id_mean": "bulan ini",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v44",
+    "jp": "来月",
+    "kana": "らいげつ",
+    "id_mean": "bulan depan",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v45",
     "jp": "去年",
     "kana": "きょねん",
     "id_mean": "tahun lalu",
@@ -273,7 +361,23 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v35",
+    "id": "b12_v46",
+    "jp": "今年",
+    "kana": "ことし",
+    "id_mean": "tahun ini",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v47",
+    "jp": "来年",
+    "kana": "らいねん",
+    "id_mean": "tahun depan",
+    "type": "word",
+    "lesson": 12
+  },
+  {
+    "id": "b12_v48",
     "jp": "学校",
     "kana": "がっこう",
     "id_mean": "sekolah",
@@ -281,7 +385,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v36",
+    "id": "b12_v49",
     "jp": "駅",
     "kana": "えき",
     "id_mean": "stasiun",
@@ -289,7 +393,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v37",
+    "id": "b12_v50",
     "jp": "飛行機",
     "kana": "ひこうき",
     "id_mean": "pesawat",
@@ -297,7 +401,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v38",
+    "id": "b12_v51",
     "jp": "電車",
     "kana": "でんしゃ",
     "id_mean": "kereta",
@@ -305,7 +409,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v39",
+    "id": "b12_v52",
     "jp": "新幹線",
     "kana": "しんかんせん",
     "id_mean": "Shinkansen",
@@ -313,7 +417,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v40",
+    "id": "b12_v53",
     "jp": "バス",
     "kana": "バス",
     "id_mean": "bus",
@@ -321,7 +425,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v41",
+    "id": "b12_v54",
     "jp": "タクシー",
     "kana": "タクシー",
     "id_mean": "taksi",
@@ -329,7 +433,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v42",
+    "id": "b12_v55",
     "jp": "自転車",
     "kana": "じてんしゃ",
     "id_mean": "sepeda",
@@ -337,7 +441,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v43",
+    "id": "b12_v56",
     "jp": "家族",
     "kana": "かぞく",
     "id_mean": "keluarga",
@@ -345,7 +449,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v44",
+    "id": "b12_v57",
     "jp": "父",
     "kana": "ちち",
     "id_mean": "ayah saya",
@@ -353,7 +457,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v45",
+    "id": "b12_v58",
     "jp": "母",
     "kana": "はは",
     "id_mean": "ibu saya",
@@ -361,7 +465,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v46",
+    "id": "b12_v59",
     "jp": "兄",
     "kana": "あに",
     "id_mean": "kakak laki-laki saya",
@@ -369,7 +473,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v47",
+    "id": "b12_v60",
     "jp": "姉",
     "kana": "あね",
     "id_mean": "kakak perempuan saya",
@@ -377,7 +481,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v48",
+    "id": "b12_v61",
     "jp": "弟",
     "kana": "おとうと",
     "id_mean": "adik laki-laki saya",
@@ -385,7 +489,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v49",
+    "id": "b12_v62",
     "jp": "妹",
     "kana": "いもうと",
     "id_mean": "adik perempuan saya",
@@ -393,7 +497,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v50",
+    "id": "b12_v63",
     "jp": "パン",
     "kana": "パン",
     "id_mean": "roti",
@@ -401,7 +505,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v51",
+    "id": "b12_v64",
     "jp": "卵",
     "kana": "たまご",
     "id_mean": "telur",
@@ -409,7 +513,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v52",
+    "id": "b12_v65",
     "jp": "肉",
     "kana": "にく",
     "id_mean": "daging",
@@ -417,7 +521,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v53",
+    "id": "b12_v66",
     "jp": "魚",
     "kana": "さかな",
     "id_mean": "ikan",
@@ -425,7 +529,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v54",
+    "id": "b12_v67",
     "jp": "野菜",
     "kana": "やさい",
     "id_mean": "sayuran",
@@ -433,7 +537,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v55",
+    "id": "b12_v68",
     "jp": "果物",
     "kana": "くだもの",
     "id_mean": "buah",
@@ -441,7 +545,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v56",
+    "id": "b12_v69",
     "jp": "水",
     "kana": "みず",
     "id_mean": "air",
@@ -449,7 +553,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v57",
+    "id": "b12_v70",
     "jp": "お茶",
     "kana": "おちゃ",
     "id_mean": "teh Jepang",
@@ -457,7 +561,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v58",
+    "id": "b12_v71",
     "jp": "紅茶",
     "kana": "こうちゃ",
     "id_mean": "teh hitam",
@@ -465,7 +569,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v59",
+    "id": "b12_v72",
     "jp": "牛乳",
     "kana": "ぎゅうにゅう",
     "id_mean": "susu",
@@ -473,7 +577,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v60",
+    "id": "b12_v73",
     "jp": "ジュース",
     "kana": "ジュース",
     "id_mean": "jus",
@@ -481,7 +585,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v61",
+    "id": "b12_v74",
     "jp": "映画",
     "kana": "えいが",
     "id_mean": "film",
@@ -489,7 +593,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v62",
+    "id": "b12_v75",
     "jp": "店",
     "kana": "みせ",
     "id_mean": "toko",
@@ -497,7 +601,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v63",
+    "id": "b12_v76",
     "jp": "レストラン",
     "kana": "レストラン",
     "id_mean": "restoran",
@@ -505,7 +609,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v64",
+    "id": "b12_v77",
     "jp": "宿題",
     "kana": "しゅくだい",
     "id_mean": "PR",
@@ -513,7 +617,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v65",
+    "id": "b12_v78",
     "jp": "テニス",
     "kana": "テニス",
     "id_mean": "tenis",
@@ -521,7 +625,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v66",
+    "id": "b12_v79",
     "jp": "サッカー",
     "kana": "サッカー",
     "id_mean": "sepak bola",
@@ -529,7 +633,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v67",
+    "id": "b12_v80",
     "jp": "花",
     "kana": "はな",
     "id_mean": "bunga",
@@ -537,7 +641,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v68",
+    "id": "b12_v81",
     "jp": "シャツ",
     "kana": "シャツ",
     "id_mean": "kemeja",
@@ -545,7 +649,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v69",
+    "id": "b12_v82",
     "jp": "荷物",
     "kana": "にもつ",
     "id_mean": "barang bawaan",
@@ -553,7 +657,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v70",
+    "id": "b12_v83",
     "jp": "静か",
     "kana": "しずか",
     "id_mean": "tenang",
@@ -561,7 +665,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v71",
+    "id": "b12_v84",
     "jp": "にぎやか",
     "kana": "にぎやか",
     "id_mean": "ramai",
@@ -569,7 +673,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v72",
+    "id": "b12_v85",
     "jp": "有名",
     "kana": "ゆうめい",
     "id_mean": "terkenal",
@@ -577,7 +681,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v73",
+    "id": "b12_v86",
     "jp": "親切",
     "kana": "しんせつ",
     "id_mean": "baik hati",
@@ -585,7 +689,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v74",
+    "id": "b12_v87",
     "jp": "元気",
     "kana": "げんき",
     "id_mean": "sehat",
@@ -593,7 +697,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v75",
+    "id": "b12_v88",
     "jp": "暇",
     "kana": "ひま",
     "id_mean": "senggang",
@@ -601,7 +705,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v76",
+    "id": "b12_v89",
     "jp": "便利",
     "kana": "べんり",
     "id_mean": "praktis",
@@ -609,7 +713,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v77",
+    "id": "b12_v90",
     "jp": "大きい",
     "kana": "おおきい",
     "id_mean": "besar",
@@ -617,7 +721,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v78",
+    "id": "b12_v91",
     "jp": "小さい",
     "kana": "ちいさい",
     "id_mean": "kecil",
@@ -625,7 +729,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v79",
+    "id": "b12_v92",
     "jp": "新しい",
     "kana": "あたらしい",
     "id_mean": "baru",
@@ -633,7 +737,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v80",
+    "id": "b12_v93",
     "jp": "古い",
     "kana": "ふるい",
     "id_mean": "lama",
@@ -641,7 +745,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v81",
+    "id": "b12_v94",
     "jp": "いい",
     "kana": "いい",
     "id_mean": "baik",
@@ -649,7 +753,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v82",
+    "id": "b12_v95",
     "jp": "悪い",
     "kana": "わるい",
     "id_mean": "buruk",
@@ -657,7 +761,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v83",
+    "id": "b12_v96",
     "jp": "暑い",
     "kana": "あつい",
     "id_mean": "panas (cuaca)",
@@ -665,7 +769,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v84",
+    "id": "b12_v97",
     "jp": "寒い",
     "kana": "さむい",
     "id_mean": "dingin (cuaca)",
@@ -673,7 +777,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v85",
+    "id": "b12_v98",
     "jp": "冷たい",
     "kana": "つめたい",
     "id_mean": "dingin",
@@ -681,7 +785,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v86",
+    "id": "b12_v99",
     "jp": "難しい",
     "kana": "むずかしい",
     "id_mean": "sulit",
@@ -689,7 +793,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v87",
+    "id": "b12_v100",
     "jp": "易しい",
     "kana": "やさしい",
     "id_mean": "mudah",
@@ -697,7 +801,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v88",
+    "id": "b12_v101",
     "jp": "高い",
     "kana": "たかい",
     "id_mean": "mahal",
@@ -705,7 +809,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v89",
+    "id": "b12_v102",
     "jp": "安い",
     "kana": "やすい",
     "id_mean": "murah",
@@ -713,7 +817,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v90",
+    "id": "b12_v103",
     "jp": "面白い",
     "kana": "おもしろい",
     "id_mean": "menarik",
@@ -721,7 +825,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v91",
+    "id": "b12_v104",
     "jp": "おいしい",
     "kana": "おいしい",
     "id_mean": "enak",
@@ -729,7 +833,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v92",
+    "id": "b12_v105",
     "jp": "忙しい",
     "kana": "いそがしい",
     "id_mean": "sibuk",
@@ -737,7 +841,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v93",
+    "id": "b12_v106",
     "jp": "楽しい",
     "kana": "たのしい",
     "id_mean": "menyenangkan",
@@ -745,7 +849,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v94",
+    "id": "b12_v107",
     "jp": "白い",
     "kana": "しろい",
     "id_mean": "putih",
@@ -753,7 +857,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v95",
+    "id": "b12_v108",
     "jp": "黒い",
     "kana": "くろい",
     "id_mean": "hitam",
@@ -761,7 +865,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v96",
+    "id": "b12_v109",
     "jp": "赤い",
     "kana": "あかい",
     "id_mean": "merah",
@@ -769,7 +873,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v97",
+    "id": "b12_v110",
     "jp": "青い",
     "kana": "あおい",
     "id_mean": "biru",
@@ -777,7 +881,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v98",
+    "id": "b12_v111",
     "jp": "町",
     "kana": "まち",
     "id_mean": "kota",
@@ -785,7 +889,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v99",
+    "id": "b12_v112",
     "jp": "食べ物",
     "kana": "たべもの",
     "id_mean": "makanan",
@@ -793,7 +897,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v100",
+    "id": "b12_v113",
     "jp": "仕事",
     "kana": "しごと",
     "id_mean": "pekerjaan",
@@ -801,7 +905,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v101",
+    "id": "b12_v114",
     "jp": "好き",
     "kana": "すき",
     "id_mean": "disukai",
@@ -809,7 +913,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v102",
+    "id": "b12_v115",
     "jp": "上手",
     "kana": "じょうず",
     "id_mean": "mahir",
@@ -817,7 +921,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v103",
+    "id": "b12_v116",
     "jp": "料理",
     "kana": "りょうり",
     "id_mean": "masakan",
@@ -825,7 +929,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v104",
+    "id": "b12_v117",
     "jp": "スポーツ",
     "kana": "スポーツ",
     "id_mean": "olahraga",
@@ -833,7 +937,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v105",
+    "id": "b12_v118",
     "jp": "音楽",
     "kana": "おんがく",
     "id_mean": "musik",
@@ -841,7 +945,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v106",
+    "id": "b12_v119",
     "jp": "りんご",
     "kana": "りんご",
     "id_mean": "apel",
@@ -849,7 +953,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v107",
+    "id": "b12_v120",
     "jp": "みかん",
     "kana": "みかん",
     "id_mean": "jeruk",
@@ -857,7 +961,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v108",
+    "id": "b12_v121",
     "jp": "アイスクリーム",
     "kana": "アイスクリーム",
     "id_mean": "es krim",
@@ -865,7 +969,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v109",
+    "id": "b12_v122",
     "jp": "簡単",
     "kana": "かんたん",
     "id_mean": "mudah",
@@ -873,7 +977,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v110",
+    "id": "b12_v123",
     "jp": "近い",
     "kana": "ちかい",
     "id_mean": "dekat",
@@ -881,7 +985,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v111",
+    "id": "b12_v124",
     "jp": "遠い",
     "kana": "とおい",
     "id_mean": "jauh",
@@ -889,7 +993,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v112",
+    "id": "b12_v125",
     "jp": "速い",
     "kana": "はやい",
     "id_mean": "cepat",
@@ -897,7 +1001,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v113",
+    "id": "b12_v126",
     "jp": "遅い",
     "kana": "おそい",
     "id_mean": "lambat",
@@ -905,7 +1009,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v114",
+    "id": "b12_v127",
     "jp": "暖かい",
     "kana": "あたたかい",
     "id_mean": "hangat",
@@ -913,7 +1017,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v115",
+    "id": "b12_v128",
     "jp": "涼しい",
     "kana": "すずしい",
     "id_mean": "sejuk",
@@ -921,7 +1025,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v116",
+    "id": "b12_v129",
     "jp": "甘い",
     "kana": "あまい",
     "id_mean": "manis",
@@ -929,7 +1033,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v117",
+    "id": "b12_v130",
     "jp": "辛い",
     "kana": "からい",
     "id_mean": "pedas",
@@ -937,7 +1041,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v118",
+    "id": "b12_v131",
     "jp": "重い",
     "kana": "おもい",
     "id_mean": "berat",
@@ -945,7 +1049,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v119",
+    "id": "b12_v132",
     "jp": "軽い",
     "kana": "かるい",
     "id_mean": "ringan",
@@ -953,7 +1057,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v120",
+    "id": "b12_v133",
     "jp": "季節",
     "kana": "きせつ",
     "id_mean": "musim",
@@ -961,7 +1065,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v121",
+    "id": "b12_v134",
     "jp": "春",
     "kana": "はる",
     "id_mean": "musim semi",
@@ -969,7 +1073,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v122",
+    "id": "b12_v135",
     "jp": "夏",
     "kana": "なつ",
     "id_mean": "musim panas",
@@ -977,7 +1081,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v123",
+    "id": "b12_v136",
     "jp": "秋",
     "kana": "あき",
     "id_mean": "musim gugur",
@@ -985,7 +1089,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v124",
+    "id": "b12_v137",
     "jp": "冬",
     "kana": "ふゆ",
     "id_mean": "musim dingin",
@@ -993,7 +1097,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v125",
+    "id": "b12_v138",
     "jp": "天気",
     "kana": "てんき",
     "id_mean": "cuaca",
@@ -1001,7 +1105,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v126",
+    "id": "b12_v139",
     "jp": "雨",
     "kana": "あめ",
     "id_mean": "hujan",
@@ -1009,7 +1113,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v127",
+    "id": "b12_v140",
     "jp": "雪",
     "kana": "ゆき",
     "id_mean": "salju",
@@ -1017,7 +1121,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v128",
+    "id": "b12_v141",
     "jp": "曇り",
     "kana": "くもり",
     "id_mean": "mendung",
@@ -1025,7 +1129,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v129",
+    "id": "b12_v142",
     "jp": "ホテル",
     "kana": "ホテル",
     "id_mean": "hotel",
@@ -1033,7 +1137,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v130",
+    "id": "b12_v143",
     "jp": "空港",
     "kana": "くうこう",
     "id_mean": "bandara",
@@ -1041,7 +1145,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v131",
+    "id": "b12_v144",
     "jp": "海",
     "kana": "うみ",
     "id_mean": "laut",
@@ -1049,7 +1153,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v132",
+    "id": "b12_v145",
     "jp": "世界",
     "kana": "せかい",
     "id_mean": "dunia",
@@ -1057,7 +1161,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v133",
+    "id": "b12_v146",
     "jp": "パーティー",
     "kana": "パーティー",
     "id_mean": "pesta",
@@ -1065,7 +1169,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v134",
+    "id": "b12_v147",
     "jp": "お祭り",
     "kana": "おまつり",
     "id_mean": "festival",
@@ -1073,7 +1177,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v135",
+    "id": "b12_v148",
     "jp": "試験",
     "kana": "しけん",
     "id_mean": "ujian",
@@ -1081,7 +1185,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v136",
+    "id": "b12_v149",
     "jp": "すき焼き",
     "kana": "すきやき",
     "id_mean": "sukiyaki",
@@ -1089,7 +1193,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v137",
+    "id": "b12_v150",
     "jp": "刺身",
     "kana": "さしみ",
     "id_mean": "sashimi",
@@ -1097,7 +1201,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v138",
+    "id": "b12_v151",
     "jp": "おすし",
     "kana": "おすし",
     "id_mean": "sushi",
@@ -1105,7 +1209,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v139",
+    "id": "b12_v152",
     "jp": "てんぷら",
     "kana": "てんぷら",
     "id_mean": "tempura",
@@ -1113,7 +1217,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v140",
+    "id": "b12_v153",
     "jp": "どちら",
     "kana": "どちら",
     "id_mean": "yang mana (dua pilihan)",
@@ -1121,7 +1225,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v141",
+    "id": "b12_v154",
     "jp": "どちらも",
     "kana": "どちらも",
     "id_mean": "keduanya",
@@ -1129,7 +1233,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v142",
+    "id": "b12_v155",
     "jp": "何",
     "kana": "なに",
     "id_mean": "apa",
@@ -1137,7 +1241,7 @@ window.VOCAB_BAB12_DATA = [
     "lesson": 12
   },
   {
-    "id": "b12_v143",
+    "id": "b12_v156",
     "jp": "いつ",
     "kana": "いつ",
     "id_mean": "kapan",

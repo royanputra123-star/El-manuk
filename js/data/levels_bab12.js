@@ -13,7 +13,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "cuaca hari ini dingin (cuaca).",
         "reading": "きょうのてんきはさむいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日の天気は寒いです。",
@@ -32,7 +32,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "cuaca kemarin dingin (cuaca).",
         "reading": "きのうのてんきはさむかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の天気は寒かったです。",
@@ -49,20 +49,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_3",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "cuaca hari ini tidak dingin (cuaca).",
-        "reading": "きょうのてんきはさむくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "cuaca besok lusa tidak dingin (cuaca).",
+        "reading": "あさってのてんきはさむくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気は寒くないです。",
-        "prompt": "cuaca hari ini tidak dingin (cuaca).",
+        "fullJp": "あさっての天気は寒くないです。",
+        "prompt": "cuaca besok lusa tidak dingin (cuaca).",
         "tiles": [
-          "今日の",
+          "あさっての",
           "寒くないです。",
           "天気は"
         ],
         "answer": [
-          "今日の",
+          "あさっての",
           "天気は",
           "寒くないです。"
         ]
@@ -71,20 +71,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_4",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "cuaca kemarin tidak dingin (cuaca).",
-        "reading": "きのうのてんきはさむくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "cuaca minggu lalu tidak dingin (cuaca).",
+        "reading": "せんしゅうのてんきはさむくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気は寒くなかったです。",
-        "prompt": "cuaca kemarin tidak dingin (cuaca).",
+        "fullJp": "先週の天気は寒くなかったです。",
+        "prompt": "cuaca minggu lalu tidak dingin (cuaca).",
         "tiles": [
           "寒くなかったです。",
           "天気は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "天気は",
           "寒くなかったです。"
         ]
@@ -93,70 +93,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_5",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "cuaca hari ini panas (cuaca).",
-        "reading": "きょうのてんきはあついです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "cuaca besok panas (cuaca).",
+        "reading": "あしたのてんきはあついです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気は暑いです。",
-        "prompt": "cuaca hari ini panas (cuaca).",
+        "fullJp": "明日の天気は暑いです。",
+        "prompt": "cuaca besok panas (cuaca).",
         "tiles": [
           "天気は",
-          "今日の",
+          "明日の",
           "暑いです。"
         ],
         "answer": [
-          "今日の",
+          "明日の",
           "天気は",
           "暑いです。"
         ],
-        "audioText": "今日の天気は暑いです。"
+        "audioText": "明日の天気は暑いです。"
       },
       {
         "id": "q_b12_6",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "cuaca kemarin panas (cuaca).",
-        "reading": "きのうのてんきはどうでしたか。きのうのてんきはあつかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "cuaca tadi pagi panas (cuaca).",
+        "reading": "けさのてんきはどうでしたか。けさのてんきはあつかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気はどうでしたか。昨日の天気は暑かったです。",
+        "fullJp": "今朝の天気はどうでしたか。今朝の天気は暑かったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の天気はどうでしたか。"
+            "text": "今朝の天気はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "cuaca kemarin panas (cuaca). Pilih respons B.",
+        "question": "cuaca tadi pagi panas (cuaca). Pilih respons B.",
         "options": [
-          "昨日の天気は暑くなかったです。",
-          "昨日の天気は暑くないです。",
-          "昨日の天気は暑かったです。",
-          "昨日の天気は暑いです。"
+          "今朝の天気は暑くなかったです。",
+          "今朝の天気は暑くないです。",
+          "今朝の天気は暑かったです。",
+          "今朝の天気は暑いです。"
         ],
-        "answer": "昨日の天気は暑かったです。",
-        "answerId": "cuaca kemarin panas (cuaca).",
+        "answer": "今朝の天気は暑かったです。",
+        "answerId": "cuaca tadi pagi panas (cuaca).",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "cuaca kemarin panas (cuaca)."
+          "cuaca tadi pagi panas (cuaca)."
         ]
       },
       {
         "id": "q_b12_7",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "cuaca hari ini tidak panas (cuaca).",
-        "reading": "きょうのてんきはあつくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "cuaca malam ini tidak panas (cuaca).",
+        "reading": "こんばんのてんきはあつくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気は暑くないです。",
-        "prompt": "今日の天気は＿＿＿",
+        "fullJp": "今晩の天気は暑くないです。",
+        "prompt": "今晩の天気は＿＿＿",
         "options": [
           "暑かったです。",
           "暑くなかったです。",
@@ -169,39 +169,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_8",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "cuaca kemarin tidak panas (cuaca).",
-        "reading": "きのうのてんきはあつくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "cuaca bulan lalu tidak panas (cuaca).",
+        "reading": "せんげつのてんきはあつくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気は暑くなかったです。",
-        "prompt": "cuaca kemarin tidak panas (cuaca).",
+        "fullJp": "先月の天気は暑くなかったです。",
+        "prompt": "cuaca bulan lalu tidak panas (cuaca).",
         "options": [
-          "昨日の天気は暑いです。",
-          "昨日の天気は暑くなかったです。",
-          "昨日の天気は暑かったです。",
-          "昨日の天気は暑くないです。"
+          "先月の天気は暑いです。",
+          "先月の天気は暑くなかったです。",
+          "先月の天気は暑かったです。",
+          "先月の天気は暑くないです。"
         ],
-        "answer": "昨日の天気は暑くなかったです。"
+        "answer": "先月の天気は暑くなかったです。"
       },
       {
         "id": "q_b12_9",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kamar hari ini hangat.",
-        "reading": "きょうのへやはあたたかいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kamar besok lusa hangat.",
+        "reading": "あさってのへやはあたたかいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の部屋は暖かいです。",
-        "prompt": "kamar hari ini hangat.",
+        "fullJp": "あさっての部屋は暖かいです。",
+        "prompt": "kamar besok lusa hangat.",
         "tiles": [
-          "今日の",
+          "あさっての",
           "暖かいです。",
           "部屋は"
         ],
         "answer": [
-          "今日の",
+          "あさっての",
           "部屋は",
           "暖かいです。"
         ]
@@ -210,20 +210,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_10",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kamar kemarin hangat.",
-        "reading": "きのうのへやはあたたかかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kamar minggu lalu hangat.",
+        "reading": "せんしゅうのへやはあたたかかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋は暖かかったです。",
-        "prompt": "kamar kemarin hangat.",
+        "fullJp": "先週の部屋は暖かかったです。",
+        "prompt": "kamar minggu lalu hangat.",
         "tiles": [
           "暖かかったです。",
           "部屋は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "部屋は",
           "暖かかったです。"
         ]
@@ -232,70 +232,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_11",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kamar hari ini tidak hangat.",
-        "reading": "きょうのへやはあたたかくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kamar minggu ini tidak hangat.",
+        "reading": "こんしゅうのへやはあたたかくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の部屋は暖かくないです。",
-        "prompt": "kamar hari ini tidak hangat.",
+        "fullJp": "今週の部屋は暖かくないです。",
+        "prompt": "kamar minggu ini tidak hangat.",
         "tiles": [
           "部屋は",
-          "今日の",
+          "今週の",
           "暖かくないです。"
         ],
         "answer": [
-          "今日の",
+          "今週の",
           "部屋は",
           "暖かくないです。"
         ],
-        "audioText": "今日の部屋は暖かくないです。"
+        "audioText": "今週の部屋は暖かくないです。"
       },
       {
         "id": "q_b12_12",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamar kemarin tidak hangat.",
-        "reading": "きのうのへやはどうでしたか。きのうのへやはあたたかくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kamar tahun lalu tidak hangat.",
+        "reading": "きょねんのへやはどうでしたか。きょねんのへやはあたたかくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋はどうでしたか。昨日の部屋は暖かくなかったです。",
+        "fullJp": "去年の部屋はどうでしたか。去年の部屋は暖かくなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の部屋はどうでしたか。"
+            "text": "去年の部屋はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamar kemarin tidak hangat. Pilih respons B.",
+        "question": "kamar tahun lalu tidak hangat. Pilih respons B.",
         "options": [
-          "昨日の部屋は暖かかったです。",
-          "昨日の部屋は暖かいです。",
-          "昨日の部屋は暖かくなかったです。",
-          "昨日の部屋は暖かくないです。"
+          "去年の部屋は暖かかったです。",
+          "去年の部屋は暖かいです。",
+          "去年の部屋は暖かくなかったです。",
+          "去年の部屋は暖かくないです。"
         ],
-        "answer": "昨日の部屋は暖かくなかったです。",
-        "answerId": "kamar kemarin tidak hangat.",
+        "answer": "去年の部屋は暖かくなかったです。",
+        "answerId": "kamar tahun lalu tidak hangat.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamar kemarin tidak hangat."
+          "kamar tahun lalu tidak hangat."
         ]
       },
       {
         "id": "q_b12_13",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kamar hari ini sejuk.",
-        "reading": "きょうのへやはすずしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kamar malam ini sejuk.",
+        "reading": "こんばんのへやはすずしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の部屋は涼しいです。",
-        "prompt": "今日の部屋は＿＿＿",
+        "fullJp": "今晩の部屋は涼しいです。",
+        "prompt": "今晩の部屋は＿＿＿",
         "options": [
           "涼しくなかったです。",
           "涼しかったです。",
@@ -308,38 +308,38 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_14",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "kamar kemarin sejuk.",
-        "reading": "きのうのへやはすずしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kamar bulan lalu sejuk.",
+        "reading": "せんげつのへやはすずしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋は涼しかったです。",
-        "prompt": "kamar kemarin sejuk.",
+        "fullJp": "先月の部屋は涼しかったです。",
+        "prompt": "kamar bulan lalu sejuk.",
         "options": [
-          "昨日の部屋は涼しかったです。",
-          "昨日の部屋は涼しくないです。",
-          "昨日の部屋は涼しくなかったです。",
-          "昨日の部屋は涼しいです。"
+          "先月の部屋は涼しかったです。",
+          "先月の部屋は涼しくないです。",
+          "先月の部屋は涼しくなかったです。",
+          "先月の部屋は涼しいです。"
         ],
-        "answer": "昨日の部屋は涼しかったです。"
+        "answer": "先月の部屋は涼しかったです。"
       },
       {
         "id": "q_b12_15",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kemarin hujan.",
-        "reading": "きのうはあめでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "kemarin lusa hujan.",
+        "reading": "おとといはあめでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日は雨でした。",
-        "prompt": "kemarin hujan.",
+        "fullJp": "おとといは雨でした。",
+        "prompt": "kemarin lusa hujan.",
         "tiles": [
           "雨でした。",
-          "昨日は"
+          "おとといは"
         ],
         "answer": [
-          "昨日は",
+          "おとといは",
           "雨でした。"
         ]
       }
@@ -356,20 +356,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_16",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kamar kemarin tidak sejuk.",
-        "reading": "きのうのへやはすずしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kamar kemarin lusa tidak sejuk.",
+        "reading": "おとといのへやはすずしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋は涼しくなかったです。",
-        "prompt": "kamar kemarin tidak sejuk.",
+        "fullJp": "おとといの部屋は涼しくなかったです。",
+        "prompt": "kamar kemarin lusa tidak sejuk.",
         "tiles": [
           "涼しくなかったです。",
           "部屋は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "部屋は",
           "涼しくなかったです。"
         ]
@@ -378,70 +378,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_17",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "air hari ini dingin.",
-        "reading": "きょうのみずはつめたいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "air setiap pagi dingin.",
+        "reading": "まいあさのみずはつめたいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の水は冷たいです。",
-        "prompt": "air hari ini dingin.",
+        "fullJp": "毎朝の水は冷たいです。",
+        "prompt": "air setiap pagi dingin.",
         "tiles": [
           "水は",
-          "今日の",
+          "毎朝の",
           "冷たいです。"
         ],
         "answer": [
-          "今日の",
+          "毎朝の",
           "水は",
           "冷たいです。"
         ],
-        "audioText": "今日の水は冷たいです。"
+        "audioText": "毎朝の水は冷たいです。"
       },
       {
         "id": "q_b12_18",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "air kemarin dingin.",
-        "reading": "きのうのみずはどうでしたか。きのうのみずはつめたかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "air kemarin lusa dingin.",
+        "reading": "おとといのみずはどうでしたか。おとといのみずはつめたかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の水はどうでしたか。昨日の水は冷たかったです。",
+        "fullJp": "おとといの水はどうでしたか。おとといの水は冷たかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の水はどうでしたか。"
+            "text": "おとといの水はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "air kemarin dingin. Pilih respons B.",
+        "question": "air kemarin lusa dingin. Pilih respons B.",
         "options": [
-          "昨日の水は冷たくなかったです。",
-          "昨日の水は冷たくないです。",
-          "昨日の水は冷たかったです。",
-          "昨日の水は冷たいです。"
+          "おとといの水は冷たくなかったです。",
+          "おとといの水は冷たくないです。",
+          "おとといの水は冷たかったです。",
+          "おとといの水は冷たいです。"
         ],
-        "answer": "昨日の水は冷たかったです。",
-        "answerId": "air kemarin dingin.",
+        "answer": "おとといの水は冷たかったです。",
+        "answerId": "air kemarin lusa dingin.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "air kemarin dingin."
+          "air kemarin lusa dingin."
         ]
       },
       {
         "id": "q_b12_19",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "air hari ini tidak dingin.",
-        "reading": "きょうのみずはつめたくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "air setiap pagi tidak dingin.",
+        "reading": "まいあさのみずはつめたくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の水は冷たくないです。",
-        "prompt": "今日の水は＿＿＿",
+        "fullJp": "毎朝の水は冷たくないです。",
+        "prompt": "毎朝の水は＿＿＿",
         "options": [
           "冷たかったです。",
           "冷たくなかったです。",
@@ -456,7 +456,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "air kemarin tidak dingin.",
         "reading": "きのうのみずはつめたくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の水は冷たくなかったです。",
@@ -473,20 +473,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_21",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kopi hari ini manis.",
-        "reading": "きょうのコーヒーはあまいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kopi setiap pagi manis.",
+        "reading": "まいあさのコーヒーはあまいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のコーヒーは甘いです。",
-        "prompt": "kopi hari ini manis.",
+        "fullJp": "毎朝のコーヒーは甘いです。",
+        "prompt": "kopi setiap pagi manis.",
         "tiles": [
-          "今日の",
+          "毎朝の",
           "甘いです。",
           "コーヒーは"
         ],
         "answer": [
-          "今日の",
+          "毎朝の",
           "コーヒーは",
           "甘いです。"
         ]
@@ -495,20 +495,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_22",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kopi kemarin manis.",
-        "reading": "きのうのコーヒーはあまかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kopi kemarin lusa manis.",
+        "reading": "おとといのコーヒーはあまかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のコーヒーは甘かったです。",
-        "prompt": "kopi kemarin manis.",
+        "fullJp": "おとといのコーヒーは甘かったです。",
+        "prompt": "kopi kemarin lusa manis.",
         "tiles": [
           "甘かったです。",
           "コーヒーは",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "コーヒーは",
           "甘かったです。"
         ]
@@ -517,70 +517,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_23",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kopi hari ini tidak manis.",
-        "reading": "きょうのコーヒーはあまくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kopi setiap pagi tidak manis.",
+        "reading": "まいあさのコーヒーはあまくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のコーヒーは甘くないです。",
-        "prompt": "kopi hari ini tidak manis.",
+        "fullJp": "毎朝のコーヒーは甘くないです。",
+        "prompt": "kopi setiap pagi tidak manis.",
         "tiles": [
           "コーヒーは",
-          "今日の",
+          "毎朝の",
           "甘くないです。"
         ],
         "answer": [
-          "今日の",
+          "毎朝の",
           "コーヒーは",
           "甘くないです。"
         ],
-        "audioText": "今日のコーヒーは甘くないです。"
+        "audioText": "毎朝のコーヒーは甘くないです。"
       },
       {
         "id": "q_b12_24",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kopi kemarin tidak manis.",
-        "reading": "きのうのコーヒーはどうでしたか。きのうのコーヒーはあまくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kopi tadi pagi tidak manis.",
+        "reading": "けさのコーヒーはどうでしたか。けさのコーヒーはあまくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のコーヒーはどうでしたか。昨日のコーヒーは甘くなかったです。",
+        "fullJp": "今朝のコーヒーはどうでしたか。今朝のコーヒーは甘くなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日のコーヒーはどうでしたか。"
+            "text": "今朝のコーヒーはどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kopi kemarin tidak manis. Pilih respons B.",
+        "question": "kopi tadi pagi tidak manis. Pilih respons B.",
         "options": [
-          "昨日のコーヒーは甘いです。",
-          "昨日のコーヒーは甘くなかったです。",
-          "昨日のコーヒーは甘かったです。",
-          "昨日のコーヒーは甘くないです。"
+          "今朝のコーヒーは甘いです。",
+          "今朝のコーヒーは甘くなかったです。",
+          "今朝のコーヒーは甘かったです。",
+          "今朝のコーヒーは甘くないです。"
         ],
-        "answer": "昨日のコーヒーは甘くなかったです。",
-        "answerId": "kopi kemarin tidak manis.",
+        "answer": "今朝のコーヒーは甘くなかったです。",
+        "answerId": "kopi tadi pagi tidak manis.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kopi kemarin tidak manis."
+          "kopi tadi pagi tidak manis."
         ]
       },
       {
         "id": "q_b12_25",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "masakan hari ini pedas.",
-        "reading": "きょうのりょうりはからいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "masakan bulan ini pedas.",
+        "reading": "こんげつのりょうりはからいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の料理は辛いです。",
-        "prompt": "今日の料理は＿＿＿",
+        "fullJp": "今月の料理は辛いです。",
+        "prompt": "今月の料理は＿＿＿",
         "options": [
           "辛くなかったです。",
           "辛かったです。",
@@ -595,7 +595,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "masakan kemarin pedas.",
         "reading": "きのうのりょうりはからかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の料理は辛かったです。",
@@ -612,20 +612,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_27",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "masakan hari ini tidak pedas.",
-        "reading": "きょうのりょうりはからくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "masakan tahun ini tidak pedas.",
+        "reading": "ことしのりょうりはからくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の料理は辛くないです。",
-        "prompt": "masakan hari ini tidak pedas.",
+        "fullJp": "今年の料理は辛くないです。",
+        "prompt": "masakan tahun ini tidak pedas.",
         "tiles": [
-          "今日の",
+          "今年の",
           "辛くないです。",
           "料理は"
         ],
         "answer": [
-          "今日の",
+          "今年の",
           "料理は",
           "辛くないです。"
         ]
@@ -634,19 +634,19 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_28",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kemarin bukan hujan.",
-        "reading": "きのうはあめではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "kemarin lusa bukan hujan.",
+        "reading": "おとといはあめではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日は雨ではありませんでした。",
-        "prompt": "kemarin bukan hujan.",
+        "fullJp": "おとといは雨ではありませんでした。",
+        "prompt": "kemarin lusa bukan hujan.",
         "tiles": [
-          "昨日は",
+          "おとといは",
           "雨ではありませんでした。"
         ],
         "answer": [
-          "昨日は",
+          "おとといは",
           "雨ではありませんでした。"
         ]
       },
@@ -654,57 +654,57 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_29",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "ujian hari ini sulit.",
-        "reading": "きょうのしけんはむずかしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "ujian bulan depan sulit.",
+        "reading": "らいげつのしけんはむずかしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の試験は難しいです。",
-        "prompt": "ujian hari ini sulit.",
+        "fullJp": "来月の試験は難しいです。",
+        "prompt": "ujian bulan depan sulit.",
         "tiles": [
           "試験は",
-          "今日の",
+          "来月の",
           "難しいです。"
         ],
         "answer": [
-          "今日の",
+          "来月の",
           "試験は",
           "難しいです。"
         ],
-        "audioText": "今日の試験は難しいです。"
+        "audioText": "来月の試験は難しいです。"
       },
       {
         "id": "q_b12_30",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "ujian kemarin sulit.",
-        "reading": "きのうのしけんはどうでしたか。きのうのしけんはむずかしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "ujian tadi pagi sulit.",
+        "reading": "けさのしけんはどうでしたか。けさのしけんはむずかしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の試験はどうでしたか。昨日の試験は難しかったです。",
+        "fullJp": "今朝の試験はどうでしたか。今朝の試験は難しかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の試験はどうでしたか。"
+            "text": "今朝の試験はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "ujian kemarin sulit. Pilih respons B.",
+        "question": "ujian tadi pagi sulit. Pilih respons B.",
         "options": [
-          "昨日の試験は難しかったです。",
-          "昨日の試験は難しくないです。",
-          "昨日の試験は難しくなかったです。",
-          "昨日の試験は難しいです。"
+          "今朝の試験は難しかったです。",
+          "今朝の試験は難しくないです。",
+          "今朝の試験は難しくなかったです。",
+          "今朝の試験は難しいです。"
         ],
-        "answer": "昨日の試験は難しかったです。",
-        "answerId": "ujian kemarin sulit.",
+        "answer": "今朝の試験は難しかったです。",
+        "answerId": "ujian tadi pagi sulit.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "ujian kemarin sulit."
+          "ujian tadi pagi sulit."
         ]
       }
     ]
@@ -720,13 +720,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_31",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "ujian hari ini tidak sulit.",
-        "reading": "きょうのしけんはむずかしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "ujian tahun depan tidak sulit.",
+        "reading": "らいねんのしけんはむずかしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の試験は難しくないです。",
-        "prompt": "今日の試験は＿＿＿",
+        "fullJp": "来年の試験は難しくないです。",
+        "prompt": "来年の試験は＿＿＿",
         "options": [
           "難しいです。",
           "難しくなかったです。",
@@ -739,39 +739,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_32",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "ujian kemarin tidak sulit.",
-        "reading": "きのうのしけんはむずかしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "ujian bulan lalu tidak sulit.",
+        "reading": "せんげつのしけんはむずかしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の試験は難しくなかったです。",
-        "prompt": "ujian kemarin tidak sulit.",
+        "fullJp": "先月の試験は難しくなかったです。",
+        "prompt": "ujian bulan lalu tidak sulit.",
         "options": [
-          "昨日の試験は難しくなかったです。",
-          "昨日の試験は難しいです。",
-          "昨日の試験は難しかったです。",
-          "昨日の試験は難しくないです。"
+          "先月の試験は難しくなかったです。",
+          "先月の試験は難しいです。",
+          "先月の試験は難しかったです。",
+          "先月の試験は難しくないです。"
         ],
-        "answer": "昨日の試験は難しくなかったです。"
+        "answer": "先月の試験は難しくなかったです。"
       },
       {
         "id": "q_b12_33",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "PR hari ini mudah.",
-        "reading": "きょうのしゅくだいはやさしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "PR tahun ini mudah.",
+        "reading": "ことしのしゅくだいはやさしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の宿題は易しいです。",
-        "prompt": "PR hari ini mudah.",
+        "fullJp": "今年の宿題は易しいです。",
+        "prompt": "PR tahun ini mudah.",
         "tiles": [
-          "今日の",
+          "今年の",
           "易しいです。",
           "宿題は"
         ],
         "answer": [
-          "今日の",
+          "今年の",
           "宿題は",
           "易しいです。"
         ]
@@ -780,20 +780,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_34",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "PR kemarin mudah.",
-        "reading": "きのうのしゅくだいはやさしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "PR minggu lalu mudah.",
+        "reading": "せんしゅうのしゅくだいはやさしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の宿題は易しかったです。",
-        "prompt": "PR kemarin mudah.",
+        "fullJp": "先週の宿題は易しかったです。",
+        "prompt": "PR minggu lalu mudah.",
         "tiles": [
           "易しかったです。",
           "宿題は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "宿題は",
           "易しかったです。"
         ]
@@ -802,70 +802,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_35",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "PR hari ini tidak mudah.",
-        "reading": "きょうのしゅくだいはやさしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "PR setiap pagi tidak mudah.",
+        "reading": "まいあさのしゅくだいはやさしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の宿題は易しくないです。",
-        "prompt": "PR hari ini tidak mudah.",
+        "fullJp": "毎朝の宿題は易しくないです。",
+        "prompt": "PR setiap pagi tidak mudah.",
         "tiles": [
           "宿題は",
-          "今日の",
+          "毎朝の",
           "易しくないです。"
         ],
         "answer": [
-          "今日の",
+          "毎朝の",
           "宿題は",
           "易しくないです。"
         ],
-        "audioText": "今日の宿題は易しくないです。"
+        "audioText": "毎朝の宿題は易しくないです。"
       },
       {
         "id": "q_b12_36",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "PR kemarin tidak mudah.",
-        "reading": "きのうのしゅくだいはどうでしたか。きのうのしゅくだいはやさしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "PR tahun lalu tidak mudah.",
+        "reading": "きょねんのしゅくだいはどうでしたか。きょねんのしゅくだいはやさしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の宿題はどうでしたか。昨日の宿題は易しくなかったです。",
+        "fullJp": "去年の宿題はどうでしたか。去年の宿題は易しくなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の宿題はどうでしたか。"
+            "text": "去年の宿題はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "PR kemarin tidak mudah. Pilih respons B.",
+        "question": "PR tahun lalu tidak mudah. Pilih respons B.",
         "options": [
-          "昨日の宿題は易しかったです。",
-          "昨日の宿題は易しいです。",
-          "昨日の宿題は易しくなかったです。",
-          "昨日の宿題は易しくないです。"
+          "去年の宿題は易しかったです。",
+          "去年の宿題は易しいです。",
+          "去年の宿題は易しくなかったです。",
+          "去年の宿題は易しくないです。"
         ],
-        "answer": "昨日の宿題は易しくなかったです。",
-        "answerId": "PR kemarin tidak mudah.",
+        "answer": "去年の宿題は易しくなかったです。",
+        "answerId": "PR tahun lalu tidak mudah.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "PR kemarin tidak mudah."
+          "PR tahun lalu tidak mudah."
         ]
       },
       {
         "id": "q_b12_37",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "ujian hari ini mudah.",
-        "reading": "きょうのしけんはかんたんです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "ujian tahun depan mudah.",
+        "reading": "らいねんのしけんはかんたんです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の試験は簡単です。",
-        "prompt": "今日の試験は＿＿＿",
+        "fullJp": "来年の試験は簡単です。",
+        "prompt": "来年の試験は＿＿＿",
         "options": [
           "簡単でした。",
           "簡単です。",
@@ -878,39 +878,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_38",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "ujian kemarin mudah.",
-        "reading": "きのうのしけんはかんたんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "ujian bulan lalu mudah.",
+        "reading": "せんげつのしけんはかんたんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の試験は簡単でした。",
-        "prompt": "ujian kemarin mudah.",
+        "fullJp": "先月の試験は簡単でした。",
+        "prompt": "ujian bulan lalu mudah.",
         "options": [
-          "昨日の試験は簡単です。",
-          "昨日の試験は簡単ではありません。",
-          "昨日の試験は簡単ではありませんでした。",
-          "昨日の試験は簡単でした。"
+          "先月の試験は簡単です。",
+          "先月の試験は簡単ではありません。",
+          "先月の試験は簡単ではありませんでした。",
+          "先月の試験は簡単でした。"
         ],
-        "answer": "昨日の試験は簡単でした。"
+        "answer": "先月の試験は簡単でした。"
       },
       {
         "id": "q_b12_39",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "ujian hari ini tidak mudah.",
-        "reading": "きょうのしけんはかんたんではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "ujian setiap malam tidak mudah.",
+        "reading": "まいばんのしけんはかんたんではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の試験は簡単ではありません。",
-        "prompt": "ujian hari ini tidak mudah.",
+        "fullJp": "毎晩の試験は簡単ではありません。",
+        "prompt": "ujian setiap malam tidak mudah.",
         "tiles": [
-          "今日の",
+          "毎晩の",
           "簡単ではありません。",
           "試験は"
         ],
         "answer": [
-          "今日の",
+          "毎晩の",
           "試験は",
           "簡単ではありません。"
         ]
@@ -919,20 +919,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_40",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "ujian kemarin tidak mudah.",
-        "reading": "きのうのしけんはかんたんではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "ujian kemarin lusa tidak mudah.",
+        "reading": "おとといのしけんはかんたんではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の試験は簡単ではありませんでした。",
-        "prompt": "ujian kemarin tidak mudah.",
+        "fullJp": "おとといの試験は簡単ではありませんでした。",
+        "prompt": "ujian kemarin lusa tidak mudah.",
         "tiles": [
           "簡単ではありませんでした。",
           "試験は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "試験は",
           "簡単ではありませんでした。"
         ]
@@ -943,7 +943,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "kemarin salju.",
         "reading": "きのうはゆきでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日は雪でした。",
@@ -962,47 +962,47 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_42",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "film kemarin menarik.",
-        "reading": "きのうのえいがはどうでしたか。きのうのえいがはおもしろかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "film tahun lalu menarik.",
+        "reading": "きょねんのえいがはどうでしたか。きょねんのえいがはおもしろかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の映画はどうでしたか。昨日の映画は面白かったです。",
+        "fullJp": "去年の映画はどうでしたか。去年の映画は面白かったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の映画はどうでしたか。"
+            "text": "去年の映画はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "film kemarin menarik. Pilih respons B.",
+        "question": "film tahun lalu menarik. Pilih respons B.",
         "options": [
-          "昨日の映画は面白くないです。",
-          "昨日の映画は面白かったです。",
-          "昨日の映画は面白くなかったです。",
-          "昨日の映画は面白いです。"
+          "去年の映画は面白くないです。",
+          "去年の映画は面白かったです。",
+          "去年の映画は面白くなかったです。",
+          "去年の映画は面白いです。"
         ],
-        "answer": "昨日の映画は面白かったです。",
-        "answerId": "film kemarin menarik.",
+        "answer": "去年の映画は面白かったです。",
+        "answerId": "film tahun lalu menarik.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "film kemarin menarik."
+          "film tahun lalu menarik."
         ]
       },
       {
         "id": "q_b12_43",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "film hari ini tidak menarik.",
-        "reading": "きょうのえいがはおもしろくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "film setiap hari tidak menarik.",
+        "reading": "まいにちのえいがはおもしろくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の映画は面白くないです。",
-        "prompt": "今日の映画は＿＿＿",
+        "fullJp": "毎日の映画は面白くないです。",
+        "prompt": "毎日の映画は＿＿＿",
         "options": [
           "面白かったです。",
           "面白くなかったです。",
@@ -1017,7 +1017,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "film kemarin tidak menarik.",
         "reading": "きのうのえいがはおもしろくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の映画は面白くなかったです。",
@@ -1034,20 +1034,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_45",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "pesta hari ini menyenangkan.",
-        "reading": "きょうのパーティーはたのしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "pesta setiap malam menyenangkan.",
+        "reading": "まいばんのパーティーはたのしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のパーティーは楽しいです。",
-        "prompt": "pesta hari ini menyenangkan.",
+        "fullJp": "毎晩のパーティーは楽しいです。",
+        "prompt": "pesta setiap malam menyenangkan.",
         "tiles": [
-          "今日の",
+          "毎晩の",
           "楽しいです。",
           "パーティーは"
         ],
         "answer": [
-          "今日の",
+          "毎晩の",
           "パーティーは",
           "楽しいです。"
         ]
@@ -1065,20 +1065,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_46",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "pesta kemarin menyenangkan.",
-        "reading": "きのうのパーティーはたのしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "pesta kemarin lusa menyenangkan.",
+        "reading": "おとといのパーティーはたのしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のパーティーは楽しかったです。",
-        "prompt": "pesta kemarin menyenangkan.",
+        "fullJp": "おとといのパーティーは楽しかったです。",
+        "prompt": "pesta kemarin lusa menyenangkan.",
         "tiles": [
           "楽しかったです。",
           "パーティーは",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "パーティーは",
           "楽しかったです。"
         ]
@@ -1089,7 +1089,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "pesta hari ini tidak menyenangkan.",
         "reading": "きょうのパーティーはたのしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日のパーティーは楽しくないです。",
@@ -1110,47 +1110,47 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_48",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "pesta kemarin tidak menyenangkan.",
-        "reading": "きのうのパーティーはどうでしたか。きのうのパーティーはたのしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "pesta minggu lalu tidak menyenangkan.",
+        "reading": "せんしゅうのパーティーはどうでしたか。せんしゅうのパーティーはたのしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のパーティーはどうでしたか。昨日のパーティーは楽しくなかったです。",
+        "fullJp": "先週のパーティーはどうでしたか。先週のパーティーは楽しくなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日のパーティーはどうでしたか。"
+            "text": "先週のパーティーはどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "pesta kemarin tidak menyenangkan. Pilih respons B.",
+        "question": "pesta minggu lalu tidak menyenangkan. Pilih respons B.",
         "options": [
-          "昨日のパーティーは楽しくなかったです。",
-          "昨日のパーティーは楽しいです。",
-          "昨日のパーティーは楽しかったです。",
-          "昨日のパーティーは楽しくないです。"
+          "先週のパーティーは楽しくなかったです。",
+          "先週のパーティーは楽しいです。",
+          "先週のパーティーは楽しかったです。",
+          "先週のパーティーは楽しくないです。"
         ],
-        "answer": "昨日のパーティーは楽しくなかったです。",
-        "answerId": "pesta kemarin tidak menyenangkan.",
+        "answer": "先週のパーティーは楽しくなかったです。",
+        "answerId": "pesta minggu lalu tidak menyenangkan.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "pesta kemarin tidak menyenangkan."
+          "pesta minggu lalu tidak menyenangkan."
         ]
       },
       {
         "id": "q_b12_49",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "pekerjaan hari ini sibuk.",
-        "reading": "きょうのしごとはいそがしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "pekerjaan setiap hari sibuk.",
+        "reading": "まいにちのしごとはいそがしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の仕事は忙しいです。",
-        "prompt": "今日の仕事は＿＿＿",
+        "fullJp": "毎日の仕事は忙しいです。",
+        "prompt": "毎日の仕事は＿＿＿",
         "options": [
           "忙しくないです。",
           "忙しかったです。",
@@ -1165,7 +1165,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "pekerjaan kemarin sibuk.",
         "reading": "きのうのしごとはいそがしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の仕事は忙しかったです。",
@@ -1182,20 +1182,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_51",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "pekerjaan hari ini tidak sibuk.",
-        "reading": "きょうのしごとはいそがしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "pekerjaan besok tidak sibuk.",
+        "reading": "あしたのしごとはいそがしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の仕事は忙しくないです。",
-        "prompt": "pekerjaan hari ini tidak sibuk.",
+        "fullJp": "明日の仕事は忙しくないです。",
+        "prompt": "pekerjaan besok tidak sibuk.",
         "tiles": [
-          "今日の",
+          "明日の",
           "忙しくないです。",
           "仕事は"
         ],
         "answer": [
-          "今日の",
+          "明日の",
           "仕事は",
           "忙しくないです。"
         ]
@@ -1204,20 +1204,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_52",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "pekerjaan kemarin tidak sibuk.",
-        "reading": "きのうのしごとはいそがしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "pekerjaan minggu lalu tidak sibuk.",
+        "reading": "せんしゅうのしごとはいそがしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の仕事は忙しくなかったです。",
-        "prompt": "pekerjaan kemarin tidak sibuk.",
+        "fullJp": "先週の仕事は忙しくなかったです。",
+        "prompt": "pekerjaan minggu lalu tidak sibuk.",
         "tiles": [
           "忙しくなかったです。",
           "仕事は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "仕事は",
           "忙しくなかったです。"
         ]
@@ -1228,7 +1228,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "hotel hari ini tenang.",
         "reading": "きょうのホテルはしずかです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日のホテルは静かです。",
@@ -1251,7 +1251,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "kemarin bukan salju.",
         "reading": "きのうはどうでしたか。きのうはゆきではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日はどうでしたか。昨日は雪ではありませんでした。",
@@ -1283,13 +1283,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_55",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "hotel hari ini tidak tenang.",
-        "reading": "きょうのホテルはしずかではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "hotel besok lusa tidak tenang.",
+        "reading": "あさってのホテルはしずかではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のホテルは静かではありません。",
-        "prompt": "今日のホテルは＿＿＿",
+        "fullJp": "あさってのホテルは静かではありません。",
+        "prompt": "あさってのホテルは＿＿＿",
         "options": [
           "静かではありませんでした。",
           "静かではありません。",
@@ -1302,39 +1302,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_56",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "hotel kemarin tidak tenang.",
-        "reading": "きのうのホテルはしずかではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "hotel bulan lalu tidak tenang.",
+        "reading": "せんげつのホテルはしずかではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のホテルは静かではありませんでした。",
-        "prompt": "hotel kemarin tidak tenang.",
+        "fullJp": "先月のホテルは静かではありませんでした。",
+        "prompt": "hotel bulan lalu tidak tenang.",
         "options": [
-          "昨日のホテルは静かではありません。",
-          "昨日のホテルは静かです。",
-          "昨日のホテルは静かでした。",
-          "昨日のホテルは静かではありませんでした。"
+          "先月のホテルは静かではありません。",
+          "先月のホテルは静かです。",
+          "先月のホテルは静かでした。",
+          "先月のホテルは静かではありませんでした。"
         ],
-        "answer": "昨日のホテルは静かではありませんでした。"
+        "answer": "先月のホテルは静かではありませんでした。"
       },
       {
         "id": "q_b12_57",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kota hari ini ramai.",
-        "reading": "きょうのまちはにぎやかです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "kota besok ramai.",
+        "reading": "あしたのまちはにぎやかです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の町はにぎやかです。",
-        "prompt": "kota hari ini ramai.",
+        "fullJp": "明日の町はにぎやかです。",
+        "prompt": "kota besok ramai.",
         "tiles": [
-          "今日の",
+          "明日の",
           "にぎやかです。",
           "町は"
         ],
         "answer": [
-          "今日の",
+          "明日の",
           "町は",
           "にぎやかです。"
         ]
@@ -1343,20 +1343,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_58",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kota kemarin ramai.",
-        "reading": "きのうのまちはにぎやかでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "kota minggu lalu ramai.",
+        "reading": "せんしゅうのまちはにぎやかでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の町はにぎやかでした。",
-        "prompt": "kota kemarin ramai.",
+        "fullJp": "先週の町はにぎやかでした。",
+        "prompt": "kota minggu lalu ramai.",
         "tiles": [
           "にぎやかでした。",
           "町は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "町は",
           "にぎやかでした。"
         ]
@@ -1365,57 +1365,57 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_59",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kota hari ini tidak ramai.",
-        "reading": "きょうのまちはにぎやかではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "kota malam ini tidak ramai.",
+        "reading": "こんばんのまちはにぎやかではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の町はにぎやかではありません。",
-        "prompt": "kota hari ini tidak ramai.",
+        "fullJp": "今晩の町はにぎやかではありません。",
+        "prompt": "kota malam ini tidak ramai.",
         "tiles": [
           "町は",
-          "今日の",
+          "今晩の",
           "にぎやかではありません。"
         ],
         "answer": [
-          "今日の",
+          "今晩の",
           "町は",
           "にぎやかではありません。"
         ],
-        "audioText": "今日の町はにぎやかではありません。"
+        "audioText": "今晩の町はにぎやかではありません。"
       },
       {
         "id": "q_b12_60",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kota kemarin tidak ramai.",
-        "reading": "きのうのまちはどうでしたか。きのうのまちはにぎやかではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "kota tahun lalu tidak ramai.",
+        "reading": "きょねんのまちはどうでしたか。きょねんのまちはにぎやかではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の町はどうでしたか。昨日の町はにぎやかではありませんでした。",
+        "fullJp": "去年の町はどうでしたか。去年の町はにぎやかではありませんでした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の町はどうでしたか。"
+            "text": "去年の町はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kota kemarin tidak ramai. Pilih respons B.",
+        "question": "kota tahun lalu tidak ramai. Pilih respons B.",
         "options": [
-          "昨日の町はにぎやかではありませんでした。",
-          "昨日の町はにぎやかです。",
-          "昨日の町はにぎやかでした。",
-          "昨日の町はにぎやかではありません。"
+          "去年の町はにぎやかではありませんでした。",
+          "去年の町はにぎやかです。",
+          "去年の町はにぎやかでした。",
+          "去年の町はにぎやかではありません。"
         ],
-        "answer": "昨日の町はにぎやかではありませんでした。",
-        "answerId": "kota kemarin tidak ramai.",
+        "answer": "去年の町はにぎやかではありませんでした。",
+        "answerId": "kota tahun lalu tidak ramai.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kota kemarin tidak ramai."
+          "kota tahun lalu tidak ramai."
         ]
       }
     ]
@@ -1431,13 +1431,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_61",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "ayah saya hari ini sehat.",
-        "reading": "きょうのちちはげんきです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "ayah saya besok lusa sehat.",
+        "reading": "あさってのちちはげんきです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の父は元気です。",
-        "prompt": "今日の父は＿＿＿",
+        "fullJp": "あさっての父は元気です。",
+        "prompt": "あさっての父は＿＿＿",
         "options": [
           "元気でした。",
           "元気です。",
@@ -1450,39 +1450,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_62",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "ayah saya kemarin sehat.",
-        "reading": "きのうのちちはげんきでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "ayah saya bulan lalu sehat.",
+        "reading": "せんげつのちちはげんきでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の父は元気でした。",
-        "prompt": "ayah saya kemarin sehat.",
+        "fullJp": "先月の父は元気でした。",
+        "prompt": "ayah saya bulan lalu sehat.",
         "options": [
-          "昨日の父は元気ではありませんでした。",
-          "昨日の父は元気ではありません。",
-          "昨日の父は元気でした。",
-          "昨日の父は元気です。"
+          "先月の父は元気ではありませんでした。",
+          "先月の父は元気ではありません。",
+          "先月の父は元気でした。",
+          "先月の父は元気です。"
         ],
-        "answer": "昨日の父は元気でした。"
+        "answer": "先月の父は元気でした。"
       },
       {
         "id": "q_b12_63",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "ayah saya hari ini tidak sehat.",
-        "reading": "きょうのちちはげんきではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "ayah saya minggu ini tidak sehat.",
+        "reading": "こんしゅうのちちはげんきではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の父は元気ではありません。",
-        "prompt": "ayah saya hari ini tidak sehat.",
+        "fullJp": "今週の父は元気ではありません。",
+        "prompt": "ayah saya minggu ini tidak sehat.",
         "tiles": [
-          "今日の",
+          "今週の",
           "元気ではありません。",
           "父は"
         ],
         "answer": [
-          "今日の",
+          "今週の",
           "父は",
           "元気ではありません。"
         ]
@@ -1491,20 +1491,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_64",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "ayah saya kemarin tidak sehat.",
-        "reading": "きのうのちちはげんきではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "ayah saya kemarin lusa tidak sehat.",
+        "reading": "おとといのちちはげんきではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の父は元気ではありませんでした。",
-        "prompt": "ayah saya kemarin tidak sehat.",
+        "fullJp": "おとといの父は元気ではありませんでした。",
+        "prompt": "ayah saya kemarin lusa tidak sehat.",
         "tiles": [
           "元気ではありませんでした。",
           "父は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "父は",
           "元気ではありませんでした。"
         ]
@@ -1513,70 +1513,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_65",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "ibu saya hari ini senggang.",
-        "reading": "きょうのはははひまです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "ibu saya malam ini senggang.",
+        "reading": "こんばんのはははひまです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の母は暇です。",
-        "prompt": "ibu saya hari ini senggang.",
+        "fullJp": "今晩の母は暇です。",
+        "prompt": "ibu saya malam ini senggang.",
         "tiles": [
           "母は",
-          "今日の",
+          "今晩の",
           "暇です。"
         ],
         "answer": [
-          "今日の",
+          "今晩の",
           "母は",
           "暇です。"
         ],
-        "audioText": "今日の母は暇です。"
+        "audioText": "今晩の母は暇です。"
       },
       {
         "id": "q_b12_66",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "ibu saya kemarin senggang.",
-        "reading": "きのうのはははどうでしたか。きのうのはははひまでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "ibu saya tahun lalu senggang.",
+        "reading": "きょねんのはははどうでしたか。きょねんのはははひまでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の母はどうでしたか。昨日の母は暇でした。",
+        "fullJp": "去年の母はどうでしたか。去年の母は暇でした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の母はどうでしたか。"
+            "text": "去年の母はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "ibu saya kemarin senggang. Pilih respons B.",
+        "question": "ibu saya tahun lalu senggang. Pilih respons B.",
         "options": [
-          "昨日の母は暇でした。",
-          "昨日の母は暇ではありません。",
-          "昨日の母は暇ではありませんでした。",
-          "昨日の母は暇です。"
+          "去年の母は暇でした。",
+          "去年の母は暇ではありません。",
+          "去年の母は暇ではありませんでした。",
+          "去年の母は暇です。"
         ],
-        "answer": "昨日の母は暇でした。",
-        "answerId": "ibu saya kemarin senggang.",
+        "answer": "去年の母は暇でした。",
+        "answerId": "ibu saya tahun lalu senggang.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "ibu saya kemarin senggang."
+          "ibu saya tahun lalu senggang."
         ]
       },
       {
         "id": "q_b12_67",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kemarin mendung.",
-        "reading": "きのうはくもりでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "tadi pagi mendung.",
+        "reading": "けさはくもりでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日は曇りでした。",
-        "prompt": "昨日は＿＿＿",
+        "fullJp": "今朝は曇りでした。",
+        "prompt": "今朝は＿＿＿",
         "options": [
           "曇りではありません。",
           "曇りでした。",
@@ -1591,7 +1591,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "ibu saya kemarin tidak senggang.",
         "reading": "きのうのはははひまではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の母は暇ではありませんでした。",
@@ -1608,20 +1608,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_69",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "toko hari ini praktis.",
-        "reading": "きょうのみせはべんりです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "toko minggu ini praktis.",
+        "reading": "こんしゅうのみせはべんりです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の店は便利です。",
-        "prompt": "toko hari ini praktis.",
+        "fullJp": "今週の店は便利です。",
+        "prompt": "toko minggu ini praktis.",
         "tiles": [
-          "今日の",
+          "今週の",
           "便利です。",
           "店は"
         ],
         "answer": [
-          "今日の",
+          "今週の",
           "店は",
           "便利です。"
         ]
@@ -1630,20 +1630,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_70",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "toko kemarin praktis.",
-        "reading": "きのうのみせはべんりでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "toko kemarin lusa praktis.",
+        "reading": "おとといのみせはべんりでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の店は便利でした。",
-        "prompt": "toko kemarin praktis.",
+        "fullJp": "おとといの店は便利でした。",
+        "prompt": "toko kemarin lusa praktis.",
         "tiles": [
           "便利でした。",
           "店は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "店は",
           "便利でした。"
         ]
@@ -1652,70 +1652,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_71",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "toko hari ini tidak praktis.",
-        "reading": "きょうのみせはべんりではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "toko bulan ini tidak praktis.",
+        "reading": "こんげつのみせはべんりではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の店は便利ではありません。",
-        "prompt": "toko hari ini tidak praktis.",
+        "fullJp": "今月の店は便利ではありません。",
+        "prompt": "toko bulan ini tidak praktis.",
         "tiles": [
           "店は",
-          "今日の",
+          "今月の",
           "便利ではありません。"
         ],
         "answer": [
-          "今日の",
+          "今月の",
           "店は",
           "便利ではありません。"
         ],
-        "audioText": "今日の店は便利ではありません。"
+        "audioText": "今月の店は便利ではありません。"
       },
       {
         "id": "q_b12_72",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "toko kemarin tidak praktis.",
-        "reading": "きのうのみせはどうでしたか。きのうのみせはべんりではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "toko tadi pagi tidak praktis.",
+        "reading": "けさのみせはどうでしたか。けさのみせはべんりではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の店はどうでしたか。昨日の店は便利ではありませんでした。",
+        "fullJp": "今朝の店はどうでしたか。今朝の店は便利ではありませんでした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の店はどうでしたか。"
+            "text": "今朝の店はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "toko kemarin tidak praktis. Pilih respons B.",
+        "question": "toko tadi pagi tidak praktis. Pilih respons B.",
         "options": [
-          "昨日の店は便利ではありません。",
-          "昨日の店は便利です。",
-          "昨日の店は便利でした。",
-          "昨日の店は便利ではありませんでした。"
+          "今朝の店は便利ではありません。",
+          "今朝の店は便利です。",
+          "今朝の店は便利でした。",
+          "今朝の店は便利ではありませんでした。"
         ],
-        "answer": "昨日の店は便利ではありませんでした。",
-        "answerId": "toko kemarin tidak praktis.",
+        "answer": "今朝の店は便利ではありませんでした。",
+        "answerId": "toko tadi pagi tidak praktis.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "toko kemarin tidak praktis."
+          "toko tadi pagi tidak praktis."
         ]
       },
       {
         "id": "q_b12_73",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "barang bawaan hari ini berat.",
-        "reading": "きょうのにもつはおもいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "barang bawaan minggu depan berat.",
+        "reading": "らいしゅうのにもつはおもいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 来週 (minggu depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の荷物は重いです。",
-        "prompt": "今日の荷物は＿＿＿",
+        "fullJp": "来週の荷物は重いです。",
+        "prompt": "来週の荷物は＿＿＿",
         "options": [
           "重かったです。",
           "重いです。",
@@ -1730,7 +1730,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "barang bawaan kemarin berat.",
         "reading": "きのうのにもつはおもかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の荷物は重かったです。",
@@ -1747,20 +1747,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_75",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "barang bawaan hari ini tidak berat.",
-        "reading": "きょうのにもつはおもくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "barang bawaan bulan depan tidak berat.",
+        "reading": "らいげつのにもつはおもくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の荷物は重くないです。",
-        "prompt": "barang bawaan hari ini tidak berat.",
+        "fullJp": "来月の荷物は重くないです。",
+        "prompt": "barang bawaan bulan depan tidak berat.",
         "tiles": [
-          "今日の",
+          "来月の",
           "重くないです。",
           "荷物は"
         ],
         "answer": [
-          "今日の",
+          "来月の",
           "荷物は",
           "重くないです。"
         ]
@@ -1778,20 +1778,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_76",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "barang bawaan kemarin tidak berat.",
-        "reading": "きのうのにもつはおもくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "barang bawaan minggu lalu tidak berat.",
+        "reading": "せんしゅうのにもつはおもくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の荷物は重くなかったです。",
-        "prompt": "barang bawaan kemarin tidak berat.",
+        "fullJp": "先週の荷物は重くなかったです。",
+        "prompt": "barang bawaan minggu lalu tidak berat.",
         "tiles": [
           "重くなかったです。",
           "荷物は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "荷物は",
           "重くなかったです。"
         ]
@@ -1800,70 +1800,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_77",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "tas hari ini ringan.",
-        "reading": "きょうのかばんはかるいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "tas bulan ini ringan.",
+        "reading": "こんげつのかばんはかるいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のかばんは軽いです。",
-        "prompt": "tas hari ini ringan.",
+        "fullJp": "今月のかばんは軽いです。",
+        "prompt": "tas bulan ini ringan.",
         "tiles": [
           "かばんは",
-          "今日の",
+          "今月の",
           "軽いです。"
         ],
         "answer": [
-          "今日の",
+          "今月の",
           "かばんは",
           "軽いです。"
         ],
-        "audioText": "今日のかばんは軽いです。"
+        "audioText": "今月のかばんは軽いです。"
       },
       {
         "id": "q_b12_78",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "tas kemarin ringan.",
-        "reading": "きのうのかばんはどうでしたか。きのうのかばんはかるかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "tas tadi pagi ringan.",
+        "reading": "けさのかばんはどうでしたか。けさのかばんはかるかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のかばんはどうでしたか。昨日のかばんは軽かったです。",
+        "fullJp": "今朝のかばんはどうでしたか。今朝のかばんは軽かったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日のかばんはどうでしたか。"
+            "text": "今朝のかばんはどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "tas kemarin ringan. Pilih respons B.",
+        "question": "tas tadi pagi ringan. Pilih respons B.",
         "options": [
-          "昨日のかばんは軽いです。",
-          "昨日のかばんは軽くないです。",
-          "昨日のかばんは軽くなかったです。",
-          "昨日のかばんは軽かったです。"
+          "今朝のかばんは軽いです。",
+          "今朝のかばんは軽くないです。",
+          "今朝のかばんは軽くなかったです。",
+          "今朝のかばんは軽かったです。"
         ],
-        "answer": "昨日のかばんは軽かったです。",
-        "answerId": "tas kemarin ringan.",
+        "answer": "今朝のかばんは軽かったです。",
+        "answerId": "tas tadi pagi ringan.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "tas kemarin ringan."
+          "tas tadi pagi ringan."
         ]
       },
       {
         "id": "q_b12_79",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "tas hari ini tidak ringan.",
-        "reading": "きょうのかばんはかるくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "tas tahun ini tidak ringan.",
+        "reading": "ことしのかばんはかるくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のかばんは軽くないです。",
-        "prompt": "今日のかばんは＿＿＿",
+        "fullJp": "今年のかばんは軽くないです。",
+        "prompt": "今年のかばんは＿＿＿",
         "options": [
           "軽くないです。",
           "軽くなかったです。",
@@ -1876,39 +1876,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_80",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "kemarin bukan mendung.",
-        "reading": "きのうはくもりではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "tadi pagi bukan mendung.",
+        "reading": "けさはくもりではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日は曇りではありませんでした。",
-        "prompt": "kemarin bukan mendung.",
+        "fullJp": "今朝は曇りではありませんでした。",
+        "prompt": "tadi pagi bukan mendung.",
         "options": [
-          "昨日は曇りではありません。",
-          "昨日は曇りです。",
-          "昨日は曇りでした。",
-          "昨日は曇りではありませんでした。"
+          "今朝は曇りではありません。",
+          "今朝は曇りです。",
+          "今朝は曇りでした。",
+          "今朝は曇りではありませんでした。"
         ],
-        "answer": "昨日は曇りではありませんでした。"
+        "answer": "今朝は曇りではありませんでした。"
       },
       {
         "id": "q_b12_81",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "mobil hari ini baru.",
-        "reading": "きょうのくるまはあたらしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "mobil bulan depan baru.",
+        "reading": "らいげつのくるまはあたらしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の車は新しいです。",
-        "prompt": "mobil hari ini baru.",
+        "fullJp": "来月の車は新しいです。",
+        "prompt": "mobil bulan depan baru.",
         "tiles": [
-          "今日の",
+          "来月の",
           "新しいです。",
           "車は"
         ],
         "answer": [
-          "今日の",
+          "来月の",
           "車は",
           "新しいです。"
         ]
@@ -1917,20 +1917,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_82",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "mobil kemarin baru.",
-        "reading": "きのうのくるまはあたらしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "mobil minggu lalu baru.",
+        "reading": "せんしゅうのくるまはあたらしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の車は新しかったです。",
-        "prompt": "mobil kemarin baru.",
+        "fullJp": "先週の車は新しかったです。",
+        "prompt": "mobil minggu lalu baru.",
         "tiles": [
           "新しかったです。",
           "車は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "車は",
           "新しかったです。"
         ]
@@ -1939,70 +1939,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_83",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "mobil hari ini tidak baru.",
-        "reading": "きょうのくるまはあたらしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "mobil tahun depan tidak baru.",
+        "reading": "らいねんのくるまはあたらしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の車は新しくないです。",
-        "prompt": "mobil hari ini tidak baru.",
+        "fullJp": "来年の車は新しくないです。",
+        "prompt": "mobil tahun depan tidak baru.",
         "tiles": [
           "車は",
-          "今日の",
+          "来年の",
           "新しくないです。"
         ],
         "answer": [
-          "今日の",
+          "来年の",
           "車は",
           "新しくないです。"
         ],
-        "audioText": "今日の車は新しくないです。"
+        "audioText": "来年の車は新しくないです。"
       },
       {
         "id": "q_b12_84",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "mobil kemarin tidak baru.",
-        "reading": "きのうのくるまはどうでしたか。きのうのくるまはあたらしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "mobil tahun lalu tidak baru.",
+        "reading": "きょねんのくるまはどうでしたか。きょねんのくるまはあたらしくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の車はどうでしたか。昨日の車は新しくなかったです。",
+        "fullJp": "去年の車はどうでしたか。去年の車は新しくなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の車はどうでしたか。"
+            "text": "去年の車はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "mobil kemarin tidak baru. Pilih respons B.",
+        "question": "mobil tahun lalu tidak baru. Pilih respons B.",
         "options": [
-          "昨日の車は新しくなかったです。",
-          "昨日の車は新しいです。",
-          "昨日の車は新しかったです。",
-          "昨日の車は新しくないです。"
+          "去年の車は新しくなかったです。",
+          "去年の車は新しいです。",
+          "去年の車は新しかったです。",
+          "去年の車は新しくないです。"
         ],
-        "answer": "昨日の車は新しくなかったです。",
-        "answerId": "mobil kemarin tidak baru.",
+        "answer": "去年の車は新しくなかったです。",
+        "answerId": "mobil tahun lalu tidak baru.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "mobil kemarin tidak baru."
+          "mobil tahun lalu tidak baru."
         ]
       },
       {
         "id": "q_b12_85",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "jam hari ini lama.",
-        "reading": "きょうのとけいはふるいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "jam tahun ini lama.",
+        "reading": "ことしのとけいはふるいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の時計は古いです。",
-        "prompt": "今日の時計は＿＿＿",
+        "fullJp": "今年の時計は古いです。",
+        "prompt": "今年の時計は＿＿＿",
         "options": [
           "古くないです。",
           "古かったです。",
@@ -2015,39 +2015,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_86",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "jam kemarin lama.",
-        "reading": "きのうのとけいはふるかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "jam bulan lalu lama.",
+        "reading": "せんげつのとけいはふるかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の時計は古かったです。",
-        "prompt": "jam kemarin lama.",
+        "fullJp": "先月の時計は古かったです。",
+        "prompt": "jam bulan lalu lama.",
         "options": [
-          "昨日の時計は古くないです。",
-          "昨日の時計は古かったです。",
-          "昨日の時計は古くなかったです。",
-          "昨日の時計は古いです。"
+          "先月の時計は古くないです。",
+          "先月の時計は古かったです。",
+          "先月の時計は古くなかったです。",
+          "先月の時計は古いです。"
         ],
-        "answer": "昨日の時計は古かったです。"
+        "answer": "先月の時計は古かったです。"
       },
       {
         "id": "q_b12_87",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "jam hari ini tidak lama.",
-        "reading": "きょうのとけいはふるくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "jam setiap pagi tidak lama.",
+        "reading": "まいあさのとけいはふるくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の時計は古くないです。",
-        "prompt": "jam hari ini tidak lama.",
+        "fullJp": "毎朝の時計は古くないです。",
+        "prompt": "jam setiap pagi tidak lama.",
         "tiles": [
-          "今日の",
+          "毎朝の",
           "古くないです。",
           "時計は"
         ],
         "answer": [
-          "今日の",
+          "毎朝の",
           "時計は",
           "古くないです。"
         ]
@@ -2056,20 +2056,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_88",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "jam kemarin tidak lama.",
-        "reading": "きのうのとけいはふるくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "jam kemarin lusa tidak lama.",
+        "reading": "おとといのとけいはふるくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の時計は古くなかったです。",
-        "prompt": "jam kemarin tidak lama.",
+        "fullJp": "おとといの時計は古くなかったです。",
+        "prompt": "jam kemarin lusa tidak lama.",
         "tiles": [
           "古くなかったです。",
           "時計は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "時計は",
           "古くなかったです。"
         ]
@@ -2078,57 +2078,57 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_89",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "ruang kelas hari ini besar.",
-        "reading": "きょうのきょうしつはおおきいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "ruang kelas tahun depan besar.",
+        "reading": "らいねんのきょうしつはおおきいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の教室は大きいです。",
-        "prompt": "ruang kelas hari ini besar.",
+        "fullJp": "来年の教室は大きいです。",
+        "prompt": "ruang kelas tahun depan besar.",
         "tiles": [
           "教室は",
-          "今日の",
+          "来年の",
           "大きいです。"
         ],
         "answer": [
-          "今日の",
+          "来年の",
           "教室は",
           "大きいです。"
         ],
-        "audioText": "今日の教室は大きいです。"
+        "audioText": "来年の教室は大きいです。"
       },
       {
         "id": "q_b12_90",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "ruang kelas kemarin besar.",
-        "reading": "きのうのきょうしつはどうでしたか。きのうのきょうしつはおおきかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "ruang kelas tahun lalu besar.",
+        "reading": "きょねんのきょうしつはどうでしたか。きょねんのきょうしつはおおきかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の教室はどうでしたか。昨日の教室は大きかったです。",
+        "fullJp": "去年の教室はどうでしたか。去年の教室は大きかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の教室はどうでしたか。"
+            "text": "去年の教室はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "ruang kelas kemarin besar. Pilih respons B.",
+        "question": "ruang kelas tahun lalu besar. Pilih respons B.",
         "options": [
-          "昨日の教室は大きいです。",
-          "昨日の教室は大きくないです。",
-          "昨日の教室は大きくなかったです。",
-          "昨日の教室は大きかったです。"
+          "去年の教室は大きいです。",
+          "去年の教室は大きくないです。",
+          "去年の教室は大きくなかったです。",
+          "去年の教室は大きかったです。"
         ],
-        "answer": "昨日の教室は大きかったです。",
-        "answerId": "ruang kelas kemarin besar.",
+        "answer": "去年の教室は大きかったです。",
+        "answerId": "ruang kelas tahun lalu besar.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "ruang kelas kemarin besar."
+          "ruang kelas tahun lalu besar."
         ]
       }
     ]
@@ -2144,13 +2144,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_91",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "ruang kelas hari ini tidak besar.",
-        "reading": "きょうのきょうしつはおおきくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "ruang kelas setiap malam tidak besar.",
+        "reading": "まいばんのきょうしつはおおきくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の教室は大きくないです。",
-        "prompt": "今日の教室は＿＿＿",
+        "fullJp": "毎晩の教室は大きくないです。",
+        "prompt": "毎晩の教室は＿＿＿",
         "options": [
           "大きくなかったです。",
           "大きくないです。",
@@ -2165,7 +2165,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "ruang kelas kemarin tidak besar.",
         "reading": "きのうのきょうしつはおおきくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の教室は大きくなかったです。",
@@ -2182,40 +2182,40 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_93",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "hari ini hari libur.",
-        "reading": "きょうはやすみです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "minggu lalu hujan.",
+        "reading": "せんしゅうはあめでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日は休みです。",
-        "prompt": "hari ini hari libur.",
+        "fullJp": "先週は雨でした。",
+        "prompt": "minggu lalu hujan.",
         "tiles": [
-          "休みです。",
-          "今日は"
+          "雨でした。",
+          "先週は"
         ],
         "answer": [
-          "今日は",
-          "休みです。"
+          "先週は",
+          "雨でした。"
         ]
       },
       {
         "id": "q_b12_94",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kamar kemarin kecil.",
-        "reading": "きのうのへやはちいさかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kamar kemarin lusa kecil.",
+        "reading": "おとといのへやはちいさかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋は小さかったです。",
-        "prompt": "kamar kemarin kecil.",
+        "fullJp": "おとといの部屋は小さかったです。",
+        "prompt": "kamar kemarin lusa kecil.",
         "tiles": [
           "小さかったです。",
           "部屋は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "部屋は",
           "小さかったです。"
         ]
@@ -2224,70 +2224,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_95",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kamar hari ini tidak kecil.",
-        "reading": "きょうのへやはちいさくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kamar setiap hari tidak kecil.",
+        "reading": "まいにちのへやはちいさくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の部屋は小さくないです。",
-        "prompt": "kamar hari ini tidak kecil.",
+        "fullJp": "毎日の部屋は小さくないです。",
+        "prompt": "kamar setiap hari tidak kecil.",
         "tiles": [
           "部屋は",
-          "今日の",
+          "毎日の",
           "小さくないです。"
         ],
         "answer": [
-          "今日の",
+          "毎日の",
           "部屋は",
           "小さくないです。"
         ],
-        "audioText": "今日の部屋は小さくないです。"
+        "audioText": "毎日の部屋は小さくないです。"
       },
       {
         "id": "q_b12_96",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamar kemarin tidak kecil.",
-        "reading": "きのうのへやはどうでしたか。きのうのへやはちいさくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kamar tadi pagi tidak kecil.",
+        "reading": "けさのへやはどうでしたか。けさのへやはちいさくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の部屋はどうでしたか。昨日の部屋は小さくなかったです。",
+        "fullJp": "今朝の部屋はどうでしたか。今朝の部屋は小さくなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の部屋はどうでしたか。"
+            "text": "今朝の部屋はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamar kemarin tidak kecil. Pilih respons B.",
+        "question": "kamar tadi pagi tidak kecil. Pilih respons B.",
         "options": [
-          "昨日の部屋は小さかったです。",
-          "昨日の部屋は小さいです。",
-          "昨日の部屋は小さくなかったです。",
-          "昨日の部屋は小さくないです。"
+          "今朝の部屋は小さかったです。",
+          "今朝の部屋は小さいです。",
+          "今朝の部屋は小さくなかったです。",
+          "今朝の部屋は小さくないです。"
         ],
-        "answer": "昨日の部屋は小さくなかったです。",
-        "answerId": "kamar kemarin tidak kecil.",
+        "answer": "今朝の部屋は小さくなかったです。",
+        "answerId": "kamar tadi pagi tidak kecil.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamar kemarin tidak kecil."
+          "kamar tadi pagi tidak kecil."
         ]
       },
       {
         "id": "q_b12_97",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kemeja hari ini putih.",
-        "reading": "きょうのシャツはしろいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kemeja setiap malam putih.",
+        "reading": "まいばんのシャツはしろいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のシャツは白いです。",
-        "prompt": "今日のシャツは＿＿＿",
+        "fullJp": "毎晩のシャツは白いです。",
+        "prompt": "毎晩のシャツは＿＿＿",
         "options": [
           "白いです。",
           "白かったです。",
@@ -2302,7 +2302,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "kemeja kemarin putih.",
         "reading": "きのうのシャツはしろかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日のシャツは白かったです。",
@@ -2321,7 +2321,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "kemeja hari ini tidak putih.",
         "reading": "きょうのシャツはしろくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日のシャツは白くないです。",
@@ -2341,20 +2341,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_100",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kemeja kemarin tidak putih.",
-        "reading": "きのうのシャツはしろくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kemeja minggu lalu tidak putih.",
+        "reading": "せんしゅうのシャツはしろくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のシャツは白くなかったです。",
-        "prompt": "kemeja kemarin tidak putih.",
+        "fullJp": "先週のシャツは白くなかったです。",
+        "prompt": "kemeja minggu lalu tidak putih.",
         "tiles": [
           "白くなかったです。",
           "シャツは",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "シャツは",
           "白くなかったです。"
         ]
@@ -2363,70 +2363,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_101",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "sepatu hari ini hitam.",
-        "reading": "きょうのくつはくろいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "sepatu setiap hari hitam.",
+        "reading": "まいにちのくつはくろいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の靴は黒いです。",
-        "prompt": "sepatu hari ini hitam.",
+        "fullJp": "毎日の靴は黒いです。",
+        "prompt": "sepatu setiap hari hitam.",
         "tiles": [
           "靴は",
-          "今日の",
+          "毎日の",
           "黒いです。"
         ],
         "answer": [
-          "今日の",
+          "毎日の",
           "靴は",
           "黒いです。"
         ],
-        "audioText": "今日の靴は黒いです。"
+        "audioText": "毎日の靴は黒いです。"
       },
       {
         "id": "q_b12_102",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "sepatu kemarin hitam.",
-        "reading": "きのうのくつはどうでしたか。きのうのくつはくろかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "sepatu tadi pagi hitam.",
+        "reading": "けさのくつはどうでしたか。けさのくつはくろかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の靴はどうでしたか。昨日の靴は黒かったです。",
+        "fullJp": "今朝の靴はどうでしたか。今朝の靴は黒かったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の靴はどうでしたか。"
+            "text": "今朝の靴はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "sepatu kemarin hitam. Pilih respons B.",
+        "question": "sepatu tadi pagi hitam. Pilih respons B.",
         "options": [
-          "昨日の靴は黒くなかったです。",
-          "昨日の靴は黒くないです。",
-          "昨日の靴は黒かったです。",
-          "昨日の靴は黒いです。"
+          "今朝の靴は黒くなかったです。",
+          "今朝の靴は黒くないです。",
+          "今朝の靴は黒かったです。",
+          "今朝の靴は黒いです。"
         ],
-        "answer": "昨日の靴は黒かったです。",
-        "answerId": "sepatu kemarin hitam.",
+        "answer": "今朝の靴は黒かったです。",
+        "answerId": "sepatu tadi pagi hitam.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "sepatu kemarin hitam."
+          "sepatu tadi pagi hitam."
         ]
       },
       {
         "id": "q_b12_103",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "sepatu hari ini tidak hitam.",
-        "reading": "きょうのくつはくろくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "sepatu besok tidak hitam.",
+        "reading": "あしたのくつはくろくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の靴は黒くないです。",
-        "prompt": "今日の靴は＿＿＿",
+        "fullJp": "明日の靴は黒くないです。",
+        "prompt": "明日の靴は＿＿＿",
         "options": [
           "黒かったです。",
           "黒くなかったです。",
@@ -2439,20 +2439,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_104",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "sepatu kemarin tidak hitam.",
-        "reading": "きのうのくつはくろくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "sepatu bulan lalu tidak hitam.",
+        "reading": "せんげつのくつはくろくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の靴は黒くなかったです。",
-        "prompt": "sepatu kemarin tidak hitam.",
+        "fullJp": "先月の靴は黒くなかったです。",
+        "prompt": "sepatu bulan lalu tidak hitam.",
         "options": [
-          "昨日の靴は黒いです。",
-          "昨日の靴は黒くなかったです。",
-          "昨日の靴は黒かったです。",
-          "昨日の靴は黒くないです。"
+          "先月の靴は黒いです。",
+          "先月の靴は黒くなかったです。",
+          "先月の靴は黒かったです。",
+          "先月の靴は黒くないです。"
         ],
-        "answer": "昨日の靴は黒くなかったです。"
+        "answer": "先月の靴は黒くなかったです。"
       },
       {
         "id": "q_b12_105",
@@ -2460,7 +2460,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "bunga hari ini merah.",
         "reading": "きょうのはなはあかいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日の花は赤いです。",
@@ -2489,90 +2489,90 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_106",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "hari ini bukan hari libur.",
-        "reading": "きょうはやすみではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "minggu lalu bukan hujan.",
+        "reading": "せんしゅうはあめではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日は休みではありません。",
-        "prompt": "hari ini bukan hari libur.",
+        "fullJp": "先週は雨ではありませんでした。",
+        "prompt": "minggu lalu bukan hujan.",
         "tiles": [
-          "今日は",
-          "休みではありません。"
+          "先週は",
+          "雨ではありませんでした。"
         ],
         "answer": [
-          "今日は",
-          "休みではありません。"
+          "先週は",
+          "雨ではありませんでした。"
         ]
       },
       {
         "id": "q_b12_107",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "bunga hari ini tidak merah.",
-        "reading": "きょうのはなはあかくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "bunga besok lusa tidak merah.",
+        "reading": "あさってのはなはあかくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の花は赤くないです。",
-        "prompt": "bunga hari ini tidak merah.",
+        "fullJp": "あさっての花は赤くないです。",
+        "prompt": "bunga besok lusa tidak merah.",
         "tiles": [
           "花は",
-          "今日の",
+          "あさっての",
           "赤くないです。"
         ],
         "answer": [
-          "今日の",
+          "あさっての",
           "花は",
           "赤くないです。"
         ],
-        "audioText": "今日の花は赤くないです。"
+        "audioText": "あさっての花は赤くないです。"
       },
       {
         "id": "q_b12_108",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "bunga kemarin tidak merah.",
-        "reading": "きのうのはなはどうでしたか。きのうのはなはあかくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "bunga tahun lalu tidak merah.",
+        "reading": "きょねんのはなはどうでしたか。きょねんのはなはあかくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の花はどうでしたか。昨日の花は赤くなかったです。",
+        "fullJp": "去年の花はどうでしたか。去年の花は赤くなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の花はどうでしたか。"
+            "text": "去年の花はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "bunga kemarin tidak merah. Pilih respons B.",
+        "question": "bunga tahun lalu tidak merah. Pilih respons B.",
         "options": [
-          "昨日の花は赤くないです。",
-          "昨日の花は赤いです。",
-          "昨日の花は赤かったです。",
-          "昨日の花は赤くなかったです。"
+          "去年の花は赤くないです。",
+          "去年の花は赤いです。",
+          "去年の花は赤かったです。",
+          "去年の花は赤くなかったです。"
         ],
-        "answer": "昨日の花は赤くなかったです。",
-        "answerId": "bunga kemarin tidak merah.",
+        "answer": "去年の花は赤くなかったです。",
+        "answerId": "bunga tahun lalu tidak merah.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "bunga kemarin tidak merah."
+          "bunga tahun lalu tidak merah."
         ]
       },
       {
         "id": "q_b12_109",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kemeja hari ini biru.",
-        "reading": "きょうのシャツはあおいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kemeja besok biru.",
+        "reading": "あしたのシャツはあおいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のシャツは青いです。",
-        "prompt": "今日のシャツは＿＿＿",
+        "fullJp": "明日のシャツは青いです。",
+        "prompt": "明日のシャツは＿＿＿",
         "options": [
           "青くないです。",
           "青かったです。",
@@ -2585,39 +2585,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_110",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "kemeja kemarin biru.",
-        "reading": "きのうのシャツはあおかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kemeja bulan lalu biru.",
+        "reading": "せんげつのシャツはあおかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のシャツは青かったです。",
-        "prompt": "kemeja kemarin biru.",
+        "fullJp": "先月のシャツは青かったです。",
+        "prompt": "kemeja bulan lalu biru.",
         "options": [
-          "昨日のシャツは青かったです。",
-          "昨日のシャツは青くないです。",
-          "昨日のシャツは青くなかったです。",
-          "昨日のシャツは青いです。"
+          "先月のシャツは青かったです。",
+          "先月のシャツは青くないです。",
+          "先月のシャツは青くなかったです。",
+          "先月のシャツは青いです。"
         ],
-        "answer": "昨日のシャツは青かったです。"
+        "answer": "先月のシャツは青かったです。"
       },
       {
         "id": "q_b12_111",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kemeja hari ini tidak biru.",
-        "reading": "きょうのシャツはあおくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kemeja malam ini tidak biru.",
+        "reading": "こんばんのシャツはあおくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のシャツは青くないです。",
-        "prompt": "kemeja hari ini tidak biru.",
+        "fullJp": "今晩のシャツは青くないです。",
+        "prompt": "kemeja malam ini tidak biru.",
         "tiles": [
-          "今日の",
+          "今晩の",
           "青くないです。",
           "シャツは"
         ],
         "answer": [
-          "今日の",
+          "今晩の",
           "シャツは",
           "青くないです。"
         ]
@@ -2626,20 +2626,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_112",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kemeja kemarin tidak biru.",
-        "reading": "きのうのシャツはあおくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kemeja kemarin lusa tidak biru.",
+        "reading": "おとといのシャツはあおくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のシャツは青くなかったです。",
-        "prompt": "kemeja kemarin tidak biru.",
+        "fullJp": "おとといのシャツは青くなかったです。",
+        "prompt": "kemeja kemarin lusa tidak biru.",
         "tiles": [
           "青くなかったです。",
           "シャツは",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "シャツは",
           "青くなかったです。"
         ]
@@ -2648,70 +2648,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_113",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "masakan hari ini enak.",
-        "reading": "きょうのりょうりはおいしいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "masakan besok lusa enak.",
+        "reading": "あさってのりょうりはおいしいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の料理はおいしいです。",
-        "prompt": "masakan hari ini enak.",
+        "fullJp": "あさっての料理はおいしいです。",
+        "prompt": "masakan besok lusa enak.",
         "tiles": [
           "料理は",
-          "今日の",
+          "あさっての",
           "おいしいです。"
         ],
         "answer": [
-          "今日の",
+          "あさっての",
           "料理は",
           "おいしいです。"
         ],
-        "audioText": "今日の料理はおいしいです。"
+        "audioText": "あさっての料理はおいしいです。"
       },
       {
         "id": "q_b12_114",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "masakan kemarin enak.",
-        "reading": "きのうのりょうりはどうでしたか。きのうのりょうりはおいしかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "masakan tahun lalu enak.",
+        "reading": "きょねんのりょうりはどうでしたか。きょねんのりょうりはおいしかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の料理はどうでしたか。昨日の料理はおいしかったです。",
+        "fullJp": "去年の料理はどうでしたか。去年の料理はおいしかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の料理はどうでしたか。"
+            "text": "去年の料理はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "masakan kemarin enak. Pilih respons B.",
+        "question": "masakan tahun lalu enak. Pilih respons B.",
         "options": [
-          "昨日の料理はおいしくなかったです。",
-          "昨日の料理はおいしくないです。",
-          "昨日の料理はおいしかったです。",
-          "昨日の料理はおいしいです。"
+          "去年の料理はおいしくなかったです。",
+          "去年の料理はおいしくないです。",
+          "去年の料理はおいしかったです。",
+          "去年の料理はおいしいです。"
         ],
-        "answer": "昨日の料理はおいしかったです。",
-        "answerId": "masakan kemarin enak.",
+        "answer": "去年の料理はおいしかったです。",
+        "answerId": "masakan tahun lalu enak.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "masakan kemarin enak."
+          "masakan tahun lalu enak."
         ]
       },
       {
         "id": "q_b12_115",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "masakan hari ini tidak enak.",
-        "reading": "きょうのりょうりはおいしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "masakan minggu ini tidak enak.",
+        "reading": "こんしゅうのりょうりはおいしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の料理はおいしくないです。",
-        "prompt": "今日の料理は＿＿＿",
+        "fullJp": "今週の料理はおいしくないです。",
+        "prompt": "今週の料理は＿＿＿",
         "options": [
           "おいしくないです。",
           "おいしくなかったです。",
@@ -2726,7 +2726,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "masakan kemarin tidak enak.",
         "reading": "きのうのりょうりはおいしくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の料理はおいしくなかったです。",
@@ -2743,20 +2743,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_117",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kamera hari ini mahal.",
-        "reading": "きょうのカメラはたかいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kamera malam ini mahal.",
+        "reading": "こんばんのカメラはたかいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のカメラは高いです。",
-        "prompt": "kamera hari ini mahal.",
+        "fullJp": "今晩のカメラは高いです。",
+        "prompt": "kamera malam ini mahal.",
         "tiles": [
-          "今日の",
+          "今晩の",
           "高いです。",
           "カメラは"
         ],
         "answer": [
-          "今日の",
+          "今晩の",
           "カメラは",
           "高いです。"
         ]
@@ -2765,20 +2765,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_118",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kamera kemarin mahal.",
-        "reading": "きのうのカメラはたかかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "kamera kemarin lusa mahal.",
+        "reading": "おとといのカメラはたかかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のカメラは高かったです。",
-        "prompt": "kamera kemarin mahal.",
+        "fullJp": "おとといのカメラは高かったです。",
+        "prompt": "kamera kemarin lusa mahal.",
         "tiles": [
           "高かったです。",
           "カメラは",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "カメラは",
           "高かったです。"
         ]
@@ -2787,55 +2787,55 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_119",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kemarin hari libur.",
-        "reading": "きのうはやすみでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "bulan lalu salju.",
+        "reading": "せんげつはゆきでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日は休みでした。",
-        "prompt": "kemarin hari libur.",
+        "fullJp": "先月は雪でした。",
+        "prompt": "bulan lalu salju.",
         "tiles": [
-          "休みでした。",
-          "昨日は"
+          "雪でした。",
+          "先月は"
         ],
         "answer": [
-          "昨日は",
-          "休みでした。"
+          "先月は",
+          "雪でした。"
         ],
-        "audioText": "昨日は休みでした。"
+        "audioText": "先月は雪でした。"
       },
       {
         "id": "q_b12_120",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamera kemarin tidak mahal.",
-        "reading": "きのうのカメラはどうでしたか。きのうのカメラはたかくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kamera tadi pagi tidak mahal.",
+        "reading": "けさのカメラはどうでしたか。けさのカメラはたかくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のカメラはどうでしたか。昨日のカメラは高くなかったです。",
+        "fullJp": "今朝のカメラはどうでしたか。今朝のカメラは高くなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日のカメラはどうでしたか。"
+            "text": "今朝のカメラはどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamera kemarin tidak mahal. Pilih respons B.",
+        "question": "kamera tadi pagi tidak mahal. Pilih respons B.",
         "options": [
-          "昨日のカメラは高いです。",
-          "昨日のカメラは高くなかったです。",
-          "昨日のカメラは高かったです。",
-          "昨日のカメラは高くないです。"
+          "今朝のカメラは高いです。",
+          "今朝のカメラは高くなかったです。",
+          "今朝のカメラは高かったです。",
+          "今朝のカメラは高くないです。"
         ],
-        "answer": "昨日のカメラは高くなかったです。",
-        "answerId": "kamera kemarin tidak mahal.",
+        "answer": "今朝のカメラは高くなかったです。",
+        "answerId": "kamera tadi pagi tidak mahal.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamera kemarin tidak mahal."
+          "kamera tadi pagi tidak mahal."
         ]
       }
     ]
@@ -2851,13 +2851,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_121",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kamus hari ini murah.",
-        "reading": "きょうのじしょはやすいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "kamus minggu ini murah.",
+        "reading": "こんしゅうのじしょはやすいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の辞書は安いです。",
-        "prompt": "今日の辞書は＿＿＿",
+        "fullJp": "今週の辞書は安いです。",
+        "prompt": "今週の辞書は＿＿＿",
         "options": [
           "安くなかったです。",
           "安かったです。",
@@ -2872,7 +2872,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "kamus kemarin murah.",
         "reading": "きのうのじしょはやすかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の辞書は安かったです。",
@@ -2889,20 +2889,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_123",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kamus hari ini tidak murah.",
-        "reading": "きょうのじしょはやすくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kamus bulan ini tidak murah.",
+        "reading": "こんげつのじしょはやすくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の辞書は安くないです。",
-        "prompt": "kamus hari ini tidak murah.",
+        "fullJp": "今月の辞書は安くないです。",
+        "prompt": "kamus bulan ini tidak murah.",
         "tiles": [
-          "今日の",
+          "今月の",
           "安くないです。",
           "辞書は"
         ],
         "answer": [
-          "今日の",
+          "今月の",
           "辞書は",
           "安くないです。"
         ]
@@ -2911,20 +2911,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_124",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kamus kemarin tidak murah.",
-        "reading": "きのうのじしょはやすくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "kamus minggu lalu tidak murah.",
+        "reading": "せんしゅうのじしょはやすくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の辞書は安くなかったです。",
-        "prompt": "kamus kemarin tidak murah.",
+        "fullJp": "先週の辞書は安くなかったです。",
+        "prompt": "kamus minggu lalu tidak murah.",
         "tiles": [
           "安くなかったです。",
           "辞書は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "辞書は",
           "安くなかったです。"
         ]
@@ -2933,70 +2933,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_125",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "cuaca hari ini baik.",
-        "reading": "きょうのてんきはいいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: sekarang positif.",
+        "translation": "cuaca minggu depan baik.",
+        "reading": "らいしゅうのてんきはいいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: sekarang positif. Time signal 来週 (minggu depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気はいいです。",
-        "prompt": "cuaca hari ini baik.",
+        "fullJp": "来週の天気はいいです。",
+        "prompt": "cuaca minggu depan baik.",
         "tiles": [
           "天気は",
-          "今日の",
+          "来週の",
           "いいです。"
         ],
         "answer": [
-          "今日の",
+          "来週の",
           "天気は",
           "いいです。"
         ],
-        "audioText": "今日の天気はいいです。"
+        "audioText": "来週の天気はいいです。"
       },
       {
         "id": "q_b12_126",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "cuaca kemarin baik.",
-        "reading": "きのうのてんきはどうでしたか。きのうのてんきはよかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: lampau positif.",
+        "translation": "cuaca tadi pagi baik.",
+        "reading": "けさのてんきはどうでしたか。けさのてんきはよかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気はどうでしたか。昨日の天気はよかったです。",
+        "fullJp": "今朝の天気はどうでしたか。今朝の天気はよかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の天気はどうでしたか。"
+            "text": "今朝の天気はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "cuaca kemarin baik. Pilih respons B.",
+        "question": "cuaca tadi pagi baik. Pilih respons B.",
         "options": [
-          "昨日の天気はよかったです。",
-          "昨日の天気はよくないです。",
-          "昨日の天気はよくなかったです。",
-          "昨日の天気はいいです。"
+          "今朝の天気はよかったです。",
+          "今朝の天気はよくないです。",
+          "今朝の天気はよくなかったです。",
+          "今朝の天気はいいです。"
         ],
-        "answer": "昨日の天気はよかったです。",
-        "answerId": "cuaca kemarin baik.",
+        "answer": "今朝の天気はよかったです。",
+        "answerId": "cuaca tadi pagi baik.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "cuaca kemarin baik."
+          "cuaca tadi pagi baik."
         ]
       },
       {
         "id": "q_b12_127",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "cuaca hari ini tidak baik.",
-        "reading": "きょうのてんきはよくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: sekarang negatif.",
+        "translation": "cuaca bulan depan tidak baik.",
+        "reading": "らいげつのてんきはよくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: sekarang negatif. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気はよくないです。",
-        "prompt": "今日の天気は＿＿＿",
+        "fullJp": "来月の天気はよくないです。",
+        "prompt": "来月の天気は＿＿＿",
         "options": [
           "いいです。",
           "よくなかったです。",
@@ -3009,39 +3009,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_128",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "cuaca kemarin tidak baik.",
-        "reading": "きのうのてんきはよくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: lampau negatif.",
+        "translation": "cuaca bulan lalu tidak baik.",
+        "reading": "せんげつのてんきはよくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Pengecualian いい memakai dasar よ-. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気はよくなかったです。",
-        "prompt": "cuaca kemarin tidak baik.",
+        "fullJp": "先月の天気はよくなかったです。",
+        "prompt": "cuaca bulan lalu tidak baik.",
         "options": [
-          "昨日の天気はよくなかったです。",
-          "昨日の天気はいいです。",
-          "昨日の天気はよかったです。",
-          "昨日の天気はよくないです。"
+          "先月の天気はよくなかったです。",
+          "先月の天気はいいです。",
+          "先月の天気はよかったです。",
+          "先月の天気はよくないです。"
         ],
-        "answer": "昨日の天気はよくなかったです。"
+        "answer": "先月の天気はよくなかったです。"
       },
       {
         "id": "q_b12_129",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "cuaca hari ini buruk.",
-        "reading": "きょうのてんきはわるいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "cuaca bulan ini buruk.",
+        "reading": "こんげつのてんきはわるいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気は悪いです。",
-        "prompt": "cuaca hari ini buruk.",
+        "fullJp": "今月の天気は悪いです。",
+        "prompt": "cuaca bulan ini buruk.",
         "tiles": [
-          "今日の",
+          "今月の",
           "悪いです。",
           "天気は"
         ],
         "answer": [
-          "今日の",
+          "今月の",
           "天気は",
           "悪いです。"
         ]
@@ -3050,20 +3050,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_130",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "cuaca kemarin buruk.",
-        "reading": "きのうのてんきはわるかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "cuaca minggu lalu buruk.",
+        "reading": "せんしゅうのてんきはわるかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の天気は悪かったです。",
-        "prompt": "cuaca kemarin buruk.",
+        "fullJp": "先週の天気は悪かったです。",
+        "prompt": "cuaca minggu lalu buruk.",
         "tiles": [
           "悪かったです。",
           "天気は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "天気は",
           "悪かったです。"
         ]
@@ -3072,70 +3072,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_131",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "cuaca hari ini tidak buruk.",
-        "reading": "きょうのてんきはわるくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "cuaca tahun ini tidak buruk.",
+        "reading": "ことしのてんきはわるくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の天気は悪くないです。",
-        "prompt": "cuaca hari ini tidak buruk.",
+        "fullJp": "今年の天気は悪くないです。",
+        "prompt": "cuaca tahun ini tidak buruk.",
         "tiles": [
           "天気は",
-          "今日の",
+          "今年の",
           "悪くないです。"
         ],
         "answer": [
-          "今日の",
+          "今年の",
           "天気は",
           "悪くないです。"
         ],
-        "audioText": "今日の天気は悪くないです。"
+        "audioText": "今年の天気は悪くないです。"
       },
       {
         "id": "q_b12_132",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kemarin bukan hari libur.",
-        "reading": "きのうはどうでしたか。きのうはやすみではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "bulan lalu bukan salju.",
+        "reading": "せんげつはどうでしたか。せんげつはゆきではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日はどうでしたか。昨日は休みではありませんでした。",
+        "fullJp": "先月はどうでしたか。先月は雪ではありませんでした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日はどうでしたか。"
+            "text": "先月はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kemarin bukan hari libur. Pilih respons B.",
+        "question": "bulan lalu bukan salju. Pilih respons B.",
         "options": [
-          "昨日は休みです。",
-          "昨日は休みではありませんでした。",
-          "昨日は休みでした。",
-          "昨日は休みではありません。"
+          "先月は雪です。",
+          "先月は雪ではありませんでした。",
+          "先月は雪でした。",
+          "先月は雪ではありません。"
         ],
-        "answer": "昨日は休みではありませんでした。",
-        "answerId": "kemarin bukan hari libur.",
+        "answer": "先月は雪ではありませんでした。",
+        "answerId": "bulan lalu bukan salju.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kemarin bukan hari libur."
+          "bulan lalu bukan salju."
         ]
       },
       {
         "id": "q_b12_133",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "hotel hari ini terkenal.",
-        "reading": "きょうのホテルはゆうめいです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "hotel bulan depan terkenal.",
+        "reading": "らいげつのホテルはゆうめいです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のホテルは有名です。",
-        "prompt": "今日のホテルは＿＿＿",
+        "fullJp": "来月のホテルは有名です。",
+        "prompt": "来月のホテルは＿＿＿",
         "options": [
           "有名ではありません。",
           "有名でした。",
@@ -3148,39 +3148,39 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_134",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "hotel kemarin terkenal.",
-        "reading": "きのうのホテルはゆうめいでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "hotel bulan lalu terkenal.",
+        "reading": "せんげつのホテルはゆうめいでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のホテルは有名でした。",
-        "prompt": "hotel kemarin terkenal.",
+        "fullJp": "先月のホテルは有名でした。",
+        "prompt": "hotel bulan lalu terkenal.",
         "options": [
-          "昨日のホテルは有名です。",
-          "昨日のホテルは有名ではありません。",
-          "昨日のホテルは有名ではありませんでした。",
-          "昨日のホテルは有名でした。"
+          "先月のホテルは有名です。",
+          "先月のホテルは有名ではありません。",
+          "先月のホテルは有名ではありませんでした。",
+          "先月のホテルは有名でした。"
         ],
-        "answer": "昨日のホテルは有名でした。"
+        "answer": "先月のホテルは有名でした。"
       },
       {
         "id": "q_b12_135",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "hotel hari ini tidak terkenal.",
-        "reading": "きょうのホテルはゆうめいではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "hotel tahun depan tidak terkenal.",
+        "reading": "らいねんのホテルはゆうめいではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日のホテルは有名ではありません。",
-        "prompt": "hotel hari ini tidak terkenal.",
+        "fullJp": "来年のホテルは有名ではありません。",
+        "prompt": "hotel tahun depan tidak terkenal.",
         "tiles": [
-          "今日の",
+          "来年の",
           "有名ではありません。",
           "ホテルは"
         ],
         "answer": [
-          "今日の",
+          "来年の",
           "ホテルは",
           "有名ではありません。"
         ]
@@ -3198,20 +3198,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_136",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "hotel kemarin tidak terkenal.",
-        "reading": "きのうのホテルはゆうめいではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "hotel kemarin lusa tidak terkenal.",
+        "reading": "おとといのホテルはゆうめいではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日のホテルは有名ではありませんでした。",
-        "prompt": "hotel kemarin tidak terkenal.",
+        "fullJp": "おとといのホテルは有名ではありませんでした。",
+        "prompt": "hotel kemarin lusa tidak terkenal.",
         "tiles": [
           "有名ではありませんでした。",
           "ホテルは",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "ホテルは",
           "有名ではありませんでした。"
         ]
@@ -3220,70 +3220,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_137",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "toko hari ini dekat.",
-        "reading": "きょうのみせはちかいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "toko tahun ini dekat.",
+        "reading": "ことしのみせはちかいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の店は近いです。",
-        "prompt": "toko hari ini dekat.",
+        "fullJp": "今年の店は近いです。",
+        "prompt": "toko tahun ini dekat.",
         "tiles": [
           "店は",
-          "今日の",
+          "今年の",
           "近いです。"
         ],
         "answer": [
-          "今日の",
+          "今年の",
           "店は",
           "近いです。"
         ],
-        "audioText": "今日の店は近いです。"
+        "audioText": "今年の店は近いです。"
       },
       {
         "id": "q_b12_138",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "toko kemarin dekat.",
-        "reading": "きのうのみせはどうでしたか。きのうのみせはちかかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "toko tahun lalu dekat.",
+        "reading": "きょねんのみせはどうでしたか。きょねんのみせはちかかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の店はどうでしたか。昨日の店は近かったです。",
+        "fullJp": "去年の店はどうでしたか。去年の店は近かったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の店はどうでしたか。"
+            "text": "去年の店はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "toko kemarin dekat. Pilih respons B.",
+        "question": "toko tahun lalu dekat. Pilih respons B.",
         "options": [
-          "昨日の店は近くないです。",
-          "昨日の店は近かったです。",
-          "昨日の店は近くなかったです。",
-          "昨日の店は近いです。"
+          "去年の店は近くないです。",
+          "去年の店は近かったです。",
+          "去年の店は近くなかったです。",
+          "去年の店は近いです。"
         ],
-        "answer": "昨日の店は近かったです。",
-        "answerId": "toko kemarin dekat.",
+        "answer": "去年の店は近かったです。",
+        "answerId": "toko tahun lalu dekat.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "toko kemarin dekat."
+          "toko tahun lalu dekat."
         ]
       },
       {
         "id": "q_b12_139",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "toko hari ini tidak dekat.",
-        "reading": "きょうのみせはちかくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "toko setiap pagi tidak dekat.",
+        "reading": "まいあさのみせはちかくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の店は近くないです。",
-        "prompt": "今日の店は＿＿＿",
+        "fullJp": "毎朝の店は近くないです。",
+        "prompt": "毎朝の店は＿＿＿",
         "options": [
           "近いです。",
           "近くなかったです。",
@@ -3298,7 +3298,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "toko kemarin tidak dekat.",
         "reading": "きのうのみせはちかくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の店は近くなかったです。",
@@ -3315,20 +3315,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_141",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "bandara hari ini jauh.",
-        "reading": "きょうのくうこうはとおいです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif.",
+        "translation": "bandara tahun depan jauh.",
+        "reading": "らいねんのくうこうはとおいです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang positif. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の空港は遠いです。",
-        "prompt": "bandara hari ini jauh.",
+        "fullJp": "来年の空港は遠いです。",
+        "prompt": "bandara tahun depan jauh.",
         "tiles": [
-          "今日の",
+          "来年の",
           "遠いです。",
           "空港は"
         ],
         "answer": [
-          "今日の",
+          "来年の",
           "空港は",
           "遠いです。"
         ]
@@ -3337,20 +3337,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_142",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "bandara kemarin jauh.",
-        "reading": "きのうのくうこうはとおかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif.",
+        "translation": "bandara kemarin lusa jauh.",
+        "reading": "おとといのくうこうはとおかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau positif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の空港は遠かったです。",
-        "prompt": "bandara kemarin jauh.",
+        "fullJp": "おとといの空港は遠かったです。",
+        "prompt": "bandara kemarin lusa jauh.",
         "tiles": [
           "遠かったです。",
           "空港は",
-          "昨日の"
+          "おとといの"
         ],
         "answer": [
-          "昨日の",
+          "おとといの",
           "空港は",
           "遠かったです。"
         ]
@@ -3359,77 +3359,77 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_143",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "bandara hari ini tidak jauh.",
-        "reading": "きょうのくうこうはとおくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "bandara setiap malam tidak jauh.",
+        "reading": "まいばんのくうこうはとおくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の空港は遠くないです。",
-        "prompt": "bandara hari ini tidak jauh.",
+        "fullJp": "毎晩の空港は遠くないです。",
+        "prompt": "bandara setiap malam tidak jauh.",
         "tiles": [
           "空港は",
-          "今日の",
+          "毎晩の",
           "遠くないです。"
         ],
         "answer": [
-          "今日の",
+          "毎晩の",
           "空港は",
           "遠くないです。"
         ],
-        "audioText": "今日の空港は遠くないです。"
+        "audioText": "毎晩の空港は遠くないです。"
       },
       {
         "id": "q_b12_144",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "bandara kemarin tidak jauh.",
-        "reading": "きのうのくうこうはどうでしたか。きのうのくうこうはとおくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "bandara tadi pagi tidak jauh.",
+        "reading": "けさのくうこうはどうでしたか。けさのくうこうはとおくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の空港はどうでしたか。昨日の空港は遠くなかったです。",
+        "fullJp": "今朝の空港はどうでしたか。今朝の空港は遠くなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の空港はどうでしたか。"
+            "text": "今朝の空港はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "bandara kemarin tidak jauh. Pilih respons B.",
+        "question": "bandara tadi pagi tidak jauh. Pilih respons B.",
         "options": [
-          "昨日の空港は遠くなかったです。",
-          "昨日の空港は遠いです。",
-          "昨日の空港は遠かったです。",
-          "昨日の空港は遠くないです。"
+          "今朝の空港は遠くなかったです。",
+          "今朝の空港は遠いです。",
+          "今朝の空港は遠かったです。",
+          "今朝の空港は遠くないです。"
         ],
-        "answer": "昨日の空港は遠くなかったです。",
-        "answerId": "bandara kemarin tidak jauh.",
+        "answer": "今朝の空港は遠くなかったです。",
+        "answerId": "bandara tadi pagi tidak jauh.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "bandara kemarin tidak jauh."
+          "bandara tadi pagi tidak jauh."
         ]
       },
       {
         "id": "q_b12_145",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kemarin pesta.",
-        "reading": "きのうはパーティーでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "tahun lalu mendung.",
+        "reading": "きょねんはくもりでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日はパーティーでした。",
-        "prompt": "昨日は＿＿＿",
+        "fullJp": "去年は曇りでした。",
+        "prompt": "去年は＿＿＿",
         "options": [
-          "パーティーです。",
-          "パーティーではありませんでした。",
-          "パーティーではありません。",
-          "パーティーでした。"
+          "曇りです。",
+          "曇りではありませんでした。",
+          "曇りではありません。",
+          "曇りでした。"
         ],
-        "answer": "パーティーでした。"
+        "answer": "曇りでした。"
       },
       {
         "id": "q_b12_146",
@@ -3437,7 +3437,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "guru kemarin baik hati.",
         "reading": "きのうのせんせいはしんせつでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "昨日の先生は親切でした。",
@@ -3454,20 +3454,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_147",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "guru hari ini tidak baik hati.",
-        "reading": "きょうのせんせいはしんせつではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "guru setiap hari tidak baik hati.",
+        "reading": "まいにちのせんせいはしんせつではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の先生は親切ではありません。",
-        "prompt": "guru hari ini tidak baik hati.",
+        "fullJp": "毎日の先生は親切ではありません。",
+        "prompt": "guru setiap hari tidak baik hati.",
         "tiles": [
-          "今日の",
+          "毎日の",
           "親切ではありません。",
           "先生は"
         ],
         "answer": [
-          "今日の",
+          "毎日の",
           "先生は",
           "親切ではありません。"
         ]
@@ -3476,20 +3476,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_148",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "guru kemarin tidak baik hati.",
-        "reading": "きのうのせんせいはしんせつではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "guru minggu lalu tidak baik hati.",
+        "reading": "せんしゅうのせんせいはしんせつではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の先生は親切ではありませんでした。",
-        "prompt": "guru kemarin tidak baik hati.",
+        "fullJp": "先週の先生は親切ではありませんでした。",
+        "prompt": "guru minggu lalu tidak baik hati.",
         "tiles": [
           "親切ではありませんでした。",
           "先生は",
-          "昨日の"
+          "先週の"
         ],
         "answer": [
-          "昨日の",
+          "先週の",
           "先生は",
           "親切ではありませんでした。"
         ]
@@ -3498,57 +3498,57 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_149",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "stasiun hari ini praktis.",
-        "reading": "きょうのえきはべんりです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "stasiun setiap malam praktis.",
+        "reading": "まいばんのえきはべんりです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の駅は便利です。",
-        "prompt": "stasiun hari ini praktis.",
+        "fullJp": "毎晩の駅は便利です。",
+        "prompt": "stasiun setiap malam praktis.",
         "tiles": [
           "駅は",
-          "今日の",
+          "毎晩の",
           "便利です。"
         ],
         "answer": [
-          "今日の",
+          "毎晩の",
           "駅は",
           "便利です。"
         ],
-        "audioText": "今日の駅は便利です。"
+        "audioText": "毎晩の駅は便利です。"
       },
       {
         "id": "q_b12_150",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "stasiun kemarin praktis.",
-        "reading": "きのうのえきはどうでしたか。きのうのえきはべんりでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "stasiun tadi pagi praktis.",
+        "reading": "けさのえきはどうでしたか。けさのえきはべんりでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の駅はどうでしたか。昨日の駅は便利でした。",
+        "fullJp": "今朝の駅はどうでしたか。今朝の駅は便利でした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の駅はどうでしたか。"
+            "text": "今朝の駅はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "stasiun kemarin praktis. Pilih respons B.",
+        "question": "stasiun tadi pagi praktis. Pilih respons B.",
         "options": [
-          "昨日の駅は便利ではありませんでした。",
-          "昨日の駅は便利ではありません。",
-          "昨日の駅は便利でした。",
-          "昨日の駅は便利です。"
+          "今朝の駅は便利ではありませんでした。",
+          "今朝の駅は便利ではありません。",
+          "今朝の駅は便利でした。",
+          "今朝の駅は便利です。"
         ],
-        "answer": "昨日の駅は便利でした。",
-        "answerId": "stasiun kemarin praktis.",
+        "answer": "今朝の駅は便利でした。",
+        "answerId": "stasiun tadi pagi praktis.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "stasiun kemarin praktis."
+          "stasiun tadi pagi praktis."
         ]
       }
     ]
@@ -3583,6 +3583,25 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_152",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "hari ini lebih sibuk daripada kemarin.",
+        "reading": "きょうはきのうよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "今日は昨日より忙しいです。",
+        "prompt": "hari ini lebih sibuk daripada kemarin.",
+        "options": [
+          "今日は昨日と忙しいです。",
+          "今日は昨日も忙しいです。",
+          "今日は昨日が忙しいです。",
+          "今日は昨日より忙しいです。"
+        ],
+        "answer": "今日は昨日より忙しいです。"
+      },
+      {
+        "id": "q_b12_153",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "barang bawaan lebih berat daripada kamus.",
         "reading": "にもつはじしょよりおもいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
@@ -3590,18 +3609,43 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "荷物は辞書より重いです。",
         "prompt": "barang bawaan lebih berat daripada kamus.",
-        "options": [
-          "荷物は辞書と重いです。",
-          "荷物は辞書も重いです。",
-          "荷物は辞書が重いです。",
-          "荷物は辞書より重いです。"
+        "tiles": [
+          "荷物は",
+          "重いです。",
+          "辞書より"
         ],
-        "answer": "荷物は辞書より重いです。"
+        "answer": [
+          "荷物は",
+          "辞書より",
+          "重いです。"
+        ]
       },
       {
-        "id": "q_b12_153",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_154",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "besok lebih sibuk daripada besok lusa.",
+        "reading": "あしたはあさってよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "明日はあさってより忙しいです。",
+        "prompt": "besok lebih sibuk daripada besok lusa.",
+        "tiles": [
+          "忙しいです。",
+          "あさってより",
+          "明日は"
+        ],
+        "answer": [
+          "明日は",
+          "あさってより",
+          "忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_155",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "kamus lebih berat daripada buku.",
         "reading": "じしょはほんよりおもいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
@@ -3610,42 +3654,93 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "辞書は本より重いです。",
         "prompt": "kamus lebih berat daripada buku.",
         "tiles": [
+          "本より",
           "辞書は",
-          "重いです。",
-          "本より"
+          "重いです。"
         ],
         "answer": [
           "辞書は",
           "本より",
           "重いです。"
+        ],
+        "audioText": "辞書は本より重いです。"
+      },
+      {
+        "id": "q_b12_156",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "besok lusa lebih sibuk daripada hari ini.",
+        "reading": "あさってはきょうよりどうですか。あさってはきょうよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "あさっては今日よりどうですか。あさっては今日より忙しいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "あさっては今日よりどうですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "besok lusa lebih sibuk daripada hari ini. Pilih respons B.",
+        "options": [
+          "あさっては今日より忙しいです。",
+          "あさっては今日と忙しいです。",
+          "あさっては今日が忙しいです。",
+          "あさっては今日も忙しいです。"
+        ],
+        "answer": "あさっては今日より忙しいです。",
+        "answerId": "besok lusa lebih sibuk daripada hari ini.",
+        "dialogueId": [
+          "Konfirmasi sesuai konteks.",
+          "besok lusa lebih sibuk daripada hari ini."
         ]
       },
       {
-        "id": "q_b12_154",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "id": "q_b12_157",
+        "type": "complete",
+        "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "buku lebih berat daripada kamera.",
         "reading": "ほんはカメラよりおもいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
         "fullJp": "本はカメラより重いです。",
-        "prompt": "buku lebih berat daripada kamera.",
-        "tiles": [
-          "重いです。",
+        "prompt": "本は＿＿＿重いです。",
+        "options": [
+          "カメラが",
           "カメラより",
-          "本は"
+          "カメラも",
+          "カメラと"
         ],
-        "answer": [
-          "本は",
-          "カメラより",
-          "重いです。"
-        ]
+        "answer": "カメラより"
       },
       {
-        "id": "q_b12_155",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
+        "id": "q_b12_158",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "minggu ini lebih sibuk daripada minggu lalu.",
+        "reading": "こんしゅうはせんしゅうよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "今週は先週より忙しいです。",
+        "prompt": "minggu ini lebih sibuk daripada minggu lalu.",
+        "options": [
+          "今週は先週が忙しいです。",
+          "今週は先週も忙しいです。",
+          "今週は先週より忙しいです。",
+          "今週は先週と忙しいです。"
+        ],
+        "answer": "今週は先週より忙しいです。"
+      },
+      {
+        "id": "q_b12_159",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "kamera lebih berat daripada tas.",
         "reading": "カメラはかばんよりおもいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
@@ -3654,53 +3749,97 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "カメラはかばんより重いです。",
         "prompt": "kamera lebih berat daripada tas.",
         "tiles": [
-          "かばんより",
           "カメラは",
-          "重いです。"
+          "重いです。",
+          "かばんより"
         ],
         "answer": [
           "カメラは",
           "かばんより",
           "重いです。"
-        ],
-        "audioText": "カメラはかばんより重いです。"
+        ]
       },
       {
-        "id": "q_b12_156",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "mobil lebih mahal daripada sepeda.",
-        "reading": "くるまはじてんしゃよりどうですか。くるまはじてんしゃよりたかいです。",
+        "id": "q_b12_160",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "minggu depan lebih sibuk daripada minggu ini.",
+        "reading": "らいしゅうはこんしゅうよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "車は自転車よりどうですか。車は自転車より高いです。",
+        "fullJp": "来週は今週より忙しいです。",
+        "prompt": "minggu depan lebih sibuk daripada minggu ini.",
+        "tiles": [
+          "忙しいです。",
+          "今週より",
+          "来週は"
+        ],
+        "answer": [
+          "来週は",
+          "今週より",
+          "忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_161",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "mobil lebih mahal daripada sepeda.",
+        "reading": "くるまはじてんしゃよりたかいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "車は自転車より高いです。",
+        "prompt": "mobil lebih mahal daripada sepeda.",
+        "tiles": [
+          "自転車より",
+          "車は",
+          "高いです。"
+        ],
+        "answer": [
+          "車は",
+          "自転車より",
+          "高いです。"
+        ],
+        "audioText": "車は自転車より高いです。"
+      },
+      {
+        "id": "q_b12_162",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "bulan ini lebih sibuk daripada bulan lalu.",
+        "reading": "こんげつはせんげつよりどうですか。こんげつはせんげつよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "今月は先月よりどうですか。今月は先月より忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "車は自転車よりどうですか。"
+            "text": "今月は先月よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "mobil lebih mahal daripada sepeda. Pilih respons B.",
+        "question": "bulan ini lebih sibuk daripada bulan lalu. Pilih respons B.",
         "options": [
-          "車は自転車より高いです。",
-          "車は自転車と高いです。",
-          "車は自転車が高いです。",
-          "車は自転車も高いです。"
+          "今月は先月より忙しいです。",
+          "今月は先月も忙しいです。",
+          "今月は先月と忙しいです。",
+          "今月は先月が忙しいです。"
         ],
-        "answer": "車は自転車より高いです。",
-        "answerId": "mobil lebih mahal daripada sepeda.",
+        "answer": "今月は先月より忙しいです。",
+        "answerId": "bulan ini lebih sibuk daripada bulan lalu.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "mobil lebih mahal daripada sepeda."
+          "bulan ini lebih sibuk daripada bulan lalu."
         ]
       },
       {
-        "id": "q_b12_157",
+        "id": "q_b12_163",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "sepeda lebih mahal daripada jam.",
@@ -3711,17 +3850,36 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "自転車は時計より高いです。",
         "prompt": "自転車は＿＿＿高いです。",
         "options": [
-          "時計が",
-          "時計より",
           "時計も",
-          "時計と"
+          "時計と",
+          "時計より",
+          "時計が"
         ],
         "answer": "時計より"
       },
       {
-        "id": "q_b12_158",
+        "id": "q_b12_164",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "bulan depan lebih sibuk daripada bulan ini.",
+        "reading": "らいげつはこんげつよりいそがしいです。",
+        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
+        "topic": "より",
+        "casual": false,
+        "fullJp": "来月は今月より忙しいです。",
+        "prompt": "bulan depan lebih sibuk daripada bulan ini.",
+        "options": [
+          "来月は今月と忙しいです。",
+          "来月は今月より忙しいです。",
+          "来月は今月が忙しいです。",
+          "来月は今月も忙しいです。"
+        ],
+        "answer": "来月は今月より忙しいです。"
+      },
+      {
+        "id": "q_b12_165",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "jam lebih mahal daripada kamera.",
         "reading": "とけいはカメラよりたかいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
@@ -3729,173 +3887,15 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "時計はカメラより高いです。",
         "prompt": "jam lebih mahal daripada kamera.",
-        "options": [
-          "時計はカメラが高いです。",
-          "時計はカメラも高いです。",
-          "時計はカメラより高いです。",
-          "時計はカメラと高いです。"
-        ],
-        "answer": "時計はカメラより高いです。"
-      },
-      {
-        "id": "q_b12_159",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kamera lebih mahal daripada televisi.",
-        "reading": "カメラはテレビよりたかいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "カメラはテレビより高いです。",
-        "prompt": "kamera lebih mahal daripada televisi.",
         "tiles": [
-          "カメラは",
+          "時計は",
           "高いです。",
-          "テレビより"
+          "カメラより"
         ],
         "answer": [
-          "カメラは",
-          "テレビより",
+          "時計は",
+          "カメラより",
           "高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_160",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "televisi lebih mahal daripada mobil.",
-        "reading": "テレビはくるまよりたかいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "テレビは車より高いです。",
-        "prompt": "televisi lebih mahal daripada mobil.",
-        "tiles": [
-          "高いです。",
-          "車より",
-          "テレビは"
-        ],
-        "answer": [
-          "テレビは",
-          "車より",
-          "高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_161",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Shinkansen lebih cepat daripada kereta.",
-        "reading": "しんかんせんはでんしゃよりはやいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "新幹線は電車より速いです。",
-        "prompt": "Shinkansen lebih cepat daripada kereta.",
-        "tiles": [
-          "電車より",
-          "新幹線は",
-          "速いです。"
-        ],
-        "answer": [
-          "新幹線は",
-          "電車より",
-          "速いです。"
-        ],
-        "audioText": "新幹線は電車より速いです。"
-      },
-      {
-        "id": "q_b12_162",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kereta lebih cepat daripada bus.",
-        "reading": "でんしゃはバスよりどうですか。でんしゃはバスよりはやいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "電車はバスよりどうですか。電車はバスより速いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "電車はバスよりどうですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "kereta lebih cepat daripada bus. Pilih respons B.",
-        "options": [
-          "電車はバスより速いです。",
-          "電車はバスも速いです。",
-          "電車はバスと速いです。",
-          "電車はバスが速いです。"
-        ],
-        "answer": "電車はバスより速いです。",
-        "answerId": "kereta lebih cepat daripada bus.",
-        "dialogueId": [
-          "Konfirmasi sesuai konteks.",
-          "kereta lebih cepat daripada bus."
-        ]
-      },
-      {
-        "id": "q_b12_163",
-        "type": "complete",
-        "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "bus lebih cepat daripada taksi.",
-        "reading": "バスはタクシーよりはやいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "バスはタクシーより速いです。",
-        "prompt": "バスは＿＿＿速いです。",
-        "options": [
-          "タクシーも",
-          "タクシーと",
-          "タクシーより",
-          "タクシーが"
-        ],
-        "answer": "タクシーより"
-      },
-      {
-        "id": "q_b12_164",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "taksi lebih cepat daripada sepeda.",
-        "reading": "タクシーはじてんしゃよりはやいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "タクシーは自転車より速いです。",
-        "prompt": "taksi lebih cepat daripada sepeda.",
-        "options": [
-          "タクシーは自転車と速いです。",
-          "タクシーは自転車より速いです。",
-          "タクシーは自転車が速いです。",
-          "タクシーは自転車も速いです。"
-        ],
-        "answer": "タクシーは自転車より速いです。"
-      },
-      {
-        "id": "q_b12_165",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "sepeda lebih cepat daripada Shinkansen.",
-        "reading": "じてんしゃはしんかんせんよりはやいです。",
-        "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
-        "topic": "より",
-        "casual": false,
-        "fullJp": "自転車は新幹線より速いです。",
-        "prompt": "sepeda lebih cepat daripada Shinkansen.",
-        "tiles": [
-          "自転車は",
-          "速いです。",
-          "新幹線より"
-        ],
-        "answer": [
-          "自転車は",
-          "新幹線より",
-          "速いです。"
         ]
       }
     ]
@@ -3911,357 +3911,357 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_166",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kopi lebih dingin daripada teh hitam.",
-        "reading": "コーヒーはこうちゃよりつめたいです。",
+        "translation": "tahun ini lebih panas (cuaca) daripada tahun lalu.",
+        "reading": "ことしはきょねんよりあついです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "コーヒーは紅茶より冷たいです。",
-        "prompt": "kopi lebih dingin daripada teh hitam.",
+        "fullJp": "今年は去年より暑いです。",
+        "prompt": "tahun ini lebih panas (cuaca) daripada tahun lalu.",
         "tiles": [
-          "冷たいです。",
-          "紅茶より",
-          "コーヒーは"
+          "暑いです。",
+          "去年より",
+          "今年は"
         ],
         "answer": [
-          "コーヒーは",
-          "紅茶より",
-          "冷たいです。"
+          "今年は",
+          "去年より",
+          "暑いです。"
         ]
       },
       {
         "id": "q_b12_167",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "teh hitam lebih dingin daripada jus.",
-        "reading": "こうちゃはジュースよりつめたいです。",
+        "translation": "kamera lebih mahal daripada televisi.",
+        "reading": "カメラはテレビよりたかいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "紅茶はジュースより冷たいです。",
-        "prompt": "teh hitam lebih dingin daripada jus.",
+        "fullJp": "カメラはテレビより高いです。",
+        "prompt": "kamera lebih mahal daripada televisi.",
         "tiles": [
-          "ジュースより",
-          "紅茶は",
-          "冷たいです。"
+          "テレビより",
+          "カメラは",
+          "高いです。"
         ],
         "answer": [
-          "紅茶は",
-          "ジュースより",
-          "冷たいです。"
+          "カメラは",
+          "テレビより",
+          "高いです。"
         ],
-        "audioText": "紅茶はジュースより冷たいです。"
+        "audioText": "カメラはテレビより高いです。"
       },
       {
         "id": "q_b12_168",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "jus lebih dingin daripada susu.",
-        "reading": "ジュースはぎゅうにゅうよりどうですか。ジュースはぎゅうにゅうよりつめたいです。",
+        "translation": "tahun depan lebih panas (cuaca) daripada tahun ini.",
+        "reading": "らいねんはことしよりどうですか。らいねんはことしよりあついです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ジュースは牛乳よりどうですか。ジュースは牛乳より冷たいです。",
+        "fullJp": "来年は今年よりどうですか。来年は今年より暑いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "ジュースは牛乳よりどうですか。"
+            "text": "来年は今年よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "jus lebih dingin daripada susu. Pilih respons B.",
+        "question": "tahun depan lebih panas (cuaca) daripada tahun ini. Pilih respons B.",
         "options": [
-          "ジュースは牛乳と冷たいです。",
-          "ジュースは牛乳も冷たいです。",
-          "ジュースは牛乳が冷たいです。",
-          "ジュースは牛乳より冷たいです。"
+          "来年は今年と暑いです。",
+          "来年は今年も暑いです。",
+          "来年は今年が暑いです。",
+          "来年は今年より暑いです。"
         ],
-        "answer": "ジュースは牛乳より冷たいです。",
-        "answerId": "jus lebih dingin daripada susu.",
+        "answer": "来年は今年より暑いです。",
+        "answerId": "tahun depan lebih panas (cuaca) daripada tahun ini.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "jus lebih dingin daripada susu."
+          "tahun depan lebih panas (cuaca) daripada tahun ini."
         ]
       },
       {
         "id": "q_b12_169",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "susu lebih dingin daripada air.",
-        "reading": "ぎゅうにゅうはみずよりつめたいです。",
+        "translation": "televisi lebih mahal daripada mobil.",
+        "reading": "テレビはくるまよりたかいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "牛乳は水より冷たいです。",
-        "prompt": "牛乳は＿＿＿冷たいです。",
+        "fullJp": "テレビは車より高いです。",
+        "prompt": "テレビは＿＿＿高いです。",
         "options": [
-          "水も",
-          "水が",
-          "水より",
-          "水と"
+          "車も",
+          "車が",
+          "車より",
+          "車と"
         ],
-        "answer": "水より"
+        "answer": "車より"
       },
       {
         "id": "q_b12_170",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "air lebih dingin daripada kopi.",
-        "reading": "みずはコーヒーよりつめたいです。",
+        "translation": "malam ini lebih dingin (cuaca) daripada tadi pagi.",
+        "reading": "こんばんはけさよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "水はコーヒーより冷たいです。",
-        "prompt": "air lebih dingin daripada kopi.",
+        "fullJp": "今晩は今朝より寒いです。",
+        "prompt": "malam ini lebih dingin (cuaca) daripada tadi pagi.",
         "options": [
-          "水はコーヒーが冷たいです。",
-          "水はコーヒーも冷たいです。",
-          "水はコーヒーと冷たいです。",
-          "水はコーヒーより冷たいです。"
+          "今晩は今朝が寒いです。",
+          "今晩は今朝も寒いです。",
+          "今晩は今朝と寒いです。",
+          "今晩は今朝より寒いです。"
         ],
-        "answer": "水はコーヒーより冷たいです。"
+        "answer": "今晩は今朝より寒いです。"
       },
       {
         "id": "q_b12_171",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "cokelat lebih manis daripada jus.",
-        "reading": "チョコレートはジュースよりあまいです。",
+        "translation": "Shinkansen lebih cepat daripada kereta.",
+        "reading": "しんかんせんはでんしゃよりはやいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "チョコレートはジュースより甘いです。",
-        "prompt": "cokelat lebih manis daripada jus.",
+        "fullJp": "新幹線は電車より速いです。",
+        "prompt": "Shinkansen lebih cepat daripada kereta.",
         "tiles": [
-          "チョコレートは",
-          "甘いです。",
-          "ジュースより"
+          "新幹線は",
+          "速いです。",
+          "電車より"
         ],
         "answer": [
-          "チョコレートは",
-          "ジュースより",
-          "甘いです。"
+          "新幹線は",
+          "電車より",
+          "速いです。"
         ]
       },
       {
         "id": "q_b12_172",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "jus lebih manis daripada apel.",
-        "reading": "ジュースはりんごよりあまいです。",
+        "translation": "setiap hari lebih sibuk daripada setiap pagi.",
+        "reading": "まいにちはまいあさよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ジュースはりんごより甘いです。",
-        "prompt": "jus lebih manis daripada apel.",
+        "fullJp": "毎日は毎朝より忙しいです。",
+        "prompt": "setiap hari lebih sibuk daripada setiap pagi.",
         "tiles": [
-          "甘いです。",
-          "りんごより",
-          "ジュースは"
+          "忙しいです。",
+          "毎朝より",
+          "毎日は"
         ],
         "answer": [
-          "ジュースは",
-          "りんごより",
-          "甘いです。"
+          "毎日は",
+          "毎朝より",
+          "忙しいです。"
         ]
       },
       {
         "id": "q_b12_173",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "apel lebih manis daripada jeruk.",
-        "reading": "りんごはみかんよりあまいです。",
+        "translation": "kereta lebih cepat daripada bus.",
+        "reading": "でんしゃはバスよりはやいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "りんごはみかんより甘いです。",
-        "prompt": "apel lebih manis daripada jeruk.",
+        "fullJp": "電車はバスより速いです。",
+        "prompt": "kereta lebih cepat daripada bus.",
         "tiles": [
-          "みかんより",
-          "りんごは",
-          "甘いです。"
+          "バスより",
+          "電車は",
+          "速いです。"
         ],
         "answer": [
-          "りんごは",
-          "みかんより",
-          "甘いです。"
+          "電車は",
+          "バスより",
+          "速いです。"
         ],
-        "audioText": "りんごはみかんより甘いです。"
+        "audioText": "電車はバスより速いです。"
       },
       {
         "id": "q_b12_174",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "jeruk lebih manis daripada es krim.",
-        "reading": "みかんはアイスクリームよりどうですか。みかんはアイスクリームよりあまいです。",
+        "translation": "setiap pagi lebih sibuk daripada setiap malam.",
+        "reading": "まいあさはまいばんよりどうですか。まいあさはまいばんよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "みかんはアイスクリームよりどうですか。みかんはアイスクリームより甘いです。",
+        "fullJp": "毎朝は毎晩よりどうですか。毎朝は毎晩より忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "みかんはアイスクリームよりどうですか。"
+            "text": "毎朝は毎晩よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "jeruk lebih manis daripada es krim. Pilih respons B.",
+        "question": "setiap pagi lebih sibuk daripada setiap malam. Pilih respons B.",
         "options": [
-          "みかんはアイスクリームが甘いです。",
-          "みかんはアイスクリームより甘いです。",
-          "みかんはアイスクリームと甘いです。",
-          "みかんはアイスクリームも甘いです。"
+          "毎朝は毎晩が忙しいです。",
+          "毎朝は毎晩より忙しいです。",
+          "毎朝は毎晩と忙しいです。",
+          "毎朝は毎晩も忙しいです。"
         ],
-        "answer": "みかんはアイスクリームより甘いです。",
-        "answerId": "jeruk lebih manis daripada es krim.",
+        "answer": "毎朝は毎晩より忙しいです。",
+        "answerId": "setiap pagi lebih sibuk daripada setiap malam.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "jeruk lebih manis daripada es krim."
+          "setiap pagi lebih sibuk daripada setiap malam."
         ]
       },
       {
         "id": "q_b12_175",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "es krim lebih manis daripada cokelat.",
-        "reading": "アイスクリームはチョコレートよりあまいです。",
+        "translation": "bus lebih cepat daripada taksi.",
+        "reading": "バスはタクシーよりはやいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "アイスクリームはチョコレートより甘いです。",
-        "prompt": "アイスクリームは＿＿＿甘いです。",
+        "fullJp": "バスはタクシーより速いです。",
+        "prompt": "バスは＿＿＿速いです。",
         "options": [
-          "チョコレートより",
-          "チョコレートと",
-          "チョコレートも",
-          "チョコレートが"
+          "タクシーより",
+          "タクシーと",
+          "タクシーも",
+          "タクシーが"
         ],
-        "answer": "チョコレートより"
+        "answer": "タクシーより"
       },
       {
         "id": "q_b12_176",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "sukiyaki lebih enak daripada sashimi.",
-        "reading": "すきやきはさしみよりおいしいです。",
+        "translation": "setiap malam lebih sibuk daripada setiap hari.",
+        "reading": "まいばんはまいにちよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "すき焼きは刺身よりおいしいです。",
-        "prompt": "sukiyaki lebih enak daripada sashimi.",
+        "fullJp": "毎晩は毎日より忙しいです。",
+        "prompt": "setiap malam lebih sibuk daripada setiap hari.",
         "options": [
-          "すき焼きは刺身とおいしいです。",
-          "すき焼きは刺身がおいしいです。",
-          "すき焼きは刺身よりおいしいです。",
-          "すき焼きは刺身もおいしいです。"
+          "毎晩は毎日と忙しいです。",
+          "毎晩は毎日が忙しいです。",
+          "毎晩は毎日より忙しいです。",
+          "毎晩は毎日も忙しいです。"
         ],
-        "answer": "すき焼きは刺身よりおいしいです。"
+        "answer": "毎晩は毎日より忙しいです。"
       },
       {
         "id": "q_b12_177",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "sashimi lebih enak daripada sushi.",
-        "reading": "さしみはおすしよりおいしいです。",
+        "translation": "taksi lebih cepat daripada sepeda.",
+        "reading": "タクシーはじてんしゃよりはやいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "刺身はおすしよりおいしいです。",
-        "prompt": "sashimi lebih enak daripada sushi.",
+        "fullJp": "タクシーは自転車より速いです。",
+        "prompt": "taksi lebih cepat daripada sepeda.",
         "tiles": [
-          "刺身は",
-          "おいしいです。",
-          "おすしより"
+          "タクシーは",
+          "速いです。",
+          "自転車より"
         ],
         "answer": [
-          "刺身は",
-          "おすしより",
-          "おいしいです。"
+          "タクシーは",
+          "自転車より",
+          "速いです。"
         ]
       },
       {
         "id": "q_b12_178",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "sushi lebih enak daripada tempura.",
-        "reading": "おすしはてんぷらよりおいしいです。",
+        "translation": "hari ini lebih senggang daripada kemarin lusa.",
+        "reading": "きょうはおとといよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "おすしはてんぷらよりおいしいです。",
-        "prompt": "sushi lebih enak daripada tempura.",
+        "fullJp": "今日はおとといより暇です。",
+        "prompt": "hari ini lebih senggang daripada kemarin lusa.",
         "tiles": [
-          "おいしいです。",
-          "てんぷらより",
-          "おすしは"
+          "暇です。",
+          "おとといより",
+          "今日は"
         ],
         "answer": [
-          "おすしは",
-          "てんぷらより",
-          "おいしいです。"
+          "今日は",
+          "おとといより",
+          "暇です。"
         ]
       },
       {
         "id": "q_b12_179",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "tempura lebih enak daripada roti.",
-        "reading": "てんぷらはパンよりおいしいです。",
+        "translation": "sepeda lebih cepat daripada Shinkansen.",
+        "reading": "じてんしゃはしんかんせんよりはやいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "てんぷらはパンよりおいしいです。",
-        "prompt": "tempura lebih enak daripada roti.",
+        "fullJp": "自転車は新幹線より速いです。",
+        "prompt": "sepeda lebih cepat daripada Shinkansen.",
         "tiles": [
-          "パンより",
-          "てんぷらは",
-          "おいしいです。"
+          "新幹線より",
+          "自転車は",
+          "速いです。"
         ],
         "answer": [
-          "てんぷらは",
-          "パンより",
-          "おいしいです。"
+          "自転車は",
+          "新幹線より",
+          "速いです。"
         ],
-        "audioText": "てんぷらはパンよりおいしいです。"
+        "audioText": "自転車は新幹線より速いです。"
       },
       {
         "id": "q_b12_180",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "roti lebih enak daripada sukiyaki.",
-        "reading": "パンはすきやきよりどうですか。パンはすきやきよりおいしいです。",
+        "translation": "besok lebih senggang daripada hari ini.",
+        "reading": "あしたはきょうよりどうですか。あしたはきょうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "パンはすき焼きよりどうですか。パンはすき焼きよりおいしいです。",
+        "fullJp": "明日は今日よりどうですか。明日は今日より暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "パンはすき焼きよりどうですか。"
+            "text": "明日は今日よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "roti lebih enak daripada sukiyaki. Pilih respons B.",
+        "question": "besok lebih senggang daripada hari ini. Pilih respons B.",
         "options": [
-          "パンはすき焼きよりおいしいです。",
-          "パンはすき焼きとおいしいです。",
-          "パンはすき焼きがおいしいです。",
-          "パンはすき焼きもおいしいです。"
+          "明日は今日より暇です。",
+          "明日は今日と暇です。",
+          "明日は今日が暇です。",
+          "明日は今日も暇です。"
         ],
-        "answer": "パンはすき焼きよりおいしいです。",
-        "answerId": "roti lebih enak daripada sukiyaki.",
+        "answer": "明日は今日より暇です。",
+        "answerId": "besok lebih senggang daripada hari ini.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "roti lebih enak daripada sukiyaki."
+          "besok lebih senggang daripada hari ini."
         ]
       }
     ]
@@ -4277,338 +4277,338 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_181",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "hotel lebih tenang daripada perpustakaan.",
-        "reading": "ホテルはとしょかんよりしずかです。",
+        "translation": "kopi lebih dingin daripada teh hitam.",
+        "reading": "コーヒーはこうちゃよりつめたいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ホテルは図書館より静かです。",
-        "prompt": "ホテルは＿＿＿静かです。",
+        "fullJp": "コーヒーは紅茶より冷たいです。",
+        "prompt": "コーヒーは＿＿＿冷たいです。",
         "options": [
-          "図書館と",
-          "図書館が",
-          "図書館も",
-          "図書館より"
+          "紅茶と",
+          "紅茶が",
+          "紅茶も",
+          "紅茶より"
         ],
-        "answer": "図書館より"
+        "answer": "紅茶より"
       },
       {
         "id": "q_b12_182",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "perpustakaan lebih tenang daripada sekolah.",
-        "reading": "としょかんはがっこうよりしずかです。",
+        "translation": "besok lusa lebih senggang daripada kemarin.",
+        "reading": "あさってはきのうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "図書館は学校より静かです。",
-        "prompt": "perpustakaan lebih tenang daripada sekolah.",
+        "fullJp": "あさっては昨日より暇です。",
+        "prompt": "besok lusa lebih senggang daripada kemarin.",
         "options": [
-          "図書館は学校が静かです。",
-          "図書館は学校より静かです。",
-          "図書館は学校と静かです。",
-          "図書館は学校も静かです。"
+          "あさっては昨日が暇です。",
+          "あさっては昨日より暇です。",
+          "あさっては昨日と暇です。",
+          "あさっては昨日も暇です。"
         ],
-        "answer": "図書館は学校より静かです。"
+        "answer": "あさっては昨日より暇です。"
       },
       {
         "id": "q_b12_183",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "sekolah lebih tenang daripada stasiun.",
-        "reading": "がっこうはえきよりしずかです。",
+        "translation": "teh hitam lebih dingin daripada jus.",
+        "reading": "こうちゃはジュースよりつめたいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "学校は駅より静かです。",
-        "prompt": "sekolah lebih tenang daripada stasiun.",
+        "fullJp": "紅茶はジュースより冷たいです。",
+        "prompt": "teh hitam lebih dingin daripada jus.",
         "tiles": [
-          "学校は",
-          "静かです。",
-          "駅より"
+          "紅茶は",
+          "冷たいです。",
+          "ジュースより"
         ],
         "answer": [
-          "学校は",
-          "駅より",
-          "静かです。"
+          "紅茶は",
+          "ジュースより",
+          "冷たいです。"
         ]
       },
       {
         "id": "q_b12_184",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "stasiun lebih tenang daripada toko.",
-        "reading": "えきはみせよりしずかです。",
+        "translation": "minggu ini lebih senggang daripada minggu depan.",
+        "reading": "こんしゅうはらいしゅうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "駅は店より静かです。",
-        "prompt": "stasiun lebih tenang daripada toko.",
+        "fullJp": "今週は来週より暇です。",
+        "prompt": "minggu ini lebih senggang daripada minggu depan.",
         "tiles": [
-          "静かです。",
-          "店より",
-          "駅は"
+          "暇です。",
+          "来週より",
+          "今週は"
         ],
         "answer": [
-          "駅は",
-          "店より",
-          "静かです。"
+          "今週は",
+          "来週より",
+          "暇です。"
         ]
       },
       {
         "id": "q_b12_185",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "toko lebih tenang daripada hotel.",
-        "reading": "みせはホテルよりしずかです。",
+        "translation": "jus lebih dingin daripada susu.",
+        "reading": "ジュースはぎゅうにゅうよりつめたいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "店はホテルより静かです。",
-        "prompt": "toko lebih tenang daripada hotel.",
+        "fullJp": "ジュースは牛乳より冷たいです。",
+        "prompt": "jus lebih dingin daripada susu.",
         "tiles": [
-          "ホテルより",
-          "店は",
-          "静かです。"
+          "牛乳より",
+          "ジュースは",
+          "冷たいです。"
         ],
         "answer": [
-          "店は",
-          "ホテルより",
-          "静かです。"
+          "ジュースは",
+          "牛乳より",
+          "冷たいです。"
         ],
-        "audioText": "店はホテルより静かです。"
+        "audioText": "ジュースは牛乳より冷たいです。"
       },
       {
         "id": "q_b12_186",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "bahasa Jepang lebih sulit daripada bahasa Inggris.",
-        "reading": "にほんごはえいごよりどうですか。にほんごはえいごよりむずかしいです。",
+        "translation": "minggu depan lebih senggang daripada minggu lalu.",
+        "reading": "らいしゅうはせんしゅうよりどうですか。らいしゅうはせんしゅうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "日本語は英語よりどうですか。日本語は英語より難しいです。",
+        "fullJp": "来週は先週よりどうですか。来週は先週より暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "日本語は英語よりどうですか。"
+            "text": "来週は先週よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "bahasa Jepang lebih sulit daripada bahasa Inggris. Pilih respons B.",
+        "question": "minggu depan lebih senggang daripada minggu lalu. Pilih respons B.",
         "options": [
-          "日本語は英語より難しいです。",
-          "日本語は英語も難しいです。",
-          "日本語は英語と難しいです。",
-          "日本語は英語が難しいです。"
+          "来週は先週より暇です。",
+          "来週は先週も暇です。",
+          "来週は先週と暇です。",
+          "来週は先週が暇です。"
         ],
-        "answer": "日本語は英語より難しいです。",
-        "answerId": "bahasa Jepang lebih sulit daripada bahasa Inggris.",
+        "answer": "来週は先週より暇です。",
+        "answerId": "minggu depan lebih senggang daripada minggu lalu.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "bahasa Jepang lebih sulit daripada bahasa Inggris."
+          "minggu depan lebih senggang daripada minggu lalu."
         ]
       },
       {
         "id": "q_b12_187",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "bahasa Inggris lebih sulit daripada bahasa Jepang.",
-        "reading": "えいごはにほんごよりむずかしいです。",
+        "translation": "susu lebih dingin daripada air.",
+        "reading": "ぎゅうにゅうはみずよりつめたいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "英語は日本語より難しいです。",
-        "prompt": "英語は＿＿＿難しいです。",
+        "fullJp": "牛乳は水より冷たいです。",
+        "prompt": "牛乳は＿＿＿冷たいです。",
         "options": [
-          "日本語も",
-          "日本語より",
-          "日本語と",
-          "日本語が"
+          "水も",
+          "水より",
+          "水と",
+          "水が"
         ],
-        "answer": "日本語より"
+        "answer": "水より"
       },
       {
         "id": "q_b12_188",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "ujian lebih sulit daripada PR.",
-        "reading": "しけんはしゅくだいよりむずかしいです。",
+        "translation": "bulan ini lebih sibuk daripada bulan depan.",
+        "reading": "こんげつはらいげつよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "試験は宿題より難しいです。",
-        "prompt": "ujian lebih sulit daripada PR.",
+        "fullJp": "今月は来月より忙しいです。",
+        "prompt": "bulan ini lebih sibuk daripada bulan depan.",
         "options": [
-          "試験は宿題と難しいです。",
-          "試験は宿題も難しいです。",
-          "試験は宿題が難しいです。",
-          "試験は宿題より難しいです。"
+          "今月は来月と忙しいです。",
+          "今月は来月も忙しいです。",
+          "今月は来月が忙しいです。",
+          "今月は来月より忙しいです。"
         ],
-        "answer": "試験は宿題より難しいです。"
+        "answer": "今月は来月より忙しいです。"
       },
       {
         "id": "q_b12_189",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "PR lebih sulit daripada ujian.",
-        "reading": "しゅくだいはしけんよりむずかしいです。",
+        "translation": "air lebih dingin daripada kopi.",
+        "reading": "みずはコーヒーよりつめたいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "宿題は試験より難しいです。",
-        "prompt": "PR lebih sulit daripada ujian.",
+        "fullJp": "水はコーヒーより冷たいです。",
+        "prompt": "air lebih dingin daripada kopi.",
         "tiles": [
-          "宿題は",
-          "難しいです。",
-          "試験より"
+          "水は",
+          "冷たいです。",
+          "コーヒーより"
         ],
         "answer": [
-          "宿題は",
-          "試験より",
-          "難しいです。"
+          "水は",
+          "コーヒーより",
+          "冷たいです。"
         ]
       },
       {
         "id": "q_b12_190",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "tas lebih ringan daripada kamus.",
-        "reading": "かばんはじしょよりかるいです。",
+        "translation": "bulan depan lebih sibuk daripada bulan lalu.",
+        "reading": "らいげつはせんげつよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "かばんは辞書より軽いです。",
-        "prompt": "tas lebih ringan daripada kamus.",
+        "fullJp": "来月は先月より忙しいです。",
+        "prompt": "bulan depan lebih sibuk daripada bulan lalu.",
         "tiles": [
-          "軽いです。",
-          "辞書より",
-          "かばんは"
+          "忙しいです。",
+          "先月より",
+          "来月は"
         ],
         "answer": [
-          "かばんは",
-          "辞書より",
-          "軽いです。"
+          "来月は",
+          "先月より",
+          "忙しいです。"
         ]
       },
       {
         "id": "q_b12_191",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "barang bawaan lebih ringan daripada buku.",
-        "reading": "にもつはほんよりかるいです。",
+        "translation": "cokelat lebih manis daripada jus.",
+        "reading": "チョコレートはジュースよりあまいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "荷物は本より軽いです。",
-        "prompt": "barang bawaan lebih ringan daripada buku.",
+        "fullJp": "チョコレートはジュースより甘いです。",
+        "prompt": "cokelat lebih manis daripada jus.",
         "tiles": [
-          "本より",
-          "荷物は",
-          "軽いです。"
+          "ジュースより",
+          "チョコレートは",
+          "甘いです。"
         ],
         "answer": [
-          "荷物は",
-          "本より",
-          "軽いです。"
+          "チョコレートは",
+          "ジュースより",
+          "甘いです。"
         ],
-        "audioText": "荷物は本より軽いです。"
+        "audioText": "チョコレートはジュースより甘いです。"
       },
       {
         "id": "q_b12_192",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamus lebih ringan daripada kamera.",
-        "reading": "じしょはカメラよりどうですか。じしょはカメラよりかるいです。",
+        "translation": "tahun ini lebih dingin (cuaca) daripada tahun depan.",
+        "reading": "ことしはらいねんよりどうですか。ことしはらいねんよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "辞書はカメラよりどうですか。辞書はカメラより軽いです。",
+        "fullJp": "今年は来年よりどうですか。今年は来年より寒いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "辞書はカメラよりどうですか。"
+            "text": "今年は来年よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamus lebih ringan daripada kamera. Pilih respons B.",
+        "question": "tahun ini lebih dingin (cuaca) daripada tahun depan. Pilih respons B.",
         "options": [
-          "辞書はカメラと軽いです。",
-          "辞書はカメラが軽いです。",
-          "辞書はカメラより軽いです。",
-          "辞書はカメラも軽いです。"
+          "今年は来年と寒いです。",
+          "今年は来年が寒いです。",
+          "今年は来年より寒いです。",
+          "今年は来年も寒いです。"
         ],
-        "answer": "辞書はカメラより軽いです。",
-        "answerId": "kamus lebih ringan daripada kamera.",
+        "answer": "今年は来年より寒いです。",
+        "answerId": "tahun ini lebih dingin (cuaca) daripada tahun depan.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamus lebih ringan daripada kamera."
+          "tahun ini lebih dingin (cuaca) daripada tahun depan."
         ]
       },
       {
         "id": "q_b12_193",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "buku lebih ringan daripada tas.",
-        "reading": "ほんはかばんよりかるいです。",
+        "translation": "jus lebih manis daripada apel.",
+        "reading": "ジュースはりんごよりあまいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "本はかばんより軽いです。",
-        "prompt": "本は＿＿＿軽いです。",
+        "fullJp": "ジュースはりんごより甘いです。",
+        "prompt": "ジュースは＿＿＿甘いです。",
         "options": [
-          "かばんより",
-          "かばんが",
-          "かばんも",
-          "かばんと"
+          "りんごより",
+          "りんごが",
+          "りんごも",
+          "りんごと"
         ],
-        "answer": "かばんより"
+        "answer": "りんごより"
       },
       {
         "id": "q_b12_194",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "kamera lebih ringan daripada barang bawaan.",
-        "reading": "カメラはにもつよりかるいです。",
+        "translation": "tahun depan lebih dingin (cuaca) daripada tahun lalu.",
+        "reading": "らいねんはきょねんよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "カメラは荷物より軽いです。",
-        "prompt": "kamera lebih ringan daripada barang bawaan.",
+        "fullJp": "来年は去年より寒いです。",
+        "prompt": "tahun depan lebih dingin (cuaca) daripada tahun lalu.",
         "options": [
-          "カメラは荷物が軽いです。",
-          "カメラは荷物も軽いです。",
-          "カメラは荷物より軽いです。",
-          "カメラは荷物と軽いです。"
+          "来年は去年が寒いです。",
+          "来年は去年も寒いです。",
+          "来年は去年より寒いです。",
+          "来年は去年と寒いです。"
         ],
-        "answer": "カメラは荷物より軽いです。"
+        "answer": "来年は去年より寒いです。"
       },
       {
         "id": "q_b12_195",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "mobil lebih murah daripada jam.",
-        "reading": "くるまはとけいよりやすいです。",
+        "translation": "apel lebih manis daripada jeruk.",
+        "reading": "りんごはみかんよりあまいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "車は時計より安いです。",
-        "prompt": "mobil lebih murah daripada jam.",
+        "fullJp": "りんごはみかんより甘いです。",
+        "prompt": "apel lebih manis daripada jeruk.",
         "tiles": [
-          "車は",
-          "安いです。",
-          "時計より"
+          "りんごは",
+          "甘いです。",
+          "みかんより"
         ],
         "answer": [
-          "車は",
-          "時計より",
-          "安いです。"
+          "りんごは",
+          "みかんより",
+          "甘いです。"
         ]
       }
     ]
@@ -4624,357 +4624,357 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_196",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "sepeda lebih murah daripada kamera.",
-        "reading": "じてんしゃはカメラよりやすいです。",
+        "translation": "setiap hari lebih senggang daripada setiap malam.",
+        "reading": "まいにちはまいばんよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "自転車はカメラより安いです。",
-        "prompt": "sepeda lebih murah daripada kamera.",
+        "fullJp": "毎日は毎晩より暇です。",
+        "prompt": "setiap hari lebih senggang daripada setiap malam.",
         "tiles": [
-          "安いです。",
-          "カメラより",
-          "自転車は"
+          "暇です。",
+          "毎晩より",
+          "毎日は"
         ],
         "answer": [
-          "自転車は",
-          "カメラより",
-          "安いです。"
+          "毎日は",
+          "毎晩より",
+          "暇です。"
         ]
       },
       {
         "id": "q_b12_197",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "jam lebih murah daripada televisi.",
-        "reading": "とけいはテレビよりやすいです。",
+        "translation": "jeruk lebih manis daripada es krim.",
+        "reading": "みかんはアイスクリームよりあまいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "時計はテレビより安いです。",
-        "prompt": "jam lebih murah daripada televisi.",
+        "fullJp": "みかんはアイスクリームより甘いです。",
+        "prompt": "jeruk lebih manis daripada es krim.",
         "tiles": [
-          "テレビより",
-          "時計は",
-          "安いです。"
+          "アイスクリームより",
+          "みかんは",
+          "甘いです。"
         ],
         "answer": [
-          "時計は",
-          "テレビより",
-          "安いです。"
+          "みかんは",
+          "アイスクリームより",
+          "甘いです。"
         ],
-        "audioText": "時計はテレビより安いです。"
+        "audioText": "みかんはアイスクリームより甘いです。"
       },
       {
         "id": "q_b12_198",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamera lebih murah daripada mobil.",
-        "reading": "カメラはくるまよりどうですか。カメラはくるまよりやすいです。",
+        "translation": "setiap pagi lebih senggang daripada setiap hari.",
+        "reading": "まいあさはまいにちよりどうですか。まいあさはまいにちよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "カメラは車よりどうですか。カメラは車より安いです。",
+        "fullJp": "毎朝は毎日よりどうですか。毎朝は毎日より暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "カメラは車よりどうですか。"
+            "text": "毎朝は毎日よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamera lebih murah daripada mobil. Pilih respons B.",
+        "question": "setiap pagi lebih senggang daripada setiap hari. Pilih respons B.",
         "options": [
-          "カメラは車が安いです。",
-          "カメラは車より安いです。",
-          "カメラは車と安いです。",
-          "カメラは車も安いです。"
+          "毎朝は毎日が暇です。",
+          "毎朝は毎日より暇です。",
+          "毎朝は毎日と暇です。",
+          "毎朝は毎日も暇です。"
         ],
-        "answer": "カメラは車より安いです。",
-        "answerId": "kamera lebih murah daripada mobil.",
+        "answer": "毎朝は毎日より暇です。",
+        "answerId": "setiap pagi lebih senggang daripada setiap hari.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamera lebih murah daripada mobil."
+          "setiap pagi lebih senggang daripada setiap hari."
         ]
       },
       {
         "id": "q_b12_199",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "televisi lebih murah daripada sepeda.",
-        "reading": "テレビはじてんしゃよりやすいです。",
+        "translation": "es krim lebih manis daripada cokelat.",
+        "reading": "アイスクリームはチョコレートよりあまいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "テレビは自転車より安いです。",
-        "prompt": "テレビは＿＿＿安いです。",
+        "fullJp": "アイスクリームはチョコレートより甘いです。",
+        "prompt": "アイスクリームは＿＿＿甘いです。",
         "options": [
-          "自転車も",
-          "自転車と",
-          "自転車が",
-          "自転車より"
+          "チョコレートも",
+          "チョコレートと",
+          "チョコレートが",
+          "チョコレートより"
         ],
-        "answer": "自転車より"
+        "answer": "チョコレートより"
       },
       {
         "id": "q_b12_200",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Shinkansen lebih lambat daripada bus.",
-        "reading": "しんかんせんはバスよりおそいです。",
+        "translation": "setiap malam lebih senggang daripada setiap pagi.",
+        "reading": "まいばんはまいあさよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "新幹線はバスより遅いです。",
-        "prompt": "Shinkansen lebih lambat daripada bus.",
+        "fullJp": "毎晩は毎朝より暇です。",
+        "prompt": "setiap malam lebih senggang daripada setiap pagi.",
         "options": [
-          "新幹線はバスと遅いです。",
-          "新幹線はバスより遅いです。",
-          "新幹線はバスが遅いです。",
-          "新幹線はバスも遅いです。"
+          "毎晩は毎朝と暇です。",
+          "毎晩は毎朝より暇です。",
+          "毎晩は毎朝が暇です。",
+          "毎晩は毎朝も暇です。"
         ],
-        "answer": "新幹線はバスより遅いです。"
+        "answer": "毎晩は毎朝より暇です。"
       },
       {
         "id": "q_b12_201",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kereta lebih lambat daripada taksi.",
-        "reading": "でんしゃはタクシーよりおそいです。",
+        "translation": "sukiyaki lebih enak daripada sashimi.",
+        "reading": "すきやきはさしみよりおいしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "電車はタクシーより遅いです。",
-        "prompt": "kereta lebih lambat daripada taksi.",
+        "fullJp": "すき焼きは刺身よりおいしいです。",
+        "prompt": "sukiyaki lebih enak daripada sashimi.",
         "tiles": [
-          "電車は",
-          "遅いです。",
-          "タクシーより"
+          "すき焼きは",
+          "おいしいです。",
+          "刺身より"
         ],
         "answer": [
-          "電車は",
-          "タクシーより",
-          "遅いです。"
+          "すき焼きは",
+          "刺身より",
+          "おいしいです。"
         ]
       },
       {
         "id": "q_b12_202",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "bus lebih lambat daripada sepeda.",
-        "reading": "バスはじてんしゃよりおそいです。",
+        "translation": "hari ini lebih panas (cuaca) daripada besok.",
+        "reading": "きょうはあしたよりあついです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "バスは自転車より遅いです。",
-        "prompt": "bus lebih lambat daripada sepeda.",
+        "fullJp": "今日は明日より暑いです。",
+        "prompt": "hari ini lebih panas (cuaca) daripada besok.",
         "tiles": [
-          "遅いです。",
-          "自転車より",
-          "バスは"
+          "暑いです。",
+          "明日より",
+          "今日は"
         ],
         "answer": [
-          "バスは",
-          "自転車より",
-          "遅いです。"
+          "今日は",
+          "明日より",
+          "暑いです。"
         ]
       },
       {
         "id": "q_b12_203",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "taksi lebih lambat daripada Shinkansen.",
-        "reading": "タクシーはしんかんせんよりおそいです。",
+        "translation": "sashimi lebih enak daripada sushi.",
+        "reading": "さしみはおすしよりおいしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "タクシーは新幹線より遅いです。",
-        "prompt": "taksi lebih lambat daripada Shinkansen.",
+        "fullJp": "刺身はおすしよりおいしいです。",
+        "prompt": "sashimi lebih enak daripada sushi.",
         "tiles": [
-          "新幹線より",
-          "タクシーは",
-          "遅いです。"
+          "おすしより",
+          "刺身は",
+          "おいしいです。"
         ],
         "answer": [
-          "タクシーは",
-          "新幹線より",
-          "遅いです。"
+          "刺身は",
+          "おすしより",
+          "おいしいです。"
         ],
-        "audioText": "タクシーは新幹線より遅いです。"
+        "audioText": "刺身はおすしよりおいしいです。"
       },
       {
         "id": "q_b12_204",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "sepeda lebih lambat daripada kereta.",
-        "reading": "じてんしゃはでんしゃよりどうですか。じてんしゃはでんしゃよりおそいです。",
+        "translation": "besok lebih panas (cuaca) daripada kemarin.",
+        "reading": "あしたはきのうよりどうですか。あしたはきのうよりあついです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "自転車は電車よりどうですか。自転車は電車より遅いです。",
+        "fullJp": "明日は昨日よりどうですか。明日は昨日より暑いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "自転車は電車よりどうですか。"
+            "text": "明日は昨日よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "sepeda lebih lambat daripada kereta. Pilih respons B.",
+        "question": "besok lebih panas (cuaca) daripada kemarin. Pilih respons B.",
         "options": [
-          "自転車は電車と遅いです。",
-          "自転車は電車も遅いです。",
-          "自転車は電車が遅いです。",
-          "自転車は電車より遅いです。"
+          "明日は昨日と暑いです。",
+          "明日は昨日も暑いです。",
+          "明日は昨日が暑いです。",
+          "明日は昨日より暑いです。"
         ],
-        "answer": "自転車は電車より遅いです。",
-        "answerId": "sepeda lebih lambat daripada kereta.",
+        "answer": "明日は昨日より暑いです。",
+        "answerId": "besok lebih panas (cuaca) daripada kemarin.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "sepeda lebih lambat daripada kereta."
+          "besok lebih panas (cuaca) daripada kemarin."
         ]
       },
       {
         "id": "q_b12_205",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kopi lebih dingin daripada jus.",
-        "reading": "コーヒーはジュースよりつめたいです。",
+        "translation": "sushi lebih enak daripada tempura.",
+        "reading": "おすしはてんぷらよりおいしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "コーヒーはジュースより冷たいです。",
-        "prompt": "コーヒーは＿＿＿冷たいです。",
+        "fullJp": "おすしはてんぷらよりおいしいです。",
+        "prompt": "おすしは＿＿＿おいしいです。",
         "options": [
-          "ジュースも",
-          "ジュースが",
-          "ジュースより",
-          "ジュースと"
+          "てんぷらも",
+          "てんぷらが",
+          "てんぷらより",
+          "てんぷらと"
         ],
-        "answer": "ジュースより"
+        "answer": "てんぷらより"
       },
       {
         "id": "q_b12_206",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "teh hitam lebih dingin daripada susu.",
-        "reading": "こうちゃはぎゅうにゅうよりつめたいです。",
+        "translation": "besok lusa lebih panas (cuaca) daripada kemarin lusa.",
+        "reading": "あさってはおとといよりあついです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "紅茶は牛乳より冷たいです。",
-        "prompt": "teh hitam lebih dingin daripada susu.",
+        "fullJp": "あさってはおとといより暑いです。",
+        "prompt": "besok lusa lebih panas (cuaca) daripada kemarin lusa.",
         "options": [
-          "紅茶は牛乳より冷たいです。",
-          "紅茶は牛乳も冷たいです。",
-          "紅茶は牛乳と冷たいです。",
-          "紅茶は牛乳が冷たいです。"
+          "あさってはおとといより暑いです。",
+          "あさってはおとといも暑いです。",
+          "あさってはおとといと暑いです。",
+          "あさってはおとといが暑いです。"
         ],
-        "answer": "紅茶は牛乳より冷たいです。"
+        "answer": "あさってはおとといより暑いです。"
       },
       {
         "id": "q_b12_207",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "jus lebih dingin daripada air.",
-        "reading": "ジュースはみずよりつめたいです。",
+        "translation": "tempura lebih enak daripada roti.",
+        "reading": "てんぷらはパンよりおいしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ジュースは水より冷たいです。",
-        "prompt": "jus lebih dingin daripada air.",
+        "fullJp": "てんぷらはパンよりおいしいです。",
+        "prompt": "tempura lebih enak daripada roti.",
         "tiles": [
-          "ジュースは",
-          "冷たいです。",
-          "水より"
+          "てんぷらは",
+          "おいしいです。",
+          "パンより"
         ],
         "answer": [
-          "ジュースは",
-          "水より",
-          "冷たいです。"
+          "てんぷらは",
+          "パンより",
+          "おいしいです。"
         ]
       },
       {
         "id": "q_b12_208",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "susu lebih dingin daripada kopi.",
-        "reading": "ぎゅうにゅうはコーヒーよりつめたいです。",
+        "translation": "hari ini lebih dingin (cuaca) daripada besok lusa.",
+        "reading": "きょうはあさってよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "牛乳はコーヒーより冷たいです。",
-        "prompt": "susu lebih dingin daripada kopi.",
+        "fullJp": "今日はあさってより寒いです。",
+        "prompt": "hari ini lebih dingin (cuaca) daripada besok lusa.",
         "tiles": [
-          "冷たいです。",
-          "コーヒーより",
-          "牛乳は"
+          "寒いです。",
+          "あさってより",
+          "今日は"
         ],
         "answer": [
-          "牛乳は",
-          "コーヒーより",
-          "冷たいです。"
+          "今日は",
+          "あさってより",
+          "寒いです。"
         ]
       },
       {
         "id": "q_b12_209",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "air lebih dingin daripada teh hitam.",
-        "reading": "みずはこうちゃよりつめたいです。",
+        "translation": "roti lebih enak daripada sukiyaki.",
+        "reading": "パンはすきやきよりおいしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "水は紅茶より冷たいです。",
-        "prompt": "air lebih dingin daripada teh hitam.",
+        "fullJp": "パンはすき焼きよりおいしいです。",
+        "prompt": "roti lebih enak daripada sukiyaki.",
         "tiles": [
-          "紅茶より",
-          "水は",
-          "冷たいです。"
+          "すき焼きより",
+          "パンは",
+          "おいしいです。"
         ],
         "answer": [
-          "水は",
-          "紅茶より",
-          "冷たいです。"
+          "パンは",
+          "すき焼きより",
+          "おいしいです。"
         ],
-        "audioText": "水は紅茶より冷たいです。"
+        "audioText": "パンはすき焼きよりおいしいです。"
       },
       {
         "id": "q_b12_210",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "cokelat lebih manis daripada apel.",
-        "reading": "チョコレートはりんごよりどうですか。チョコレートはりんごよりあまいです。",
+        "translation": "besok lebih dingin (cuaca) daripada kemarin lusa.",
+        "reading": "あしたはおとといよりどうですか。あしたはおとといよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "チョコレートはりんごよりどうですか。チョコレートはりんごより甘いです。",
+        "fullJp": "明日はおとといよりどうですか。明日はおとといより寒いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "チョコレートはりんごよりどうですか。"
+            "text": "明日はおとといよりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "cokelat lebih manis daripada apel. Pilih respons B.",
+        "question": "besok lebih dingin (cuaca) daripada kemarin lusa. Pilih respons B.",
         "options": [
-          "チョコレートはりんごが甘いです。",
-          "チョコレートはりんごも甘いです。",
-          "チョコレートはりんごより甘いです。",
-          "チョコレートはりんごと甘いです。"
+          "明日はおとといが寒いです。",
+          "明日はおとといも寒いです。",
+          "明日はおとといより寒いです。",
+          "明日はおとといと寒いです。"
         ],
-        "answer": "チョコレートはりんごより甘いです。",
-        "answerId": "cokelat lebih manis daripada apel.",
+        "answer": "明日はおとといより寒いです。",
+        "answerId": "besok lebih dingin (cuaca) daripada kemarin lusa.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "cokelat lebih manis daripada apel."
+          "besok lebih dingin (cuaca) daripada kemarin lusa."
         ]
       }
     ]
@@ -4990,338 +4990,338 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_211",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "jus lebih manis daripada jeruk.",
-        "reading": "ジュースはみかんよりあまいです。",
+        "translation": "hotel lebih tenang daripada perpustakaan.",
+        "reading": "ホテルはとしょかんよりしずかです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ジュースはみかんより甘いです。",
-        "prompt": "ジュースは＿＿＿甘いです。",
+        "fullJp": "ホテルは図書館より静かです。",
+        "prompt": "ホテルは＿＿＿静かです。",
         "options": [
-          "みかんより",
-          "みかんと",
-          "みかんも",
-          "みかんが"
+          "図書館より",
+          "図書館と",
+          "図書館も",
+          "図書館が"
         ],
-        "answer": "みかんより"
+        "answer": "図書館より"
       },
       {
         "id": "q_b12_212",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "apel lebih manis daripada es krim.",
-        "reading": "りんごはアイスクリームよりあまいです。",
+        "translation": "besok lusa lebih dingin (cuaca) daripada besok.",
+        "reading": "あさってはあしたよりさむいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "りんごはアイスクリームより甘いです。",
-        "prompt": "apel lebih manis daripada es krim.",
+        "fullJp": "あさっては明日より寒いです。",
+        "prompt": "besok lusa lebih dingin (cuaca) daripada besok.",
         "options": [
-          "りんごはアイスクリームと甘いです。",
-          "りんごはアイスクリームも甘いです。",
-          "りんごはアイスクリームが甘いです。",
-          "りんごはアイスクリームより甘いです。"
+          "あさっては明日と寒いです。",
+          "あさっては明日も寒いです。",
+          "あさっては明日が寒いです。",
+          "あさっては明日より寒いです。"
         ],
-        "answer": "りんごはアイスクリームより甘いです。"
+        "answer": "あさっては明日より寒いです。"
       },
       {
         "id": "q_b12_213",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "jeruk lebih manis daripada cokelat.",
-        "reading": "みかんはチョコレートよりあまいです。",
+        "translation": "perpustakaan lebih tenang daripada sekolah.",
+        "reading": "としょかんはがっこうよりしずかです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "みかんはチョコレートより甘いです。",
-        "prompt": "jeruk lebih manis daripada cokelat.",
+        "fullJp": "図書館は学校より静かです。",
+        "prompt": "perpustakaan lebih tenang daripada sekolah.",
         "tiles": [
-          "みかんは",
-          "甘いです。",
-          "チョコレートより"
+          "図書館は",
+          "静かです。",
+          "学校より"
         ],
         "answer": [
-          "みかんは",
-          "チョコレートより",
-          "甘いです。"
+          "図書館は",
+          "学校より",
+          "静かです。"
         ]
       },
       {
         "id": "q_b12_214",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "es krim lebih manis daripada jus.",
-        "reading": "アイスクリームはジュースよりあまいです。",
+        "translation": "minggu ini lebih senggang daripada minggu lalu.",
+        "reading": "こんしゅうはせんしゅうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "アイスクリームはジュースより甘いです。",
-        "prompt": "es krim lebih manis daripada jus.",
+        "fullJp": "今週は先週より暇です。",
+        "prompt": "minggu ini lebih senggang daripada minggu lalu.",
         "tiles": [
-          "甘いです。",
-          "ジュースより",
-          "アイスクリームは"
+          "暇です。",
+          "先週より",
+          "今週は"
         ],
         "answer": [
-          "アイスクリームは",
-          "ジュースより",
-          "甘いです。"
+          "今週は",
+          "先週より",
+          "暇です。"
         ]
       },
       {
         "id": "q_b12_215",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "sukiyaki lebih mahal daripada sushi.",
-        "reading": "すきやきはおすしよりたかいです。",
+        "translation": "sekolah lebih tenang daripada stasiun.",
+        "reading": "がっこうはえきよりしずかです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "すき焼きはおすしより高いです。",
-        "prompt": "sukiyaki lebih mahal daripada sushi.",
+        "fullJp": "学校は駅より静かです。",
+        "prompt": "sekolah lebih tenang daripada stasiun.",
         "tiles": [
-          "おすしより",
-          "すき焼きは",
-          "高いです。"
+          "駅より",
+          "学校は",
+          "静かです。"
         ],
         "answer": [
-          "すき焼きは",
-          "おすしより",
-          "高いです。"
+          "学校は",
+          "駅より",
+          "静かです。"
         ],
-        "audioText": "すき焼きはおすしより高いです。"
+        "audioText": "学校は駅より静かです。"
       },
       {
         "id": "q_b12_216",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "sashimi lebih mahal daripada tempura.",
-        "reading": "さしみはてんぷらよりどうですか。さしみはてんぷらよりたかいです。",
+        "translation": "minggu depan lebih senggang daripada minggu ini.",
+        "reading": "らいしゅうはこんしゅうよりどうですか。らいしゅうはこんしゅうよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "刺身はてんぷらよりどうですか。刺身はてんぷらより高いです。",
+        "fullJp": "来週は今週よりどうですか。来週は今週より暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "刺身はてんぷらよりどうですか。"
+            "text": "来週は今週よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "sashimi lebih mahal daripada tempura. Pilih respons B.",
+        "question": "minggu depan lebih senggang daripada minggu ini. Pilih respons B.",
         "options": [
-          "刺身はてんぷらと高いです。",
-          "刺身はてんぷらより高いです。",
-          "刺身はてんぷらが高いです。",
-          "刺身はてんぷらも高いです。"
+          "来週は今週と暇です。",
+          "来週は今週より暇です。",
+          "来週は今週が暇です。",
+          "来週は今週も暇です。"
         ],
-        "answer": "刺身はてんぷらより高いです。",
-        "answerId": "sashimi lebih mahal daripada tempura.",
+        "answer": "来週は今週より暇です。",
+        "answerId": "minggu depan lebih senggang daripada minggu ini.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "sashimi lebih mahal daripada tempura."
+          "minggu depan lebih senggang daripada minggu ini."
         ]
       },
       {
         "id": "q_b12_217",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "sushi lebih mahal daripada roti.",
-        "reading": "おすしはパンよりたかいです。",
+        "translation": "stasiun lebih tenang daripada toko.",
+        "reading": "えきはみせよりしずかです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "おすしはパンより高いです。",
-        "prompt": "おすしは＿＿＿高いです。",
+        "fullJp": "駅は店より静かです。",
+        "prompt": "駅は＿＿＿静かです。",
         "options": [
-          "パンより",
-          "パンが",
-          "パンも",
-          "パンと"
+          "店より",
+          "店が",
+          "店も",
+          "店と"
         ],
-        "answer": "パンより"
+        "answer": "店より"
       },
       {
         "id": "q_b12_218",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "tempura lebih mahal daripada sukiyaki.",
-        "reading": "てんぷらはすきやきよりたかいです。",
+        "translation": "setiap hari lebih senggang daripada setiap pagi.",
+        "reading": "まいにちはまいあさよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "てんぷらはすき焼きより高いです。",
-        "prompt": "tempura lebih mahal daripada sukiyaki.",
+        "fullJp": "毎日は毎朝より暇です。",
+        "prompt": "setiap hari lebih senggang daripada setiap pagi.",
         "options": [
-          "てんぷらはすき焼きが高いです。",
-          "てんぷらはすき焼きより高いです。",
-          "てんぷらはすき焼きと高いです。",
-          "てんぷらはすき焼きも高いです。"
+          "毎日は毎朝が暇です。",
+          "毎日は毎朝より暇です。",
+          "毎日は毎朝と暇です。",
+          "毎日は毎朝も暇です。"
         ],
-        "answer": "てんぷらはすき焼きより高いです。"
+        "answer": "毎日は毎朝より暇です。"
       },
       {
         "id": "q_b12_219",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "roti lebih mahal daripada sashimi.",
-        "reading": "パンはさしみよりたかいです。",
+        "translation": "toko lebih tenang daripada hotel.",
+        "reading": "みせはホテルよりしずかです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "パンは刺身より高いです。",
-        "prompt": "roti lebih mahal daripada sashimi.",
+        "fullJp": "店はホテルより静かです。",
+        "prompt": "toko lebih tenang daripada hotel.",
         "tiles": [
-          "パンは",
-          "高いです。",
-          "刺身より"
+          "店は",
+          "静かです。",
+          "ホテルより"
         ],
         "answer": [
-          "パンは",
-          "刺身より",
-          "高いです。"
+          "店は",
+          "ホテルより",
+          "静かです。"
         ]
       },
       {
         "id": "q_b12_220",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "hotel lebih dekat daripada sekolah.",
-        "reading": "ホテルはがっこうよりちかいです。",
+        "translation": "setiap pagi lebih senggang daripada setiap malam.",
+        "reading": "まいあさはまいばんよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "ホテルは学校より近いです。",
-        "prompt": "hotel lebih dekat daripada sekolah.",
+        "fullJp": "毎朝は毎晩より暇です。",
+        "prompt": "setiap pagi lebih senggang daripada setiap malam.",
         "tiles": [
-          "近いです。",
-          "学校より",
-          "ホテルは"
+          "暇です。",
+          "毎晩より",
+          "毎朝は"
         ],
         "answer": [
-          "ホテルは",
-          "学校より",
-          "近いです。"
+          "毎朝は",
+          "毎晩より",
+          "暇です。"
         ]
       },
       {
         "id": "q_b12_221",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "perpustakaan lebih dekat daripada stasiun.",
-        "reading": "としょかんはえきよりちかいです。",
+        "translation": "bahasa Jepang lebih sulit daripada bahasa Inggris.",
+        "reading": "にほんごはえいごよりむずかしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "図書館は駅より近いです。",
-        "prompt": "perpustakaan lebih dekat daripada stasiun.",
+        "fullJp": "日本語は英語より難しいです。",
+        "prompt": "bahasa Jepang lebih sulit daripada bahasa Inggris.",
         "tiles": [
-          "駅より",
-          "図書館は",
-          "近いです。"
+          "英語より",
+          "日本語は",
+          "難しいです。"
         ],
         "answer": [
-          "図書館は",
-          "駅より",
-          "近いです。"
+          "日本語は",
+          "英語より",
+          "難しいです。"
         ],
-        "audioText": "図書館は駅より近いです。"
+        "audioText": "日本語は英語より難しいです。"
       },
       {
         "id": "q_b12_222",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "sekolah lebih dekat daripada toko.",
-        "reading": "がっこうはみせよりどうですか。がっこうはみせよりちかいです。",
+        "translation": "setiap malam lebih senggang daripada setiap hari.",
+        "reading": "まいばんはまいにちよりどうですか。まいばんはまいにちよりひまです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "学校は店よりどうですか。学校は店より近いです。",
+        "fullJp": "毎晩は毎日よりどうですか。毎晩は毎日より暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "学校は店よりどうですか。"
+            "text": "毎晩は毎日よりどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "sekolah lebih dekat daripada toko. Pilih respons B.",
+        "question": "setiap malam lebih senggang daripada setiap hari. Pilih respons B.",
         "options": [
-          "学校は店が近いです。",
-          "学校は店も近いです。",
-          "学校は店と近いです。",
-          "学校は店より近いです。"
+          "毎晩は毎日が暇です。",
+          "毎晩は毎日も暇です。",
+          "毎晩は毎日と暇です。",
+          "毎晩は毎日より暇です。"
         ],
-        "answer": "学校は店より近いです。",
-        "answerId": "sekolah lebih dekat daripada toko.",
+        "answer": "毎晩は毎日より暇です。",
+        "answerId": "setiap malam lebih senggang daripada setiap hari.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "sekolah lebih dekat daripada toko."
+          "setiap malam lebih senggang daripada setiap hari."
         ]
       },
       {
         "id": "q_b12_223",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "stasiun lebih dekat daripada hotel.",
-        "reading": "えきはホテルよりちかいです。",
+        "translation": "bahasa Inggris lebih sulit daripada bahasa Jepang.",
+        "reading": "えいごはにほんごよりむずかしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "駅はホテルより近いです。",
-        "prompt": "駅は＿＿＿近いです。",
+        "fullJp": "英語は日本語より難しいです。",
+        "prompt": "英語は＿＿＿難しいです。",
         "options": [
-          "ホテルも",
-          "ホテルと",
-          "ホテルより",
-          "ホテルが"
+          "日本語も",
+          "日本語と",
+          "日本語より",
+          "日本語が"
         ],
-        "answer": "ホテルより"
+        "answer": "日本語より"
       },
       {
         "id": "q_b12_224",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "toko lebih dekat daripada perpustakaan.",
-        "reading": "みせはとしょかんよりちかいです。",
+        "translation": "minggu ini lebih sibuk daripada minggu depan.",
+        "reading": "こんしゅうはらいしゅうよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "店は図書館より近いです。",
-        "prompt": "toko lebih dekat daripada perpustakaan.",
+        "fullJp": "今週は来週より忙しいです。",
+        "prompt": "minggu ini lebih sibuk daripada minggu depan.",
         "options": [
-          "店は図書館より近いです。",
-          "店は図書館と近いです。",
-          "店は図書館が近いです。",
-          "店は図書館も近いです。"
+          "今週は来週より忙しいです。",
+          "今週は来週と忙しいです。",
+          "今週は来週が忙しいです。",
+          "今週は来週も忙しいです。"
         ],
-        "answer": "店は図書館より近いです。"
+        "answer": "今週は来週より忙しいです。"
       },
       {
         "id": "q_b12_225",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "tas lebih berat daripada buku.",
-        "reading": "かばんはほんよりおもいです。",
+        "translation": "ujian lebih sulit daripada PR.",
+        "reading": "しけんはしゅくだいよりむずかしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "かばんは本より重いです。",
-        "prompt": "tas lebih berat daripada buku.",
+        "fullJp": "試験は宿題より難しいです。",
+        "prompt": "ujian lebih sulit daripada PR.",
         "tiles": [
-          "かばんは",
-          "重いです。",
-          "本より"
+          "試験は",
+          "難しいです。",
+          "宿題より"
         ],
         "answer": [
-          "かばんは",
-          "本より",
-          "重いです。"
+          "試験は",
+          "宿題より",
+          "難しいです。"
         ]
       }
     ]
@@ -5363,105 +5363,237 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_227",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara hari ini dan kemarin, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "きょうときのうとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今日と昨日とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "Antara hari ini dan kemarin, mana yang lebih sibuk? Keduanya sibuk.",
+        "tiles": [
+          "忙しいですか。",
+          "どちらが",
+          "昨日と",
+          "今日と",
+          "どちらも忙しいです。"
+        ],
+        "answer": [
+          "今日と",
+          "昨日と",
+          "どちらが",
+          "忙しいですか。",
+          "どちらも忙しいです。"
+        ],
+        "audioText": "今日と昨日とどちらが忙しいですか。どちらも忙しいです。"
+      },
+      {
+        "id": "q_b12_228",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "Antara barang bawaan dan kamus, mana yang lebih berat? barang bawaan lebih berat.",
         "reading": "にもつとじしょとどちらがおもいですか。にもつのほうがおもいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "荷物と辞書とどちらが重いですか。荷物のほうが重いです。",
-        "prompt": "Antara barang bawaan dan kamus, mana yang lebih berat? barang bawaan lebih berat.",
-        "tiles": [
-          "重いですか。",
-          "どちらが",
-          "辞書と",
-          "荷物と",
-          "荷物のほうが重いです。"
-        ],
-        "answer": [
-          "荷物と",
-          "辞書と",
-          "どちらが",
-          "重いですか。",
-          "荷物のほうが重いです。"
-        ],
-        "audioText": "荷物と辞書とどちらが重いですか。荷物のほうが重いです。"
-      },
-      {
-        "id": "q_b12_228",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara kamus dan buku, mana yang lebih berat? kamus lebih berat.",
-        "reading": "じしょとほんとどちらがおもいですか。じしょのほうがおもいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "辞書と本とどちらが重いですか。辞書のほうが重いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "辞書と本とどちらが重いですか。"
+            "text": "荷物と辞書とどちらが重いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih kamus. Pilih respons B.",
+        "question": "Konteks: pembicara memilih barang bawaan. Pilih respons B.",
         "options": [
-          "本より重いです。",
+          "辞書より重いです。",
+          "荷物のほうが重いです。",
           "辞書のほうが重いです。",
-          "本のほうが重いです。",
-          "辞書より重いです。"
+          "荷物より重いです。"
         ],
-        "answer": "辞書のほうが重いです。",
-        "answerId": "kamus lebih berat.",
+        "answer": "荷物のほうが重いです。",
+        "answerId": "barang bawaan lebih berat.",
         "dialogueId": [
-          "Antara kamus dan buku, mana yang lebih berat?",
-          "kamus lebih berat."
+          "Antara barang bawaan dan kamus, mana yang lebih berat?",
+          "barang bawaan lebih berat."
         ]
       },
       {
         "id": "q_b12_229",
         "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "instruction": "Konteks: pembicara memilih besok. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara besok dan besok lusa, mana yang lebih sibuk? besok lebih sibuk.",
+        "reading": "あしたとあさってとどちらがいそがしいですか。あしたのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "明日とあさってとどちらが忙しいですか。明日のほうが忙しいです。",
+        "prompt": "明日とあさってとどちらが忙しいですか。＿＿＿",
+        "options": [
+          "明日より忙しいです。",
+          "あさってのほうが忙しいです。",
+          "明日のほうが忙しいです。",
+          "あさってより忙しいです。"
+        ],
+        "answer": "明日のほうが忙しいです。"
+      },
+      {
+        "id": "q_b12_230",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara kamus dan buku, mana yang lebih berat? kamus lebih berat.",
+        "reading": "じしょとほんとどちらがおもいですか。じしょのほうがおもいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "辞書と本とどちらが重いですか。辞書のほうが重いです。",
+        "prompt": "Antara kamus dan buku, mana yang lebih berat? kamus lebih berat.",
+        "options": [
+          "辞書と本とどちらが重いですか。本のほうが重いです。",
+          "辞書と本とどちらが重いですか。辞書より重いです。",
+          "辞書と本とどちらが重いですか。本より重いです。",
+          "辞書と本とどちらが重いですか。辞書のほうが重いです。"
+        ],
+        "answer": "辞書と本とどちらが重いですか。辞書のほうが重いです。"
+      },
+      {
+        "id": "q_b12_231",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara besok lusa dan hari ini, mana yang lebih sibuk? besok lusa lebih sibuk.",
+        "reading": "あさってときょうとどちらがいそがしいですか。あさってのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "あさってと今日とどちらが忙しいですか。あさってのほうが忙しいです。",
+        "prompt": "Antara besok lusa dan hari ini, mana yang lebih sibuk? besok lusa lebih sibuk.",
+        "tiles": [
+          "あさってのほうが忙しいです。",
+          "忙しいですか。",
+          "どちらが",
+          "今日と",
+          "あさってと"
+        ],
+        "answer": [
+          "あさってと",
+          "今日と",
+          "どちらが",
+          "忙しいですか。",
+          "あさってのほうが忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_232",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "Antara buku dan kamera, mana yang lebih berat? Keduanya berat.",
         "reading": "ほんとカメラとどちらがおもいですか。どちらもおもいです。",
         "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "本とカメラとどちらが重いですか。どちらも重いです。",
-        "prompt": "本とカメラとどちらが重いですか。＿＿＿",
-        "options": [
-          "どちらと重いです。",
-          "どちらが重いです。",
-          "どちらも重いです。",
-          "どちらより重いです。"
+        "prompt": "Antara buku dan kamera, mana yang lebih berat? Keduanya berat.",
+        "tiles": [
+          "重いですか。",
+          "どちらが",
+          "カメラと",
+          "本と",
+          "どちらも重いです。"
         ],
-        "answer": "どちらも重いです。"
+        "answer": [
+          "本と",
+          "カメラと",
+          "どちらが",
+          "重いですか。",
+          "どちらも重いです。"
+        ]
       },
       {
-        "id": "q_b12_230",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "id": "q_b12_233",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara minggu ini dan minggu lalu, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "こんしゅうとせんしゅうとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今週と先週とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "Antara minggu ini dan minggu lalu, mana yang lebih sibuk? Keduanya sibuk.",
+        "tiles": [
+          "どちらが",
+          "先週と",
+          "今週と",
+          "どちらも忙しいです。",
+          "忙しいですか。"
+        ],
+        "answer": [
+          "今週と",
+          "先週と",
+          "どちらが",
+          "忙しいですか。",
+          "どちらも忙しいです。"
+        ],
+        "audioText": "今週と先週とどちらが忙しいですか。どちらも忙しいです。"
+      },
+      {
+        "id": "q_b12_234",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "Antara kamera dan tas, mana yang lebih berat? kamera lebih berat.",
         "reading": "カメラとかばんとどちらがおもいですか。カメラのほうがおもいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "カメラとかばんとどちらが重いですか。カメラのほうが重いです。",
-        "prompt": "Antara kamera dan tas, mana yang lebih berat? kamera lebih berat.",
-        "options": [
-          "カメラとかばんとどちらが重いですか。かばんのほうが重いです。",
-          "カメラとかばんとどちらが重いですか。カメラより重いです。",
-          "カメラとかばんとどちらが重いですか。かばんより重いです。",
-          "カメラとかばんとどちらが重いですか。カメラのほうが重いです。"
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "カメラとかばんとどちらが重いですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
         ],
-        "answer": "カメラとかばんとどちらが重いですか。カメラのほうが重いです。"
+        "question": "Konteks: pembicara memilih kamera. Pilih respons B.",
+        "options": [
+          "かばんのほうが重いです。",
+          "カメラのほうが重いです。",
+          "かばんより重いです。",
+          "カメラより重いです。"
+        ],
+        "answer": "カメラのほうが重いです。",
+        "answerId": "kamera lebih berat.",
+        "dialogueId": [
+          "Antara kamera dan tas, mana yang lebih berat?",
+          "kamera lebih berat."
+        ]
       },
       {
-        "id": "q_b12_231",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_235",
+        "type": "complete",
+        "instruction": "Konteks: pembicara memilih minggu depan. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara minggu depan dan minggu ini, mana yang lebih sibuk? minggu depan lebih sibuk.",
+        "reading": "らいしゅうとこんしゅうとどちらがいそがしいですか。らいしゅうのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "来週と今週とどちらが忙しいですか。来週のほうが忙しいです。",
+        "prompt": "来週と今週とどちらが忙しいですか。＿＿＿",
+        "options": [
+          "来週より忙しいです。",
+          "今週より忙しいです。",
+          "来週のほうが忙しいです。",
+          "今週のほうが忙しいです。"
+        ],
+        "answer": "来週のほうが忙しいです。"
+      },
+      {
+        "id": "q_b12_236",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "Antara mobil dan sepeda, mana yang lebih mahal? mobil lebih mahal.",
         "reading": "くるまとじてんしゃとどちらがたかいですか。くるまのほうがたかいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
@@ -5469,23 +5601,42 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "車と自転車とどちらが高いですか。車のほうが高いです。",
         "prompt": "Antara mobil dan sepeda, mana yang lebih mahal? mobil lebih mahal.",
+        "options": [
+          "車と自転車とどちらが高いですか。自転車より高いです。",
+          "車と自転車とどちらが高いですか。車より高いです。",
+          "車と自転車とどちらが高いですか。自転車のほうが高いです。",
+          "車と自転車とどちらが高いですか。車のほうが高いです。"
+        ],
+        "answer": "車と自転車とどちらが高いですか。車のほうが高いです。"
+      },
+      {
+        "id": "q_b12_237",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara bulan ini dan bulan lalu, mana yang lebih sibuk? bulan ini lebih sibuk.",
+        "reading": "こんげつとせんげつとどちらがいそがしいですか。こんげつのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今月と先月とどちらが忙しいですか。今月のほうが忙しいです。",
+        "prompt": "Antara bulan ini dan bulan lalu, mana yang lebih sibuk? bulan ini lebih sibuk.",
         "tiles": [
-          "車のほうが高いです。",
-          "高いですか。",
+          "忙しいですか。",
           "どちらが",
-          "自転車と",
-          "車と"
+          "先月と",
+          "今月と",
+          "今月のほうが忙しいです。"
         ],
         "answer": [
-          "車と",
-          "自転車と",
+          "今月と",
+          "先月と",
           "どちらが",
-          "高いですか。",
-          "車のほうが高いです。"
+          "忙しいですか。",
+          "今月のほうが忙しいです。"
         ]
       },
       {
-        "id": "q_b12_232",
+        "id": "q_b12_238",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "Antara sepeda dan jam, mana yang lebih mahal? Keduanya mahal.",
@@ -5496,230 +5647,79 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "自転車と時計とどちらが高いですか。どちらも高いです。",
         "prompt": "Antara sepeda dan jam, mana yang lebih mahal? Keduanya mahal.",
         "tiles": [
-          "高いですか。",
           "どちらが",
           "時計と",
           "自転車と",
-          "どちらも高いです。"
-        ],
-        "answer": [
-          "自転車と",
-          "時計と",
-          "どちらが",
-          "高いですか。",
-          "どちらも高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_233",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara jam dan kamera, mana yang lebih mahal? jam lebih mahal.",
-        "reading": "とけいとカメラとどちらがたかいですか。とけいのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "時計とカメラとどちらが高いですか。時計のほうが高いです。",
-        "prompt": "Antara jam dan kamera, mana yang lebih mahal? jam lebih mahal.",
-        "tiles": [
-          "どちらが",
-          "カメラと",
-          "時計と",
-          "時計のほうが高いです。",
+          "どちらも高いです。",
           "高いですか。"
         ],
         "answer": [
+          "自転車と",
           "時計と",
-          "カメラと",
           "どちらが",
           "高いですか。",
-          "時計のほうが高いです。"
-        ],
-        "audioText": "時計とカメラとどちらが高いですか。時計のほうが高いです。"
-      },
-      {
-        "id": "q_b12_234",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara kamera dan televisi, mana yang lebih mahal? kamera lebih mahal.",
-        "reading": "カメラとテレビとどちらがたかいですか。カメラのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "カメラとテレビとどちらが高いですか。カメラのほうが高いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "カメラとテレビとどちらが高いですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih kamera. Pilih respons B.",
-        "options": [
-          "テレビのほうが高いです。",
-          "カメラのほうが高いです。",
-          "テレビより高いです。",
-          "カメラより高いです。"
-        ],
-        "answer": "カメラのほうが高いです。",
-        "answerId": "kamera lebih mahal.",
-        "dialogueId": [
-          "Antara kamera dan televisi, mana yang lebih mahal?",
-          "kamera lebih mahal."
-        ]
-      },
-      {
-        "id": "q_b12_235",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara televisi dan mobil, mana yang lebih mahal? Keduanya mahal.",
-        "reading": "テレビとくるまとどちらがたかいですか。どちらもたかいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "テレビと車とどちらが高いですか。どちらも高いです。",
-        "prompt": "テレビと車とどちらが高いですか。＿＿＿",
-        "options": [
-          "どちらと高いです。",
-          "どちらより高いです。",
-          "どちらも高いです。",
-          "どちらが高いです。"
-        ],
-        "answer": "どちらも高いです。"
-      },
-      {
-        "id": "q_b12_236",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara Shinkansen dan kereta, mana yang lebih cepat? Shinkansen lebih cepat.",
-        "reading": "しんかんせんとでんしゃとどちらがはやいですか。しんかんせんのほうがはやいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "新幹線と電車とどちらが速いですか。新幹線のほうが速いです。",
-        "prompt": "Antara Shinkansen dan kereta, mana yang lebih cepat? Shinkansen lebih cepat.",
-        "options": [
-          "新幹線と電車とどちらが速いですか。電車より速いです。",
-          "新幹線と電車とどちらが速いですか。新幹線より速いです。",
-          "新幹線と電車とどちらが速いですか。電車のほうが速いです。",
-          "新幹線と電車とどちらが速いですか。新幹線のほうが速いです。"
-        ],
-        "answer": "新幹線と電車とどちらが速いですか。新幹線のほうが速いです。"
-      },
-      {
-        "id": "q_b12_237",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara kereta dan bus, mana yang lebih cepat? kereta lebih cepat.",
-        "reading": "でんしゃとバスとどちらがはやいですか。でんしゃのほうがはやいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "電車とバスとどちらが速いですか。電車のほうが速いです。",
-        "prompt": "Antara kereta dan bus, mana yang lebih cepat? kereta lebih cepat.",
-        "tiles": [
-          "速いですか。",
-          "どちらが",
-          "バスと",
-          "電車と",
-          "電車のほうが速いです。"
-        ],
-        "answer": [
-          "電車と",
-          "バスと",
-          "どちらが",
-          "速いですか。",
-          "電車のほうが速いです。"
-        ]
-      },
-      {
-        "id": "q_b12_238",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara bus dan taksi, mana yang lebih cepat? Keduanya cepat.",
-        "reading": "バスとタクシーとどちらがはやいですか。どちらもはやいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "バスとタクシーとどちらが速いですか。どちらも速いです。",
-        "prompt": "Antara bus dan taksi, mana yang lebih cepat? Keduanya cepat.",
-        "tiles": [
-          "どちらが",
-          "タクシーと",
-          "バスと",
-          "どちらも速いです。",
-          "速いですか。"
-        ],
-        "answer": [
-          "バスと",
-          "タクシーと",
-          "どちらが",
-          "速いですか。",
-          "どちらも速いです。"
+          "どちらも高いです。"
         ]
       },
       {
         "id": "q_b12_239",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara taksi dan sepeda, mana yang lebih cepat? taksi lebih cepat.",
-        "reading": "タクシーとじてんしゃとどちらがはやいですか。タクシーのほうがはやいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara bulan depan dan bulan ini, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "らいげつとこんげつとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "タクシーと自転車とどちらが速いですか。タクシーのほうが速いです。",
-        "prompt": "Antara taksi dan sepeda, mana yang lebih cepat? taksi lebih cepat.",
+        "fullJp": "来月と今月とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "Antara bulan depan dan bulan ini, mana yang lebih sibuk? Keduanya sibuk.",
         "tiles": [
-          "自転車と",
-          "タクシーと",
-          "タクシーのほうが速いです。",
-          "速いですか。",
+          "今月と",
+          "来月と",
+          "どちらも忙しいです。",
+          "忙しいですか。",
           "どちらが"
         ],
         "answer": [
-          "タクシーと",
-          "自転車と",
+          "来月と",
+          "今月と",
           "どちらが",
-          "速いですか。",
-          "タクシーのほうが速いです。"
+          "忙しいですか。",
+          "どちらも忙しいです。"
         ],
-        "audioText": "タクシーと自転車とどちらが速いですか。タクシーのほうが速いです。"
+        "audioText": "来月と今月とどちらが忙しいですか。どちらも忙しいです。"
       },
       {
         "id": "q_b12_240",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara sepeda dan Shinkansen, mana yang lebih cepat? sepeda lebih cepat.",
-        "reading": "じてんしゃとしんかんせんとどちらがはやいですか。じてんしゃのほうがはやいです。",
+        "translation": "Antara jam dan kamera, mana yang lebih mahal? jam lebih mahal.",
+        "reading": "とけいとカメラとどちらがたかいですか。とけいのほうがたかいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "自転車と新幹線とどちらが速いですか。自転車のほうが速いです。",
+        "fullJp": "時計とカメラとどちらが高いですか。時計のほうが高いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "自転車と新幹線とどちらが速いですか。"
+            "text": "時計とカメラとどちらが高いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih sepeda. Pilih respons B.",
+        "question": "Konteks: pembicara memilih jam. Pilih respons B.",
         "options": [
-          "自転車のほうが速いです。",
-          "新幹線より速いです。",
-          "新幹線のほうが速いです。",
-          "自転車より速いです。"
+          "時計のほうが高いです。",
+          "カメラより高いです。",
+          "カメラのほうが高いです。",
+          "時計より高いです。"
         ],
-        "answer": "自転車のほうが速いです。",
-        "answerId": "sepeda lebih cepat.",
+        "answer": "時計のほうが高いです。",
+        "answerId": "jam lebih mahal.",
         "dialogueId": [
-          "Antara sepeda dan Shinkansen, mana yang lebih cepat?",
-          "sepeda lebih cepat."
+          "Antara jam dan kamera, mana yang lebih mahal?",
+          "jam lebih mahal."
         ]
       }
     ]
@@ -5734,367 +5734,367 @@ window.LEVELS_BAB12_DATA = [
       {
         "id": "q_b12_241",
         "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara kopi dan teh hitam, mana yang lebih dingin? Keduanya dingin.",
-        "reading": "コーヒーとこうちゃとどちらがつめたいですか。どちらもつめたいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "instruction": "Konteks: pembicara memilih tahun ini. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara tahun ini dan tahun lalu, mana yang lebih panas (cuaca)? tahun ini lebih panas (cuaca).",
+        "reading": "ことしときょねんとどちらがあついですか。ことしのほうがあついです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "コーヒーと紅茶とどちらが冷たいですか。どちらも冷たいです。",
-        "prompt": "コーヒーと紅茶とどちらが冷たいですか。＿＿＿",
+        "fullJp": "今年と去年とどちらが暑いですか。今年のほうが暑いです。",
+        "prompt": "今年と去年とどちらが暑いですか。＿＿＿",
         "options": [
-          "どちらより冷たいです。",
-          "どちらが冷たいです。",
-          "どちらと冷たいです。",
-          "どちらも冷たいです。"
+          "去年より暑いです。",
+          "去年のほうが暑いです。",
+          "今年より暑いです。",
+          "今年のほうが暑いです。"
         ],
-        "answer": "どちらも冷たいです。"
+        "answer": "今年のほうが暑いです。"
       },
       {
         "id": "q_b12_242",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara teh hitam dan jus, mana yang lebih dingin? teh hitam lebih dingin.",
-        "reading": "こうちゃとジュースとどちらがつめたいですか。こうちゃのほうがつめたいです。",
+        "translation": "Antara kamera dan televisi, mana yang lebih mahal? kamera lebih mahal.",
+        "reading": "カメラとテレビとどちらがたかいですか。カメラのほうがたかいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "紅茶とジュースとどちらが冷たいですか。紅茶のほうが冷たいです。",
-        "prompt": "Antara teh hitam dan jus, mana yang lebih dingin? teh hitam lebih dingin.",
+        "fullJp": "カメラとテレビとどちらが高いですか。カメラのほうが高いです。",
+        "prompt": "Antara kamera dan televisi, mana yang lebih mahal? kamera lebih mahal.",
         "options": [
-          "紅茶とジュースとどちらが冷たいですか。紅茶のほうが冷たいです。",
-          "紅茶とジュースとどちらが冷たいですか。紅茶より冷たいです。",
-          "紅茶とジュースとどちらが冷たいですか。ジュースより冷たいです。",
-          "紅茶とジュースとどちらが冷たいですか。ジュースのほうが冷たいです。"
+          "カメラとテレビとどちらが高いですか。カメラのほうが高いです。",
+          "カメラとテレビとどちらが高いですか。カメラより高いです。",
+          "カメラとテレビとどちらが高いですか。テレビより高いです。",
+          "カメラとテレビとどちらが高いですか。テレビのほうが高いです。"
         ],
-        "answer": "紅茶とジュースとどちらが冷たいですか。紅茶のほうが冷たいです。"
+        "answer": "カメラとテレビとどちらが高いですか。カメラのほうが高いです。"
       },
       {
         "id": "q_b12_243",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara jus dan susu, mana yang lebih dingin? jus lebih dingin.",
-        "reading": "ジュースとぎゅうにゅうとどちらがつめたいですか。ジュースのほうがつめたいです。",
+        "translation": "Antara tahun depan dan tahun ini, mana yang lebih panas (cuaca)? tahun depan lebih panas (cuaca).",
+        "reading": "らいねんとことしとどちらがあついですか。らいねんのほうがあついです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "ジュースと牛乳とどちらが冷たいですか。ジュースのほうが冷たいです。",
-        "prompt": "Antara jus dan susu, mana yang lebih dingin? jus lebih dingin.",
+        "fullJp": "来年と今年とどちらが暑いですか。来年のほうが暑いです。",
+        "prompt": "Antara tahun depan dan tahun ini, mana yang lebih panas (cuaca)? tahun depan lebih panas (cuaca).",
         "tiles": [
           "どちらが",
-          "牛乳と",
-          "ジュースと",
-          "ジュースのほうが冷たいです。",
-          "冷たいですか。"
+          "今年と",
+          "来年と",
+          "来年のほうが暑いです。",
+          "暑いですか。"
         ],
         "answer": [
-          "ジュースと",
-          "牛乳と",
+          "来年と",
+          "今年と",
           "どちらが",
-          "冷たいですか。",
-          "ジュースのほうが冷たいです。"
+          "暑いですか。",
+          "来年のほうが暑いです。"
         ]
       },
       {
         "id": "q_b12_244",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara susu dan air, mana yang lebih dingin? Keduanya dingin.",
-        "reading": "ぎゅうにゅうとみずとどちらがつめたいですか。どちらもつめたいです。",
+        "translation": "Antara televisi dan mobil, mana yang lebih mahal? Keduanya mahal.",
+        "reading": "テレビとくるまとどちらがたかいですか。どちらもたかいです。",
         "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "牛乳と水とどちらが冷たいですか。どちらも冷たいです。",
-        "prompt": "Antara susu dan air, mana yang lebih dingin? Keduanya dingin.",
+        "fullJp": "テレビと車とどちらが高いですか。どちらも高いです。",
+        "prompt": "Antara televisi dan mobil, mana yang lebih mahal? Keduanya mahal.",
         "tiles": [
-          "水と",
-          "牛乳と",
-          "どちらも冷たいです。",
-          "冷たいですか。",
+          "車と",
+          "テレビと",
+          "どちらも高いです。",
+          "高いですか。",
           "どちらが"
         ],
         "answer": [
-          "牛乳と",
-          "水と",
+          "テレビと",
+          "車と",
           "どちらが",
-          "冷たいですか。",
-          "どちらも冷たいです。"
+          "高いですか。",
+          "どちらも高いです。"
         ]
       },
       {
         "id": "q_b12_245",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara air dan kopi, mana yang lebih dingin? air lebih dingin.",
-        "reading": "みずとコーヒーとどちらがつめたいですか。みずのほうがつめたいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara malam ini dan tadi pagi, mana yang lebih dingin (cuaca)? Keduanya dingin (cuaca).",
+        "reading": "こんばんとけさとどちらがさむいですか。どちらもさむいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "水とコーヒーとどちらが冷たいですか。水のほうが冷たいです。",
-        "prompt": "Antara air dan kopi, mana yang lebih dingin? air lebih dingin.",
+        "fullJp": "今晩と今朝とどちらが寒いですか。どちらも寒いです。",
+        "prompt": "Antara malam ini dan tadi pagi, mana yang lebih dingin (cuaca)? Keduanya dingin (cuaca).",
         "tiles": [
-          "水と",
-          "水のほうが冷たいです。",
-          "冷たいですか。",
+          "今晩と",
+          "どちらも寒いです。",
+          "寒いですか。",
           "どちらが",
-          "コーヒーと"
+          "今朝と"
         ],
         "answer": [
-          "水と",
-          "コーヒーと",
+          "今晩と",
+          "今朝と",
           "どちらが",
-          "冷たいですか。",
-          "水のほうが冷たいです。"
+          "寒いですか。",
+          "どちらも寒いです。"
         ],
-        "audioText": "水とコーヒーとどちらが冷たいですか。水のほうが冷たいです。"
+        "audioText": "今晩と今朝とどちらが寒いですか。どちらも寒いです。"
       },
       {
         "id": "q_b12_246",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara cokelat dan jus, mana yang lebih manis? cokelat lebih manis.",
-        "reading": "チョコレートとジュースとどちらがあまいですか。チョコレートのほうがあまいです。",
+        "translation": "Antara Shinkansen dan kereta, mana yang lebih cepat? Shinkansen lebih cepat.",
+        "reading": "しんかんせんとでんしゃとどちらがはやいですか。しんかんせんのほうがはやいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "チョコレートとジュースとどちらが甘いですか。チョコレートのほうが甘いです。",
+        "fullJp": "新幹線と電車とどちらが速いですか。新幹線のほうが速いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "チョコレートとジュースとどちらが甘いですか。"
+            "text": "新幹線と電車とどちらが速いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih cokelat. Pilih respons B.",
+        "question": "Konteks: pembicara memilih Shinkansen. Pilih respons B.",
         "options": [
-          "ジュースのほうが甘いです。",
-          "チョコレートより甘いです。",
-          "チョコレートのほうが甘いです。",
-          "ジュースより甘いです。"
+          "電車のほうが速いです。",
+          "新幹線より速いです。",
+          "新幹線のほうが速いです。",
+          "電車より速いです。"
         ],
-        "answer": "チョコレートのほうが甘いです。",
-        "answerId": "cokelat lebih manis.",
+        "answer": "新幹線のほうが速いです。",
+        "answerId": "Shinkansen lebih cepat.",
         "dialogueId": [
-          "Antara cokelat dan jus, mana yang lebih manis?",
-          "cokelat lebih manis."
+          "Antara Shinkansen dan kereta, mana yang lebih cepat?",
+          "Shinkansen lebih cepat."
         ]
       },
       {
         "id": "q_b12_247",
         "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara jus dan apel, mana yang lebih manis? Keduanya manis.",
-        "reading": "ジュースとりんごとどちらがあまいですか。どちらもあまいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "instruction": "Konteks: pembicara memilih setiap hari. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara setiap hari dan setiap pagi, mana yang lebih sibuk? setiap hari lebih sibuk.",
+        "reading": "まいにちとまいあさとどちらがいそがしいですか。まいにちのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "ジュースとりんごとどちらが甘いですか。どちらも甘いです。",
-        "prompt": "ジュースとりんごとどちらが甘いですか。＿＿＿",
+        "fullJp": "毎日と毎朝とどちらが忙しいですか。毎日のほうが忙しいです。",
+        "prompt": "毎日と毎朝とどちらが忙しいですか。＿＿＿",
         "options": [
-          "どちらと甘いです。",
-          "どちらも甘いです。",
-          "どちらより甘いです。",
-          "どちらが甘いです。"
+          "毎日より忙しいです。",
+          "毎日のほうが忙しいです。",
+          "毎朝より忙しいです。",
+          "毎朝のほうが忙しいです。"
         ],
-        "answer": "どちらも甘いです。"
+        "answer": "毎日のほうが忙しいです。"
       },
       {
         "id": "q_b12_248",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara apel dan jeruk, mana yang lebih manis? apel lebih manis.",
-        "reading": "りんごとみかんとどちらがあまいですか。りんごのほうがあまいです。",
+        "translation": "Antara kereta dan bus, mana yang lebih cepat? kereta lebih cepat.",
+        "reading": "でんしゃとバスとどちらがはやいですか。でんしゃのほうがはやいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "りんごとみかんとどちらが甘いですか。りんごのほうが甘いです。",
-        "prompt": "Antara apel dan jeruk, mana yang lebih manis? apel lebih manis.",
+        "fullJp": "電車とバスとどちらが速いですか。電車のほうが速いです。",
+        "prompt": "Antara kereta dan bus, mana yang lebih cepat? kereta lebih cepat.",
         "options": [
-          "りんごとみかんとどちらが甘いですか。りんごのほうが甘いです。",
-          "りんごとみかんとどちらが甘いですか。みかんより甘いです。",
-          "りんごとみかんとどちらが甘いですか。みかんのほうが甘いです。",
-          "りんごとみかんとどちらが甘いですか。りんごより甘いです。"
+          "電車とバスとどちらが速いですか。電車のほうが速いです。",
+          "電車とバスとどちらが速いですか。バスより速いです。",
+          "電車とバスとどちらが速いですか。バスのほうが速いです。",
+          "電車とバスとどちらが速いですか。電車より速いです。"
         ],
-        "answer": "りんごとみかんとどちらが甘いですか。りんごのほうが甘いです。"
+        "answer": "電車とバスとどちらが速いですか。電車のほうが速いです。"
       },
       {
         "id": "q_b12_249",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara jeruk dan es krim, mana yang lebih manis? jeruk lebih manis.",
-        "reading": "みかんとアイスクリームとどちらがあまいですか。みかんのほうがあまいです。",
+        "translation": "Antara setiap pagi dan setiap malam, mana yang lebih sibuk? setiap pagi lebih sibuk.",
+        "reading": "まいあさとまいばんとどちらがいそがしいですか。まいあさのほうがいそがしいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "みかんとアイスクリームとどちらが甘いですか。みかんのほうが甘いです。",
-        "prompt": "Antara jeruk dan es krim, mana yang lebih manis? jeruk lebih manis.",
+        "fullJp": "毎朝と毎晩とどちらが忙しいですか。毎朝のほうが忙しいです。",
+        "prompt": "Antara setiap pagi dan setiap malam, mana yang lebih sibuk? setiap pagi lebih sibuk.",
         "tiles": [
-          "アイスクリームと",
-          "みかんと",
-          "みかんのほうが甘いです。",
-          "甘いですか。",
+          "毎晩と",
+          "毎朝と",
+          "毎朝のほうが忙しいです。",
+          "忙しいですか。",
           "どちらが"
         ],
         "answer": [
-          "みかんと",
-          "アイスクリームと",
+          "毎朝と",
+          "毎晩と",
           "どちらが",
-          "甘いですか。",
-          "みかんのほうが甘いです。"
+          "忙しいですか。",
+          "毎朝のほうが忙しいです。"
         ]
       },
       {
         "id": "q_b12_250",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara es krim dan cokelat, mana yang lebih manis? Keduanya manis.",
-        "reading": "アイスクリームとチョコレートとどちらがあまいですか。どちらもあまいです。",
+        "translation": "Antara bus dan taksi, mana yang lebih cepat? Keduanya cepat.",
+        "reading": "バスとタクシーとどちらがはやいですか。どちらもはやいです。",
         "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "アイスクリームとチョコレートとどちらが甘いですか。どちらも甘いです。",
-        "prompt": "Antara es krim dan cokelat, mana yang lebih manis? Keduanya manis.",
+        "fullJp": "バスとタクシーとどちらが速いですか。どちらも速いです。",
+        "prompt": "Antara bus dan taksi, mana yang lebih cepat? Keduanya cepat.",
         "tiles": [
-          "アイスクリームと",
-          "どちらも甘いです。",
-          "甘いですか。",
+          "バスと",
+          "どちらも速いです。",
+          "速いですか。",
           "どちらが",
-          "チョコレートと"
+          "タクシーと"
         ],
         "answer": [
-          "アイスクリームと",
-          "チョコレートと",
+          "バスと",
+          "タクシーと",
           "どちらが",
-          "甘いですか。",
-          "どちらも甘いです。"
+          "速いですか。",
+          "どちらも速いです。"
         ]
       },
       {
         "id": "q_b12_251",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara sukiyaki dan sashimi, mana yang lebih enak? sukiyaki lebih enak.",
-        "reading": "すきやきとさしみとどちらがおいしいですか。すきやきのほうがおいしいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara setiap malam dan setiap hari, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "まいばんとまいにちとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "すき焼きと刺身とどちらがおいしいですか。すき焼きのほうがおいしいです。",
-        "prompt": "Antara sukiyaki dan sashimi, mana yang lebih enak? sukiyaki lebih enak.",
+        "fullJp": "毎晩と毎日とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "Antara setiap malam dan setiap hari, mana yang lebih sibuk? Keduanya sibuk.",
         "tiles": [
-          "すき焼きのほうがおいしいです。",
-          "おいしいですか。",
+          "どちらも忙しいです。",
+          "忙しいですか。",
           "どちらが",
-          "刺身と",
-          "すき焼きと"
+          "毎日と",
+          "毎晩と"
         ],
         "answer": [
-          "すき焼きと",
-          "刺身と",
+          "毎晩と",
+          "毎日と",
           "どちらが",
-          "おいしいですか。",
-          "すき焼きのほうがおいしいです。"
+          "忙しいですか。",
+          "どちらも忙しいです。"
         ],
-        "audioText": "すき焼きと刺身とどちらがおいしいですか。すき焼きのほうがおいしいです。"
+        "audioText": "毎晩と毎日とどちらが忙しいですか。どちらも忙しいです。"
       },
       {
         "id": "q_b12_252",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara sashimi dan sushi, mana yang lebih enak? sashimi lebih enak.",
-        "reading": "さしみとおすしとどちらがおいしいですか。さしみのほうがおいしいです。",
+        "translation": "Antara taksi dan sepeda, mana yang lebih cepat? taksi lebih cepat.",
+        "reading": "タクシーとじてんしゃとどちらがはやいですか。タクシーのほうがはやいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "刺身とおすしとどちらがおいしいですか。刺身のほうがおいしいです。",
+        "fullJp": "タクシーと自転車とどちらが速いですか。タクシーのほうが速いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "刺身とおすしとどちらがおいしいですか。"
+            "text": "タクシーと自転車とどちらが速いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih sashimi. Pilih respons B.",
+        "question": "Konteks: pembicara memilih taksi. Pilih respons B.",
         "options": [
-          "おすしよりおいしいです。",
-          "刺身のほうがおいしいです。",
-          "おすしのほうがおいしいです。",
-          "刺身よりおいしいです。"
+          "自転車より速いです。",
+          "タクシーのほうが速いです。",
+          "自転車のほうが速いです。",
+          "タクシーより速いです。"
         ],
-        "answer": "刺身のほうがおいしいです。",
-        "answerId": "sashimi lebih enak.",
+        "answer": "タクシーのほうが速いです。",
+        "answerId": "taksi lebih cepat.",
         "dialogueId": [
-          "Antara sashimi dan sushi, mana yang lebih enak?",
-          "sashimi lebih enak."
+          "Antara taksi dan sepeda, mana yang lebih cepat?",
+          "taksi lebih cepat."
         ]
       },
       {
         "id": "q_b12_253",
         "type": "complete",
         "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara sushi dan tempura, mana yang lebih enak? Keduanya enak.",
-        "reading": "おすしとてんぷらとどちらがおいしいですか。どちらもおいしいです。",
+        "translation": "Antara hari ini dan kemarin lusa, mana yang lebih senggang? Keduanya senggang.",
+        "reading": "きょうとおとといとどちらがひまですか。どちらもひまです。",
         "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "おすしとてんぷらとどちらがおいしいですか。どちらもおいしいです。",
-        "prompt": "おすしとてんぷらとどちらがおいしいですか。＿＿＿",
+        "fullJp": "今日とおとといとどちらが暇ですか。どちらも暇です。",
+        "prompt": "今日とおとといとどちらが暇ですか。＿＿＿",
         "options": [
-          "どちらよりおいしいです。",
-          "どちらがおいしいです。",
-          "どちらとおいしいです。",
-          "どちらもおいしいです。"
+          "どちらより暇です。",
+          "どちらが暇です。",
+          "どちらと暇です。",
+          "どちらも暇です。"
         ],
-        "answer": "どちらもおいしいです。"
+        "answer": "どちらも暇です。"
       },
       {
         "id": "q_b12_254",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara tempura dan roti, mana yang lebih enak? tempura lebih enak.",
-        "reading": "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。",
+        "translation": "Antara sepeda dan Shinkansen, mana yang lebih cepat? sepeda lebih cepat.",
+        "reading": "じてんしゃとしんかんせんとどちらがはやいですか。じてんしゃのほうがはやいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。",
-        "prompt": "Antara tempura dan roti, mana yang lebih enak? tempura lebih enak.",
+        "fullJp": "自転車と新幹線とどちらが速いですか。自転車のほうが速いです。",
+        "prompt": "Antara sepeda dan Shinkansen, mana yang lebih cepat? sepeda lebih cepat.",
         "options": [
-          "てんぷらとパンとどちらがおいしいですか。パンのほうがおいしいです。",
-          "てんぷらとパンとどちらがおいしいですか。てんぷらよりおいしいです。",
-          "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。",
-          "てんぷらとパンとどちらがおいしいですか。パンよりおいしいです。"
+          "自転車と新幹線とどちらが速いですか。新幹線のほうが速いです。",
+          "自転車と新幹線とどちらが速いですか。自転車より速いです。",
+          "自転車と新幹線とどちらが速いですか。自転車のほうが速いです。",
+          "自転車と新幹線とどちらが速いですか。新幹線より速いです。"
         ],
-        "answer": "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。"
+        "answer": "自転車と新幹線とどちらが速いですか。自転車のほうが速いです。"
       },
       {
         "id": "q_b12_255",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara roti dan sukiyaki, mana yang lebih enak? roti lebih enak.",
-        "reading": "パンとすきやきとどちらがおいしいですか。パンのほうがおいしいです。",
+        "translation": "Antara besok dan hari ini, mana yang lebih senggang? besok lebih senggang.",
+        "reading": "あしたときょうとどちらがひまですか。あしたのほうがひまです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "パンとすき焼きとどちらがおいしいですか。パンのほうがおいしいです。",
-        "prompt": "Antara roti dan sukiyaki, mana yang lebih enak? roti lebih enak.",
+        "fullJp": "明日と今日とどちらが暇ですか。明日のほうが暇です。",
+        "prompt": "Antara besok dan hari ini, mana yang lebih senggang? besok lebih senggang.",
         "tiles": [
-          "パンと",
-          "パンのほうがおいしいです。",
-          "おいしいですか。",
+          "明日と",
+          "明日のほうが暇です。",
+          "暇ですか。",
           "どちらが",
-          "すき焼きと"
+          "今日と"
         ],
         "answer": [
-          "パンと",
-          "すき焼きと",
+          "明日と",
+          "今日と",
           "どちらが",
-          "おいしいですか。",
-          "パンのほうがおいしいです。"
+          "暇ですか。",
+          "明日のほうが暇です。"
         ]
       }
     ]
@@ -6108,6 +6108,779 @@ window.LEVELS_BAB12_DATA = [
     "questions": [
       {
         "id": "q_b12_256",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Antara kopi dan teh hitam, mana yang lebih dingin? Keduanya dingin.",
+        "reading": "コーヒーとこうちゃとどちらがつめたいですか。どちらもつめたいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "コーヒーと紅茶とどちらが冷たいですか。どちらも冷たいです。",
+        "prompt": "Antara kopi dan teh hitam, mana yang lebih dingin? Keduanya dingin.",
+        "tiles": [
+          "どちらも冷たいです。",
+          "冷たいですか。",
+          "どちらが",
+          "紅茶と",
+          "コーヒーと"
+        ],
+        "answer": [
+          "コーヒーと",
+          "紅茶と",
+          "どちらが",
+          "冷たいですか。",
+          "どちらも冷たいです。"
+        ]
+      },
+      {
+        "id": "q_b12_257",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara besok lusa dan kemarin, mana yang lebih senggang? besok lusa lebih senggang.",
+        "reading": "あさってときのうとどちらがひまですか。あさってのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "あさってと昨日とどちらが暇ですか。あさってのほうが暇です。",
+        "prompt": "Antara besok lusa dan kemarin, mana yang lebih senggang? besok lusa lebih senggang.",
+        "tiles": [
+          "暇ですか。",
+          "どちらが",
+          "昨日と",
+          "あさってと",
+          "あさってのほうが暇です。"
+        ],
+        "answer": [
+          "あさってと",
+          "昨日と",
+          "どちらが",
+          "暇ですか。",
+          "あさってのほうが暇です。"
+        ],
+        "audioText": "あさってと昨日とどちらが暇ですか。あさってのほうが暇です。"
+      },
+      {
+        "id": "q_b12_258",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Antara teh hitam dan jus, mana yang lebih dingin? teh hitam lebih dingin.",
+        "reading": "こうちゃとジュースとどちらがつめたいですか。こうちゃのほうがつめたいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "紅茶とジュースとどちらが冷たいですか。紅茶のほうが冷たいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "紅茶とジュースとどちらが冷たいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks: pembicara memilih teh hitam. Pilih respons B.",
+        "options": [
+          "紅茶のほうが冷たいです。",
+          "紅茶より冷たいです。",
+          "ジュースより冷たいです。",
+          "ジュースのほうが冷たいです。"
+        ],
+        "answer": "紅茶のほうが冷たいです。",
+        "answerId": "teh hitam lebih dingin.",
+        "dialogueId": [
+          "Antara teh hitam dan jus, mana yang lebih dingin?",
+          "teh hitam lebih dingin."
+        ]
+      },
+      {
+        "id": "q_b12_259",
+        "type": "complete",
+        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara minggu ini dan minggu depan, mana yang lebih senggang? Keduanya senggang.",
+        "reading": "こんしゅうとらいしゅうとどちらがひまですか。どちらもひまです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今週と来週とどちらが暇ですか。どちらも暇です。",
+        "prompt": "今週と来週とどちらが暇ですか。＿＿＿",
+        "options": [
+          "どちらと暇です。",
+          "どちらも暇です。",
+          "どちらより暇です。",
+          "どちらが暇です。"
+        ],
+        "answer": "どちらも暇です。"
+      },
+      {
+        "id": "q_b12_260",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara jus dan susu, mana yang lebih dingin? jus lebih dingin.",
+        "reading": "ジュースとぎゅうにゅうとどちらがつめたいですか。ジュースのほうがつめたいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "ジュースと牛乳とどちらが冷たいですか。ジュースのほうが冷たいです。",
+        "prompt": "Antara jus dan susu, mana yang lebih dingin? jus lebih dingin.",
+        "options": [
+          "ジュースと牛乳とどちらが冷たいですか。牛乳より冷たいです。",
+          "ジュースと牛乳とどちらが冷たいですか。牛乳のほうが冷たいです。",
+          "ジュースと牛乳とどちらが冷たいですか。ジュースのほうが冷たいです。",
+          "ジュースと牛乳とどちらが冷たいですか。ジュースより冷たいです。"
+        ],
+        "answer": "ジュースと牛乳とどちらが冷たいですか。ジュースのほうが冷たいです。"
+      },
+      {
+        "id": "q_b12_261",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara minggu depan dan minggu lalu, mana yang lebih senggang? minggu depan lebih senggang.",
+        "reading": "らいしゅうとせんしゅうとどちらがひまですか。らいしゅうのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "来週と先週とどちらが暇ですか。来週のほうが暇です。",
+        "prompt": "Antara minggu depan dan minggu lalu, mana yang lebih senggang? minggu depan lebih senggang.",
+        "tiles": [
+          "来週のほうが暇です。",
+          "暇ですか。",
+          "どちらが",
+          "先週と",
+          "来週と"
+        ],
+        "answer": [
+          "来週と",
+          "先週と",
+          "どちらが",
+          "暇ですか。",
+          "来週のほうが暇です。"
+        ]
+      },
+      {
+        "id": "q_b12_262",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Antara susu dan air, mana yang lebih dingin? Keduanya dingin.",
+        "reading": "ぎゅうにゅうとみずとどちらがつめたいですか。どちらもつめたいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "牛乳と水とどちらが冷たいですか。どちらも冷たいです。",
+        "prompt": "Antara susu dan air, mana yang lebih dingin? Keduanya dingin.",
+        "tiles": [
+          "冷たいですか。",
+          "どちらが",
+          "水と",
+          "牛乳と",
+          "どちらも冷たいです。"
+        ],
+        "answer": [
+          "牛乳と",
+          "水と",
+          "どちらが",
+          "冷たいですか。",
+          "どちらも冷たいです。"
+        ]
+      },
+      {
+        "id": "q_b12_263",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara bulan ini dan bulan depan, mana yang lebih sibuk? bulan ini lebih sibuk.",
+        "reading": "こんげつとらいげつとどちらがいそがしいですか。こんげつのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今月と来月とどちらが忙しいですか。今月のほうが忙しいです。",
+        "prompt": "Antara bulan ini dan bulan depan, mana yang lebih sibuk? bulan ini lebih sibuk.",
+        "tiles": [
+          "どちらが",
+          "来月と",
+          "今月と",
+          "今月のほうが忙しいです。",
+          "忙しいですか。"
+        ],
+        "answer": [
+          "今月と",
+          "来月と",
+          "どちらが",
+          "忙しいですか。",
+          "今月のほうが忙しいです。"
+        ],
+        "audioText": "今月と来月とどちらが忙しいですか。今月のほうが忙しいです。"
+      },
+      {
+        "id": "q_b12_264",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Antara air dan kopi, mana yang lebih dingin? air lebih dingin.",
+        "reading": "みずとコーヒーとどちらがつめたいですか。みずのほうがつめたいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "水とコーヒーとどちらが冷たいですか。水のほうが冷たいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "水とコーヒーとどちらが冷たいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks: pembicara memilih air. Pilih respons B.",
+        "options": [
+          "コーヒーより冷たいです。",
+          "水より冷たいです。",
+          "コーヒーのほうが冷たいです。",
+          "水のほうが冷たいです。"
+        ],
+        "answer": "水のほうが冷たいです。",
+        "answerId": "air lebih dingin.",
+        "dialogueId": [
+          "Antara air dan kopi, mana yang lebih dingin?",
+          "air lebih dingin."
+        ]
+      },
+      {
+        "id": "q_b12_265",
+        "type": "complete",
+        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara bulan depan dan bulan lalu, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "らいげつとせんげつとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "来月と先月とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "来月と先月とどちらが忙しいですか。＿＿＿",
+        "options": [
+          "どちらが忙しいです。",
+          "どちらも忙しいです。",
+          "どちらと忙しいです。",
+          "どちらより忙しいです。"
+        ],
+        "answer": "どちらも忙しいです。"
+      },
+      {
+        "id": "q_b12_266",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara cokelat dan jus, mana yang lebih manis? cokelat lebih manis.",
+        "reading": "チョコレートとジュースとどちらがあまいですか。チョコレートのほうがあまいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "チョコレートとジュースとどちらが甘いですか。チョコレートのほうが甘いです。",
+        "prompt": "Antara cokelat dan jus, mana yang lebih manis? cokelat lebih manis.",
+        "options": [
+          "チョコレートとジュースとどちらが甘いですか。ジュースのほうが甘いです。",
+          "チョコレートとジュースとどちらが甘いですか。チョコレートより甘いです。",
+          "チョコレートとジュースとどちらが甘いですか。チョコレートのほうが甘いです。",
+          "チョコレートとジュースとどちらが甘いですか。ジュースより甘いです。"
+        ],
+        "answer": "チョコレートとジュースとどちらが甘いですか。チョコレートのほうが甘いです。"
+      },
+      {
+        "id": "q_b12_267",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara tahun ini dan tahun depan, mana yang lebih dingin (cuaca)? tahun ini lebih dingin (cuaca).",
+        "reading": "ことしとらいねんとどちらがさむいですか。ことしのほうがさむいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今年と来年とどちらが寒いですか。今年のほうが寒いです。",
+        "prompt": "Antara tahun ini dan tahun depan, mana yang lebih dingin (cuaca)? tahun ini lebih dingin (cuaca).",
+        "tiles": [
+          "寒いですか。",
+          "どちらが",
+          "来年と",
+          "今年と",
+          "今年のほうが寒いです。"
+        ],
+        "answer": [
+          "今年と",
+          "来年と",
+          "どちらが",
+          "寒いですか。",
+          "今年のほうが寒いです。"
+        ]
+      },
+      {
+        "id": "q_b12_268",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Antara jus dan apel, mana yang lebih manis? Keduanya manis.",
+        "reading": "ジュースとりんごとどちらがあまいですか。どちらもあまいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "ジュースとりんごとどちらが甘いですか。どちらも甘いです。",
+        "prompt": "Antara jus dan apel, mana yang lebih manis? Keduanya manis.",
+        "tiles": [
+          "どちらが",
+          "りんごと",
+          "ジュースと",
+          "どちらも甘いです。",
+          "甘いですか。"
+        ],
+        "answer": [
+          "ジュースと",
+          "りんごと",
+          "どちらが",
+          "甘いですか。",
+          "どちらも甘いです。"
+        ]
+      },
+      {
+        "id": "q_b12_269",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara tahun depan dan tahun lalu, mana yang lebih dingin (cuaca)? tahun depan lebih dingin (cuaca).",
+        "reading": "らいねんときょねんとどちらがさむいですか。らいねんのほうがさむいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "来年と去年とどちらが寒いですか。来年のほうが寒いです。",
+        "prompt": "Antara tahun depan dan tahun lalu, mana yang lebih dingin (cuaca)? tahun depan lebih dingin (cuaca).",
+        "tiles": [
+          "去年と",
+          "来年と",
+          "来年のほうが寒いです。",
+          "寒いですか。",
+          "どちらが"
+        ],
+        "answer": [
+          "来年と",
+          "去年と",
+          "どちらが",
+          "寒いですか。",
+          "来年のほうが寒いです。"
+        ],
+        "audioText": "来年と去年とどちらが寒いですか。来年のほうが寒いです。"
+      },
+      {
+        "id": "q_b12_270",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Antara apel dan jeruk, mana yang lebih manis? apel lebih manis.",
+        "reading": "りんごとみかんとどちらがあまいですか。りんごのほうがあまいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "りんごとみかんとどちらが甘いですか。りんごのほうが甘いです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "りんごとみかんとどちらが甘いですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks: pembicara memilih apel. Pilih respons B.",
+        "options": [
+          "みかんのほうが甘いです。",
+          "りんごより甘いです。",
+          "みかんより甘いです。",
+          "りんごのほうが甘いです。"
+        ],
+        "answer": "りんごのほうが甘いです。",
+        "answerId": "apel lebih manis.",
+        "dialogueId": [
+          "Antara apel dan jeruk, mana yang lebih manis?",
+          "apel lebih manis."
+        ]
+      }
+    ]
+  },
+  {
+    "level": 19,
+    "title": "Level 19",
+    "tier": "sedang",
+    "focus": "Memilih dua hal: どちら／どちらも／のほうが",
+    "theme": "Minna no Nihongo Bab 12",
+    "questions": [
+      {
+        "id": "q_b12_271",
+        "type": "complete",
+        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara setiap hari dan setiap malam, mana yang lebih senggang? Keduanya senggang.",
+        "reading": "まいにちとまいばんとどちらがひまですか。どちらもひまです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎日と毎晩とどちらが暇ですか。どちらも暇です。",
+        "prompt": "毎日と毎晩とどちらが暇ですか。＿＿＿",
+        "options": [
+          "どちらも暇です。",
+          "どちらより暇です。",
+          "どちらと暇です。",
+          "どちらが暇です。"
+        ],
+        "answer": "どちらも暇です。"
+      },
+      {
+        "id": "q_b12_272",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara jeruk dan es krim, mana yang lebih manis? jeruk lebih manis.",
+        "reading": "みかんとアイスクリームとどちらがあまいですか。みかんのほうがあまいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "みかんとアイスクリームとどちらが甘いですか。みかんのほうが甘いです。",
+        "prompt": "Antara jeruk dan es krim, mana yang lebih manis? jeruk lebih manis.",
+        "options": [
+          "みかんとアイスクリームとどちらが甘いですか。アイスクリームより甘いです。",
+          "みかんとアイスクリームとどちらが甘いですか。みかんより甘いです。",
+          "みかんとアイスクリームとどちらが甘いですか。アイスクリームのほうが甘いです。",
+          "みかんとアイスクリームとどちらが甘いですか。みかんのほうが甘いです。"
+        ],
+        "answer": "みかんとアイスクリームとどちらが甘いですか。みかんのほうが甘いです。"
+      },
+      {
+        "id": "q_b12_273",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara setiap pagi dan setiap hari, mana yang lebih senggang? setiap pagi lebih senggang.",
+        "reading": "まいあさとまいにちとどちらがひまですか。まいあさのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎朝と毎日とどちらが暇ですか。毎朝のほうが暇です。",
+        "prompt": "Antara setiap pagi dan setiap hari, mana yang lebih senggang? setiap pagi lebih senggang.",
+        "tiles": [
+          "どちらが",
+          "毎日と",
+          "毎朝と",
+          "毎朝のほうが暇です。",
+          "暇ですか。"
+        ],
+        "answer": [
+          "毎朝と",
+          "毎日と",
+          "どちらが",
+          "暇ですか。",
+          "毎朝のほうが暇です。"
+        ]
+      },
+      {
+        "id": "q_b12_274",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Antara es krim dan cokelat, mana yang lebih manis? Keduanya manis.",
+        "reading": "アイスクリームとチョコレートとどちらがあまいですか。どちらもあまいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "アイスクリームとチョコレートとどちらが甘いですか。どちらも甘いです。",
+        "prompt": "Antara es krim dan cokelat, mana yang lebih manis? Keduanya manis.",
+        "tiles": [
+          "チョコレートと",
+          "アイスクリームと",
+          "どちらも甘いです。",
+          "甘いですか。",
+          "どちらが"
+        ],
+        "answer": [
+          "アイスクリームと",
+          "チョコレートと",
+          "どちらが",
+          "甘いですか。",
+          "どちらも甘いです。"
+        ]
+      },
+      {
+        "id": "q_b12_275",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara setiap malam dan setiap pagi, mana yang lebih senggang? setiap malam lebih senggang.",
+        "reading": "まいばんとまいあさとどちらがひまですか。まいばんのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎晩と毎朝とどちらが暇ですか。毎晩のほうが暇です。",
+        "prompt": "Antara setiap malam dan setiap pagi, mana yang lebih senggang? setiap malam lebih senggang.",
+        "tiles": [
+          "毎晩と",
+          "毎晩のほうが暇です。",
+          "暇ですか。",
+          "どちらが",
+          "毎朝と"
+        ],
+        "answer": [
+          "毎晩と",
+          "毎朝と",
+          "どちらが",
+          "暇ですか。",
+          "毎晩のほうが暇です。"
+        ],
+        "audioText": "毎晩と毎朝とどちらが暇ですか。毎晩のほうが暇です。"
+      },
+      {
+        "id": "q_b12_276",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Antara sukiyaki dan sashimi, mana yang lebih enak? sukiyaki lebih enak.",
+        "reading": "すきやきとさしみとどちらがおいしいですか。すきやきのほうがおいしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "すき焼きと刺身とどちらがおいしいですか。すき焼きのほうがおいしいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "すき焼きと刺身とどちらがおいしいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks: pembicara memilih sukiyaki. Pilih respons B.",
+        "options": [
+          "すき焼きのほうがおいしいです。",
+          "刺身よりおいしいです。",
+          "刺身のほうがおいしいです。",
+          "すき焼きよりおいしいです。"
+        ],
+        "answer": "すき焼きのほうがおいしいです。",
+        "answerId": "sukiyaki lebih enak.",
+        "dialogueId": [
+          "Antara sukiyaki dan sashimi, mana yang lebih enak?",
+          "sukiyaki lebih enak."
+        ]
+      },
+      {
+        "id": "q_b12_277",
+        "type": "complete",
+        "instruction": "Konteks: pembicara memilih hari ini. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara hari ini dan besok, mana yang lebih panas (cuaca)? hari ini lebih panas (cuaca).",
+        "reading": "きょうとあしたとどちらがあついですか。きょうのほうがあついです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今日と明日とどちらが暑いですか。今日のほうが暑いです。",
+        "prompt": "今日と明日とどちらが暑いですか。＿＿＿",
+        "options": [
+          "今日より暑いです。",
+          "明日のほうが暑いです。",
+          "今日のほうが暑いです。",
+          "明日より暑いです。"
+        ],
+        "answer": "今日のほうが暑いです。"
+      },
+      {
+        "id": "q_b12_278",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara sashimi dan sushi, mana yang lebih enak? sashimi lebih enak.",
+        "reading": "さしみとおすしとどちらがおいしいですか。さしみのほうがおいしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "刺身とおすしとどちらがおいしいですか。刺身のほうがおいしいです。",
+        "prompt": "Antara sashimi dan sushi, mana yang lebih enak? sashimi lebih enak.",
+        "options": [
+          "刺身とおすしとどちらがおいしいですか。おすしのほうがおいしいです。",
+          "刺身とおすしとどちらがおいしいですか。刺身のほうがおいしいです。",
+          "刺身とおすしとどちらがおいしいですか。おすしよりおいしいです。",
+          "刺身とおすしとどちらがおいしいですか。刺身よりおいしいです。"
+        ],
+        "answer": "刺身とおすしとどちらがおいしいですか。刺身のほうがおいしいです。"
+      },
+      {
+        "id": "q_b12_279",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara besok dan kemarin, mana yang lebih panas (cuaca)? Keduanya panas (cuaca).",
+        "reading": "あしたときのうとどちらがあついですか。どちらもあついです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "明日と昨日とどちらが暑いですか。どちらも暑いです。",
+        "prompt": "Antara besok dan kemarin, mana yang lebih panas (cuaca)? Keduanya panas (cuaca).",
+        "tiles": [
+          "昨日と",
+          "明日と",
+          "どちらも暑いです。",
+          "暑いですか。",
+          "どちらが"
+        ],
+        "answer": [
+          "明日と",
+          "昨日と",
+          "どちらが",
+          "暑いですか。",
+          "どちらも暑いです。"
+        ]
+      },
+      {
+        "id": "q_b12_280",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Antara sushi dan tempura, mana yang lebih enak? Keduanya enak.",
+        "reading": "おすしとてんぷらとどちらがおいしいですか。どちらもおいしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "おすしとてんぷらとどちらがおいしいですか。どちらもおいしいです。",
+        "prompt": "Antara sushi dan tempura, mana yang lebih enak? Keduanya enak.",
+        "tiles": [
+          "おすしと",
+          "どちらもおいしいです。",
+          "おいしいですか。",
+          "どちらが",
+          "てんぷらと"
+        ],
+        "answer": [
+          "おすしと",
+          "てんぷらと",
+          "どちらが",
+          "おいしいですか。",
+          "どちらもおいしいです。"
+        ]
+      },
+      {
+        "id": "q_b12_281",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara besok lusa dan kemarin lusa, mana yang lebih panas (cuaca)? besok lusa lebih panas (cuaca).",
+        "reading": "あさってとおとといとどちらがあついですか。あさってのほうがあついです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "あさってとおとといとどちらが暑いですか。あさってのほうが暑いです。",
+        "prompt": "Antara besok lusa dan kemarin lusa, mana yang lebih panas (cuaca)? besok lusa lebih panas (cuaca).",
+        "tiles": [
+          "あさってのほうが暑いです。",
+          "暑いですか。",
+          "どちらが",
+          "おとといと",
+          "あさってと"
+        ],
+        "answer": [
+          "あさってと",
+          "おとといと",
+          "どちらが",
+          "暑いですか。",
+          "あさってのほうが暑いです。"
+        ],
+        "audioText": "あさってとおとといとどちらが暑いですか。あさってのほうが暑いです。"
+      },
+      {
+        "id": "q_b12_282",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Antara tempura dan roti, mana yang lebih enak? tempura lebih enak.",
+        "reading": "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "てんぷらとパンとどちらがおいしいですか。てんぷらのほうがおいしいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "てんぷらとパンとどちらがおいしいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks: pembicara memilih tempura. Pilih respons B.",
+        "options": [
+          "パンのほうがおいしいです。",
+          "てんぷらよりおいしいです。",
+          "パンよりおいしいです。",
+          "てんぷらのほうがおいしいです。"
+        ],
+        "answer": "てんぷらのほうがおいしいです。",
+        "answerId": "tempura lebih enak.",
+        "dialogueId": [
+          "Antara tempura dan roti, mana yang lebih enak?",
+          "tempura lebih enak."
+        ]
+      },
+      {
+        "id": "q_b12_283",
+        "type": "complete",
+        "instruction": "Konteks: pembicara memilih hari ini. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara hari ini dan besok lusa, mana yang lebih dingin (cuaca)? hari ini lebih dingin (cuaca).",
+        "reading": "きょうとあさってとどちらがさむいですか。きょうのほうがさむいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今日とあさってとどちらが寒いですか。今日のほうが寒いです。",
+        "prompt": "今日とあさってとどちらが寒いですか。＿＿＿",
+        "options": [
+          "今日のほうが寒いです。",
+          "あさってより寒いです。",
+          "今日より寒いです。",
+          "あさってのほうが寒いです。"
+        ],
+        "answer": "今日のほうが寒いです。"
+      },
+      {
+        "id": "q_b12_284",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara roti dan sukiyaki, mana yang lebih enak? roti lebih enak.",
+        "reading": "パンとすきやきとどちらがおいしいですか。パンのほうがおいしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "パンとすき焼きとどちらがおいしいですか。パンのほうがおいしいです。",
+        "prompt": "Antara roti dan sukiyaki, mana yang lebih enak? roti lebih enak.",
+        "options": [
+          "パンとすき焼きとどちらがおいしいですか。すき焼きよりおいしいです。",
+          "パンとすき焼きとどちらがおいしいですか。パンのほうがおいしいです。",
+          "パンとすき焼きとどちらがおいしいですか。すき焼きのほうがおいしいです。",
+          "パンとすき焼きとどちらがおいしいですか。パンよりおいしいです。"
+        ],
+        "answer": "パンとすき焼きとどちらがおいしいですか。パンのほうがおいしいです。"
+      },
+      {
+        "id": "q_b12_285",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara besok dan kemarin lusa, mana yang lebih dingin (cuaca)? besok lebih dingin (cuaca).",
+        "reading": "あしたとおとといとどちらがさむいですか。あしたのほうがさむいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "明日とおとといとどちらが寒いですか。明日のほうが寒いです。",
+        "prompt": "Antara besok dan kemarin lusa, mana yang lebih dingin (cuaca)? besok lebih dingin (cuaca).",
+        "tiles": [
+          "明日と",
+          "明日のほうが寒いです。",
+          "寒いですか。",
+          "どちらが",
+          "おとといと"
+        ],
+        "answer": [
+          "明日と",
+          "おとといと",
+          "どちらが",
+          "寒いですか。",
+          "明日のほうが寒いです。"
+        ]
+      }
+    ]
+  },
+  {
+    "level": 20,
+    "title": "Level 20",
+    "tier": "sedang",
+    "focus": "Memilih dua hal: どちら／どちらも／のほうが",
+    "theme": "Minna no Nihongo Bab 12",
+    "questions": [
+      {
+        "id": "q_b12_286",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "Antara hotel dan perpustakaan, mana yang lebih tenang? Keduanya tenang.",
@@ -6133,108 +6906,240 @@ window.LEVELS_BAB12_DATA = [
         ]
       },
       {
-        "id": "q_b12_257",
+        "id": "q_b12_287",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara besok lusa dan besok, mana yang lebih dingin (cuaca)? Keduanya dingin (cuaca).",
+        "reading": "あさってとあしたとどちらがさむいですか。どちらもさむいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "あさってと明日とどちらが寒いですか。どちらも寒いです。",
+        "prompt": "Antara besok lusa dan besok, mana yang lebih dingin (cuaca)? Keduanya dingin (cuaca).",
+        "tiles": [
+          "寒いですか。",
+          "どちらが",
+          "明日と",
+          "あさってと",
+          "どちらも寒いです。"
+        ],
+        "answer": [
+          "あさってと",
+          "明日と",
+          "どちらが",
+          "寒いですか。",
+          "どちらも寒いです。"
+        ],
+        "audioText": "あさってと明日とどちらが寒いですか。どちらも寒いです。"
+      },
+      {
+        "id": "q_b12_288",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "Antara perpustakaan dan sekolah, mana yang lebih tenang? perpustakaan lebih tenang.",
         "reading": "としょかんとがっこうとどちらがしずかですか。としょかんのほうがしずかです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "図書館と学校とどちらが静かですか。図書館のほうが静かです。",
-        "prompt": "Antara perpustakaan dan sekolah, mana yang lebih tenang? perpustakaan lebih tenang.",
-        "tiles": [
-          "静かですか。",
-          "どちらが",
-          "学校と",
-          "図書館と",
-          "図書館のほうが静かです。"
-        ],
-        "answer": [
-          "図書館と",
-          "学校と",
-          "どちらが",
-          "静かですか。",
-          "図書館のほうが静かです。"
-        ],
-        "audioText": "図書館と学校とどちらが静かですか。図書館のほうが静かです。"
-      },
-      {
-        "id": "q_b12_258",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara sekolah dan stasiun, mana yang lebih tenang? sekolah lebih tenang.",
-        "reading": "がっこうとえきとどちらがしずかですか。がっこうのほうがしずかです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "学校と駅とどちらが静かですか。学校のほうが静かです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "学校と駅とどちらが静かですか。"
+            "text": "図書館と学校とどちらが静かですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih sekolah. Pilih respons B.",
+        "question": "Konteks: pembicara memilih perpustakaan. Pilih respons B.",
         "options": [
-          "学校のほうが静かです。",
           "学校より静かです。",
-          "駅より静かです。",
-          "駅のほうが静かです。"
+          "学校のほうが静かです。",
+          "図書館のほうが静かです。",
+          "図書館より静かです。"
         ],
-        "answer": "学校のほうが静かです。",
-        "answerId": "sekolah lebih tenang.",
+        "answer": "図書館のほうが静かです。",
+        "answerId": "perpustakaan lebih tenang.",
         "dialogueId": [
-          "Antara sekolah dan stasiun, mana yang lebih tenang?",
-          "sekolah lebih tenang."
+          "Antara perpustakaan dan sekolah, mana yang lebih tenang?",
+          "perpustakaan lebih tenang."
         ]
       },
       {
-        "id": "q_b12_259",
+        "id": "q_b12_289",
         "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "instruction": "Konteks: pembicara memilih minggu ini. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara minggu ini dan minggu lalu, mana yang lebih senggang? minggu ini lebih senggang.",
+        "reading": "こんしゅうとせんしゅうとどちらがひまですか。こんしゅうのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "今週と先週とどちらが暇ですか。今週のほうが暇です。",
+        "prompt": "今週と先週とどちらが暇ですか。＿＿＿",
+        "options": [
+          "今週のほうが暇です。",
+          "先週のほうが暇です。",
+          "今週より暇です。",
+          "先週より暇です。"
+        ],
+        "answer": "今週のほうが暇です。"
+      },
+      {
+        "id": "q_b12_290",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Antara sekolah dan stasiun, mana yang lebih tenang? sekolah lebih tenang.",
+        "reading": "がっこうとえきとどちらがしずかですか。がっこうのほうがしずかです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "学校と駅とどちらが静かですか。学校のほうが静かです。",
+        "prompt": "Antara sekolah dan stasiun, mana yang lebih tenang? sekolah lebih tenang.",
+        "options": [
+          "学校と駅とどちらが静かですか。駅のほうが静かです。",
+          "学校と駅とどちらが静かですか。学校より静かです。",
+          "学校と駅とどちらが静かですか。学校のほうが静かです。",
+          "学校と駅とどちらが静かですか。駅より静かです。"
+        ],
+        "answer": "学校と駅とどちらが静かですか。学校のほうが静かです。"
+      },
+      {
+        "id": "q_b12_291",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara minggu depan dan minggu ini, mana yang lebih senggang? minggu depan lebih senggang.",
+        "reading": "らいしゅうとこんしゅうとどちらがひまですか。らいしゅうのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "来週と今週とどちらが暇ですか。来週のほうが暇です。",
+        "prompt": "Antara minggu depan dan minggu ini, mana yang lebih senggang? minggu depan lebih senggang.",
+        "tiles": [
+          "来週のほうが暇です。",
+          "暇ですか。",
+          "どちらが",
+          "今週と",
+          "来週と"
+        ],
+        "answer": [
+          "来週と",
+          "今週と",
+          "どちらが",
+          "暇ですか。",
+          "来週のほうが暇です。"
+        ]
+      },
+      {
+        "id": "q_b12_292",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "Antara stasiun dan toko, mana yang lebih tenang? Keduanya tenang.",
         "reading": "えきとみせとどちらがしずかですか。どちらもしずかです。",
         "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "駅と店とどちらが静かですか。どちらも静かです。",
-        "prompt": "駅と店とどちらが静かですか。＿＿＿",
-        "options": [
-          "どちらと静かです。",
-          "どちらも静かです。",
-          "どちらより静かです。",
-          "どちらが静かです。"
+        "prompt": "Antara stasiun dan toko, mana yang lebih tenang? Keduanya tenang.",
+        "tiles": [
+          "静かですか。",
+          "どちらが",
+          "店と",
+          "駅と",
+          "どちらも静かです。"
         ],
-        "answer": "どちらも静かです。"
+        "answer": [
+          "駅と",
+          "店と",
+          "どちらが",
+          "静かですか。",
+          "どちらも静かです。"
+        ]
       },
       {
-        "id": "q_b12_260",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "id": "q_b12_293",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
+        "translation": "Antara setiap hari dan setiap pagi, mana yang lebih senggang? Keduanya senggang.",
+        "reading": "まいにちとまいあさとどちらがひまですか。どちらもひまです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎日と毎朝とどちらが暇ですか。どちらも暇です。",
+        "prompt": "Antara setiap hari dan setiap pagi, mana yang lebih senggang? Keduanya senggang.",
+        "tiles": [
+          "どちらが",
+          "毎朝と",
+          "毎日と",
+          "どちらも暇です。",
+          "暇ですか。"
+        ],
+        "answer": [
+          "毎日と",
+          "毎朝と",
+          "どちらが",
+          "暇ですか。",
+          "どちらも暇です。"
+        ],
+        "audioText": "毎日と毎朝とどちらが暇ですか。どちらも暇です。"
+      },
+      {
+        "id": "q_b12_294",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "Antara toko dan hotel, mana yang lebih tenang? toko lebih tenang.",
         "reading": "みせとホテルとどちらがしずかですか。みせのほうがしずかです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
         "fullJp": "店とホテルとどちらが静かですか。店のほうが静かです。",
-        "prompt": "Antara toko dan hotel, mana yang lebih tenang? toko lebih tenang.",
-        "options": [
-          "店とホテルとどちらが静かですか。ホテルより静かです。",
-          "店とホテルとどちらが静かですか。ホテルのほうが静かです。",
-          "店とホテルとどちらが静かですか。店のほうが静かです。",
-          "店とホテルとどちらが静かですか。店より静かです。"
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "店とホテルとどちらが静かですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
         ],
-        "answer": "店とホテルとどちらが静かですか。店のほうが静かです。"
+        "question": "Konteks: pembicara memilih toko. Pilih respons B.",
+        "options": [
+          "ホテルのほうが静かです。",
+          "店のほうが静かです。",
+          "ホテルより静かです。",
+          "店より静かです。"
+        ],
+        "answer": "店のほうが静かです。",
+        "answerId": "toko lebih tenang.",
+        "dialogueId": [
+          "Antara toko dan hotel, mana yang lebih tenang?",
+          "toko lebih tenang."
+        ]
       },
       {
-        "id": "q_b12_261",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_295",
+        "type": "complete",
+        "instruction": "Konteks: pembicara memilih setiap pagi. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Antara setiap pagi dan setiap malam, mana yang lebih senggang? setiap pagi lebih senggang.",
+        "reading": "まいあさとまいばんとどちらがひまですか。まいあさのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎朝と毎晩とどちらが暇ですか。毎朝のほうが暇です。",
+        "prompt": "毎朝と毎晩とどちらが暇ですか。＿＿＿",
+        "options": [
+          "毎朝より暇です。",
+          "毎晩より暇です。",
+          "毎晩のほうが暇です。",
+          "毎朝のほうが暇です。"
+        ],
+        "answer": "毎朝のほうが暇です。"
+      },
+      {
+        "id": "q_b12_296",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
         "translation": "Antara bahasa Jepang dan bahasa Inggris, mana yang lebih sulit? bahasa Jepang lebih sulit.",
         "reading": "にほんごとえいごとどちらがむずかしいですか。にほんごのほうがむずかしいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
@@ -6242,23 +7147,42 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "日本語と英語とどちらが難しいですか。日本語のほうが難しいです。",
         "prompt": "Antara bahasa Jepang dan bahasa Inggris, mana yang lebih sulit? bahasa Jepang lebih sulit.",
+        "options": [
+          "日本語と英語とどちらが難しいですか。英語より難しいです。",
+          "日本語と英語とどちらが難しいですか。英語のほうが難しいです。",
+          "日本語と英語とどちらが難しいですか。日本語のほうが難しいです。",
+          "日本語と英語とどちらが難しいですか。日本語より難しいです。"
+        ],
+        "answer": "日本語と英語とどちらが難しいですか。日本語のほうが難しいです。"
+      },
+      {
+        "id": "q_b12_297",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "translation": "Antara setiap malam dan setiap hari, mana yang lebih senggang? setiap malam lebih senggang.",
+        "reading": "まいばんとまいにちとどちらがひまですか。まいばんのほうがひまです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "topic": "どちら",
+        "casual": false,
+        "fullJp": "毎晩と毎日とどちらが暇ですか。毎晩のほうが暇です。",
+        "prompt": "Antara setiap malam dan setiap hari, mana yang lebih senggang? setiap malam lebih senggang.",
         "tiles": [
-          "日本語のほうが難しいです。",
-          "難しいですか。",
+          "暇ですか。",
           "どちらが",
-          "英語と",
-          "日本語と"
+          "毎日と",
+          "毎晩と",
+          "毎晩のほうが暇です。"
         ],
         "answer": [
-          "日本語と",
-          "英語と",
+          "毎晩と",
+          "毎日と",
           "どちらが",
-          "難しいですか。",
-          "日本語のほうが難しいです。"
+          "暇ですか。",
+          "毎晩のほうが暇です。"
         ]
       },
       {
-        "id": "q_b12_262",
+        "id": "q_b12_298",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "Antara bahasa Inggris dan bahasa Jepang, mana yang lebih sulit? Keduanya sulit.",
@@ -6269,1003 +7193,79 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "英語と日本語とどちらが難しいですか。どちらも難しいです。",
         "prompt": "Antara bahasa Inggris dan bahasa Jepang, mana yang lebih sulit? Keduanya sulit.",
         "tiles": [
-          "難しいですか。",
           "どちらが",
           "日本語と",
           "英語と",
-          "どちらも難しいです。"
-        ],
-        "answer": [
-          "英語と",
-          "日本語と",
-          "どちらが",
-          "難しいですか。",
-          "どちらも難しいです。"
-        ]
-      },
-      {
-        "id": "q_b12_263",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara ujian dan PR, mana yang lebih sulit? ujian lebih sulit.",
-        "reading": "しけんとしゅくだいとどちらがむずかしいですか。しけんのほうがむずかしいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "試験と宿題とどちらが難しいですか。試験のほうが難しいです。",
-        "prompt": "Antara ujian dan PR, mana yang lebih sulit? ujian lebih sulit.",
-        "tiles": [
-          "どちらが",
-          "宿題と",
-          "試験と",
-          "試験のほうが難しいです。",
+          "どちらも難しいです。",
           "難しいですか。"
         ],
         "answer": [
-          "試験と",
-          "宿題と",
+          "英語と",
+          "日本語と",
           "どちらが",
           "難しいですか。",
-          "試験のほうが難しいです。"
-        ],
-        "audioText": "試験と宿題とどちらが難しいですか。試験のほうが難しいです。"
-      },
-      {
-        "id": "q_b12_264",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara PR dan ujian, mana yang lebih sulit? PR lebih sulit.",
-        "reading": "しゅくだいとしけんとどちらがむずかしいですか。しゅくだいのほうがむずかしいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "宿題と試験とどちらが難しいですか。宿題のほうが難しいです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "宿題と試験とどちらが難しいですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih PR. Pilih respons B.",
-        "options": [
-          "試験より難しいです。",
-          "宿題より難しいです。",
-          "試験のほうが難しいです。",
-          "宿題のほうが難しいです。"
-        ],
-        "answer": "宿題のほうが難しいです。",
-        "answerId": "PR lebih sulit.",
-        "dialogueId": [
-          "Antara PR dan ujian, mana yang lebih sulit?",
-          "PR lebih sulit."
-        ]
-      },
-      {
-        "id": "q_b12_265",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara tas dan kamus, mana yang lebih ringan? Keduanya ringan.",
-        "reading": "かばんとじしょとどちらがかるいですか。どちらもかるいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "かばんと辞書とどちらが軽いですか。どちらも軽いです。",
-        "prompt": "かばんと辞書とどちらが軽いですか。＿＿＿",
-        "options": [
-          "どちらが軽いです。",
-          "どちらも軽いです。",
-          "どちらと軽いです。",
-          "どちらより軽いです。"
-        ],
-        "answer": "どちらも軽いです。"
-      },
-      {
-        "id": "q_b12_266",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara barang bawaan dan buku, mana yang lebih ringan? barang bawaan lebih ringan.",
-        "reading": "にもつとほんとどちらがかるいですか。にもつのほうがかるいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "荷物と本とどちらが軽いですか。荷物のほうが軽いです。",
-        "prompt": "Antara barang bawaan dan buku, mana yang lebih ringan? barang bawaan lebih ringan.",
-        "options": [
-          "荷物と本とどちらが軽いですか。本のほうが軽いです。",
-          "荷物と本とどちらが軽いですか。荷物より軽いです。",
-          "荷物と本とどちらが軽いですか。荷物のほうが軽いです。",
-          "荷物と本とどちらが軽いですか。本より軽いです。"
-        ],
-        "answer": "荷物と本とどちらが軽いですか。荷物のほうが軽いです。"
-      },
-      {
-        "id": "q_b12_267",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara kamus dan kamera, mana yang lebih ringan? kamus lebih ringan.",
-        "reading": "じしょとカメラとどちらがかるいですか。じしょのほうがかるいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "辞書とカメラとどちらが軽いですか。辞書のほうが軽いです。",
-        "prompt": "Antara kamus dan kamera, mana yang lebih ringan? kamus lebih ringan.",
-        "tiles": [
-          "軽いですか。",
-          "どちらが",
-          "カメラと",
-          "辞書と",
-          "辞書のほうが軽いです。"
-        ],
-        "answer": [
-          "辞書と",
-          "カメラと",
-          "どちらが",
-          "軽いですか。",
-          "辞書のほうが軽いです。"
-        ]
-      },
-      {
-        "id": "q_b12_268",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara buku dan tas, mana yang lebih ringan? Keduanya ringan.",
-        "reading": "ほんとかばんとどちらがかるいですか。どちらもかるいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "本とかばんとどちらが軽いですか。どちらも軽いです。",
-        "prompt": "Antara buku dan tas, mana yang lebih ringan? Keduanya ringan.",
-        "tiles": [
-          "どちらが",
-          "かばんと",
-          "本と",
-          "どちらも軽いです。",
-          "軽いですか。"
-        ],
-        "answer": [
-          "本と",
-          "かばんと",
-          "どちらが",
-          "軽いですか。",
-          "どちらも軽いです。"
-        ]
-      },
-      {
-        "id": "q_b12_269",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara kamera dan barang bawaan, mana yang lebih ringan? kamera lebih ringan.",
-        "reading": "カメラとにもつとどちらがかるいですか。カメラのほうがかるいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "カメラと荷物とどちらが軽いですか。カメラのほうが軽いです。",
-        "prompt": "Antara kamera dan barang bawaan, mana yang lebih ringan? kamera lebih ringan.",
-        "tiles": [
-          "荷物と",
-          "カメラと",
-          "カメラのほうが軽いです。",
-          "軽いですか。",
-          "どちらが"
-        ],
-        "answer": [
-          "カメラと",
-          "荷物と",
-          "どちらが",
-          "軽いですか。",
-          "カメラのほうが軽いです。"
-        ],
-        "audioText": "カメラと荷物とどちらが軽いですか。カメラのほうが軽いです。"
-      },
-      {
-        "id": "q_b12_270",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara mobil dan jam, mana yang lebih murah? mobil lebih murah.",
-        "reading": "くるまととけいとどちらがやすいですか。くるまのほうがやすいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "車と時計とどちらが安いですか。車のほうが安いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "車と時計とどちらが安いですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih mobil. Pilih respons B.",
-        "options": [
-          "時計のほうが安いです。",
-          "車より安いです。",
-          "時計より安いです。",
-          "車のほうが安いです。"
-        ],
-        "answer": "車のほうが安いです。",
-        "answerId": "mobil lebih murah.",
-        "dialogueId": [
-          "Antara mobil dan jam, mana yang lebih murah?",
-          "mobil lebih murah."
-        ]
-      }
-    ]
-  },
-  {
-    "level": 19,
-    "title": "Level 19",
-    "tier": "sedang",
-    "focus": "Memilih dua hal: どちら／どちらも／のほうが",
-    "theme": "Minna no Nihongo Bab 12",
-    "questions": [
-      {
-        "id": "q_b12_271",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara sepeda dan kamera, mana yang lebih murah? Keduanya murah.",
-        "reading": "じてんしゃとカメラとどちらがやすいですか。どちらもやすいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "自転車とカメラとどちらが安いですか。どちらも安いです。",
-        "prompt": "自転車とカメラとどちらが安いですか。＿＿＿",
-        "options": [
-          "どちらも安いです。",
-          "どちらより安いです。",
-          "どちらと安いです。",
-          "どちらが安いです。"
-        ],
-        "answer": "どちらも安いです。"
-      },
-      {
-        "id": "q_b12_272",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara jam dan televisi, mana yang lebih murah? jam lebih murah.",
-        "reading": "とけいとテレビとどちらがやすいですか。とけいのほうがやすいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "時計とテレビとどちらが安いですか。時計のほうが安いです。",
-        "prompt": "Antara jam dan televisi, mana yang lebih murah? jam lebih murah.",
-        "options": [
-          "時計とテレビとどちらが安いですか。テレビより安いです。",
-          "時計とテレビとどちらが安いですか。時計より安いです。",
-          "時計とテレビとどちらが安いですか。テレビのほうが安いです。",
-          "時計とテレビとどちらが安いですか。時計のほうが安いです。"
-        ],
-        "answer": "時計とテレビとどちらが安いですか。時計のほうが安いです。"
-      },
-      {
-        "id": "q_b12_273",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara kamera dan mobil, mana yang lebih murah? kamera lebih murah.",
-        "reading": "カメラとくるまとどちらがやすいですか。カメラのほうがやすいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "カメラと車とどちらが安いですか。カメラのほうが安いです。",
-        "prompt": "Antara kamera dan mobil, mana yang lebih murah? kamera lebih murah.",
-        "tiles": [
-          "どちらが",
-          "車と",
-          "カメラと",
-          "カメラのほうが安いです。",
-          "安いですか。"
-        ],
-        "answer": [
-          "カメラと",
-          "車と",
-          "どちらが",
-          "安いですか。",
-          "カメラのほうが安いです。"
-        ]
-      },
-      {
-        "id": "q_b12_274",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara televisi dan sepeda, mana yang lebih murah? Keduanya murah.",
-        "reading": "テレビとじてんしゃとどちらがやすいですか。どちらもやすいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "テレビと自転車とどちらが安いですか。どちらも安いです。",
-        "prompt": "Antara televisi dan sepeda, mana yang lebih murah? Keduanya murah.",
-        "tiles": [
-          "自転車と",
-          "テレビと",
-          "どちらも安いです。",
-          "安いですか。",
-          "どちらが"
-        ],
-        "answer": [
-          "テレビと",
-          "自転車と",
-          "どちらが",
-          "安いですか。",
-          "どちらも安いです。"
-        ]
-      },
-      {
-        "id": "q_b12_275",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara Shinkansen dan bus, mana yang lebih lambat? Shinkansen lebih lambat.",
-        "reading": "しんかんせんとバスとどちらがおそいですか。しんかんせんのほうがおそいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "新幹線とバスとどちらが遅いですか。新幹線のほうが遅いです。",
-        "prompt": "Antara Shinkansen dan bus, mana yang lebih lambat? Shinkansen lebih lambat.",
-        "tiles": [
-          "新幹線と",
-          "新幹線のほうが遅いです。",
-          "遅いですか。",
-          "どちらが",
-          "バスと"
-        ],
-        "answer": [
-          "新幹線と",
-          "バスと",
-          "どちらが",
-          "遅いですか。",
-          "新幹線のほうが遅いです。"
-        ],
-        "audioText": "新幹線とバスとどちらが遅いですか。新幹線のほうが遅いです。"
-      },
-      {
-        "id": "q_b12_276",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara kereta dan taksi, mana yang lebih lambat? kereta lebih lambat.",
-        "reading": "でんしゃとタクシーとどちらがおそいですか。でんしゃのほうがおそいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "電車とタクシーとどちらが遅いですか。電車のほうが遅いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "電車とタクシーとどちらが遅いですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih kereta. Pilih respons B.",
-        "options": [
-          "電車のほうが遅いです。",
-          "タクシーより遅いです。",
-          "タクシーのほうが遅いです。",
-          "電車より遅いです。"
-        ],
-        "answer": "電車のほうが遅いです。",
-        "answerId": "kereta lebih lambat.",
-        "dialogueId": [
-          "Antara kereta dan taksi, mana yang lebih lambat?",
-          "kereta lebih lambat."
-        ]
-      },
-      {
-        "id": "q_b12_277",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara bus dan sepeda, mana yang lebih lambat? Keduanya lambat.",
-        "reading": "バスとじてんしゃとどちらがおそいですか。どちらもおそいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "バスと自転車とどちらが遅いですか。どちらも遅いです。",
-        "prompt": "バスと自転車とどちらが遅いですか。＿＿＿",
-        "options": [
-          "どちらと遅いです。",
-          "どちらが遅いです。",
-          "どちらも遅いです。",
-          "どちらより遅いです。"
-        ],
-        "answer": "どちらも遅いです。"
-      },
-      {
-        "id": "q_b12_278",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara taksi dan Shinkansen, mana yang lebih lambat? taksi lebih lambat.",
-        "reading": "タクシーとしんかんせんとどちらがおそいですか。タクシーのほうがおそいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "タクシーと新幹線とどちらが遅いですか。タクシーのほうが遅いです。",
-        "prompt": "Antara taksi dan Shinkansen, mana yang lebih lambat? taksi lebih lambat.",
-        "options": [
-          "タクシーと新幹線とどちらが遅いですか。新幹線のほうが遅いです。",
-          "タクシーと新幹線とどちらが遅いですか。タクシーのほうが遅いです。",
-          "タクシーと新幹線とどちらが遅いですか。新幹線より遅いです。",
-          "タクシーと新幹線とどちらが遅いですか。タクシーより遅いです。"
-        ],
-        "answer": "タクシーと新幹線とどちらが遅いですか。タクシーのほうが遅いです。"
-      },
-      {
-        "id": "q_b12_279",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara sepeda dan kereta, mana yang lebih lambat? sepeda lebih lambat.",
-        "reading": "じてんしゃとでんしゃとどちらがおそいですか。じてんしゃのほうがおそいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "自転車と電車とどちらが遅いですか。自転車のほうが遅いです。",
-        "prompt": "Antara sepeda dan kereta, mana yang lebih lambat? sepeda lebih lambat.",
-        "tiles": [
-          "電車と",
-          "自転車と",
-          "自転車のほうが遅いです。",
-          "遅いですか。",
-          "どちらが"
-        ],
-        "answer": [
-          "自転車と",
-          "電車と",
-          "どちらが",
-          "遅いですか。",
-          "自転車のほうが遅いです。"
-        ]
-      },
-      {
-        "id": "q_b12_280",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara kopi dan jus, mana yang lebih dingin? Keduanya dingin.",
-        "reading": "コーヒーとジュースとどちらがつめたいですか。どちらもつめたいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "コーヒーとジュースとどちらが冷たいですか。どちらも冷たいです。",
-        "prompt": "Antara kopi dan jus, mana yang lebih dingin? Keduanya dingin.",
-        "tiles": [
-          "コーヒーと",
-          "どちらも冷たいです。",
-          "冷たいですか。",
-          "どちらが",
-          "ジュースと"
-        ],
-        "answer": [
-          "コーヒーと",
-          "ジュースと",
-          "どちらが",
-          "冷たいですか。",
-          "どちらも冷たいです。"
-        ]
-      },
-      {
-        "id": "q_b12_281",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara teh hitam dan susu, mana yang lebih dingin? teh hitam lebih dingin.",
-        "reading": "こうちゃとぎゅうにゅうとどちらがつめたいですか。こうちゃのほうがつめたいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "紅茶と牛乳とどちらが冷たいですか。紅茶のほうが冷たいです。",
-        "prompt": "Antara teh hitam dan susu, mana yang lebih dingin? teh hitam lebih dingin.",
-        "tiles": [
-          "紅茶のほうが冷たいです。",
-          "冷たいですか。",
-          "どちらが",
-          "牛乳と",
-          "紅茶と"
-        ],
-        "answer": [
-          "紅茶と",
-          "牛乳と",
-          "どちらが",
-          "冷たいですか。",
-          "紅茶のほうが冷たいです。"
-        ],
-        "audioText": "紅茶と牛乳とどちらが冷たいですか。紅茶のほうが冷たいです。"
-      },
-      {
-        "id": "q_b12_282",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara jus dan air, mana yang lebih dingin? jus lebih dingin.",
-        "reading": "ジュースとみずとどちらがつめたいですか。ジュースのほうがつめたいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "ジュースと水とどちらが冷たいですか。ジュースのほうが冷たいです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "ジュースと水とどちらが冷たいですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih jus. Pilih respons B.",
-        "options": [
-          "水のほうが冷たいです。",
-          "ジュースより冷たいです。",
-          "水より冷たいです。",
-          "ジュースのほうが冷たいです。"
-        ],
-        "answer": "ジュースのほうが冷たいです。",
-        "answerId": "jus lebih dingin.",
-        "dialogueId": [
-          "Antara jus dan air, mana yang lebih dingin?",
-          "jus lebih dingin."
-        ]
-      },
-      {
-        "id": "q_b12_283",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara susu dan kopi, mana yang lebih dingin? Keduanya dingin.",
-        "reading": "ぎゅうにゅうとコーヒーとどちらがつめたいですか。どちらもつめたいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "牛乳とコーヒーとどちらが冷たいですか。どちらも冷たいです。",
-        "prompt": "牛乳とコーヒーとどちらが冷たいですか。＿＿＿",
-        "options": [
-          "どちらも冷たいです。",
-          "どちらより冷たいです。",
-          "どちらと冷たいです。",
-          "どちらが冷たいです。"
-        ],
-        "answer": "どちらも冷たいです。"
-      },
-      {
-        "id": "q_b12_284",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara air dan teh hitam, mana yang lebih dingin? air lebih dingin.",
-        "reading": "みずとこうちゃとどちらがつめたいですか。みずのほうがつめたいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "水と紅茶とどちらが冷たいですか。水のほうが冷たいです。",
-        "prompt": "Antara air dan teh hitam, mana yang lebih dingin? air lebih dingin.",
-        "options": [
-          "水と紅茶とどちらが冷たいですか。紅茶より冷たいです。",
-          "水と紅茶とどちらが冷たいですか。水のほうが冷たいです。",
-          "水と紅茶とどちらが冷たいですか。紅茶のほうが冷たいです。",
-          "水と紅茶とどちらが冷たいですか。水より冷たいです。"
-        ],
-        "answer": "水と紅茶とどちらが冷たいですか。水のほうが冷たいです。"
-      },
-      {
-        "id": "q_b12_285",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara cokelat dan apel, mana yang lebih manis? cokelat lebih manis.",
-        "reading": "チョコレートとりんごとどちらがあまいですか。チョコレートのほうがあまいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "チョコレートとりんごとどちらが甘いですか。チョコレートのほうが甘いです。",
-        "prompt": "Antara cokelat dan apel, mana yang lebih manis? cokelat lebih manis.",
-        "tiles": [
-          "チョコレートと",
-          "チョコレートのほうが甘いです。",
-          "甘いですか。",
-          "どちらが",
-          "りんごと"
-        ],
-        "answer": [
-          "チョコレートと",
-          "りんごと",
-          "どちらが",
-          "甘いですか。",
-          "チョコレートのほうが甘いです。"
-        ]
-      }
-    ]
-  },
-  {
-    "level": 20,
-    "title": "Level 20",
-    "tier": "sedang",
-    "focus": "Memilih dua hal: どちら／どちらも／のほうが",
-    "theme": "Minna no Nihongo Bab 12",
-    "questions": [
-      {
-        "id": "q_b12_286",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara jus dan jeruk, mana yang lebih manis? Keduanya manis.",
-        "reading": "ジュースとみかんとどちらがあまいですか。どちらもあまいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "ジュースとみかんとどちらが甘いですか。どちらも甘いです。",
-        "prompt": "Antara jus dan jeruk, mana yang lebih manis? Keduanya manis.",
-        "tiles": [
-          "どちらも甘いです。",
-          "甘いですか。",
-          "どちらが",
-          "みかんと",
-          "ジュースと"
-        ],
-        "answer": [
-          "ジュースと",
-          "みかんと",
-          "どちらが",
-          "甘いですか。",
-          "どちらも甘いです。"
-        ]
-      },
-      {
-        "id": "q_b12_287",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara apel dan es krim, mana yang lebih manis? apel lebih manis.",
-        "reading": "りんごとアイスクリームとどちらがあまいですか。りんごのほうがあまいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "りんごとアイスクリームとどちらが甘いですか。りんごのほうが甘いです。",
-        "prompt": "Antara apel dan es krim, mana yang lebih manis? apel lebih manis.",
-        "tiles": [
-          "甘いですか。",
-          "どちらが",
-          "アイスクリームと",
-          "りんごと",
-          "りんごのほうが甘いです。"
-        ],
-        "answer": [
-          "りんごと",
-          "アイスクリームと",
-          "どちらが",
-          "甘いですか。",
-          "りんごのほうが甘いです。"
-        ],
-        "audioText": "りんごとアイスクリームとどちらが甘いですか。りんごのほうが甘いです。"
-      },
-      {
-        "id": "q_b12_288",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara jeruk dan cokelat, mana yang lebih manis? jeruk lebih manis.",
-        "reading": "みかんとチョコレートとどちらがあまいですか。みかんのほうがあまいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "みかんとチョコレートとどちらが甘いですか。みかんのほうが甘いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "みかんとチョコレートとどちらが甘いですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih jeruk. Pilih respons B.",
-        "options": [
-          "チョコレートより甘いです。",
-          "チョコレートのほうが甘いです。",
-          "みかんのほうが甘いです。",
-          "みかんより甘いです。"
-        ],
-        "answer": "みかんのほうが甘いです。",
-        "answerId": "jeruk lebih manis.",
-        "dialogueId": [
-          "Antara jeruk dan cokelat, mana yang lebih manis?",
-          "jeruk lebih manis."
-        ]
-      },
-      {
-        "id": "q_b12_289",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara es krim dan jus, mana yang lebih manis? Keduanya manis.",
-        "reading": "アイスクリームとジュースとどちらがあまいですか。どちらもあまいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "アイスクリームとジュースとどちらが甘いですか。どちらも甘いです。",
-        "prompt": "アイスクリームとジュースとどちらが甘いですか。＿＿＿",
-        "options": [
-          "どちらも甘いです。",
-          "どちらが甘いです。",
-          "どちらと甘いです。",
-          "どちらより甘いです。"
-        ],
-        "answer": "どちらも甘いです。"
-      },
-      {
-        "id": "q_b12_290",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara sukiyaki dan sushi, mana yang lebih mahal? sukiyaki lebih mahal.",
-        "reading": "すきやきとおすしとどちらがたかいですか。すきやきのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "すき焼きとおすしとどちらが高いですか。すき焼きのほうが高いです。",
-        "prompt": "Antara sukiyaki dan sushi, mana yang lebih mahal? sukiyaki lebih mahal.",
-        "options": [
-          "すき焼きとおすしとどちらが高いですか。おすしのほうが高いです。",
-          "すき焼きとおすしとどちらが高いですか。すき焼きより高いです。",
-          "すき焼きとおすしとどちらが高いですか。すき焼きのほうが高いです。",
-          "すき焼きとおすしとどちらが高いですか。おすしより高いです。"
-        ],
-        "answer": "すき焼きとおすしとどちらが高いですか。すき焼きのほうが高いです。"
-      },
-      {
-        "id": "q_b12_291",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara sashimi dan tempura, mana yang lebih mahal? sashimi lebih mahal.",
-        "reading": "さしみとてんぷらとどちらがたかいですか。さしみのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "刺身とてんぷらとどちらが高いですか。刺身のほうが高いです。",
-        "prompt": "Antara sashimi dan tempura, mana yang lebih mahal? sashimi lebih mahal.",
-        "tiles": [
-          "刺身のほうが高いです。",
-          "高いですか。",
-          "どちらが",
-          "てんぷらと",
-          "刺身と"
-        ],
-        "answer": [
-          "刺身と",
-          "てんぷらと",
-          "どちらが",
-          "高いですか。",
-          "刺身のほうが高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_292",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara sushi dan roti, mana yang lebih mahal? Keduanya mahal.",
-        "reading": "おすしとパンとどちらがたかいですか。どちらもたかいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "おすしとパンとどちらが高いですか。どちらも高いです。",
-        "prompt": "Antara sushi dan roti, mana yang lebih mahal? Keduanya mahal.",
-        "tiles": [
-          "高いですか。",
-          "どちらが",
-          "パンと",
-          "おすしと",
-          "どちらも高いです。"
-        ],
-        "answer": [
-          "おすしと",
-          "パンと",
-          "どちらが",
-          "高いですか。",
-          "どちらも高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_293",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara tempura dan sukiyaki, mana yang lebih mahal? tempura lebih mahal.",
-        "reading": "てんぷらとすきやきとどちらがたかいですか。てんぷらのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "てんぷらとすき焼きとどちらが高いですか。てんぷらのほうが高いです。",
-        "prompt": "Antara tempura dan sukiyaki, mana yang lebih mahal? tempura lebih mahal.",
-        "tiles": [
-          "どちらが",
-          "すき焼きと",
-          "てんぷらと",
-          "てんぷらのほうが高いです。",
-          "高いですか。"
-        ],
-        "answer": [
-          "てんぷらと",
-          "すき焼きと",
-          "どちらが",
-          "高いですか。",
-          "てんぷらのほうが高いです。"
-        ],
-        "audioText": "てんぷらとすき焼きとどちらが高いですか。てんぷらのほうが高いです。"
-      },
-      {
-        "id": "q_b12_294",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara roti dan sashimi, mana yang lebih mahal? roti lebih mahal.",
-        "reading": "パンとさしみとどちらがたかいですか。パンのほうがたかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "パンと刺身とどちらが高いですか。パンのほうが高いです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "パンと刺身とどちらが高いですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks: pembicara memilih roti. Pilih respons B.",
-        "options": [
-          "刺身のほうが高いです。",
-          "パンのほうが高いです。",
-          "刺身より高いです。",
-          "パンより高いです。"
-        ],
-        "answer": "パンのほうが高いです。",
-        "answerId": "roti lebih mahal.",
-        "dialogueId": [
-          "Antara roti dan sashimi, mana yang lebih mahal?",
-          "roti lebih mahal."
-        ]
-      },
-      {
-        "id": "q_b12_295",
-        "type": "complete",
-        "instruction": "Konteks: keduanya dinilai sama. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Antara hotel dan sekolah, mana yang lebih dekat? Keduanya dekat.",
-        "reading": "ホテルとがっこうとどちらがちかいですか。どちらもちかいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "ホテルと学校とどちらが近いですか。どちらも近いです。",
-        "prompt": "ホテルと学校とどちらが近いですか。＿＿＿",
-        "options": [
-          "どちらと近いです。",
-          "どちらより近いです。",
-          "どちらが近いです。",
-          "どちらも近いです。"
-        ],
-        "answer": "どちらも近いです。"
-      },
-      {
-        "id": "q_b12_296",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara perpustakaan dan stasiun, mana yang lebih dekat? perpustakaan lebih dekat.",
-        "reading": "としょかんとえきとどちらがちかいですか。としょかんのほうがちかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "図書館と駅とどちらが近いですか。図書館のほうが近いです。",
-        "prompt": "Antara perpustakaan dan stasiun, mana yang lebih dekat? perpustakaan lebih dekat.",
-        "options": [
-          "図書館と駅とどちらが近いですか。駅より近いです。",
-          "図書館と駅とどちらが近いですか。駅のほうが近いです。",
-          "図書館と駅とどちらが近いですか。図書館のほうが近いです。",
-          "図書館と駅とどちらが近いですか。図書館より近いです。"
-        ],
-        "answer": "図書館と駅とどちらが近いですか。図書館のほうが近いです。"
-      },
-      {
-        "id": "q_b12_297",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Antara sekolah dan toko, mana yang lebih dekat? sekolah lebih dekat.",
-        "reading": "がっこうとみせとどちらがちかいですか。がっこうのほうがちかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "学校と店とどちらが近いですか。学校のほうが近いです。",
-        "prompt": "Antara sekolah dan toko, mana yang lebih dekat? sekolah lebih dekat.",
-        "tiles": [
-          "近いですか。",
-          "どちらが",
-          "店と",
-          "学校と",
-          "学校のほうが近いです。"
-        ],
-        "answer": [
-          "学校と",
-          "店と",
-          "どちらが",
-          "近いですか。",
-          "学校のほうが近いです。"
-        ]
-      },
-      {
-        "id": "q_b12_298",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara stasiun dan hotel, mana yang lebih dekat? Keduanya dekat.",
-        "reading": "えきとホテルとどちらがちかいですか。どちらもちかいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
-        "topic": "どちら",
-        "casual": false,
-        "fullJp": "駅とホテルとどちらが近いですか。どちらも近いです。",
-        "prompt": "Antara stasiun dan hotel, mana yang lebih dekat? Keduanya dekat.",
-        "tiles": [
-          "どちらが",
-          "ホテルと",
-          "駅と",
-          "どちらも近いです。",
-          "近いですか。"
-        ],
-        "answer": [
-          "駅と",
-          "ホテルと",
-          "どちらが",
-          "近いですか。",
-          "どちらも近いです。"
+          "どちらも難しいです。"
         ]
       },
       {
         "id": "q_b12_299",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Antara toko dan perpustakaan, mana yang lebih dekat? toko lebih dekat.",
-        "reading": "みせととしょかんとどちらがちかいですか。みせのほうがちかいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara minggu ini dan minggu depan, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "こんしゅうとらいしゅうとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "店と図書館とどちらが近いですか。店のほうが近いです。",
-        "prompt": "Antara toko dan perpustakaan, mana yang lebih dekat? toko lebih dekat.",
+        "fullJp": "今週と来週とどちらが忙しいですか。どちらも忙しいです。",
+        "prompt": "Antara minggu ini dan minggu depan, mana yang lebih sibuk? Keduanya sibuk.",
         "tiles": [
-          "図書館と",
-          "店と",
-          "店のほうが近いです。",
-          "近いですか。",
+          "来週と",
+          "今週と",
+          "どちらも忙しいです。",
+          "忙しいですか。",
           "どちらが"
         ],
         "answer": [
-          "店と",
-          "図書館と",
+          "今週と",
+          "来週と",
           "どちらが",
-          "近いですか。",
-          "店のほうが近いです。"
+          "忙しいですか。",
+          "どちらも忙しいです。"
         ],
-        "audioText": "店と図書館とどちらが近いですか。店のほうが近いです。"
+        "audioText": "今週と来週とどちらが忙しいですか。どちらも忙しいです。"
       },
       {
         "id": "q_b12_300",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara tas dan buku, mana yang lebih berat? tas lebih berat.",
-        "reading": "かばんとほんとどちらがおもいですか。かばんのほうがおもいです。",
+        "translation": "Antara ujian dan PR, mana yang lebih sulit? ujian lebih sulit.",
+        "reading": "しけんとしゅくだいとどちらがむずかしいですか。しけんのほうがむずかしいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "かばんと本とどちらが重いですか。かばんのほうが重いです。",
+        "fullJp": "試験と宿題とどちらが難しいですか。試験のほうが難しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "かばんと本とどちらが重いですか。"
+            "text": "試験と宿題とどちらが難しいですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih tas. Pilih respons B.",
+        "question": "Konteks: pembicara memilih ujian. Pilih respons B.",
         "options": [
-          "本より重いです。",
-          "かばんより重いです。",
-          "本のほうが重いです。",
-          "かばんのほうが重いです。"
+          "宿題より難しいです。",
+          "試験より難しいです。",
+          "宿題のほうが難しいです。",
+          "試験のほうが難しいです。"
         ],
-        "answer": "かばんのほうが重いです。",
-        "answerId": "tas lebih berat.",
+        "answer": "試験のほうが難しいです。",
+        "answerId": "ujian lebih sulit.",
         "dialogueId": [
-          "Antara tas dan buku, mana yang lebih berat?",
-          "tas lebih berat."
+          "Antara ujian dan PR, mana yang lebih sulit?",
+          "ujian lebih sulit."
         ]
       }
     ]
@@ -7300,6 +7300,25 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_302",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara hari ini, kemarin, kemarin lusa, waktu mana yang paling sibuk? hari ini paling sibuk.",
+        "reading": "きょうときのうとおとといのなかでいつがいちばんいそがしいですか。きょうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今日と昨日とおとといのなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。",
+        "prompt": "Di antara hari ini, kemarin, kemarin lusa, waktu mana yang paling sibuk? hari ini paling sibuk.",
+        "options": [
+          "今日と昨日とおとといのなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。",
+          "今日と昨日とおとといのなかでどこがいちばん忙しいですか。今日がいちばん忙しいです。",
+          "今日と昨日とおとといのなかでだれがいちばん忙しいですか。今日がいちばん忙しいです。",
+          "今日と昨日とおとといのなかで何がいちばん忙しいですか。今日がいちばん忙しいです。"
+        ],
+        "answer": "今日と昨日とおとといのなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_303",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sibuk? ayah saya paling sibuk.",
         "reading": "ちちとははとあにのなかでだれがいちばんいそがしいですか。ちちがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7307,18 +7326,51 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "父と母と兄のなかでだれがいちばん忙しいですか。父がいちばん忙しいです。",
         "prompt": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sibuk? ayah saya paling sibuk.",
-        "options": [
-          "父と母と兄のなかでだれがいちばん忙しいですか。父がいちばん忙しいです。",
-          "父と母と兄のなかでどこがいちばん忙しいですか。父がいちばん忙しいです。",
-          "父と母と兄のなかでいつがいちばん忙しいですか。父がいちばん忙しいです。",
-          "父と母と兄のなかで何がいちばん忙しいですか。父がいちばん忙しいです。"
+        "tiles": [
+          "いちばん",
+          "だれが",
+          "父と母と兄のなかで",
+          "父がいちばん忙しいです。",
+          "忙しいですか。"
         ],
-        "answer": "父と母と兄のなかでだれがいちばん忙しいですか。父がいちばん忙しいです。"
+        "answer": [
+          "父と母と兄のなかで",
+          "だれが",
+          "いちばん",
+          "忙しいですか。",
+          "父がいちばん忙しいです。"
+        ]
       },
       {
-        "id": "q_b12_303",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_304",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara besok, hari ini, besok lusa, waktu mana yang paling sibuk? besok paling sibuk.",
+        "reading": "あしたときょうとあさってのなかでいつがいちばんいそがしいですか。あしたがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "明日と今日とあさってのなかでいつがいちばん忙しいですか。明日がいちばん忙しいです。",
+        "prompt": "Di antara besok, hari ini, besok lusa, waktu mana yang paling sibuk? besok paling sibuk.",
+        "tiles": [
+          "いつが",
+          "明日と今日とあさってのなかで",
+          "明日がいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん"
+        ],
+        "answer": [
+          "明日と今日とあさってのなかで",
+          "いつが",
+          "いちばん",
+          "忙しいですか。",
+          "明日がいちばん忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_305",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara hotel, sekolah, stasiun, tempat mana yang paling tenang? hotel paling tenang.",
         "reading": "ホテルとがっこうとえきのなかでどこがいちばんしずかですか。ホテルがいちばんしずかです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7327,11 +7379,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "ホテルと学校と駅のなかでどこがいちばん静かですか。ホテルがいちばん静かです。",
         "prompt": "Di antara hotel, sekolah, stasiun, tempat mana yang paling tenang? hotel paling tenang.",
         "tiles": [
-          "いちばん",
-          "どこが",
           "ホテルと学校と駅のなかで",
           "ホテルがいちばん静かです。",
-          "静かですか。"
+          "静かですか。",
+          "いちばん",
+          "どこが"
         ],
         "answer": [
           "ホテルと学校と駅のなかで",
@@ -7339,38 +7391,85 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "静かですか。",
           "ホテルがいちばん静かです。"
+        ],
+        "audioText": "ホテルと学校と駅のなかでどこがいちばん静かですか。ホテルがいちばん静かです。"
+      },
+      {
+        "id": "q_b12_306",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara minggu ini, minggu lalu, minggu depan, waktu mana yang paling sibuk? minggu ini paling sibuk.",
+        "reading": "こんしゅうとせんしゅうとらいしゅうのなかでいつがいちばんいそがしいですか。こんしゅうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今週と先週と来週のなかでいつがいちばん忙しいですか。今週がいちばん忙しいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "今週と先週と来週のなかでいつがいちばん忙しいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks jawaban: minggu ini. Pilih respons B.",
+        "options": [
+          "今週はいちばん忙しいです。",
+          "今週よりいちばん忙しいです。",
+          "今週がいちばん忙しいです。",
+          "今週といちばん忙しいです。"
+        ],
+        "answer": "今週がいちばん忙しいです。",
+        "answerId": "minggu ini paling sibuk.",
+        "dialogueId": [
+          "Di antara minggu ini, minggu lalu, minggu depan, waktu mana yang paling sibuk?",
+          "minggu ini paling sibuk."
         ]
       },
       {
-        "id": "q_b12_304",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "id": "q_b12_307",
+        "type": "complete",
+        "instruction": "Konteks jawaban: musim semi. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim semi paling disukai.",
         "reading": "はるとなつとあきのなかでいつがいちばんすきですか。はるがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "春と夏と秋のなかでいつがいちばん好きですか。春がいちばん好きです。",
-        "prompt": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim semi paling disukai.",
-        "tiles": [
+        "prompt": "春と夏と秋のなかで＿＿＿いちばん好きですか。春がいちばん好きです。",
+        "options": [
           "いつが",
-          "春と夏と秋のなかで",
-          "春がいちばん好きです。",
-          "好きですか。",
-          "いちばん"
+          "どこが",
+          "何が",
+          "だれが"
         ],
-        "answer": [
-          "春と夏と秋のなかで",
-          "いつが",
-          "いちばん",
-          "好きですか。",
-          "春がいちばん好きです。"
-        ]
+        "answer": "いつが"
       },
       {
-        "id": "q_b12_305",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
+        "id": "q_b12_308",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara bulan ini, bulan lalu, bulan depan, waktu mana yang paling sibuk? bulan ini paling sibuk.",
+        "reading": "こんげつとせんげつとらいげつのなかでいつがいちばんいそがしいですか。こんげつがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今月と先月と来月のなかでいつがいちばん忙しいですか。今月がいちばん忙しいです。",
+        "prompt": "Di antara bulan ini, bulan lalu, bulan depan, waktu mana yang paling sibuk? bulan ini paling sibuk.",
+        "options": [
+          "今月と先月と来月のなかでどこがいちばん忙しいですか。今月がいちばん忙しいです。",
+          "今月と先月と来月のなかで何がいちばん忙しいですか。今月がいちばん忙しいです。",
+          "今月と先月と来月のなかでだれがいちばん忙しいですか。今月がいちばん忙しいです。",
+          "今月と先月と来月のなかでいつがいちばん忙しいですか。今月がいちばん忙しいです。"
+        ],
+        "answer": "今月と先月と来月のなかでいつがいちばん忙しいですか。今月がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_309",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara sashimi, sushi, tempura, apa yang paling enak? sushi paling enak.",
         "reading": "さしみとおすしとてんぷらのなかでなにがいちばんおいしいですか。おすしがいちばんおいしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7379,11 +7478,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "刺身とおすしとてんぷらのなかで何がいちばんおいしいですか。おすしがいちばんおいしいです。",
         "prompt": "Di antara sashimi, sushi, tempura, apa yang paling enak? sushi paling enak.",
         "tiles": [
+          "何が",
           "刺身とおすしとてんぷらのなかで",
           "おすしがいちばんおいしいです。",
           "おいしいですか。",
-          "いちばん",
-          "何が"
+          "いちばん"
         ],
         "answer": [
           "刺身とおすしとてんぷらのなかで",
@@ -7391,45 +7490,97 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "おいしいですか。",
           "おすしがいちばんおいしいです。"
-        ],
-        "audioText": "刺身とおすしとてんぷらのなかで何がいちばんおいしいですか。おすしがいちばんおいしいです。"
+        ]
       },
       {
-        "id": "q_b12_306",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "id": "q_b12_310",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling panas (cuaca)? tahun ini paling panas (cuaca).",
+        "reading": "ことしときょねんとらいねんのなかでいつがいちばんあついですか。ことしがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今年と去年と来年のなかでいつがいちばん暑いですか。今年がいちばん暑いです。",
+        "prompt": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling panas (cuaca)? tahun ini paling panas (cuaca).",
+        "tiles": [
+          "今年と去年と来年のなかで",
+          "今年がいちばん暑いです。",
+          "暑いですか。",
+          "いちばん",
+          "いつが"
+        ],
+        "answer": [
+          "今年と去年と来年のなかで",
+          "いつが",
+          "いちばん",
+          "暑いですか。",
+          "今年がいちばん暑いです。"
+        ]
+      },
+      {
+        "id": "q_b12_311",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sibuk? kakak laki-laki saya paling sibuk.",
         "reading": "ははとあにとあねのなかでだれがいちばんいそがしいですか。あにがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "母と兄と姉のなかでだれがいちばん忙しいですか。兄がいちばん忙しいです。",
+        "prompt": "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sibuk? kakak laki-laki saya paling sibuk.",
+        "tiles": [
+          "兄がいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん",
+          "だれが",
+          "母と兄と姉のなかで"
+        ],
+        "answer": [
+          "母と兄と姉のなかで",
+          "だれが",
+          "いちばん",
+          "忙しいですか。",
+          "兄がいちばん忙しいです。"
+        ],
+        "audioText": "母と兄と姉のなかでだれがいちばん忙しいですか。兄がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_312",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara setiap hari, setiap pagi, setiap malam, waktu mana yang paling sibuk? setiap hari paling sibuk.",
+        "reading": "まいにちとまいあさとまいばんのなかでいつがいちばんいそがしいですか。まいにちがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "毎日と毎朝と毎晩のなかでいつがいちばん忙しいですか。毎日がいちばん忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "母と兄と姉のなかでだれがいちばん忙しいですか。"
+            "text": "毎日と毎朝と毎晩のなかでいつがいちばん忙しいですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: kakak laki-laki saya. Pilih respons B.",
+        "question": "Konteks jawaban: setiap hari. Pilih respons B.",
         "options": [
-          "兄はいちばん忙しいです。",
-          "兄よりいちばん忙しいです。",
-          "兄がいちばん忙しいです。",
-          "兄といちばん忙しいです。"
+          "毎日といちばん忙しいです。",
+          "毎日がいちばん忙しいです。",
+          "毎日はいちばん忙しいです。",
+          "毎日よりいちばん忙しいです。"
         ],
-        "answer": "兄がいちばん忙しいです。",
-        "answerId": "kakak laki-laki saya paling sibuk.",
+        "answer": "毎日がいちばん忙しいです。",
+        "answerId": "setiap hari paling sibuk.",
         "dialogueId": [
-          "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sibuk?",
-          "kakak laki-laki saya paling sibuk."
+          "Di antara setiap hari, setiap pagi, setiap malam, waktu mana yang paling sibuk?",
+          "setiap hari paling sibuk."
         ]
       },
       {
-        "id": "q_b12_307",
+        "id": "q_b12_313",
         "type": "complete",
         "instruction": "Konteks jawaban: stasiun. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara sekolah, stasiun, perpustakaan, tempat mana yang paling tenang? stasiun paling tenang.",
@@ -7440,17 +7591,36 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "学校と駅と図書館のなかでどこがいちばん静かですか。駅がいちばん静かです。",
         "prompt": "学校と駅と図書館のなかで＿＿＿いちばん静かですか。駅がいちばん静かです。",
         "options": [
-          "どこが",
-          "いつが",
           "何が",
-          "だれが"
+          "だれが",
+          "いつが",
+          "どこが"
         ],
         "answer": "どこが"
       },
       {
-        "id": "q_b12_308",
+        "id": "q_b12_314",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara malam ini, tadi pagi, setiap hari, waktu mana yang paling dingin (cuaca)? malam ini paling dingin (cuaca).",
+        "reading": "こんばんとけさとまいにちのなかでいつがいちばんさむいですか。こんばんがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今晩と今朝と毎日のなかでいつがいちばん寒いですか。今晩がいちばん寒いです。",
+        "prompt": "Di antara malam ini, tadi pagi, setiap hari, waktu mana yang paling dingin (cuaca)? malam ini paling dingin (cuaca).",
+        "options": [
+          "今晩と今朝と毎日のなかでだれがいちばん寒いですか。今晩がいちばん寒いです。",
+          "今晩と今朝と毎日のなかでいつがいちばん寒いですか。今晩がいちばん寒いです。",
+          "今晩と今朝と毎日のなかでどこがいちばん寒いですか。今晩がいちばん寒いです。",
+          "今晩と今朝と毎日のなかで何がいちばん寒いですか。今晩がいちばん寒いです。"
+        ],
+        "answer": "今晩と今朝と毎日のなかでいつがいちばん寒いですか。今晩がいちばん寒いです。"
+      },
+      {
+        "id": "q_b12_315",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim gugur paling disukai.",
         "reading": "なつとあきとふゆのなかでいつがいちばんすきですか。あきがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7458,18 +7628,60 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "夏と秋と冬のなかでいつがいちばん好きですか。秋がいちばん好きです。",
         "prompt": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim gugur paling disukai.",
-        "options": [
-          "夏と秋と冬のなかでどこがいちばん好きですか。秋がいちばん好きです。",
-          "夏と秋と冬のなかで何がいちばん好きですか。秋がいちばん好きです。",
-          "夏と秋と冬のなかでだれがいちばん好きですか。秋がいちばん好きです。",
-          "夏と秋と冬のなかでいつがいちばん好きですか。秋がいちばん好きです。"
+        "tiles": [
+          "夏と秋と冬のなかで",
+          "秋がいちばん好きです。",
+          "好きですか。",
+          "いちばん",
+          "いつが"
         ],
-        "answer": "夏と秋と冬のなかでいつがいちばん好きですか。秋がいちばん好きです。"
+        "answer": [
+          "夏と秋と冬のなかで",
+          "いつが",
+          "いちばん",
+          "好きですか。",
+          "秋がいちばん好きです。"
+        ]
+      }
+    ]
+  },
+  {
+    "level": 22,
+    "title": "Level 22",
+    "tier": "kalimat",
+    "focus": "Kelompok: のなかで／いちばん",
+    "theme": "Minna no Nihongo Bab 12",
+    "questions": [
+      {
+        "id": "q_b12_316",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling sibuk? kemarin lusa paling sibuk.",
+        "reading": "きのうとおとといときょうのなかでいつがいちばんいそがしいですか。おとといがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "昨日とおとといと今日のなかでいつがいちばん忙しいですか。おとといがいちばん忙しいです。",
+        "prompt": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling sibuk? kemarin lusa paling sibuk.",
+        "tiles": [
+          "おとといがいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん",
+          "いつが",
+          "昨日とおとといと今日のなかで"
+        ],
+        "answer": [
+          "昨日とおとといと今日のなかで",
+          "いつが",
+          "いちばん",
+          "忙しいですか。",
+          "おとといがいちばん忙しいです。"
+        ]
       },
       {
-        "id": "q_b12_309",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_317",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara sushi, tempura, roti, apa yang paling enak? roti paling enak.",
         "reading": "おすしとてんぷらとパンのなかでなにがいちばんおいしいですか。パンがいちばんおいしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7478,11 +7690,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "おすしとてんぷらとパンのなかで何がいちばんおいしいですか。パンがいちばんおいしいです。",
         "prompt": "Di antara sushi, tempura, roti, apa yang paling enak? roti paling enak.",
         "tiles": [
+          "おいしいですか。",
+          "いちばん",
           "何が",
           "おすしとてんぷらとパンのなかで",
-          "パンがいちばんおいしいです。",
-          "おいしいですか。",
-          "いちばん"
+          "パンがいちばんおいしいです。"
         ],
         "answer": [
           "おすしとてんぷらとパンのなかで",
@@ -7490,38 +7702,85 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "おいしいですか。",
           "パンがいちばんおいしいです。"
+        ],
+        "audioText": "おすしとてんぷらとパンのなかで何がいちばんおいしいですか。パンがいちばんおいしいです。"
+      },
+      {
+        "id": "q_b12_318",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara hari ini, besok lusa, besok, waktu mana yang paling sibuk? besok lusa paling sibuk.",
+        "reading": "きょうとあさってとあしたのなかでいつがいちばんいそがしいですか。あさってがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今日とあさってと明日のなかでいつがいちばん忙しいですか。あさってがいちばん忙しいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "今日とあさってと明日のなかでいつがいちばん忙しいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks jawaban: besok lusa. Pilih respons B.",
+        "options": [
+          "あさってがいちばん忙しいです。",
+          "あさってよりいちばん忙しいです。",
+          "あさってといちばん忙しいです。",
+          "あさってはいちばん忙しいです。"
+        ],
+        "answer": "あさってがいちばん忙しいです。",
+        "answerId": "besok lusa paling sibuk.",
+        "dialogueId": [
+          "Di antara hari ini, besok lusa, besok, waktu mana yang paling sibuk?",
+          "besok lusa paling sibuk."
         ]
       },
       {
-        "id": "q_b12_310",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "id": "q_b12_319",
+        "type": "complete",
+        "instruction": "Konteks jawaban: adik laki-laki saya. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara kakak laki-laki saya, kakak perempuan saya, adik laki-laki saya, siapa yang paling sibuk? adik laki-laki saya paling sibuk.",
         "reading": "あにとあねとおとうとのなかでだれがいちばんいそがしいですか。おとうとがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "兄と姉と弟のなかでだれがいちばん忙しいですか。弟がいちばん忙しいです。",
-        "prompt": "Di antara kakak laki-laki saya, kakak perempuan saya, adik laki-laki saya, siapa yang paling sibuk? adik laki-laki saya paling sibuk.",
-        "tiles": [
-          "兄と姉と弟のなかで",
-          "弟がいちばん忙しいです。",
-          "忙しいですか。",
-          "いちばん",
-          "だれが"
-        ],
-        "answer": [
-          "兄と姉と弟のなかで",
+        "prompt": "兄と姉と弟のなかで＿＿＿いちばん忙しいですか。弟がいちばん忙しいです。",
+        "options": [
+          "どこが",
+          "いつが",
           "だれが",
-          "いちばん",
-          "忙しいですか。",
-          "弟がいちばん忙しいです。"
-        ]
+          "何が"
+        ],
+        "answer": "だれが"
       },
       {
-        "id": "q_b12_311",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
+        "id": "q_b12_320",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara minggu lalu, minggu depan, minggu ini, waktu mana yang paling sibuk? minggu depan paling sibuk.",
+        "reading": "せんしゅうとらいしゅうとこんしゅうのなかでいつがいちばんいそがしいですか。らいしゅうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "先週と来週と今週のなかでいつがいちばん忙しいですか。来週がいちばん忙しいです。",
+        "prompt": "Di antara minggu lalu, minggu depan, minggu ini, waktu mana yang paling sibuk? minggu depan paling sibuk.",
+        "options": [
+          "先週と来週と今週のなかでいつがいちばん忙しいですか。来週がいちばん忙しいです。",
+          "先週と来週と今週のなかで何がいちばん忙しいですか。来週がいちばん忙しいです。",
+          "先週と来週と今週のなかでだれがいちばん忙しいですか。来週がいちばん忙しいです。",
+          "先週と来週と今週のなかでどこがいちばん忙しいですか。来週がいちばん忙しいです。"
+        ],
+        "answer": "先週と来週と今週のなかでいつがいちばん忙しいですか。来週がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_321",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara stasiun, perpustakaan, toko, tempat mana yang paling tenang? toko paling tenang.",
         "reading": "えきととしょかんとみせのなかでどこがいちばんしずかですか。みせがいちばんしずかです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7542,45 +7801,97 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "静かですか。",
           "店がいちばん静かです。"
-        ],
-        "audioText": "駅と図書館と店のなかでどこがいちばん静かですか。店がいちばん静かです。"
+        ]
       },
       {
-        "id": "q_b12_312",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "id": "q_b12_322",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara bulan lalu, bulan depan, bulan ini, waktu mana yang paling sibuk? bulan depan paling sibuk.",
+        "reading": "せんげつとらいげつとこんげつのなかでいつがいちばんいそがしいですか。らいげつがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "先月と来月と今月のなかでいつがいちばん忙しいですか。来月がいちばん忙しいです。",
+        "prompt": "Di antara bulan lalu, bulan depan, bulan ini, waktu mana yang paling sibuk? bulan depan paling sibuk.",
+        "tiles": [
+          "忙しいですか。",
+          "いちばん",
+          "いつが",
+          "先月と来月と今月のなかで",
+          "来月がいちばん忙しいです。"
+        ],
+        "answer": [
+          "先月と来月と今月のなかで",
+          "いつが",
+          "いちばん",
+          "忙しいですか。",
+          "来月がいちばん忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_323",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim semi paling disukai.",
         "reading": "あきとふゆとはるのなかでいつがいちばんすきですか。はるがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "秋と冬と春のなかでいつがいちばん好きですか。春がいちばん好きです。",
+        "prompt": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim semi paling disukai.",
+        "tiles": [
+          "いちばん",
+          "いつが",
+          "秋と冬と春のなかで",
+          "春がいちばん好きです。",
+          "好きですか。"
+        ],
+        "answer": [
+          "秋と冬と春のなかで",
+          "いつが",
+          "いちばん",
+          "好きですか。",
+          "春がいちばん好きです。"
+        ],
+        "audioText": "秋と冬と春のなかでいつがいちばん好きですか。春がいちばん好きです。"
+      },
+      {
+        "id": "q_b12_324",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling panas (cuaca)? tahun depan paling panas (cuaca).",
+        "reading": "きょねんとらいねんとことしのなかでいつがいちばんあついですか。らいねんがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "去年と来年と今年のなかでいつがいちばん暑いですか。来年がいちばん暑いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "秋と冬と春のなかでいつがいちばん好きですか。"
+            "text": "去年と来年と今年のなかでいつがいちばん暑いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: musim semi. Pilih respons B.",
+        "question": "Konteks jawaban: tahun depan. Pilih respons B.",
         "options": [
-          "春といちばん好きです。",
-          "春がいちばん好きです。",
-          "春はいちばん好きです。",
-          "春よりいちばん好きです。"
+          "来年といちばん暑いです。",
+          "来年はいちばん暑いです。",
+          "来年がいちばん暑いです。",
+          "来年よりいちばん暑いです。"
         ],
-        "answer": "春がいちばん好きです。",
-        "answerId": "musim semi paling disukai.",
+        "answer": "来年がいちばん暑いです。",
+        "answerId": "tahun depan paling panas (cuaca).",
         "dialogueId": [
-          "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai?",
-          "musim semi paling disukai."
+          "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling panas (cuaca)?",
+          "tahun depan paling panas (cuaca)."
         ]
       },
       {
-        "id": "q_b12_313",
+        "id": "q_b12_325",
         "type": "complete",
         "instruction": "Konteks jawaban: tempura. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara tempura, roti, daging, apa yang paling enak? tempura paling enak.",
@@ -7591,17 +7902,36 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "てんぷらとパンと肉のなかで何がいちばんおいしいですか。てんぷらがいちばんおいしいです。",
         "prompt": "てんぷらとパンと肉のなかで＿＿＿いちばんおいしいですか。てんぷらがいちばんおいしいです。",
         "options": [
-          "いつが",
           "だれが",
+          "何が",
           "どこが",
-          "何が"
+          "いつが"
         ],
         "answer": "何が"
       },
       {
-        "id": "q_b12_314",
+        "id": "q_b12_326",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara setiap pagi, setiap malam, setiap hari, waktu mana yang paling sibuk? setiap malam paling sibuk.",
+        "reading": "まいあさとまいばんとまいにちのなかでいつがいちばんいそがしいですか。まいばんがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "毎朝と毎晩と毎日のなかでいつがいちばん忙しいですか。毎晩がいちばん忙しいです。",
+        "prompt": "Di antara setiap pagi, setiap malam, setiap hari, waktu mana yang paling sibuk? setiap malam paling sibuk.",
+        "options": [
+          "毎朝と毎晩と毎日のなかでだれがいちばん忙しいですか。毎晩がいちばん忙しいです。",
+          "毎朝と毎晩と毎日のなかでどこがいちばん忙しいですか。毎晩がいちばん忙しいです。",
+          "毎朝と毎晩と毎日のなかで何がいちばん忙しいですか。毎晩がいちばん忙しいです。",
+          "毎朝と毎晩と毎日のなかでいつがいちばん忙しいですか。毎晩がいちばん忙しいです。"
+        ],
+        "answer": "毎朝と毎晩と毎日のなかでいつがいちばん忙しいですか。毎晩がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_327",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sibuk? kakak perempuan saya paling sibuk.",
         "reading": "あねとおとうとといもうとのなかでだれがいちばんいそがしいですか。あねがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7609,18 +7939,51 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "姉と弟と妹のなかでだれがいちばん忙しいですか。姉がいちばん忙しいです。",
         "prompt": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sibuk? kakak perempuan saya paling sibuk.",
-        "options": [
-          "姉と弟と妹のなかでどこがいちばん忙しいですか。姉がいちばん忙しいです。",
-          "姉と弟と妹のなかでだれがいちばん忙しいですか。姉がいちばん忙しいです。",
-          "姉と弟と妹のなかでいつがいちばん忙しいですか。姉がいちばん忙しいです。",
-          "姉と弟と妹のなかで何がいちばん忙しいですか。姉がいちばん忙しいです。"
+        "tiles": [
+          "忙しいですか。",
+          "いちばん",
+          "だれが",
+          "姉と弟と妹のなかで",
+          "姉がいちばん忙しいです。"
         ],
-        "answer": "姉と弟と妹のなかでだれがいちばん忙しいですか。姉がいちばん忙しいです。"
+        "answer": [
+          "姉と弟と妹のなかで",
+          "だれが",
+          "いちばん",
+          "忙しいですか。",
+          "姉がいちばん忙しいです。"
+        ]
       },
       {
-        "id": "q_b12_315",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_328",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara tadi pagi, setiap hari, malam ini, waktu mana yang paling dingin (cuaca)? setiap hari paling dingin (cuaca).",
+        "reading": "けさとまいにちとこんばんのなかでいつがいちばんさむいですか。まいにちがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今朝と毎日と今晩のなかでいつがいちばん寒いですか。毎日がいちばん寒いです。",
+        "prompt": "Di antara tadi pagi, setiap hari, malam ini, waktu mana yang paling dingin (cuaca)? setiap hari paling dingin (cuaca).",
+        "tiles": [
+          "いちばん",
+          "いつが",
+          "今朝と毎日と今晩のなかで",
+          "毎日がいちばん寒いです。",
+          "寒いですか。"
+        ],
+        "answer": [
+          "今朝と毎日と今晩のなかで",
+          "いつが",
+          "いちばん",
+          "寒いですか。",
+          "毎日がいちばん寒いです。"
+        ]
+      },
+      {
+        "id": "q_b12_329",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara perpustakaan, toko, kantin, tempat mana yang paling tenang? perpustakaan paling tenang.",
         "reading": "としょかんとみせとしょくどうのなかでどこがいちばんしずかですか。としょかんがいちばんしずかです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7629,11 +7992,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "図書館と店と食堂のなかでどこがいちばん静かですか。図書館がいちばん静かです。",
         "prompt": "Di antara perpustakaan, toko, kantin, tempat mana yang paling tenang? perpustakaan paling tenang.",
         "tiles": [
+          "どこが",
           "図書館と店と食堂のなかで",
           "図書館がいちばん静かです。",
           "静かですか。",
-          "いちばん",
-          "どこが"
+          "いちばん"
         ],
         "answer": [
           "図書館と店と食堂のなかで",
@@ -7641,47 +8004,94 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "静かですか。",
           "図書館がいちばん静かです。"
+        ],
+        "audioText": "図書館と店と食堂のなかでどこがいちばん静かですか。図書館がいちばん静かです。"
+      },
+      {
+        "id": "q_b12_330",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara kemarin lusa, hari ini, kemarin, waktu mana yang paling sibuk? kemarin paling sibuk.",
+        "reading": "おとといときょうときのうのなかでいつがいちばんいそがしいですか。きのうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "おとといと今日と昨日のなかでいつがいちばん忙しいですか。昨日がいちばん忙しいです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "おとといと今日と昨日のなかでいつがいちばん忙しいですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks jawaban: kemarin. Pilih respons B.",
+        "options": [
+          "昨日はいちばん忙しいです。",
+          "昨日がいちばん忙しいです。",
+          "昨日といちばん忙しいです。",
+          "昨日よりいちばん忙しいです。"
+        ],
+        "answer": "昨日がいちばん忙しいです。",
+        "answerId": "kemarin paling sibuk.",
+        "dialogueId": [
+          "Di antara kemarin lusa, hari ini, kemarin, waktu mana yang paling sibuk?",
+          "kemarin paling sibuk."
         ]
       }
     ]
   },
   {
-    "level": 22,
-    "title": "Level 22",
+    "level": 23,
+    "title": "Level 23",
     "tier": "kalimat",
     "focus": "Kelompok: のなかで／いちばん",
     "theme": "Minna no Nihongo Bab 12",
     "questions": [
       {
-        "id": "q_b12_316",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "id": "q_b12_331",
+        "type": "complete",
+        "instruction": "Konteks jawaban: musim dingin. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim dingin paling disukai.",
         "reading": "ふゆとはるとなつのなかでいつがいちばんすきですか。ふゆがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "冬と春と夏のなかでいつがいちばん好きですか。冬がいちばん好きです。",
-        "prompt": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim dingin paling disukai.",
-        "tiles": [
-          "冬がいちばん好きです。",
-          "好きですか。",
-          "いちばん",
+        "prompt": "冬と春と夏のなかで＿＿＿いちばん好きですか。冬がいちばん好きです。",
+        "options": [
+          "どこが",
+          "何が",
           "いつが",
-          "冬と春と夏のなかで"
+          "だれが"
         ],
-        "answer": [
-          "冬と春と夏のなかで",
-          "いつが",
-          "いちばん",
-          "好きですか。",
-          "冬がいちばん好きです。"
-        ]
+        "answer": "いつが"
       },
       {
-        "id": "q_b12_317",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
+        "id": "q_b12_332",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara besok lusa, besok, hari ini, waktu mana yang paling sibuk? hari ini paling sibuk.",
+        "reading": "あさってとあしたときょうのなかでいつがいちばんいそがしいですか。きょうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "あさってと明日と今日のなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。",
+        "prompt": "Di antara besok lusa, besok, hari ini, waktu mana yang paling sibuk? hari ini paling sibuk.",
+        "options": [
+          "あさってと明日と今日のなかでどこがいちばん忙しいですか。今日がいちばん忙しいです。",
+          "あさってと明日と今日のなかで何がいちばん忙しいですか。今日がいちばん忙しいです。",
+          "あさってと明日と今日のなかでだれがいちばん忙しいですか。今日がいちばん忙しいです。",
+          "あさってと明日と今日のなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。"
+        ],
+        "answer": "あさってと明日と今日のなかでいつがいちばん忙しいですか。今日がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_333",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara roti, daging, ikan, apa yang paling enak? daging paling enak.",
         "reading": "パンとにくとさかなのなかでなにがいちばんおいしいですか。にくがいちばんおいしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7690,11 +8100,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "パンと肉と魚のなかで何がいちばんおいしいですか。肉がいちばんおいしいです。",
         "prompt": "Di antara roti, daging, ikan, apa yang paling enak? daging paling enak.",
         "tiles": [
-          "おいしいですか。",
           "いちばん",
           "何が",
           "パンと肉と魚のなかで",
-          "肉がいちばんおいしいです。"
+          "肉がいちばんおいしいです。",
+          "おいしいですか。"
         ],
         "answer": [
           "パンと肉と魚のなかで",
@@ -7702,45 +8112,97 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "おいしいですか。",
           "肉がいちばんおいしいです。"
-        ],
-        "audioText": "パンと肉と魚のなかで何がいちばんおいしいですか。肉がいちばんおいしいです。"
+        ]
       },
       {
-        "id": "q_b12_318",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "id": "q_b12_334",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara minggu depan, minggu ini, minggu lalu, waktu mana yang paling sibuk? minggu lalu paling sibuk.",
+        "reading": "らいしゅうとこんしゅうとせんしゅうのなかでいつがいちばんいそがしいですか。せんしゅうがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "来週と今週と先週のなかでいつがいちばん忙しいですか。先週がいちばん忙しいです。",
+        "prompt": "Di antara minggu depan, minggu ini, minggu lalu, waktu mana yang paling sibuk? minggu lalu paling sibuk.",
+        "tiles": [
+          "いつが",
+          "来週と今週と先週のなかで",
+          "先週がいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん"
+        ],
+        "answer": [
+          "来週と今週と先週のなかで",
+          "いつが",
+          "いちばん",
+          "忙しいですか。",
+          "先週がいちばん忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_335",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sibuk? adik perempuan saya paling sibuk.",
         "reading": "おとうとといもうととちちのなかでだれがいちばんいそがしいですか。いもうとがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "弟と妹と父のなかでだれがいちばん忙しいですか。妹がいちばん忙しいです。",
+        "prompt": "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sibuk? adik perempuan saya paling sibuk.",
+        "tiles": [
+          "弟と妹と父のなかで",
+          "妹がいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん",
+          "だれが"
+        ],
+        "answer": [
+          "弟と妹と父のなかで",
+          "だれが",
+          "いちばん",
+          "忙しいですか。",
+          "妹がいちばん忙しいです。"
+        ],
+        "audioText": "弟と妹と父のなかでだれがいちばん忙しいですか。妹がいちばん忙しいです。"
+      },
+      {
+        "id": "q_b12_336",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara bulan depan, bulan ini, bulan lalu, waktu mana yang paling sibuk? bulan lalu paling sibuk.",
+        "reading": "らいげつとこんげつとせんげつのなかでいつがいちばんいそがしいですか。せんげつがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "来月と今月と先月のなかでいつがいちばん忙しいですか。先月がいちばん忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "弟と妹と父のなかでだれがいちばん忙しいですか。"
+            "text": "来月と今月と先月のなかでいつがいちばん忙しいですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: adik perempuan saya. Pilih respons B.",
+        "question": "Konteks jawaban: bulan lalu. Pilih respons B.",
         "options": [
-          "妹がいちばん忙しいです。",
-          "妹よりいちばん忙しいです。",
-          "妹といちばん忙しいです。",
-          "妹はいちばん忙しいです。"
+          "先月がいちばん忙しいです。",
+          "先月といちばん忙しいです。",
+          "先月はいちばん忙しいです。",
+          "先月よりいちばん忙しいです。"
         ],
-        "answer": "妹がいちばん忙しいです。",
-        "answerId": "adik perempuan saya paling sibuk.",
+        "answer": "先月がいちばん忙しいです。",
+        "answerId": "bulan lalu paling sibuk.",
         "dialogueId": [
-          "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sibuk?",
-          "adik perempuan saya paling sibuk."
+          "Di antara bulan depan, bulan ini, bulan lalu, waktu mana yang paling sibuk?",
+          "bulan lalu paling sibuk."
         ]
       },
       {
-        "id": "q_b12_319",
+        "id": "q_b12_337",
         "type": "complete",
         "instruction": "Konteks jawaban: kantin. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara toko, kantin, hotel, tempat mana yang paling tenang? kantin paling tenang.",
@@ -7752,16 +8214,35 @@ window.LEVELS_BAB12_DATA = [
         "prompt": "店と食堂とホテルのなかで＿＿＿いちばん静かですか。食堂がいちばん静かです。",
         "options": [
           "何が",
-          "いつが",
+          "だれが",
           "どこが",
-          "だれが"
+          "いつが"
         ],
         "answer": "どこが"
       },
       {
-        "id": "q_b12_320",
+        "id": "q_b12_338",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara tahun depan, tahun ini, tahun lalu, waktu mana yang paling panas (cuaca)? tahun lalu paling panas (cuaca).",
+        "reading": "らいねんとことしときょねんのなかでいつがいちばんあついですか。きょねんがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "来年と今年と去年のなかでいつがいちばん暑いですか。去年がいちばん暑いです。",
+        "prompt": "Di antara tahun depan, tahun ini, tahun lalu, waktu mana yang paling panas (cuaca)? tahun lalu paling panas (cuaca).",
+        "options": [
+          "来年と今年と去年のなかでいつがいちばん暑いですか。去年がいちばん暑いです。",
+          "来年と今年と去年のなかでどこがいちばん暑いですか。去年がいちばん暑いです。",
+          "来年と今年と去年のなかでだれがいちばん暑いですか。去年がいちばん暑いです。",
+          "来年と今年と去年のなかで何がいちばん暑いですか。去年がいちばん暑いです。"
+        ],
+        "answer": "来年と今年と去年のなかでいつがいちばん暑いですか。去年がいちばん暑いです。"
+      },
+      {
+        "id": "q_b12_339",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim panas paling disukai.",
         "reading": "はるとなつとあきのなかでいつがいちばんすきですか。なつがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7769,18 +8250,51 @@ window.LEVELS_BAB12_DATA = [
         "casual": false,
         "fullJp": "春と夏と秋のなかでいつがいちばん好きですか。夏がいちばん好きです。",
         "prompt": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim panas paling disukai.",
-        "options": [
-          "春と夏と秋のなかでいつがいちばん好きですか。夏がいちばん好きです。",
-          "春と夏と秋のなかで何がいちばん好きですか。夏がいちばん好きです。",
-          "春と夏と秋のなかでだれがいちばん好きですか。夏がいちばん好きです。",
-          "春と夏と秋のなかでどこがいちばん好きですか。夏がいちばん好きです。"
+        "tiles": [
+          "いつが",
+          "春と夏と秋のなかで",
+          "夏がいちばん好きです。",
+          "好きですか。",
+          "いちばん"
         ],
-        "answer": "春と夏と秋のなかでいつがいちばん好きですか。夏がいちばん好きです。"
+        "answer": [
+          "春と夏と秋のなかで",
+          "いつが",
+          "いちばん",
+          "好きですか。",
+          "夏がいちばん好きです。"
+        ]
       },
       {
-        "id": "q_b12_321",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
+        "id": "q_b12_340",
+        "type": "arrange",
+        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "translation": "Di antara setiap malam, setiap hari, setiap pagi, waktu mana yang paling sibuk? setiap pagi paling sibuk.",
+        "reading": "まいばんとまいにちとまいあさのなかでいつがいちばんいそがしいですか。まいあさがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "毎晩と毎日と毎朝のなかでいつがいちばん忙しいですか。毎朝がいちばん忙しいです。",
+        "prompt": "Di antara setiap malam, setiap hari, setiap pagi, waktu mana yang paling sibuk? setiap pagi paling sibuk.",
+        "tiles": [
+          "毎晩と毎日と毎朝のなかで",
+          "毎朝がいちばん忙しいです。",
+          "忙しいですか。",
+          "いちばん",
+          "いつが"
+        ],
+        "answer": [
+          "毎晩と毎日と毎朝のなかで",
+          "いつが",
+          "いちばん",
+          "忙しいですか。",
+          "毎朝がいちばん忙しいです。"
+        ]
+      },
+      {
+        "id": "q_b12_341",
+        "type": "listening",
+        "instruction": "Dengarkan lalu susun kalimat.",
         "translation": "Di antara daging, ikan, sayuran, apa yang paling enak? sayuran paling enak.",
         "reading": "にくとさかなとやさいのなかでなにがいちばんおいしいですか。やさいがいちばんおいしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7801,38 +8315,85 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "おいしいですか。",
           "野菜がいちばんおいしいです。"
+        ],
+        "audioText": "肉と魚と野菜のなかで何がいちばんおいしいですか。野菜がいちばんおいしいです。"
+      },
+      {
+        "id": "q_b12_342",
+        "type": "short_conversation",
+        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
+        "translation": "Di antara setiap hari, malam ini, tadi pagi, waktu mana yang paling dingin (cuaca)? tadi pagi paling dingin (cuaca).",
+        "reading": "まいにちとこんばんとけさのなかでいつがいちばんさむいですか。けさがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "毎日と今晩と今朝のなかでいつがいちばん寒いですか。今朝がいちばん寒いです。",
+        "dialogue": [
+          {
+            "speaker": "A",
+            "text": "毎日と今晩と今朝のなかでいつがいちばん寒いですか。"
+          },
+          {
+            "speaker": "B",
+            "text": "＿＿＿"
+          }
+        ],
+        "question": "Konteks jawaban: tadi pagi. Pilih respons B.",
+        "options": [
+          "今朝はいちばん寒いです。",
+          "今朝よりいちばん寒いです。",
+          "今朝といちばん寒いです。",
+          "今朝がいちばん寒いです。"
+        ],
+        "answer": "今朝がいちばん寒いです。",
+        "answerId": "tadi pagi paling dingin (cuaca).",
+        "dialogueId": [
+          "Di antara setiap hari, malam ini, tadi pagi, waktu mana yang paling dingin (cuaca)?",
+          "tadi pagi paling dingin (cuaca)."
         ]
       },
       {
-        "id": "q_b12_322",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
+        "id": "q_b12_343",
+        "type": "complete",
+        "instruction": "Konteks jawaban: ibu saya. Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Di antara adik perempuan saya, ayah saya, ibu saya, siapa yang paling sibuk? ibu saya paling sibuk.",
         "reading": "いもうととちちとははのなかでだれがいちばんいそがしいですか。ははがいちばんいそがしいです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
         "fullJp": "妹と父と母のなかでだれがいちばん忙しいですか。母がいちばん忙しいです。",
-        "prompt": "Di antara adik perempuan saya, ayah saya, ibu saya, siapa yang paling sibuk? ibu saya paling sibuk.",
-        "tiles": [
-          "忙しいですか。",
-          "いちばん",
+        "prompt": "妹と父と母のなかで＿＿＿いちばん忙しいですか。母がいちばん忙しいです。",
+        "options": [
+          "どこが",
           "だれが",
-          "妹と父と母のなかで",
-          "母がいちばん忙しいです。"
+          "何が",
+          "いつが"
         ],
-        "answer": [
-          "妹と父と母のなかで",
-          "だれが",
-          "いちばん",
-          "忙しいですか。",
-          "母がいちばん忙しいです。"
-        ]
+        "answer": "だれが"
       },
       {
-        "id": "q_b12_323",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
+        "id": "q_b12_344",
+        "type": "choose_translation",
+        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
+        "translation": "Di antara hari ini, kemarin, kemarin lusa, waktu mana yang paling senggang? hari ini paling senggang.",
+        "reading": "きょうときのうとおとといのなかでいつがいちばんひまですか。きょうがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
+        "topic": "いちばん",
+        "casual": false,
+        "fullJp": "今日と昨日とおとといのなかでいつがいちばん暇ですか。今日がいちばん暇です。",
+        "prompt": "Di antara hari ini, kemarin, kemarin lusa, waktu mana yang paling senggang? hari ini paling senggang.",
+        "options": [
+          "今日と昨日とおとといのなかでいつがいちばん暇ですか。今日がいちばん暇です。",
+          "今日と昨日とおとといのなかで何がいちばん暇ですか。今日がいちばん暇です。",
+          "今日と昨日とおとといのなかでだれがいちばん暇ですか。今日がいちばん暇です。",
+          "今日と昨日とおとといのなかでどこがいちばん暇ですか。今日がいちばん暇です。"
+        ],
+        "answer": "今日と昨日とおとといのなかでいつがいちばん暇ですか。今日がいちばん暇です。"
+      },
+      {
+        "id": "q_b12_345",
+        "type": "translate",
+        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
         "translation": "Di antara kantin, hotel, sekolah, tempat mana yang paling tenang? sekolah paling tenang.",
         "reading": "しょくどうとホテルとがっこうのなかでどこがいちばんしずかですか。がっこうがいちばんしずかです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
@@ -7841,11 +8402,11 @@ window.LEVELS_BAB12_DATA = [
         "fullJp": "食堂とホテルと学校のなかでどこがいちばん静かですか。学校がいちばん静かです。",
         "prompt": "Di antara kantin, hotel, sekolah, tempat mana yang paling tenang? sekolah paling tenang.",
         "tiles": [
-          "いちばん",
-          "どこが",
           "食堂とホテルと学校のなかで",
           "学校がいちばん静かです。",
-          "静かですか。"
+          "静かですか。",
+          "いちばん",
+          "どこが"
         ],
         "answer": [
           "食堂とホテルと学校のなかで",
@@ -7853,567 +8414,6 @@ window.LEVELS_BAB12_DATA = [
           "いちばん",
           "静かですか。",
           "学校がいちばん静かです。"
-        ],
-        "audioText": "食堂とホテルと学校のなかでどこがいちばん静かですか。学校がいちばん静かです。"
-      },
-      {
-        "id": "q_b12_324",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim dingin paling disukai.",
-        "reading": "なつとあきとふゆのなかでいつがいちばんすきですか。ふゆがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "夏と秋と冬のなかでいつがいちばん好きですか。冬がいちばん好きです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "夏と秋と冬のなかでいつがいちばん好きですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks jawaban: musim dingin. Pilih respons B.",
-        "options": [
-          "冬といちばん好きです。",
-          "冬はいちばん好きです。",
-          "冬がいちばん好きです。",
-          "冬よりいちばん好きです。"
-        ],
-        "answer": "冬がいちばん好きです。",
-        "answerId": "musim dingin paling disukai.",
-        "dialogueId": [
-          "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai?",
-          "musim dingin paling disukai."
-        ]
-      },
-      {
-        "id": "q_b12_325",
-        "type": "complete",
-        "instruction": "Konteks jawaban: ikan. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara ikan, sayuran, sukiyaki, apa yang paling enak? ikan paling enak.",
-        "reading": "さかなとやさいとすきやきのなかでなにがいちばんおいしいですか。さかながいちばんおいしいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "魚と野菜とすき焼きのなかで何がいちばんおいしいですか。魚がいちばんおいしいです。",
-        "prompt": "魚と野菜とすき焼きのなかで＿＿＿いちばんおいしいですか。魚がいちばんおいしいです。",
-        "options": [
-          "だれが",
-          "何が",
-          "どこが",
-          "いつが"
-        ],
-        "answer": "何が"
-      },
-      {
-        "id": "q_b12_326",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sehat? ayah saya paling sehat.",
-        "reading": "ちちとははとあにのなかでだれがいちばんげんきですか。ちちがいちばんげんきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "父と母と兄のなかでだれがいちばん元気ですか。父がいちばん元気です。",
-        "prompt": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sehat? ayah saya paling sehat.",
-        "options": [
-          "父と母と兄のなかで何がいちばん元気ですか。父がいちばん元気です。",
-          "父と母と兄のなかでどこがいちばん元気ですか。父がいちばん元気です。",
-          "父と母と兄のなかでいつがいちばん元気ですか。父がいちばん元気です。",
-          "父と母と兄のなかでだれがいちばん元気ですか。父がいちばん元気です。"
-        ],
-        "answer": "父と母と兄のなかでだれがいちばん元気ですか。父がいちばん元気です。"
-      },
-      {
-        "id": "q_b12_327",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara hotel, sekolah, stasiun, tempat mana yang paling dekat? hotel paling dekat.",
-        "reading": "ホテルとがっこうとえきのなかでどこがいちばんちかいですか。ホテルがいちばんちかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "ホテルと学校と駅のなかでどこがいちばん近いですか。ホテルがいちばん近いです。",
-        "prompt": "Di antara hotel, sekolah, stasiun, tempat mana yang paling dekat? hotel paling dekat.",
-        "tiles": [
-          "近いですか。",
-          "いちばん",
-          "どこが",
-          "ホテルと学校と駅のなかで",
-          "ホテルがいちばん近いです。"
-        ],
-        "answer": [
-          "ホテルと学校と駅のなかで",
-          "どこが",
-          "いちばん",
-          "近いですか。",
-          "ホテルがいちばん近いです。"
-        ]
-      },
-      {
-        "id": "q_b12_328",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim gugur paling disukai.",
-        "reading": "あきとふゆとはるのなかでいつがいちばんすきですか。あきがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "秋と冬と春のなかでいつがいちばん好きですか。秋がいちばん好きです。",
-        "prompt": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim gugur paling disukai.",
-        "tiles": [
-          "いちばん",
-          "いつが",
-          "秋と冬と春のなかで",
-          "秋がいちばん好きです。",
-          "好きですか。"
-        ],
-        "answer": [
-          "秋と冬と春のなかで",
-          "いつが",
-          "いちばん",
-          "好きですか。",
-          "秋がいちばん好きです。"
-        ]
-      },
-      {
-        "id": "q_b12_329",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sayuran, sukiyaki, sashimi, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "やさいとすきやきとさしみのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "野菜とすき焼きと刺身のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sayuran, sukiyaki, sashimi, apa yang paling enak? sukiyaki paling enak.",
-        "tiles": [
-          "何が",
-          "野菜とすき焼きと刺身のなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
-          "いちばん"
-        ],
-        "answer": [
-          "野菜とすき焼きと刺身のなかで",
-          "何が",
-          "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
-        ],
-        "audioText": "野菜とすき焼きと刺身のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。"
-      },
-      {
-        "id": "q_b12_330",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sehat? kakak laki-laki saya paling sehat.",
-        "reading": "ははとあにとあねのなかでだれがいちばんげんきですか。あにがいちばんげんきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "母と兄と姉のなかでだれがいちばん元気ですか。兄がいちばん元気です。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "母と兄と姉のなかでだれがいちばん元気ですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks jawaban: kakak laki-laki saya. Pilih respons B.",
-        "options": [
-          "兄はいちばん元気です。",
-          "兄がいちばん元気です。",
-          "兄といちばん元気です。",
-          "兄よりいちばん元気です。"
-        ],
-        "answer": "兄がいちばん元気です。",
-        "answerId": "kakak laki-laki saya paling sehat.",
-        "dialogueId": [
-          "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sehat?",
-          "kakak laki-laki saya paling sehat."
-        ]
-      }
-    ]
-  },
-  {
-    "level": 23,
-    "title": "Level 23",
-    "tier": "kalimat",
-    "focus": "Kelompok: のなかで／いちばん",
-    "theme": "Minna no Nihongo Bab 12",
-    "questions": [
-      {
-        "id": "q_b12_331",
-        "type": "complete",
-        "instruction": "Konteks jawaban: stasiun. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sekolah, stasiun, perpustakaan, tempat mana yang paling dekat? stasiun paling dekat.",
-        "reading": "がっこうとえきととしょかんのなかでどこがいちばんちかいですか。えきがいちばんちかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "学校と駅と図書館のなかでどこがいちばん近いですか。駅がいちばん近いです。",
-        "prompt": "学校と駅と図書館のなかで＿＿＿いちばん近いですか。駅がいちばん近いです。",
-        "options": [
-          "何が",
-          "いつが",
-          "どこが",
-          "だれが"
-        ],
-        "answer": "どこが"
-      },
-      {
-        "id": "q_b12_332",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim semi paling disukai.",
-        "reading": "ふゆとはるとなつのなかでいつがいちばんすきですか。はるがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "冬と春と夏のなかでいつがいちばん好きですか。春がいちばん好きです。",
-        "prompt": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim semi paling disukai.",
-        "options": [
-          "冬と春と夏のなかでどこがいちばん好きですか。春がいちばん好きです。",
-          "冬と春と夏のなかで何がいちばん好きですか。春がいちばん好きです。",
-          "冬と春と夏のなかでだれがいちばん好きですか。春がいちばん好きです。",
-          "冬と春と夏のなかでいつがいちばん好きですか。春がいちばん好きです。"
-        ],
-        "answer": "冬と春と夏のなかでいつがいちばん好きですか。春がいちばん好きです。"
-      },
-      {
-        "id": "q_b12_333",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sashimi, sushi, apa yang paling mahal? sushi paling mahal.",
-        "reading": "すきやきとさしみとおすしのなかでなにがいちばんたかいですか。おすしがいちばんたかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "すき焼きと刺身とおすしのなかで何がいちばん高いですか。おすしがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sashimi, sushi, apa yang paling mahal? sushi paling mahal.",
-        "tiles": [
-          "いちばん",
-          "何が",
-          "すき焼きと刺身とおすしのなかで",
-          "おすしがいちばん高いです。",
-          "高いですか。"
-        ],
-        "answer": [
-          "すき焼きと刺身とおすしのなかで",
-          "何が",
-          "いちばん",
-          "高いですか。",
-          "おすしがいちばん高いです。"
-        ]
-      },
-      {
-        "id": "q_b12_334",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara kakak laki-laki saya, kakak perempuan saya, adik laki-laki saya, siapa yang paling sehat? adik laki-laki saya paling sehat.",
-        "reading": "あにとあねとおとうとのなかでだれがいちばんげんきですか。おとうとがいちばんげんきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "兄と姉と弟のなかでだれがいちばん元気ですか。弟がいちばん元気です。",
-        "prompt": "Di antara kakak laki-laki saya, kakak perempuan saya, adik laki-laki saya, siapa yang paling sehat? adik laki-laki saya paling sehat.",
-        "tiles": [
-          "だれが",
-          "兄と姉と弟のなかで",
-          "弟がいちばん元気です。",
-          "元気ですか。",
-          "いちばん"
-        ],
-        "answer": [
-          "兄と姉と弟のなかで",
-          "だれが",
-          "いちばん",
-          "元気ですか。",
-          "弟がいちばん元気です。"
-        ]
-      },
-      {
-        "id": "q_b12_335",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara stasiun, perpustakaan, toko, tempat mana yang paling dekat? toko paling dekat.",
-        "reading": "えきととしょかんとみせのなかでどこがいちばんちかいですか。みせがいちばんちかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "駅と図書館と店のなかでどこがいちばん近いですか。店がいちばん近いです。",
-        "prompt": "Di antara stasiun, perpustakaan, toko, tempat mana yang paling dekat? toko paling dekat.",
-        "tiles": [
-          "駅と図書館と店のなかで",
-          "店がいちばん近いです。",
-          "近いですか。",
-          "いちばん",
-          "どこが"
-        ],
-        "answer": [
-          "駅と図書館と店のなかで",
-          "どこが",
-          "いちばん",
-          "近いですか。",
-          "店がいちばん近いです。"
-        ],
-        "audioText": "駅と図書館と店のなかでどこがいちばん近いですか。店がいちばん近いです。"
-      },
-      {
-        "id": "q_b12_336",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim gugur paling disukai.",
-        "reading": "はるとなつとあきのなかでいつがいちばんすきですか。あきがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "春と夏と秋のなかでいつがいちばん好きですか。秋がいちばん好きです。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "春と夏と秋のなかでいつがいちばん好きですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks jawaban: musim gugur. Pilih respons B.",
-        "options": [
-          "秋がいちばん好きです。",
-          "秋といちばん好きです。",
-          "秋はいちばん好きです。",
-          "秋よりいちばん好きです。"
-        ],
-        "answer": "秋がいちばん好きです。",
-        "answerId": "musim gugur paling disukai.",
-        "dialogueId": [
-          "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai?",
-          "musim gugur paling disukai."
-        ]
-      },
-      {
-        "id": "q_b12_337",
-        "type": "complete",
-        "instruction": "Konteks jawaban: sashimi. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sashimi, sushi, tempura, apa yang paling mahal? sashimi paling mahal.",
-        "reading": "さしみとおすしとてんぷらのなかでなにがいちばんたかいですか。さしみがいちばんたかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "刺身とおすしとてんぷらのなかで何がいちばん高いですか。刺身がいちばん高いです。",
-        "prompt": "刺身とおすしとてんぷらのなかで＿＿＿いちばん高いですか。刺身がいちばん高いです。",
-        "options": [
-          "どこが",
-          "だれが",
-          "何が",
-          "いつが"
-        ],
-        "answer": "何が"
-      },
-      {
-        "id": "q_b12_338",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sehat? kakak perempuan saya paling sehat.",
-        "reading": "あねとおとうとといもうとのなかでだれがいちばんげんきですか。あねがいちばんげんきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "姉と弟と妹のなかでだれがいちばん元気ですか。姉がいちばん元気です。",
-        "prompt": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sehat? kakak perempuan saya paling sehat.",
-        "options": [
-          "姉と弟と妹のなかでだれがいちばん元気ですか。姉がいちばん元気です。",
-          "姉と弟と妹のなかでどこがいちばん元気ですか。姉がいちばん元気です。",
-          "姉と弟と妹のなかでいつがいちばん元気ですか。姉がいちばん元気です。",
-          "姉と弟と妹のなかで何がいちばん元気ですか。姉がいちばん元気です。"
-        ],
-        "answer": "姉と弟と妹のなかでだれがいちばん元気ですか。姉がいちばん元気です。"
-      },
-      {
-        "id": "q_b12_339",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara perpustakaan, toko, kantin, tempat mana yang paling dekat? perpustakaan paling dekat.",
-        "reading": "としょかんとみせとしょくどうのなかでどこがいちばんちかいですか。としょかんがいちばんちかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "図書館と店と食堂のなかでどこがいちばん近いですか。図書館がいちばん近いです。",
-        "prompt": "Di antara perpustakaan, toko, kantin, tempat mana yang paling dekat? perpustakaan paling dekat.",
-        "tiles": [
-          "どこが",
-          "図書館と店と食堂のなかで",
-          "図書館がいちばん近いです。",
-          "近いですか。",
-          "いちばん"
-        ],
-        "answer": [
-          "図書館と店と食堂のなかで",
-          "どこが",
-          "いちばん",
-          "近いですか。",
-          "図書館がいちばん近いです。"
-        ]
-      },
-      {
-        "id": "q_b12_340",
-        "type": "arrange",
-        "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim panas paling disukai.",
-        "reading": "なつとあきとふゆのなかでいつがいちばんすきですか。なつがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "夏と秋と冬のなかでいつがいちばん好きですか。夏がいちばん好きです。",
-        "prompt": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim panas paling disukai.",
-        "tiles": [
-          "夏と秋と冬のなかで",
-          "夏がいちばん好きです。",
-          "好きですか。",
-          "いちばん",
-          "いつが"
-        ],
-        "answer": [
-          "夏と秋と冬のなかで",
-          "いつが",
-          "いちばん",
-          "好きですか。",
-          "夏がいちばん好きです。"
-        ]
-      },
-      {
-        "id": "q_b12_341",
-        "type": "listening",
-        "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sushi, tempura, roti, apa yang paling mahal? tempura paling mahal.",
-        "reading": "おすしとてんぷらとパンのなかでなにがいちばんたかいですか。てんぷらがいちばんたかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "おすしとてんぷらとパンのなかで何がいちばん高いですか。てんぷらがいちばん高いです。",
-        "prompt": "Di antara sushi, tempura, roti, apa yang paling mahal? tempura paling mahal.",
-        "tiles": [
-          "てんぷらがいちばん高いです。",
-          "高いですか。",
-          "いちばん",
-          "何が",
-          "おすしとてんぷらとパンのなかで"
-        ],
-        "answer": [
-          "おすしとてんぷらとパンのなかで",
-          "何が",
-          "いちばん",
-          "高いですか。",
-          "てんぷらがいちばん高いです。"
-        ],
-        "audioText": "おすしとてんぷらとパンのなかで何がいちばん高いですか。てんぷらがいちばん高いです。"
-      },
-      {
-        "id": "q_b12_342",
-        "type": "short_conversation",
-        "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sehat? adik perempuan saya paling sehat.",
-        "reading": "おとうとといもうととちちのなかでだれがいちばんげんきですか。いもうとがいちばんげんきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "弟と妹と父のなかでだれがいちばん元気ですか。妹がいちばん元気です。",
-        "dialogue": [
-          {
-            "speaker": "A",
-            "text": "弟と妹と父のなかでだれがいちばん元気ですか。"
-          },
-          {
-            "speaker": "B",
-            "text": "＿＿＿"
-          }
-        ],
-        "question": "Konteks jawaban: adik perempuan saya. Pilih respons B.",
-        "options": [
-          "妹はいちばん元気です。",
-          "妹よりいちばん元気です。",
-          "妹といちばん元気です。",
-          "妹がいちばん元気です。"
-        ],
-        "answer": "妹がいちばん元気です。",
-        "answerId": "adik perempuan saya paling sehat.",
-        "dialogueId": [
-          "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sehat?",
-          "adik perempuan saya paling sehat."
-        ]
-      },
-      {
-        "id": "q_b12_343",
-        "type": "complete",
-        "instruction": "Konteks jawaban: kantin. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara toko, kantin, hotel, tempat mana yang paling dekat? kantin paling dekat.",
-        "reading": "みせとしょくどうとホテルのなかでどこがいちばんちかいですか。しょくどうがいちばんちかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "店と食堂とホテルのなかでどこがいちばん近いですか。食堂がいちばん近いです。",
-        "prompt": "店と食堂とホテルのなかで＿＿＿いちばん近いですか。食堂がいちばん近いです。",
-        "options": [
-          "いつが",
-          "どこが",
-          "何が",
-          "だれが"
-        ],
-        "answer": "どこが"
-      },
-      {
-        "id": "q_b12_344",
-        "type": "choose_translation",
-        "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim dingin paling disukai.",
-        "reading": "あきとふゆとはるのなかでいつがいちばんすきですか。ふゆがいちばんすきです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "秋と冬と春のなかでいつがいちばん好きですか。冬がいちばん好きです。",
-        "prompt": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim dingin paling disukai.",
-        "options": [
-          "秋と冬と春のなかでいつがいちばん好きですか。冬がいちばん好きです。",
-          "秋と冬と春のなかで何がいちばん好きですか。冬がいちばん好きです。",
-          "秋と冬と春のなかでだれがいちばん好きですか。冬がいちばん好きです。",
-          "秋と冬と春のなかでどこがいちばん好きですか。冬がいちばん好きです。"
-        ],
-        "answer": "秋と冬と春のなかでいつがいちばん好きですか。冬がいちばん好きです。"
-      },
-      {
-        "id": "q_b12_345",
-        "type": "translate",
-        "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara tempura, roti, daging, apa yang paling mahal? daging paling mahal.",
-        "reading": "てんぷらとパンとにくのなかでなにがいちばんたかいですか。にくがいちばんたかいです。",
-        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
-        "topic": "いちばん",
-        "casual": false,
-        "fullJp": "てんぷらとパンと肉のなかで何がいちばん高いですか。肉がいちばん高いです。",
-        "prompt": "Di antara tempura, roti, daging, apa yang paling mahal? daging paling mahal.",
-        "tiles": [
-          "てんぷらとパンと肉のなかで",
-          "肉がいちばん高いです。",
-          "高いですか。",
-          "いちばん",
-          "何が"
-        ],
-        "answer": [
-          "てんぷらとパンと肉のなかで",
-          "何が",
-          "いちばん",
-          "高いですか。",
-          "肉がいちばん高いです。"
         ]
       }
     ]
@@ -8429,100 +8429,100 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_346",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara adik perempuan saya, ayah saya, ibu saya, siapa yang paling sehat? ibu saya paling sehat.",
-        "reading": "いもうととちちとははのなかでだれがいちばんげんきですか。ははがいちばんげんきです。",
+        "translation": "Di antara besok, hari ini, besok lusa, waktu mana yang paling senggang? besok paling senggang.",
+        "reading": "あしたときょうとあさってのなかでいつがいちばんひまですか。あしたがいちばんひまです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "妹と父と母のなかでだれがいちばん元気ですか。母がいちばん元気です。",
-        "prompt": "Di antara adik perempuan saya, ayah saya, ibu saya, siapa yang paling sehat? ibu saya paling sehat.",
+        "fullJp": "明日と今日とあさってのなかでいつがいちばん暇ですか。明日がいちばん暇です。",
+        "prompt": "Di antara besok, hari ini, besok lusa, waktu mana yang paling senggang? besok paling senggang.",
         "tiles": [
-          "母がいちばん元気です。",
-          "元気ですか。",
+          "明日がいちばん暇です。",
+          "暇ですか。",
           "いちばん",
-          "だれが",
-          "妹と父と母のなかで"
+          "いつが",
+          "明日と今日とあさってのなかで"
         ],
         "answer": [
-          "妹と父と母のなかで",
-          "だれが",
+          "明日と今日とあさってのなかで",
+          "いつが",
           "いちばん",
-          "元気ですか。",
-          "母がいちばん元気です。"
+          "暇ですか。",
+          "明日がいちばん暇です。"
         ]
       },
       {
         "id": "q_b12_347",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara kantin, hotel, sekolah, tempat mana yang paling dekat? sekolah paling dekat.",
-        "reading": "しょくどうとホテルとがっこうのなかでどこがいちばんちかいですか。がっこうがいちばんちかいです。",
+        "translation": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim dingin paling disukai.",
+        "reading": "なつとあきとふゆのなかでいつがいちばんすきですか。ふゆがいちばんすきです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "食堂とホテルと学校のなかでどこがいちばん近いですか。学校がいちばん近いです。",
-        "prompt": "Di antara kantin, hotel, sekolah, tempat mana yang paling dekat? sekolah paling dekat.",
+        "fullJp": "夏と秋と冬のなかでいつがいちばん好きですか。冬がいちばん好きです。",
+        "prompt": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim dingin paling disukai.",
         "tiles": [
-          "近いですか。",
+          "好きですか。",
           "いちばん",
-          "どこが",
-          "食堂とホテルと学校のなかで",
-          "学校がいちばん近いです。"
+          "いつが",
+          "夏と秋と冬のなかで",
+          "冬がいちばん好きです。"
         ],
         "answer": [
-          "食堂とホテルと学校のなかで",
-          "どこが",
+          "夏と秋と冬のなかで",
+          "いつが",
           "いちばん",
-          "近いですか。",
-          "学校がいちばん近いです。"
+          "好きですか。",
+          "冬がいちばん好きです。"
         ],
-        "audioText": "食堂とホテルと学校のなかでどこがいちばん近いですか。学校がいちばん近いです。"
+        "audioText": "夏と秋と冬のなかでいつがいちばん好きですか。冬がいちばん好きです。"
       },
       {
         "id": "q_b12_348",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim panas paling disukai.",
-        "reading": "ふゆとはるとなつのなかでいつがいちばんすきですか。なつがいちばんすきです。",
+        "translation": "Di antara minggu ini, minggu lalu, minggu depan, waktu mana yang paling senggang? minggu ini paling senggang.",
+        "reading": "こんしゅうとせんしゅうとらいしゅうのなかでいつがいちばんひまですか。こんしゅうがいちばんひまです。",
         "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "冬と春と夏のなかでいつがいちばん好きですか。夏がいちばん好きです。",
+        "fullJp": "今週と先週と来週のなかでいつがいちばん暇ですか。今週がいちばん暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "冬と春と夏のなかでいつがいちばん好きですか。"
+            "text": "今週と先週と来週のなかでいつがいちばん暇ですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: musim panas. Pilih respons B.",
+        "question": "Konteks jawaban: minggu ini. Pilih respons B.",
         "options": [
-          "夏といちばん好きです。",
-          "夏がいちばん好きです。",
-          "夏はいちばん好きです。",
-          "夏よりいちばん好きです。"
+          "今週といちばん暇です。",
+          "今週がいちばん暇です。",
+          "今週はいちばん暇です。",
+          "今週よりいちばん暇です。"
         ],
-        "answer": "夏がいちばん好きです。",
-        "answerId": "musim panas paling disukai.",
+        "answer": "今週がいちばん暇です。",
+        "answerId": "minggu ini paling senggang.",
         "dialogueId": [
-          "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai?",
-          "musim panas paling disukai."
+          "Di antara minggu ini, minggu lalu, minggu depan, waktu mana yang paling senggang?",
+          "minggu ini paling senggang."
         ]
       },
       {
         "id": "q_b12_349",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sashimi, sushi, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとおすしのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: ikan. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara ikan, sayuran, sukiyaki, apa yang paling enak? ikan paling enak.",
+        "reading": "さかなとやさいとすきやきのなかでなにがいちばんおいしいですか。さかながいちばんおいしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とおすしのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きと刺身とおすしのなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "魚と野菜とすき焼きのなかで何がいちばんおいしいですか。魚がいちばんおいしいです。",
+        "prompt": "魚と野菜とすき焼きのなかで＿＿＿いちばんおいしいですか。魚がいちばんおいしいです。",
         "options": [
           "いつが",
           "だれが",
@@ -8535,192 +8535,192 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_350",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara sukiyaki, sashimi, sushi, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとおすしのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling dingin (cuaca)? tahun ini paling dingin (cuaca).",
+        "reading": "ことしときょねんとらいねんのなかでいつがいちばんさむいですか。ことしがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とおすしのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, sushi, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "今年と去年と来年のなかでいつがいちばん寒いですか。今年がいちばん寒いです。",
+        "prompt": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling dingin (cuaca)? tahun ini paling dingin (cuaca).",
         "options": [
-          "すき焼きと刺身とおすしのなかでだれがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とおすしのなかでどこがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とおすしのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とおすしのなかでいつがいちばん安いですか。すき焼きがいちばん安いです。"
+          "今年と去年と来年のなかでだれがいちばん寒いですか。今年がいちばん寒いです。",
+          "今年と去年と来年のなかでどこがいちばん寒いですか。今年がいちばん寒いです。",
+          "今年と去年と来年のなかでいつがいちばん寒いですか。今年がいちばん寒いです。",
+          "今年と去年と来年のなかで何がいちばん寒いですか。今年がいちばん寒いです。"
         ],
-        "answer": "すき焼きと刺身とおすしのなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "answer": "今年と去年と来年のなかでいつがいちばん寒いですか。今年がいちばん寒いです。"
       },
       {
         "id": "q_b12_351",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sashimi, tempura, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとさしみとてんぷらのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sehat? ayah saya paling sehat.",
+        "reading": "ちちとははとあにのなかでだれがいちばんげんきですか。ちちがいちばんげんきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とてんぷらのなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sashimi, tempura, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "父と母と兄のなかでだれがいちばん元気ですか。父がいちばん元気です。",
+        "prompt": "Di antara ayah saya, ibu saya, kakak laki-laki saya, siapa yang paling sehat? ayah saya paling sehat.",
         "tiles": [
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
+          "父がいちばん元気です。",
+          "元気ですか。",
           "いちばん",
-          "何が",
-          "すき焼きと刺身とてんぷらのなかで"
+          "だれが",
+          "父と母と兄のなかで"
         ],
         "answer": [
-          "すき焼きと刺身とてんぷらのなかで",
-          "何が",
+          "父と母と兄のなかで",
+          "だれが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "元気ですか。",
+          "父がいちばん元気です。"
         ]
       },
       {
         "id": "q_b12_352",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara sukiyaki, sashimi, tempura, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとてんぷらのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara setiap hari, setiap pagi, setiap malam, waktu mana yang paling senggang? setiap hari paling senggang.",
+        "reading": "まいにちとまいあさとまいばんのなかでいつがいちばんひまですか。まいにちがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とてんぷらのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sashimi, tempura, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "毎日と毎朝と毎晩のなかでいつがいちばん暇ですか。毎日がいちばん暇です。",
+        "prompt": "Di antara setiap hari, setiap pagi, setiap malam, waktu mana yang paling senggang? setiap hari paling senggang.",
         "tiles": [
-          "高いですか。",
+          "暇ですか。",
           "いちばん",
-          "何が",
-          "すき焼きと刺身とてんぷらのなかで",
-          "すき焼きがいちばん高いです。"
+          "いつが",
+          "毎日と毎朝と毎晩のなかで",
+          "毎日がいちばん暇です。"
         ],
         "answer": [
-          "すき焼きと刺身とてんぷらのなかで",
-          "何が",
+          "毎日と毎朝と毎晩のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "暇ですか。",
+          "毎日がいちばん暇です。"
         ]
       },
       {
         "id": "q_b12_353",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sashimi, tempura, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとてんぷらのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara hotel, sekolah, stasiun, tempat mana yang paling dekat? hotel paling dekat.",
+        "reading": "ホテルとがっこうとえきのなかでどこがいちばんちかいですか。ホテルがいちばんちかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とてんぷらのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, tempura, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "ホテルと学校と駅のなかでどこがいちばん近いですか。ホテルがいちばん近いです。",
+        "prompt": "Di antara hotel, sekolah, stasiun, tempat mana yang paling dekat? hotel paling dekat.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きと刺身とてんぷらのなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。"
+          "どこが",
+          "ホテルと学校と駅のなかで",
+          "ホテルがいちばん近いです。",
+          "近いですか。"
         ],
         "answer": [
-          "すき焼きと刺身とてんぷらのなかで",
-          "何が",
+          "ホテルと学校と駅のなかで",
+          "どこが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "近いですか。",
+          "ホテルがいちばん近いです。"
         ],
-        "audioText": "すき焼きと刺身とてんぷらのなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "ホテルと学校と駅のなかでどこがいちばん近いですか。ホテルがいちばん近いです。"
       },
       {
         "id": "q_b12_354",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara sukiyaki, sashimi, roti, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとさしみとパンのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara malam ini, tadi pagi, setiap hari, waktu mana yang paling panas (cuaca)? malam ini paling panas (cuaca).",
+        "reading": "こんばんとけさとまいにちのなかでいつがいちばんあついですか。こんばんがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とパンのなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "fullJp": "今晩と今朝と毎日のなかでいつがいちばん暑いですか。今晩がいちばん暑いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "すき焼きと刺身とパンのなかで何がいちばんおいしいですか。"
+            "text": "今晩と今朝と毎日のなかでいつがいちばん暑いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: sukiyaki. Pilih respons B.",
+        "question": "Konteks jawaban: malam ini. Pilih respons B.",
         "options": [
-          "すき焼きがいちばんおいしいです。",
-          "すき焼きよりいちばんおいしいです。",
-          "すき焼きといちばんおいしいです。",
-          "すき焼きはいちばんおいしいです。"
+          "今晩がいちばん暑いです。",
+          "今晩よりいちばん暑いです。",
+          "今晩といちばん暑いです。",
+          "今晩はいちばん暑いです。"
         ],
-        "answer": "すき焼きがいちばんおいしいです。",
-        "answerId": "sukiyaki paling enak.",
+        "answer": "今晩がいちばん暑いです。",
+        "answerId": "malam ini paling panas (cuaca).",
         "dialogueId": [
-          "Di antara sukiyaki, sashimi, roti, apa yang paling enak?",
-          "sukiyaki paling enak."
+          "Di antara malam ini, tadi pagi, setiap hari, waktu mana yang paling panas (cuaca)?",
+          "malam ini paling panas (cuaca)."
         ]
       },
       {
         "id": "q_b12_355",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sashimi, roti, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとパンのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: musim gugur. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara musim gugur, musim dingin, musim semi, musim mana yang paling disukai? musim gugur paling disukai.",
+        "reading": "あきとふゆとはるのなかでいつがいちばんすきですか。あきがいちばんすきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とパンのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きと刺身とパンのなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "秋と冬と春のなかでいつがいちばん好きですか。秋がいちばん好きです。",
+        "prompt": "秋と冬と春のなかで＿＿＿いちばん好きですか。秋がいちばん好きです。",
         "options": [
           "どこが",
-          "いつが",
           "何が",
+          "いつが",
           "だれが"
         ],
-        "answer": "何が"
+        "answer": "いつが"
       },
       {
         "id": "q_b12_356",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara sukiyaki, sashimi, roti, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとパンのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling senggang? kemarin lusa paling senggang.",
+        "reading": "きのうとおとといときょうのなかでいつがいちばんひまですか。おとといがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身とパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, roti, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "昨日とおとといと今日のなかでいつがいちばん暇ですか。おとといがいちばん暇です。",
+        "prompt": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling senggang? kemarin lusa paling senggang.",
         "options": [
-          "すき焼きと刺身とパンのなかでいつがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とパンのなかでだれがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身とパンのなかでどこがいちばん安いですか。すき焼きがいちばん安いです。"
+          "昨日とおとといと今日のなかで何がいちばん暇ですか。おとといがいちばん暇です。",
+          "昨日とおとといと今日のなかでいつがいちばん暇ですか。おとといがいちばん暇です。",
+          "昨日とおとといと今日のなかでだれがいちばん暇ですか。おとといがいちばん暇です。",
+          "昨日とおとといと今日のなかでどこがいちばん暇ですか。おとといがいちばん暇です。"
         ],
-        "answer": "すき焼きと刺身とパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "answer": "昨日とおとといと今日のなかでいつがいちばん暇ですか。おとといがいちばん暇です。"
       },
       {
         "id": "q_b12_357",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sashimi, daging, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとさしみとにくのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara sayuran, sukiyaki, sashimi, apa yang paling enak? sukiyaki paling enak.",
+        "reading": "やさいとすきやきとさしみのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と肉のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sashimi, daging, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "野菜とすき焼きと刺身のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "prompt": "Di antara sayuran, sukiyaki, sashimi, apa yang paling enak? sukiyaki paling enak.",
         "tiles": [
           "おいしいですか。",
           "いちばん",
           "何が",
-          "すき焼きと刺身と肉のなかで",
+          "野菜とすき焼きと刺身のなかで",
           "すき焼きがいちばんおいしいです。"
         ],
         "answer": [
-          "すき焼きと刺身と肉のなかで",
+          "野菜とすき焼きと刺身のなかで",
           "何が",
           "いちばん",
           "おいしいですか。",
@@ -8731,87 +8731,87 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_358",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara sukiyaki, sashimi, daging, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとにくのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara hari ini, besok lusa, besok, waktu mana yang paling senggang? besok lusa paling senggang.",
+        "reading": "きょうとあさってとあしたのなかでいつがいちばんひまですか。あさってがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と肉のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sashimi, daging, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "今日とあさってと明日のなかでいつがいちばん暇ですか。あさってがいちばん暇です。",
+        "prompt": "Di antara hari ini, besok lusa, besok, waktu mana yang paling senggang? besok lusa paling senggang.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きと刺身と肉のなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。"
+          "いつが",
+          "今日とあさってと明日のなかで",
+          "あさってがいちばん暇です。",
+          "暇ですか。"
         ],
         "answer": [
-          "すき焼きと刺身と肉のなかで",
-          "何が",
+          "今日とあさってと明日のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "暇ですか。",
+          "あさってがいちばん暇です。"
         ]
       },
       {
         "id": "q_b12_359",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sashimi, daging, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとにくのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sehat? kakak laki-laki saya paling sehat.",
+        "reading": "ははとあにとあねのなかでだれがいちばんげんきですか。あにがいちばんげんきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, daging, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "母と兄と姉のなかでだれがいちばん元気ですか。兄がいちばん元気です。",
+        "prompt": "Di antara ibu saya, kakak laki-laki saya, kakak perempuan saya, siapa yang paling sehat? kakak laki-laki saya paling sehat.",
         "tiles": [
-          "何が",
-          "すき焼きと刺身と肉のなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "だれが",
+          "母と兄と姉のなかで",
+          "兄がいちばん元気です。",
+          "元気ですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きと刺身と肉のなかで",
-          "何が",
+          "母と兄と姉のなかで",
+          "だれが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "元気ですか。",
+          "兄がいちばん元気です。"
         ],
-        "audioText": "すき焼きと刺身と肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "母と兄と姉のなかでだれがいちばん元気ですか。兄がいちばん元気です。"
       },
       {
         "id": "q_b12_360",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara sukiyaki, sashimi, ikan, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとさしみとさかなのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara minggu lalu, minggu depan, minggu ini, waktu mana yang paling senggang? minggu depan paling senggang.",
+        "reading": "せんしゅうとらいしゅうとこんしゅうのなかでいつがいちばんひまですか。らいしゅうがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と魚のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "fullJp": "先週と来週と今週のなかでいつがいちばん暇ですか。来週がいちばん暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "すき焼きと刺身と魚のなかで何がいちばんおいしいですか。"
+            "text": "先週と来週と今週のなかでいつがいちばん暇ですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: sukiyaki. Pilih respons B.",
+        "question": "Konteks jawaban: minggu depan. Pilih respons B.",
         "options": [
-          "すき焼きといちばんおいしいです。",
-          "すき焼きよりいちばんおいしいです。",
-          "すき焼きはいちばんおいしいです。",
-          "すき焼きがいちばんおいしいです。"
+          "来週といちばん暇です。",
+          "来週よりいちばん暇です。",
+          "来週はいちばん暇です。",
+          "来週がいちばん暇です。"
         ],
-        "answer": "すき焼きがいちばんおいしいです。",
-        "answerId": "sukiyaki paling enak.",
+        "answer": "来週がいちばん暇です。",
+        "answerId": "minggu depan paling senggang.",
         "dialogueId": [
-          "Di antara sukiyaki, sashimi, ikan, apa yang paling enak?",
-          "sukiyaki paling enak."
+          "Di antara minggu lalu, minggu depan, minggu ini, waktu mana yang paling senggang?",
+          "minggu depan paling senggang."
         ]
       }
     ]
@@ -8826,316 +8826,316 @@ window.LEVELS_BAB12_DATA = [
       {
         "id": "q_b12_361",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sashimi, ikan, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとさかなのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: stasiun. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara sekolah, stasiun, perpustakaan, tempat mana yang paling dekat? stasiun paling dekat.",
+        "reading": "がっこうとえきととしょかんのなかでどこがいちばんちかいですか。えきがいちばんちかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と魚のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きと刺身と魚のなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "学校と駅と図書館のなかでどこがいちばん近いですか。駅がいちばん近いです。",
+        "prompt": "学校と駅と図書館のなかで＿＿＿いちばん近いですか。駅がいちばん近いです。",
         "options": [
-          "どこが",
-          "だれが",
           "何が",
+          "だれが",
+          "どこが",
           "いつが"
         ],
-        "answer": "何が"
+        "answer": "どこが"
       },
       {
         "id": "q_b12_362",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara sukiyaki, sashimi, ikan, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとさかなのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling dingin (cuaca)? tahun depan paling dingin (cuaca).",
+        "reading": "きょねんとらいねんとことしのなかでいつがいちばんさむいですか。らいねんがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と魚のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, ikan, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "去年と来年と今年のなかでいつがいちばん寒いですか。来年がいちばん寒いです。",
+        "prompt": "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling dingin (cuaca)? tahun depan paling dingin (cuaca).",
         "options": [
-          "すき焼きと刺身と魚のなかでだれがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身と魚のなかでどこがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身と魚のなかでいつがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きと刺身と魚のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+          "去年と来年と今年のなかでだれがいちばん寒いですか。来年がいちばん寒いです。",
+          "去年と来年と今年のなかでどこがいちばん寒いですか。来年がいちばん寒いです。",
+          "去年と来年と今年のなかで何がいちばん寒いですか。来年がいちばん寒いです。",
+          "去年と来年と今年のなかでいつがいちばん寒いですか。来年がいちばん寒いです。"
         ],
-        "answer": "すき焼きと刺身と魚のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "answer": "去年と来年と今年のなかでいつがいちばん寒いですか。来年がいちばん寒いです。"
       },
       {
         "id": "q_b12_363",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sashimi, sayuran, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとさしみとやさいのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim semi paling disukai.",
+        "reading": "ふゆとはるとなつのなかでいつがいちばんすきですか。はるがいちばんすきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と野菜のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sashimi, sayuran, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "冬と春と夏のなかでいつがいちばん好きですか。春がいちばん好きです。",
+        "prompt": "Di antara musim dingin, musim semi, musim panas, musim mana yang paling disukai? musim semi paling disukai.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きと刺身と野菜のなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。"
+          "いつが",
+          "冬と春と夏のなかで",
+          "春がいちばん好きです。",
+          "好きですか。"
         ],
         "answer": [
-          "すき焼きと刺身と野菜のなかで",
-          "何が",
+          "冬と春と夏のなかで",
+          "いつが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "好きですか。",
+          "春がいちばん好きです。"
         ]
       },
       {
         "id": "q_b12_364",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara sukiyaki, sashimi, sayuran, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとさしみとやさいのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara setiap pagi, setiap malam, setiap hari, waktu mana yang paling senggang? setiap malam paling senggang.",
+        "reading": "まいあさとまいばんとまいにちのなかでいつがいちばんひまですか。まいばんがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と野菜のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sashimi, sayuran, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "毎朝と毎晩と毎日のなかでいつがいちばん暇ですか。毎晩がいちばん暇です。",
+        "prompt": "Di antara setiap pagi, setiap malam, setiap hari, waktu mana yang paling senggang? setiap malam paling senggang.",
         "tiles": [
-          "何が",
-          "すき焼きと刺身と野菜のなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。",
+          "いつが",
+          "毎朝と毎晩と毎日のなかで",
+          "毎晩がいちばん暇です。",
+          "暇ですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きと刺身と野菜のなかで",
-          "何が",
+          "毎朝と毎晩と毎日のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "暇ですか。",
+          "毎晩がいちばん暇です。"
         ]
       },
       {
         "id": "q_b12_365",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sashimi, sayuran, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとさしみとやさいのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara sukiyaki, sashimi, sushi, apa yang paling mahal? sushi paling mahal.",
+        "reading": "すきやきとさしみとおすしのなかでなにがいちばんたかいですか。おすしがいちばんたかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きと刺身と野菜のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sashimi, sayuran, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "すき焼きと刺身とおすしのなかで何がいちばん高いですか。おすしがいちばん高いです。",
+        "prompt": "Di antara sukiyaki, sashimi, sushi, apa yang paling mahal? sushi paling mahal.",
         "tiles": [
-          "すき焼きと刺身と野菜のなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "すき焼きと刺身とおすしのなかで",
+          "おすしがいちばん高いです。",
+          "高いですか。",
           "いちばん",
           "何が"
         ],
         "answer": [
-          "すき焼きと刺身と野菜のなかで",
+          "すき焼きと刺身とおすしのなかで",
           "何が",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "高いですか。",
+          "おすしがいちばん高いです。"
         ],
-        "audioText": "すき焼きと刺身と野菜のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "すき焼きと刺身とおすしのなかで何がいちばん高いですか。おすしがいちばん高いです。"
       },
       {
         "id": "q_b12_366",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara sukiyaki, sushi, tempura, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとおすしとてんぷらのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tadi pagi, setiap hari, malam ini, waktu mana yang paling panas (cuaca)? setiap hari paling panas (cuaca).",
+        "reading": "けさとまいにちとこんばんのなかでいつがいちばんあついですか。まいにちがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとてんぷらのなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "fullJp": "今朝と毎日と今晩のなかでいつがいちばん暑いですか。毎日がいちばん暑いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "すき焼きとおすしとてんぷらのなかで何がいちばんおいしいですか。"
+            "text": "今朝と毎日と今晩のなかでいつがいちばん暑いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: sukiyaki. Pilih respons B.",
+        "question": "Konteks jawaban: setiap hari. Pilih respons B.",
         "options": [
-          "すき焼きはいちばんおいしいです。",
-          "すき焼きがいちばんおいしいです。",
-          "すき焼きといちばんおいしいです。",
-          "すき焼きよりいちばんおいしいです。"
+          "毎日はいちばん暑いです。",
+          "毎日がいちばん暑いです。",
+          "毎日といちばん暑いです。",
+          "毎日よりいちばん暑いです。"
         ],
-        "answer": "すき焼きがいちばんおいしいです。",
-        "answerId": "sukiyaki paling enak.",
+        "answer": "毎日がいちばん暑いです。",
+        "answerId": "setiap hari paling panas (cuaca).",
         "dialogueId": [
-          "Di antara sukiyaki, sushi, tempura, apa yang paling enak?",
-          "sukiyaki paling enak."
+          "Di antara tadi pagi, setiap hari, malam ini, waktu mana yang paling panas (cuaca)?",
+          "setiap hari paling panas (cuaca)."
         ]
       },
       {
         "id": "q_b12_367",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sushi, tempura, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとおすしとてんぷらのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: adik laki-laki saya. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara kakak laki-laki saya, kakak perempuan saya, adik laki-laki saya, siapa yang paling sehat? adik laki-laki saya paling sehat.",
+        "reading": "あにとあねとおとうとのなかでだれがいちばんげんきですか。おとうとがいちばんげんきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとてんぷらのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きとおすしとてんぷらのなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "兄と姉と弟のなかでだれがいちばん元気ですか。弟がいちばん元気です。",
+        "prompt": "兄と姉と弟のなかで＿＿＿いちばん元気ですか。弟がいちばん元気です。",
         "options": [
-          "何が",
+          "だれが",
           "いつが",
-          "どこが",
-          "だれが"
+          "何が",
+          "どこが"
         ],
-        "answer": "何が"
+        "answer": "だれが"
       },
       {
         "id": "q_b12_368",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara sukiyaki, sushi, tempura, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとおすしとてんぷらのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara kemarin lusa, hari ini, kemarin, waktu mana yang paling senggang? kemarin paling senggang.",
+        "reading": "おとといときょうときのうのなかでいつがいちばんひまですか。きのうがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとてんぷらのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sushi, tempura, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "おとといと今日と昨日のなかでいつがいちばん暇ですか。昨日がいちばん暇です。",
+        "prompt": "Di antara kemarin lusa, hari ini, kemarin, waktu mana yang paling senggang? kemarin paling senggang.",
         "options": [
-          "すき焼きとおすしとてんぷらのなかでいつがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしとてんぷらのなかでだれがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしとてんぷらのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしとてんぷらのなかでどこがいちばん安いですか。すき焼きがいちばん安いです。"
+          "おとといと今日と昨日のなかでだれがいちばん暇ですか。昨日がいちばん暇です。",
+          "おとといと今日と昨日のなかで何がいちばん暇ですか。昨日がいちばん暇です。",
+          "おとといと今日と昨日のなかでいつがいちばん暇ですか。昨日がいちばん暇です。",
+          "おとといと今日と昨日のなかでどこがいちばん暇ですか。昨日がいちばん暇です。"
         ],
-        "answer": "すき焼きとおすしとてんぷらのなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "answer": "おとといと今日と昨日のなかでいつがいちばん暇ですか。昨日がいちばん暇です。"
       },
       {
         "id": "q_b12_369",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sushi, roti, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとおすしとパンのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara stasiun, perpustakaan, toko, tempat mana yang paling dekat? toko paling dekat.",
+        "reading": "えきととしょかんとみせのなかでどこがいちばんちかいですか。みせがいちばんちかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとパンのなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sushi, roti, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "駅と図書館と店のなかでどこがいちばん近いですか。店がいちばん近いです。",
+        "prompt": "Di antara stasiun, perpustakaan, toko, tempat mana yang paling dekat? toko paling dekat.",
         "tiles": [
-          "何が",
-          "すき焼きとおすしとパンのなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
+          "どこが",
+          "駅と図書館と店のなかで",
+          "店がいちばん近いです。",
+          "近いですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きとおすしとパンのなかで",
-          "何が",
+          "駅と図書館と店のなかで",
+          "どこが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "近いですか。",
+          "店がいちばん近いです。"
         ]
       },
       {
         "id": "q_b12_370",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Di antara sukiyaki, sushi, roti, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとおすしとパンのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara besok lusa, besok, hari ini, waktu mana yang paling senggang? hari ini paling senggang.",
+        "reading": "あさってとあしたときょうのなかでいつがいちばんひまですか。きょうがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとパンのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sushi, roti, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "あさってと明日と今日のなかでいつがいちばん暇ですか。今日がいちばん暇です。",
+        "prompt": "Di antara besok lusa, besok, hari ini, waktu mana yang paling senggang? hari ini paling senggang.",
         "tiles": [
-          "すき焼きとおすしとパンのなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。",
+          "あさってと明日と今日のなかで",
+          "今日がいちばん暇です。",
+          "暇ですか。",
           "いちばん",
-          "何が"
+          "いつが"
         ],
         "answer": [
-          "すき焼きとおすしとパンのなかで",
-          "何が",
+          "あさってと明日と今日のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "暇ですか。",
+          "今日がいちばん暇です。"
         ]
       },
       {
         "id": "q_b12_371",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sushi, roti, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとおすしとパンのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim gugur paling disukai.",
+        "reading": "はるとなつとあきのなかでいつがいちばんすきですか。あきがいちばんすきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしとパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sushi, roti, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "春と夏と秋のなかでいつがいちばん好きですか。秋がいちばん好きです。",
+        "prompt": "Di antara musim semi, musim panas, musim gugur, musim mana yang paling disukai? musim gugur paling disukai.",
         "tiles": [
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "秋がいちばん好きです。",
+          "好きですか。",
           "いちばん",
-          "何が",
-          "すき焼きとおすしとパンのなかで"
+          "いつが",
+          "春と夏と秋のなかで"
         ],
         "answer": [
-          "すき焼きとおすしとパンのなかで",
-          "何が",
+          "春と夏と秋のなかで",
+          "いつが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "好きですか。",
+          "秋がいちばん好きです。"
         ],
-        "audioText": "すき焼きとおすしとパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "春と夏と秋のなかでいつがいちばん好きですか。秋がいちばん好きです。"
       },
       {
         "id": "q_b12_372",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Di antara sukiyaki, sushi, daging, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとおすしとにくのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara minggu depan, minggu ini, minggu lalu, waktu mana yang paling senggang? minggu lalu paling senggang.",
+        "reading": "らいしゅうとこんしゅうとせんしゅうのなかでいつがいちばんひまですか。せんしゅうがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと肉のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "fullJp": "来週と今週と先週のなかでいつがいちばん暇ですか。先週がいちばん暇です。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "すき焼きとおすしと肉のなかで何がいちばんおいしいですか。"
+            "text": "来週と今週と先週のなかでいつがいちばん暇ですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks jawaban: sukiyaki. Pilih respons B.",
+        "question": "Konteks jawaban: minggu lalu. Pilih respons B.",
         "options": [
-          "すき焼きがいちばんおいしいです。",
-          "すき焼きといちばんおいしいです。",
-          "すき焼きはいちばんおいしいです。",
-          "すき焼きよりいちばんおいしいです。"
+          "先週がいちばん暇です。",
+          "先週といちばん暇です。",
+          "先週はいちばん暇です。",
+          "先週よりいちばん暇です。"
         ],
-        "answer": "すき焼きがいちばんおいしいです。",
-        "answerId": "sukiyaki paling enak.",
+        "answer": "先週がいちばん暇です。",
+        "answerId": "minggu lalu paling senggang.",
         "dialogueId": [
-          "Di antara sukiyaki, sushi, daging, apa yang paling enak?",
-          "sukiyaki paling enak."
+          "Di antara minggu depan, minggu ini, minggu lalu, waktu mana yang paling senggang?",
+          "minggu lalu paling senggang."
         ]
       },
       {
         "id": "q_b12_373",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sushi, daging, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとおすしとにくのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: sashimi. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara sashimi, sushi, tempura, apa yang paling mahal? sashimi paling mahal.",
+        "reading": "さしみとおすしとてんぷらのなかでなにがいちばんたかいですか。さしみがいちばんたかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと肉のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きとおすしと肉のなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "刺身とおすしとてんぷらのなかで何がいちばん高いですか。刺身がいちばん高いです。",
+        "prompt": "刺身とおすしとてんぷらのなかで＿＿＿いちばん高いですか。刺身がいちばん高いです。",
         "options": [
           "いつが",
           "だれが",
@@ -9148,45 +9148,45 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_374",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Di antara sukiyaki, sushi, daging, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとおすしとにくのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tahun depan, tahun ini, tahun lalu, waktu mana yang paling dingin (cuaca)? tahun lalu paling dingin (cuaca).",
+        "reading": "らいねんとことしときょねんのなかでいつがいちばんさむいですか。きょねんがいちばんさむいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sushi, daging, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "来年と今年と去年のなかでいつがいちばん寒いですか。去年がいちばん寒いです。",
+        "prompt": "Di antara tahun depan, tahun ini, tahun lalu, waktu mana yang paling dingin (cuaca)? tahun lalu paling dingin (cuaca).",
         "options": [
-          "すき焼きとおすしと肉のなかでだれがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしと肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしと肉のなかでいつがいちばん安いですか。すき焼きがいちばん安いです。",
-          "すき焼きとおすしと肉のなかでどこがいちばん安いですか。すき焼きがいちばん安いです。"
+          "来年と今年と去年のなかでだれがいちばん寒いですか。去年がいちばん寒いです。",
+          "来年と今年と去年のなかでいつがいちばん寒いですか。去年がいちばん寒いです。",
+          "来年と今年と去年のなかでどこがいちばん寒いですか。去年がいちばん寒いです。",
+          "来年と今年と去年のなかで何がいちばん寒いですか。去年がいちばん寒いです。"
         ],
-        "answer": "すき焼きとおすしと肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "answer": "来年と今年と去年のなかでいつがいちばん寒いですか。去年がいちばん寒いです。"
       },
       {
         "id": "q_b12_375",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, sushi, ikan, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとおすしとさかなのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sehat? kakak perempuan saya paling sehat.",
+        "reading": "あねとおとうとといもうとのなかでだれがいちばんげんきですか。あねがいちばんげんきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと魚のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sushi, ikan, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "姉と弟と妹のなかでだれがいちばん元気ですか。姉がいちばん元気です。",
+        "prompt": "Di antara kakak perempuan saya, adik laki-laki saya, adik perempuan saya, siapa yang paling sehat? kakak perempuan saya paling sehat.",
         "tiles": [
-          "すき焼きとおすしと魚のなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
+          "姉と弟と妹のなかで",
+          "姉がいちばん元気です。",
+          "元気ですか。",
           "いちばん",
-          "何が"
+          "だれが"
         ],
         "answer": [
-          "すき焼きとおすしと魚のなかで",
-          "何が",
+          "姉と弟と妹のなかで",
+          "だれが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "元気ですか。",
+          "姉がいちばん元気です。"
         ]
       }
     ]
@@ -9202,13 +9202,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_376",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah cuaca kemarin dingin (cuaca)? (kasual)",
-        "reading": "きのうのてんき、さむかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah cuaca kemarin lusa dingin (cuaca)? (kasual)",
+        "reading": "おとといのてんき、さむかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の天気、寒かった？",
-        "prompt": "昨日の天気、＿＿＿",
+        "fullJp": "おとといの天気、寒かった？",
+        "prompt": "おとといの天気、＿＿＿",
         "options": [
           "寒くなかった？",
           "寒くない？",
@@ -9221,20 +9221,20 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_377",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah cuaca hari ini panas (cuaca)? (kasual)",
-        "reading": "きょうのてんき、あつい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah cuaca kemarin panas (cuaca)? (kasual)",
+        "reading": "きのうのてんき、あつかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の天気、暑い？",
-        "prompt": "今日の天気、＿＿＿",
+        "fullJp": "昨日の天気、暑かった？",
+        "prompt": "昨日の天気、＿＿＿",
         "options": [
-          "暑い？",
           "暑かった？",
+          "暑い？",
           "暑くない？",
           "暑くなかった？"
         ],
-        "answer": "暑い？"
+        "answer": "暑かった？"
       },
       {
         "id": "q_b12_378",
@@ -9242,7 +9242,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
         "translation": "stasiun hari ini tidak praktis.",
         "reading": "きょうのえきはどうですか。きょうのえきはべんりではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日の駅はどうですか。今日の駅は便利ではありません。",
@@ -9274,51 +9274,51 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_379",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "barang bawaan lebih berat daripada kamera.",
-        "reading": "にもつはカメラよりおもいです。",
+        "translation": "minggu depan lebih sibuk daripada minggu lalu.",
+        "reading": "らいしゅうはせんしゅうよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "荷物はカメラより重いです。",
-        "prompt": "荷物は＿＿＿重いです。",
+        "fullJp": "来週は先週より忙しいです。",
+        "prompt": "来週は＿＿＿忙しいです。",
         "options": [
-          "カメラも",
-          "カメラと",
-          "カメラより",
-          "カメラが"
+          "先週も",
+          "先週と",
+          "先週より",
+          "先週が"
         ],
-        "answer": "カメラより"
+        "answer": "先週より"
       },
       {
         "id": "q_b12_380",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara barang bawaan dan kamera, mana yang lebih berat? Keduanya berat.",
-        "reading": "にもつとカメラとどちらがおもいですか。どちらもおもいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "translation": "Antara minggu depan dan minggu lalu, mana yang lebih sibuk? minggu depan lebih sibuk.",
+        "reading": "らいしゅうとせんしゅうとどちらがいそがしいですか。らいしゅうのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "荷物とカメラとどちらが重いですか。どちらも重いです。",
-        "prompt": "Antara barang bawaan dan kamera, mana yang lebih berat? Keduanya berat.",
+        "fullJp": "来週と先週とどちらが忙しいですか。来週のほうが忙しいです。",
+        "prompt": "Antara minggu depan dan minggu lalu, mana yang lebih sibuk? minggu depan lebih sibuk.",
         "options": [
-          "荷物とカメラとどちらが重いですか。どちらも重いです。",
-          "荷物とカメラとどちらが重いですか。どちらより重いです。",
-          "荷物とカメラとどちらが重いですか。どちらが重いです。",
-          "荷物とカメラとどちらが重いですか。どちらと重いです。"
+          "来週と先週とどちらが忙しいですか。来週のほうが忙しいです。",
+          "来週と先週とどちらが忙しいですか。先週より忙しいです。",
+          "来週と先週とどちらが忙しいですか。先週のほうが忙しいです。",
+          "来週と先週とどちらが忙しいですか。来週より忙しいです。"
         ],
-        "answer": "荷物とカメラとどちらが重いですか。どちらも重いです。"
+        "answer": "来週と先週とどちらが忙しいですか。来週のほうが忙しいです。"
       },
       {
         "id": "q_b12_381",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kamar kemarin hangat? (kasual)",
-        "reading": "きのうのへや、あたたかかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kamar tadi pagi hangat? (kasual)",
+        "reading": "けさのへや、あたたかかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の部屋、暖かかった？",
-        "prompt": "昨日の部屋、＿＿＿",
+        "fullJp": "今朝の部屋、暖かかった？",
+        "prompt": "今朝の部屋、＿＿＿",
         "options": [
           "暖かくない？",
           "暖かい？",
@@ -9331,112 +9331,112 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_382",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kamar hari ini sejuk? (kasual)",
-        "reading": "きょうのへや、すずしい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kamar minggu lalu sejuk? (kasual)",
+        "reading": "せんしゅうのへや、すずしかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の部屋、涼しい？",
-        "prompt": "今日の部屋、＿＿＿",
+        "fullJp": "先週の部屋、涼しかった？",
+        "prompt": "先週の部屋、＿＿＿",
         "options": [
-          "涼しかった？",
           "涼しい？",
+          "涼しかった？",
           "涼しくなかった？",
           "涼しくない？"
         ],
-        "answer": "涼しい？"
+        "answer": "涼しかった？"
       },
       {
         "id": "q_b12_383",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sushi, ikan, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとおすしとさかなのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara setiap malam, setiap hari, setiap pagi, waktu mana yang paling senggang? setiap pagi paling senggang.",
+        "reading": "まいばんとまいにちとまいあさのなかでいつがいちばんひまですか。まいあさがいちばんひまです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと魚のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, sushi, ikan, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "毎晩と毎日と毎朝のなかでいつがいちばん暇ですか。毎朝がいちばん暇です。",
+        "prompt": "Di antara setiap malam, setiap hari, setiap pagi, waktu mana yang paling senggang? setiap pagi paling senggang.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きとおすしと魚のなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。"
+          "いつが",
+          "毎晩と毎日と毎朝のなかで",
+          "毎朝がいちばん暇です。",
+          "暇ですか。"
         ],
         "answer": [
-          "すき焼きとおすしと魚のなかで",
-          "何が",
+          "毎晩と毎日と毎朝のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "暇ですか。",
+          "毎朝がいちばん暇です。"
         ],
-        "audioText": "すき焼きとおすしと魚のなかで何がいちばん高いですか。すき焼きがいちばん高いです。"
+        "audioText": "毎晩と毎日と毎朝のなかでいつがいちばん暇ですか。毎朝がいちばん暇です。"
       },
       {
         "id": "q_b12_384",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "stasiun kemarin tidak praktis.",
-        "reading": "きのうのえきはどうでしたか。きのうのえきはべんりではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "stasiun bulan lalu tidak praktis.",
+        "reading": "せんげつのえきはどうでしたか。せんげつのえきはべんりではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の駅はどうでしたか。昨日の駅は便利ではありませんでした。",
+        "fullJp": "先月の駅はどうでしたか。先月の駅は便利ではありませんでした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の駅はどうでしたか。"
+            "text": "先月の駅はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "stasiun kemarin tidak praktis. Pilih respons B.",
+        "question": "stasiun bulan lalu tidak praktis. Pilih respons B.",
         "options": [
-          "昨日の駅は便利ではありません。",
-          "昨日の駅は便利です。",
-          "昨日の駅は便利でした。",
-          "昨日の駅は便利ではありませんでした。"
+          "先月の駅は便利ではありません。",
+          "先月の駅は便利です。",
+          "先月の駅は便利でした。",
+          "先月の駅は便利ではありませんでした。"
         ],
-        "answer": "昨日の駅は便利ではありませんでした。",
-        "answerId": "stasiun kemarin tidak praktis.",
+        "answer": "先月の駅は便利ではありませんでした。",
+        "answerId": "stasiun bulan lalu tidak praktis.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "stasiun kemarin tidak praktis."
+          "stasiun bulan lalu tidak praktis."
         ]
       },
       {
         "id": "q_b12_385",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kamus lebih berat daripada tas.",
-        "reading": "じしょはかばんよりおもいです。",
+        "translation": "PR lebih sulit daripada ujian.",
+        "reading": "しゅくだいはしけんよりむずかしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "辞書はかばんより重いです。",
-        "prompt": "辞書は＿＿＿重いです。",
+        "fullJp": "宿題は試験より難しいです。",
+        "prompt": "宿題は＿＿＿難しいです。",
         "options": [
-          "かばんが",
-          "かばんより",
-          "かばんも",
-          "かばんと"
+          "試験が",
+          "試験より",
+          "試験も",
+          "試験と"
         ],
-        "answer": "かばんより"
+        "answer": "試験より"
       },
       {
         "id": "q_b12_386",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah air kemarin dingin? (kasual)",
-        "reading": "きのうのみず、つめたかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah air kemarin lusa dingin? (kasual)",
+        "reading": "おとといのみず、つめたかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の水、冷たかった？",
-        "prompt": "昨日の水、＿＿＿",
+        "fullJp": "おとといの水、冷たかった？",
+        "prompt": "おとといの水、＿＿＿",
         "options": [
           "冷たい？",
           "冷たくない？",
@@ -9449,106 +9449,106 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_387",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kopi hari ini manis? (kasual)",
-        "reading": "きょうのコーヒー、あまい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kopi kemarin lusa manis? (kasual)",
+        "reading": "おとといのコーヒー、あまかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のコーヒー、甘い？",
-        "prompt": "今日のコーヒー、＿＿＿",
+        "fullJp": "おとといのコーヒー、甘かった？",
+        "prompt": "おとといのコーヒー、＿＿＿",
         "options": [
           "甘くない？",
           "甘くなかった？",
-          "甘かった？",
-          "甘い？"
+          "甘い？",
+          "甘かった？"
         ],
-        "answer": "甘い？"
+        "answer": "甘かった？"
       },
       {
         "id": "q_b12_388",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara kamus dan tas, mana yang lebih berat? kamus lebih berat.",
-        "reading": "じしょとかばんとどちらがおもいですか。じしょのほうがおもいです。",
+        "translation": "Antara PR dan ujian, mana yang lebih sulit? PR lebih sulit.",
+        "reading": "しゅくだいとしけんとどちらがむずかしいですか。しゅくだいのほうがむずかしいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "辞書とかばんとどちらが重いですか。辞書のほうが重いです。",
-        "prompt": "Antara kamus dan tas, mana yang lebih berat? kamus lebih berat.",
+        "fullJp": "宿題と試験とどちらが難しいですか。宿題のほうが難しいです。",
+        "prompt": "Antara PR dan ujian, mana yang lebih sulit? PR lebih sulit.",
         "tiles": [
           "どちらが",
-          "かばんと",
-          "辞書と",
-          "辞書のほうが重いです。",
-          "重いですか。"
+          "試験と",
+          "宿題と",
+          "宿題のほうが難しいです。",
+          "難しいですか。"
         ],
         "answer": [
-          "辞書と",
-          "かばんと",
+          "宿題と",
+          "試験と",
           "どちらが",
-          "重いですか。",
-          "辞書のほうが重いです。"
+          "難しいですか。",
+          "宿題のほうが難しいです。"
         ]
       },
       {
         "id": "q_b12_389",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sushi, ikan, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとおすしとさかなのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara perpustakaan, toko, kantin, tempat mana yang paling dekat? perpustakaan paling dekat.",
+        "reading": "としょかんとみせとしょくどうのなかでどこがいちばんちかいですか。としょかんがいちばんちかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと魚のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, sushi, ikan, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "図書館と店と食堂のなかでどこがいちばん近いですか。図書館がいちばん近いです。",
+        "prompt": "Di antara perpustakaan, toko, kantin, tempat mana yang paling dekat? perpustakaan paling dekat.",
         "tiles": [
-          "何が",
-          "すき焼きとおすしと魚のなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "どこが",
+          "図書館と店と食堂のなかで",
+          "図書館がいちばん近いです。",
+          "近いですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きとおすしと魚のなかで",
-          "何が",
+          "図書館と店と食堂のなかで",
+          "どこが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "近いですか。",
+          "図書館がいちばん近いです。"
         ],
-        "audioText": "すき焼きとおすしと魚のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "図書館と店と食堂のなかでどこがいちばん近いですか。図書館がいちばん近いです。"
       },
       {
         "id": "q_b12_390",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "perpustakaan hari ini tenang.",
-        "reading": "きょうのとしょかんはどうですか。きょうのとしょかんはしずかです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "translation": "perpustakaan setiap hari tenang.",
+        "reading": "まいにちのとしょかんはどうですか。まいにちのとしょかんはしずかです。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の図書館はどうですか。今日の図書館は静かです。",
+        "fullJp": "毎日の図書館はどうですか。毎日の図書館は静かです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "今日の図書館はどうですか。"
+            "text": "毎日の図書館はどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "perpustakaan hari ini tenang. Pilih respons B.",
+        "question": "perpustakaan setiap hari tenang. Pilih respons B.",
         "options": [
-          "今日の図書館は静かです。",
-          "今日の図書館は静かではありません。",
-          "今日の図書館は静かではありませんでした。",
-          "今日の図書館は静かでした。"
+          "毎日の図書館は静かです。",
+          "毎日の図書館は静かではありません。",
+          "毎日の図書館は静かではありませんでした。",
+          "毎日の図書館は静かでした。"
         ],
-        "answer": "今日の図書館は静かです。",
-        "answerId": "perpustakaan hari ini tenang.",
+        "answer": "毎日の図書館は静かです。",
+        "answerId": "perpustakaan setiap hari tenang.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "perpustakaan hari ini tenang."
+          "perpustakaan setiap hari tenang."
         ]
       }
     ]
@@ -9564,32 +9564,32 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_391",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah masakan kemarin pedas? (kasual)",
-        "reading": "きのうのりょうり、からかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah masakan hari ini pedas? (kasual)",
+        "reading": "きょうのりょうり、からい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の料理、辛かった？",
-        "prompt": "昨日の料理、＿＿＿",
+        "fullJp": "今日の料理、辛い？",
+        "prompt": "今日の料理、＿＿＿",
         "options": [
           "辛くない？",
           "辛くなかった？",
-          "辛い？",
-          "辛かった？"
+          "辛かった？",
+          "辛い？"
         ],
-        "answer": "辛かった？"
+        "answer": "辛い？"
       },
       {
         "id": "q_b12_392",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah ujian hari ini sulit? (kasual)",
-        "reading": "きょうのしけん、むずかしい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah ujian besok sulit? (kasual)",
+        "reading": "あしたのしけん、むずかしい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の試験、難しい？",
-        "prompt": "今日の試験、＿＿＿",
+        "fullJp": "明日の試験、難しい？",
+        "prompt": "明日の試験、＿＿＿",
         "options": [
           "難しい？",
           "難しくなかった？",
@@ -9602,107 +9602,107 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_393",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "buku lebih berat daripada barang bawaan.",
-        "reading": "ほんはにもつよりおもいです。",
+        "translation": "setiap hari lebih sibuk daripada setiap malam.",
+        "reading": "まいにちはまいばんよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "本は荷物より重いです。",
-        "prompt": "buku lebih berat daripada barang bawaan.",
+        "fullJp": "毎日は毎晩より忙しいです。",
+        "prompt": "setiap hari lebih sibuk daripada setiap malam.",
         "tiles": [
-          "本は",
-          "重いです。",
-          "荷物より"
+          "毎日は",
+          "忙しいです。",
+          "毎晩より"
         ],
         "answer": [
-          "本は",
-          "荷物より",
-          "重いです。"
+          "毎日は",
+          "毎晩より",
+          "忙しいです。"
         ]
       },
       {
         "id": "q_b12_394",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara buku dan barang bawaan, mana yang lebih berat? buku lebih berat.",
-        "reading": "ほんとにもつとどちらがおもいですか。ほんのほうがおもいです。",
+        "translation": "Antara setiap hari dan setiap malam, mana yang lebih sibuk? setiap hari lebih sibuk.",
+        "reading": "まいにちとまいばんとどちらがいそがしいですか。まいにちのほうがいそがしいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "本と荷物とどちらが重いですか。本のほうが重いです。",
-        "prompt": "Antara buku dan barang bawaan, mana yang lebih berat? buku lebih berat.",
+        "fullJp": "毎日と毎晩とどちらが忙しいですか。毎日のほうが忙しいです。",
+        "prompt": "Antara setiap hari dan setiap malam, mana yang lebih sibuk? setiap hari lebih sibuk.",
         "tiles": [
-          "荷物と",
-          "本と",
-          "本のほうが重いです。",
-          "重いですか。",
+          "毎晩と",
+          "毎日と",
+          "毎日のほうが忙しいです。",
+          "忙しいですか。",
           "どちらが"
         ],
         "answer": [
-          "本と",
-          "荷物と",
+          "毎日と",
+          "毎晩と",
           "どちらが",
-          "重いですか。",
-          "本のほうが重いです。"
+          "忙しいですか。",
+          "毎日のほうが忙しいです。"
         ]
       },
       {
         "id": "q_b12_395",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, sushi, sayuran, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとおすしとやさいのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara setiap hari, malam ini, tadi pagi, waktu mana yang paling panas (cuaca)? tadi pagi paling panas (cuaca).",
+        "reading": "まいにちとこんばんとけさのなかでいつがいちばんあついですか。けさがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと野菜のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, sushi, sayuran, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "毎日と今晩と今朝のなかでいつがいちばん暑いですか。今朝がいちばん暑いです。",
+        "prompt": "Di antara setiap hari, malam ini, tadi pagi, waktu mana yang paling panas (cuaca)? tadi pagi paling panas (cuaca).",
         "tiles": [
-          "すき焼きとおすしと野菜のなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
+          "毎日と今晩と今朝のなかで",
+          "今朝がいちばん暑いです。",
+          "暑いですか。",
           "いちばん",
-          "何が"
+          "いつが"
         ],
         "answer": [
-          "すき焼きとおすしと野菜のなかで",
-          "何が",
+          "毎日と今晩と今朝のなかで",
+          "いつが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "暑いですか。",
+          "今朝がいちばん暑いです。"
         ],
-        "audioText": "すき焼きとおすしと野菜のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。"
+        "audioText": "毎日と今晩と今朝のなかでいつがいちばん暑いですか。今朝がいちばん暑いです。"
       },
       {
         "id": "q_b12_396",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah PR kemarin mudah? (kasual)",
-        "reading": "きのうのしゅくだい、やさしかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah PR besok lusa mudah? (kasual)",
+        "reading": "あさってのしゅくだい、やさしい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の宿題、易しかった？",
-        "prompt": "昨日の宿題、＿＿＿",
+        "fullJp": "あさっての宿題、易しい？",
+        "prompt": "あさっての宿題、＿＿＿",
         "options": [
           "易しくなかった？",
-          "易しい？",
           "易しかった？",
+          "易しい？",
           "易しくない？"
         ],
-        "answer": "易しかった？"
+        "answer": "易しい？"
       },
       {
         "id": "q_b12_397",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah ujian hari ini mudah? (kasual)",
-        "reading": "きょうのしけん、かんたん？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah ujian malam ini mudah? (kasual)",
+        "reading": "こんばんのしけん、かんたん？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の試験、簡単？",
-        "prompt": "今日の試験、＿＿＿",
+        "fullJp": "今晩の試験、簡単？",
+        "prompt": "今晩の試験、＿＿＿",
         "options": [
           "簡単だった？",
           "簡単？",
@@ -9715,99 +9715,99 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_398",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "perpustakaan kemarin tenang.",
-        "reading": "きのうのとしょかんはしずかでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif.",
+        "translation": "perpustakaan minggu lalu tenang.",
+        "reading": "せんしゅうのとしょかんはしずかでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の図書館は静かでした。",
-        "prompt": "perpustakaan kemarin tenang.",
+        "fullJp": "先週の図書館は静かでした。",
+        "prompt": "perpustakaan minggu lalu tenang.",
         "options": [
-          "昨日の図書館は静かです。",
-          "昨日の図書館は静かではありません。",
-          "昨日の図書館は静かではありませんでした。",
-          "昨日の図書館は静かでした。"
+          "先週の図書館は静かです。",
+          "先週の図書館は静かではありません。",
+          "先週の図書館は静かではありませんでした。",
+          "先週の図書館は静かでした。"
         ],
-        "answer": "昨日の図書館は静かでした。"
+        "answer": "先週の図書館は静かでした。"
       },
       {
         "id": "q_b12_399",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "kamera lebih berat daripada kamus.",
-        "reading": "カメラはじしょよりおもいです。",
+        "translation": "tas lebih ringan daripada kamus.",
+        "reading": "かばんはじしょよりかるいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "カメラは辞書より重いです。",
-        "prompt": "kamera lebih berat daripada kamus.",
+        "fullJp": "かばんは辞書より軽いです。",
+        "prompt": "tas lebih ringan daripada kamus.",
         "tiles": [
-          "カメラは",
-          "重いです。",
+          "かばんは",
+          "軽いです。",
           "辞書より"
         ],
         "answer": [
-          "カメラは",
+          "かばんは",
           "辞書より",
-          "重いです。"
+          "軽いです。"
         ]
       },
       {
         "id": "q_b12_400",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara kamera dan kamus, mana yang lebih berat? Keduanya berat.",
-        "reading": "カメラとじしょとどちらがおもいですか。どちらもおもいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "translation": "Antara tas dan kamus, mana yang lebih ringan? tas lebih ringan.",
+        "reading": "かばんとじしょとどちらがかるいですか。かばんのほうがかるいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "カメラと辞書とどちらが重いですか。どちらも重いです。",
-        "prompt": "Antara kamera dan kamus, mana yang lebih berat? Keduanya berat.",
+        "fullJp": "かばんと辞書とどちらが軽いですか。かばんのほうが軽いです。",
+        "prompt": "Antara tas dan kamus, mana yang lebih ringan? tas lebih ringan.",
         "tiles": [
-          "カメラと",
-          "どちらも重いです。",
-          "重いですか。",
+          "かばんと",
+          "かばんのほうが軽いです。",
+          "軽いですか。",
           "どちらが",
           "辞書と"
         ],
         "answer": [
-          "カメラと",
+          "かばんと",
           "辞書と",
           "どちらが",
-          "重いですか。",
-          "どちらも重いです。"
+          "軽いですか。",
+          "かばんのほうが軽いです。"
         ]
       },
       {
         "id": "q_b12_401",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah film kemarin menarik? (kasual)",
-        "reading": "きのうのえいが、おもしろかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah film minggu ini menarik? (kasual)",
+        "reading": "こんしゅうのえいが、おもしろい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の映画、面白かった？",
-        "prompt": "昨日の映画、＿＿＿",
+        "fullJp": "今週の映画、面白い？",
+        "prompt": "今週の映画、＿＿＿",
         "options": [
-          "面白い？",
           "面白かった？",
+          "面白い？",
           "面白くない？",
           "面白くなかった？"
         ],
-        "answer": "面白かった？"
+        "answer": "面白い？"
       },
       {
         "id": "q_b12_402",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah pesta hari ini menyenangkan? (kasual)",
-        "reading": "きょうのパーティー、たのしい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah pesta minggu depan menyenangkan? (kasual)",
+        "reading": "らいしゅうのパーティー、たのしい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 来週 (minggu depan) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のパーティー、楽しい？",
-        "prompt": "今日のパーティー、＿＿＿",
+        "fullJp": "来週のパーティー、楽しい？",
+        "prompt": "来週のパーティー、＿＿＿",
         "options": [
           "楽しい？",
           "楽しくない？",
@@ -9819,61 +9819,61 @@ window.LEVELS_BAB12_DATA = [
       {
         "id": "q_b12_403",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sushi, sayuran, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとおすしとやさいのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: musim panas. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara musim panas, musim gugur, musim dingin, musim mana yang paling disukai? musim panas paling disukai.",
+        "reading": "なつとあきとふゆのなかでいつがいちばんすきですか。なつがいちばんすきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと野菜のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "すき焼きとおすしと野菜のなかで＿＿＿いちばん高いですか。すき焼きがいちばん高いです。",
+        "fullJp": "夏と秋と冬のなかでいつがいちばん好きですか。夏がいちばん好きです。",
+        "prompt": "夏と秋と冬のなかで＿＿＿いちばん好きですか。夏がいちばん好きです。",
         "options": [
           "どこが",
-          "いつが",
           "何が",
+          "いつが",
           "だれが"
         ],
-        "answer": "何が"
+        "answer": "いつが"
       },
       {
         "id": "q_b12_404",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "perpustakaan hari ini tidak tenang.",
-        "reading": "きょうのとしょかんはしずかではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "perpustakaan besok tidak tenang.",
+        "reading": "あしたのとしょかんはしずかではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の図書館は静かではありません。",
-        "prompt": "perpustakaan hari ini tidak tenang.",
+        "fullJp": "明日の図書館は静かではありません。",
+        "prompt": "perpustakaan besok tidak tenang.",
         "options": [
-          "今日の図書館は静かではありませんでした。",
-          "今日の図書館は静かではありません。",
-          "今日の図書館は静かでした。",
-          "今日の図書館は静かです。"
+          "明日の図書館は静かではありませんでした。",
+          "明日の図書館は静かではありません。",
+          "明日の図書館は静かでした。",
+          "明日の図書館は静かです。"
         ],
-        "answer": "今日の図書館は静かではありません。"
+        "answer": "明日の図書館は静かではありません。"
       },
       {
         "id": "q_b12_405",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "mobil lebih baru daripada kamera.",
-        "reading": "くるまはカメラよりあたらしいです。",
+        "translation": "setiap pagi lebih sibuk daripada setiap hari.",
+        "reading": "まいあさはまいにちよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "車はカメラより新しいです。",
-        "prompt": "mobil lebih baru daripada kamera.",
+        "fullJp": "毎朝は毎日より忙しいです。",
+        "prompt": "setiap pagi lebih sibuk daripada setiap hari.",
         "tiles": [
-          "車は",
-          "新しいです。",
-          "カメラより"
+          "毎朝は",
+          "忙しいです。",
+          "毎日より"
         ],
         "answer": [
-          "車は",
-          "カメラより",
-          "新しいです。"
+          "毎朝は",
+          "毎日より",
+          "忙しいです。"
         ]
       }
     ]
@@ -9889,32 +9889,32 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_406",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah pekerjaan kemarin sibuk? (kasual)",
-        "reading": "きのうのしごと、いそがしかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah pekerjaan bulan ini sibuk? (kasual)",
+        "reading": "こんげつのしごと、いそがしい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今月 (bulan ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の仕事、忙しかった？",
-        "prompt": "昨日の仕事、＿＿＿",
+        "fullJp": "今月の仕事、忙しい？",
+        "prompt": "今月の仕事、＿＿＿",
         "options": [
-          "忙しい？",
-          "忙しくない？",
           "忙しかった？",
+          "忙しくない？",
+          "忙しい？",
           "忙しくなかった？"
         ],
-        "answer": "忙しかった？"
+        "answer": "忙しい？"
       },
       {
         "id": "q_b12_407",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah hotel hari ini tenang? (kasual)",
-        "reading": "きょうのホテル、しずか？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah hotel bulan depan tenang? (kasual)",
+        "reading": "らいげつのホテル、しずか？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 来月 (bulan depan) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のホテル、静か？",
-        "prompt": "今日のホテル、＿＿＿",
+        "fullJp": "来月のホテル、静か？",
+        "prompt": "来月のホテル、＿＿＿",
         "options": [
           "静か？",
           "静かではありませんでした？",
@@ -9927,104 +9927,104 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_408",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara mobil dan kamera, mana yang lebih baru? mobil lebih baru.",
-        "reading": "くるまとカメラとどちらがあたらしいですか。くるまのほうがあたらしいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara setiap pagi dan setiap hari, mana yang lebih sibuk? Keduanya sibuk.",
+        "reading": "まいあさとまいにちとどちらがいそがしいですか。どちらもいそがしいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "車とカメラとどちらが新しいですか。車のほうが新しいです。",
+        "fullJp": "毎朝と毎日とどちらが忙しいですか。どちらも忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "車とカメラとどちらが新しいですか。"
+            "text": "毎朝と毎日とどちらが忙しいですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih mobil. Pilih respons B.",
+        "question": "Konteks: keduanya dinilai sama. Pilih respons B.",
         "options": [
-          "カメラより新しいです。",
-          "車より新しいです。",
-          "カメラのほうが新しいです。",
-          "車のほうが新しいです。"
+          "どちらより忙しいです。",
+          "どちらと忙しいです。",
+          "どちらが忙しいです。",
+          "どちらも忙しいです。"
         ],
-        "answer": "車のほうが新しいです。",
-        "answerId": "mobil lebih baru.",
+        "answer": "どちらも忙しいです。",
+        "answerId": "Keduanya sibuk.",
         "dialogueId": [
-          "Antara mobil dan kamera, mana yang lebih baru?",
-          "mobil lebih baru."
+          "Antara setiap pagi dan setiap hari, mana yang lebih sibuk?",
+          "Keduanya sibuk."
         ]
       },
       {
         "id": "q_b12_409",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, sushi, sayuran, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとおすしとやさいのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: hari ini. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara hari ini, kemarin, kemarin lusa, waktu mana yang paling panas (cuaca)? hari ini paling panas (cuaca).",
+        "reading": "きょうときのうとおとといのなかでいつがいちばんあついですか。きょうがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとおすしと野菜のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "すき焼きとおすしと野菜のなかで＿＿＿いちばん安いですか。すき焼きがいちばん安いです。",
+        "fullJp": "今日と昨日とおとといのなかでいつがいちばん暑いですか。今日がいちばん暑いです。",
+        "prompt": "今日と昨日とおとといのなかで＿＿＿いちばん暑いですか。今日がいちばん暑いです。",
         "options": [
-          "だれが",
           "何が",
+          "いつが",
           "どこが",
-          "いつが"
+          "だれが"
         ],
-        "answer": "何が"
+        "answer": "いつが"
       },
       {
         "id": "q_b12_410",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "perpustakaan kemarin tidak tenang.",
-        "reading": "きのうのとしょかんはしずかではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "perpustakaan tahun lalu tidak tenang.",
+        "reading": "きょねんのとしょかんはしずかではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の図書館は静かではありませんでした。",
-        "prompt": "perpustakaan kemarin tidak tenang.",
+        "fullJp": "去年の図書館は静かではありませんでした。",
+        "prompt": "perpustakaan tahun lalu tidak tenang.",
         "options": [
-          "昨日の図書館は静かでした。",
-          "昨日の図書館は静かではありません。",
-          "昨日の図書館は静かです。",
-          "昨日の図書館は静かではありませんでした。"
+          "去年の図書館は静かでした。",
+          "去年の図書館は静かではありません。",
+          "去年の図書館は静かです。",
+          "去年の図書館は静かではありませんでした。"
         ],
-        "answer": "昨日の図書館は静かではありませんでした。"
+        "answer": "去年の図書館は静かではありませんでした。"
       },
       {
         "id": "q_b12_411",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kota kemarin ramai? (kasual)",
-        "reading": "きのうのまち、にぎやかだった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kota tahun ini ramai? (kasual)",
+        "reading": "ことしのまち、にぎやか？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今年 (tahun ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の町、にぎやかだった？",
-        "prompt": "昨日の町、＿＿＿",
+        "fullJp": "今年の町、にぎやか？",
+        "prompt": "今年の町、＿＿＿",
         "options": [
           "にぎやかではありません？",
           "にぎやかではありませんでした？",
-          "にぎやかだった？",
-          "にぎやか？"
+          "にぎやか？",
+          "にぎやかだった？"
         ],
-        "answer": "にぎやかだった？"
+        "answer": "にぎやか？"
       },
       {
         "id": "q_b12_412",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah ayah saya hari ini sehat? (kasual)",
-        "reading": "きょうのちち、げんき？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah ayah saya tahun depan sehat? (kasual)",
+        "reading": "らいねんのちち、げんき？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 来年 (tahun depan) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の父、元気？",
-        "prompt": "今日の父、＿＿＿",
+        "fullJp": "来年の父、元気？",
+        "prompt": "来年の父、＿＿＿",
         "options": [
           "元気？",
           "元気ではありませんでした？",
@@ -10037,70 +10037,70 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_413",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "sepeda lebih baru daripada televisi.",
-        "reading": "じてんしゃはテレビよりあたらしいです。",
+        "translation": "barang bawaan lebih ringan daripada buku.",
+        "reading": "にもつはほんよりかるいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "自転車はテレビより新しいです。",
-        "prompt": "sepeda lebih baru daripada televisi.",
+        "fullJp": "荷物は本より軽いです。",
+        "prompt": "barang bawaan lebih ringan daripada buku.",
         "tiles": [
-          "テレビより",
-          "自転車は",
-          "新しいです。"
+          "本より",
+          "荷物は",
+          "軽いです。"
         ],
         "answer": [
-          "自転車は",
-          "テレビより",
-          "新しいです。"
+          "荷物は",
+          "本より",
+          "軽いです。"
         ],
-        "audioText": "自転車はテレビより新しいです。"
+        "audioText": "荷物は本より軽いです。"
       },
       {
         "id": "q_b12_414",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara sepeda dan televisi, mana yang lebih baru? sepeda lebih baru.",
-        "reading": "じてんしゃとテレビとどちらがあたらしいですか。じてんしゃのほうがあたらしいです。",
+        "translation": "Antara barang bawaan dan buku, mana yang lebih ringan? barang bawaan lebih ringan.",
+        "reading": "にもつとほんとどちらがかるいですか。にもつのほうがかるいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "自転車とテレビとどちらが新しいですか。自転車のほうが新しいです。",
+        "fullJp": "荷物と本とどちらが軽いですか。荷物のほうが軽いです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "自転車とテレビとどちらが新しいですか。"
+            "text": "荷物と本とどちらが軽いですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: pembicara memilih sepeda. Pilih respons B.",
+        "question": "Konteks: pembicara memilih barang bawaan. Pilih respons B.",
         "options": [
-          "テレビのほうが新しいです。",
-          "自転車より新しいです。",
-          "テレビより新しいです。",
-          "自転車のほうが新しいです。"
+          "本のほうが軽いです。",
+          "荷物より軽いです。",
+          "本より軽いです。",
+          "荷物のほうが軽いです。"
         ],
-        "answer": "自転車のほうが新しいです。",
-        "answerId": "sepeda lebih baru.",
+        "answer": "荷物のほうが軽いです。",
+        "answerId": "barang bawaan lebih ringan.",
         "dialogueId": [
-          "Antara sepeda dan televisi, mana yang lebih baru?",
-          "sepeda lebih baru."
+          "Antara barang bawaan dan buku, mana yang lebih ringan?",
+          "barang bawaan lebih ringan."
         ]
       },
       {
         "id": "q_b12_415",
         "type": "complete",
-        "instruction": "Konteks jawaban: sukiyaki. Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Di antara sukiyaki, tempura, roti, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとてんぷらとパンのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "instruction": "Konteks jawaban: tempura. Lengkapi bagian rumpang sesuai arti dan konteks.",
+        "translation": "Di antara sushi, tempura, roti, apa yang paling mahal? tempura paling mahal.",
+        "reading": "おすしとてんぷらとパンのなかでなにがいちばんたかいですか。てんぷらがいちばんたかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらとパンのなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "すき焼きとてんぷらとパンのなかで＿＿＿いちばんおいしいですか。すき焼きがいちばんおいしいです。",
+        "fullJp": "おすしとてんぷらとパンのなかで何がいちばん高いですか。てんぷらがいちばん高いです。",
+        "prompt": "おすしとてんぷらとパンのなかで＿＿＿いちばん高いですか。てんぷらがいちばん高いです。",
         "options": [
           "何が",
           "いつが",
@@ -10113,32 +10113,32 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_416",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah ibu saya kemarin senggang? (kasual)",
-        "reading": "きのうのはは、ひまだった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah ibu saya setiap pagi senggang? (kasual)",
+        "reading": "まいあさのはは、ひま？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 毎朝 (setiap pagi) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の母、暇だった？",
-        "prompt": "昨日の母、＿＿＿",
+        "fullJp": "毎朝の母、暇？",
+        "prompt": "毎朝の母、＿＿＿",
         "options": [
           "暇ではありませんでした？",
-          "暇？",
           "暇だった？",
+          "暇？",
           "暇ではありません？"
         ],
-        "answer": "暇だった？"
+        "answer": "暇？"
       },
       {
         "id": "q_b12_417",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah toko hari ini praktis? (kasual)",
-        "reading": "きょうのみせ、べんり？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah toko setiap malam praktis? (kasual)",
+        "reading": "まいばんのみせ、べんり？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 毎晩 (setiap malam) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の店、便利？",
-        "prompt": "今日の店、＿＿＿",
+        "fullJp": "毎晩の店、便利？",
+        "prompt": "毎晩の店、＿＿＿",
         "options": [
           "便利だった？",
           "便利？",
@@ -10153,7 +10153,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
         "translation": "laut hari ini indah.",
         "reading": "きょうのうみはきれいです。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif.",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang positif. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
         "fullJp": "今日の海は綺麗です。",
@@ -10173,57 +10173,57 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_419",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "jam lebih baru daripada mobil.",
-        "reading": "とけいはくるまよりあたらしいです。",
+        "translation": "setiap malam lebih sibuk daripada setiap pagi.",
+        "reading": "まいばんはまいあさよりいそがしいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "時計は車より新しいです。",
-        "prompt": "jam lebih baru daripada mobil.",
+        "fullJp": "毎晩は毎朝より忙しいです。",
+        "prompt": "setiap malam lebih sibuk daripada setiap pagi.",
         "tiles": [
-          "車より",
-          "時計は",
-          "新しいです。"
+          "毎朝より",
+          "毎晩は",
+          "忙しいです。"
         ],
         "answer": [
-          "時計は",
-          "車より",
-          "新しいです。"
+          "毎晩は",
+          "毎朝より",
+          "忙しいです。"
         ],
-        "audioText": "時計は車より新しいです。"
+        "audioText": "毎晩は毎朝より忙しいです。"
       },
       {
         "id": "q_b12_420",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "Antara jam dan mobil, mana yang lebih baru? Keduanya baru.",
-        "reading": "とけいとくるまとどちらがあたらしいですか。どちらもあたらしいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "translation": "Antara setiap malam dan setiap pagi, mana yang lebih sibuk? setiap malam lebih sibuk.",
+        "reading": "まいばんとまいあさとどちらがいそがしいですか。まいばんのほうがいそがしいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "時計と車とどちらが新しいですか。どちらも新しいです。",
+        "fullJp": "毎晩と毎朝とどちらが忙しいですか。毎晩のほうが忙しいです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "時計と車とどちらが新しいですか。"
+            "text": "毎晩と毎朝とどちらが忙しいですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "Konteks: keduanya dinilai sama. Pilih respons B.",
+        "question": "Konteks: pembicara memilih setiap malam. Pilih respons B.",
         "options": [
-          "どちらも新しいです。",
-          "どちらより新しいです。",
-          "どちらが新しいです。",
-          "どちらと新しいです。"
+          "毎晩のほうが忙しいです。",
+          "毎朝より忙しいです。",
+          "毎朝のほうが忙しいです。",
+          "毎晩より忙しいです。"
         ],
-        "answer": "どちらも新しいです。",
-        "answerId": "Keduanya baru.",
+        "answer": "毎晩のほうが忙しいです。",
+        "answerId": "setiap malam lebih sibuk.",
         "dialogueId": [
-          "Antara jam dan mobil, mana yang lebih baru?",
-          "Keduanya baru."
+          "Antara setiap malam dan setiap pagi, mana yang lebih sibuk?",
+          "setiap malam lebih sibuk."
         ]
       }
     ]
@@ -10239,108 +10239,110 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_421",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah barang bawaan kemarin berat? (kasual)",
-        "reading": "きのうのにもつ、おもかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah barang bawaan setiap hari berat? (kasual)",
+        "reading": "まいにちのにもつ、おもい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 毎日 (setiap hari) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の荷物、重かった？",
-        "prompt": "昨日の荷物、＿＿＿",
+        "fullJp": "毎日の荷物、重い？",
+        "prompt": "毎日の荷物、＿＿＿",
         "options": [
-          "重い？",
           "重かった？",
+          "重い？",
           "重くない？",
           "重くなかった？"
         ],
-        "answer": "重かった？"
+        "answer": "重い？"
       },
       {
         "id": "q_b12_422",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah tas hari ini ringan? (kasual)",
-        "reading": "きょうのかばん、かるい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah tas kemarin lusa ringan? (kasual)",
+        "reading": "おとといのかばん、かるかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のかばん、軽い？",
-        "prompt": "今日のかばん、＿＿＿",
+        "fullJp": "おとといのかばん、軽かった？",
+        "prompt": "おとといのかばん、＿＿＿",
         "options": [
-          "軽かった？",
+          "軽い？",
           "軽くない？",
           "軽くなかった？",
-          "軽い？"
+          "軽かった？"
         ],
-        "answer": "軽い？"
+        "answer": "軽かった？"
       },
       {
         "id": "q_b12_423",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, tempura, roti, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとてんぷらとパンのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling sibuk? tahun ini paling sibuk.",
+        "reading": "ことしときょねんとらいねんのなかでいつがいちばんいそがしいですか。ことしがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらとパンのなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, tempura, roti, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "今年と去年と来年のなかでいつがいちばん忙しいですか。今年がいちばん忙しいです。",
+        "prompt": "Di antara tahun ini, tahun lalu, tahun depan, waktu mana yang paling sibuk? tahun ini paling sibuk.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きとてんぷらとパンのなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。"
+          "いつが",
+          "今年と去年と来年のなかで",
+          "今年がいちばん忙しいです。",
+          "忙しいですか。"
         ],
         "answer": [
-          "すき焼きとてんぷらとパンのなかで",
-          "何が",
+          "今年と去年と来年のなかで",
+          "いつが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "忙しいですか。",
+          "今年がいちばん忙しいです。"
         ]
       },
       {
         "id": "q_b12_424",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "kemarin bukan pesta.",
-        "reading": "きのうはパーティーではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "laut bulan lalu indah.",
+        "reading": "せんげつのうみはきれいでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau positif. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日はパーティーではありませんでした。",
-        "prompt": "kemarin bukan pesta.",
+        "fullJp": "先月の海は綺麗でした。",
+        "prompt": "laut bulan lalu indah.",
         "tiles": [
-          "昨日は",
-          "パーティーではありませんでした。"
+          "綺麗でした。",
+          "海は",
+          "先月の"
         ],
         "answer": [
-          "昨日は",
-          "パーティーではありませんでした。"
+          "先月の",
+          "海は",
+          "綺麗でした。"
         ]
       },
       {
         "id": "q_b12_425",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "kamera lebih baru daripada sepeda.",
-        "reading": "カメラはじてんしゃよりあたらしいです。",
+        "translation": "kamus lebih ringan daripada kamera.",
+        "reading": "じしょはカメラよりかるいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "カメラは自転車より新しいです。",
-        "prompt": "kamera lebih baru daripada sepeda.",
+        "fullJp": "辞書はカメラより軽いです。",
+        "prompt": "kamus lebih ringan daripada kamera.",
         "tiles": [
-          "自転車より",
-          "カメラは",
-          "新しいです。"
+          "カメラより",
+          "辞書は",
+          "軽いです。"
         ],
         "answer": [
-          "カメラは",
-          "自転車より",
-          "新しいです。"
+          "辞書は",
+          "カメラより",
+          "軽いです。"
         ],
-        "audioText": "カメラは自転車より新しいです。"
+        "audioText": "辞書はカメラより軽いです。"
       },
       {
         "id": "q_b12_426",
@@ -10348,7 +10350,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Apakah mobil kemarin baru? (kasual)",
         "reading": "きのうのくるま、あたらしかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 昨日 (kemarin) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
         "fullJp": "昨日の車、新しかった？",
@@ -10365,84 +10367,84 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_427",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah jam hari ini lama? (kasual)",
-        "reading": "きょうのとけい、ふるい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah jam tadi pagi lama? (kasual)",
+        "reading": "けさのとけい、ふるかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今朝 (tadi pagi) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の時計、古い？",
-        "prompt": "今日の時計、＿＿＿",
+        "fullJp": "今朝の時計、古かった？",
+        "prompt": "今朝の時計、＿＿＿",
         "options": [
           "古くない？",
-          "古い？",
+          "古かった？",
           "古くなかった？",
-          "古かった？"
+          "古い？"
         ],
-        "answer": "古い？"
+        "answer": "古かった？"
       },
       {
         "id": "q_b12_428",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara kamera dan sepeda, mana yang lebih baru? kamera lebih baru.",
-        "reading": "カメラとじてんしゃとどちらがあたらしいですか。カメラのほうがあたらしいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara kamus dan kamera, mana yang lebih ringan? Keduanya ringan.",
+        "reading": "じしょとカメラとどちらがかるいですか。どちらもかるいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "カメラと自転車とどちらが新しいですか。カメラのほうが新しいです。",
-        "prompt": "Antara kamera dan sepeda, mana yang lebih baru? kamera lebih baru.",
+        "fullJp": "辞書とカメラとどちらが軽いですか。どちらも軽いです。",
+        "prompt": "Antara kamus dan kamera, mana yang lebih ringan? Keduanya ringan.",
         "options": [
-          "カメラと自転車とどちらが新しいですか。自転車より新しいです。",
-          "カメラと自転車とどちらが新しいですか。自転車のほうが新しいです。",
-          "カメラと自転車とどちらが新しいですか。カメラのほうが新しいです。",
-          "カメラと自転車とどちらが新しいですか。カメラより新しいです。"
+          "辞書とカメラとどちらが軽いですか。どちらより軽いです。",
+          "辞書とカメラとどちらが軽いですか。どちらが軽いです。",
+          "辞書とカメラとどちらが軽いですか。どちらも軽いです。",
+          "辞書とカメラとどちらが軽いですか。どちらと軽いです。"
         ],
-        "answer": "カメラと自転車とどちらが新しいですか。カメラのほうが新しいです。"
+        "answer": "辞書とカメラとどちらが軽いですか。どちらも軽いです。"
       },
       {
         "id": "q_b12_429",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, tempura, roti, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとてんぷらとパンのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sehat? adik perempuan saya paling sehat.",
+        "reading": "おとうとといもうととちちのなかでだれがいちばんげんきですか。いもうとがいちばんげんきです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらとパンのなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, tempura, roti, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "弟と妹と父のなかでだれがいちばん元気ですか。妹がいちばん元気です。",
+        "prompt": "Di antara adik laki-laki saya, adik perempuan saya, ayah saya, siapa yang paling sehat? adik perempuan saya paling sehat.",
         "tiles": [
-          "何が",
-          "すき焼きとてんぷらとパンのなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "だれが",
+          "弟と妹と父のなかで",
+          "妹がいちばん元気です。",
+          "元気ですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きとてんぷらとパンのなかで",
-          "何が",
+          "弟と妹と父のなかで",
+          "だれが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "元気ですか。",
+          "妹がいちばん元気です。"
         ]
       },
       {
         "id": "q_b12_430",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "laut hari ini tidak indah.",
-        "reading": "きょうのうみはきれいではありません。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif.",
+        "translation": "laut besok lusa tidak indah.",
+        "reading": "あさってのうみはきれいではありません。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: sekarang negatif. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の海は綺麗ではありません。",
-        "prompt": "laut hari ini tidak indah.",
+        "fullJp": "あさっての海は綺麗ではありません。",
+        "prompt": "laut besok lusa tidak indah.",
         "tiles": [
           "綺麗ではありません。",
           "海は",
-          "今日の"
+          "あさっての"
         ],
         "answer": [
-          "今日の",
+          "あさっての",
           "海は",
           "綺麗ではありません。"
         ]
@@ -10451,13 +10453,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_431",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah ruang kelas kemarin besar? (kasual)",
-        "reading": "きのうのきょうしつ、おおきかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah ruang kelas minggu lalu besar? (kasual)",
+        "reading": "せんしゅうのきょうしつ、おおきかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の教室、大きかった？",
-        "prompt": "昨日の教室、＿＿＿",
+        "fullJp": "先週の教室、大きかった？",
+        "prompt": "先週の教室、＿＿＿",
         "options": [
           "大きかった？",
           "大きくなかった？",
@@ -10470,83 +10472,83 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_432",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kamar hari ini kecil? (kasual)",
-        "reading": "きょうのへや、ちいさい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kamar bulan lalu kecil? (kasual)",
+        "reading": "せんげつのへや、ちいさかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 先月 (bulan lalu) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日の部屋、小さい？",
-        "prompt": "今日の部屋、＿＿＿",
+        "fullJp": "先月の部屋、小さかった？",
+        "prompt": "先月の部屋、＿＿＿",
         "options": [
           "小さくなかった？",
           "小さくない？",
-          "小さかった？",
-          "小さい？"
+          "小さい？",
+          "小さかった？"
         ],
-        "answer": "小さい？"
+        "answer": "小さかった？"
       },
       {
         "id": "q_b12_433",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "televisi lebih baru daripada jam.",
-        "reading": "テレビはとけいよりあたらしいです。",
+        "translation": "buku lebih ringan daripada tas.",
+        "reading": "ほんはかばんよりかるいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "テレビは時計より新しいです。",
-        "prompt": "テレビは＿＿＿新しいです。",
+        "fullJp": "本はかばんより軽いです。",
+        "prompt": "本は＿＿＿軽いです。",
         "options": [
-          "時計が",
-          "時計より",
-          "時計も",
-          "時計と"
+          "かばんが",
+          "かばんより",
+          "かばんも",
+          "かばんと"
         ],
-        "answer": "時計より"
+        "answer": "かばんより"
       },
       {
         "id": "q_b12_434",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara televisi dan jam, mana yang lebih baru? televisi lebih baru.",
-        "reading": "テレビととけいとどちらがあたらしいですか。テレビのほうがあたらしいです。",
+        "translation": "Antara buku dan tas, mana yang lebih ringan? buku lebih ringan.",
+        "reading": "ほんとかばんとどちらがかるいですか。ほんのほうがかるいです。",
         "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "テレビと時計とどちらが新しいですか。テレビのほうが新しいです。",
-        "prompt": "Antara televisi dan jam, mana yang lebih baru? televisi lebih baru.",
+        "fullJp": "本とかばんとどちらが軽いですか。本のほうが軽いです。",
+        "prompt": "Antara buku dan tas, mana yang lebih ringan? buku lebih ringan.",
         "options": [
-          "テレビと時計とどちらが新しいですか。時計のほうが新しいです。",
-          "テレビと時計とどちらが新しいですか。テレビより新しいです。",
-          "テレビと時計とどちらが新しいですか。テレビのほうが新しいです。",
-          "テレビと時計とどちらが新しいですか。時計より新しいです。"
+          "本とかばんとどちらが軽いですか。かばんのほうが軽いです。",
+          "本とかばんとどちらが軽いですか。本より軽いです。",
+          "本とかばんとどちらが軽いですか。本のほうが軽いです。",
+          "本とかばんとどちらが軽いですか。かばんより軽いです。"
         ],
-        "answer": "テレビと時計とどちらが新しいですか。テレビのほうが新しいです。"
+        "answer": "本とかばんとどちらが軽いですか。本のほうが軽いです。"
       },
       {
         "id": "q_b12_435",
         "type": "translate",
         "instruction": "Susun terjemahan Jepang: mulai dari topik/kelompok; pertanyaan sebelum jawaban.",
-        "translation": "Di antara sukiyaki, tempura, daging, apa yang paling enak? sukiyaki paling enak.",
-        "reading": "すきやきとてんぷらとにくのなかでなにがいちばんおいしいですか。すきやきがいちばんおいしいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling panas (cuaca)? kemarin lusa paling panas (cuaca).",
+        "reading": "きのうとおとといときょうのなかでいつがいちばんあついですか。おとといがいちばんあついです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらと肉のなかで何がいちばんおいしいですか。すき焼きがいちばんおいしいです。",
-        "prompt": "Di antara sukiyaki, tempura, daging, apa yang paling enak? sukiyaki paling enak.",
+        "fullJp": "昨日とおとといと今日のなかでいつがいちばん暑いですか。おとといがいちばん暑いです。",
+        "prompt": "Di antara kemarin, kemarin lusa, hari ini, waktu mana yang paling panas (cuaca)? kemarin lusa paling panas (cuaca).",
         "tiles": [
-          "すき焼きとてんぷらと肉のなかで",
-          "すき焼きがいちばんおいしいです。",
-          "おいしいですか。",
+          "昨日とおとといと今日のなかで",
+          "おとといがいちばん暑いです。",
+          "暑いですか。",
           "いちばん",
-          "何が"
+          "いつが"
         ],
         "answer": [
-          "すき焼きとてんぷらと肉のなかで",
-          "何が",
+          "昨日とおとといと今日のなかで",
+          "いつが",
           "いちばん",
-          "おいしいですか。",
-          "すき焼きがいちばんおいしいです。"
+          "暑いですか。",
+          "おとといがいちばん暑いです。"
         ]
       }
     ]
@@ -10562,13 +10564,13 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_436",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kemeja kemarin putih? (kasual)",
-        "reading": "きのうのシャツ、しろかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kemeja tahun lalu putih? (kasual)",
+        "reading": "きょねんのシャツ、しろかった？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 去年 (tahun lalu) memakai bentuk lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日のシャツ、白かった？",
-        "prompt": "昨日のシャツ、＿＿＿",
+        "fullJp": "去年のシャツ、白かった？",
+        "prompt": "去年のシャツ、＿＿＿",
         "options": [
           "白くなかった？",
           "白くない？",
@@ -10583,7 +10585,7 @@ window.LEVELS_BAB12_DATA = [
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
         "translation": "Apakah sepatu hari ini hitam? (kasual)",
         "reading": "きょうのくつ、くろい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今日 (hari ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
         "fullJp": "今日の靴、黒い？",
@@ -10600,104 +10602,104 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_438",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "laut kemarin tidak indah.",
-        "reading": "きのうのうみはどうでしたか。きのうのうみはきれいではありませんでした。",
-        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif.",
+        "translation": "laut kemarin lusa tidak indah.",
+        "reading": "おとといのうみはどうでしたか。おとといのうみはきれいではありませんでした。",
+        "explanation": "Kata sifat な dan kata benda memakai です／でした／ではありません／ではありませんでした. Target: lampau negatif. Time signal おととい (kemarin lusa) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の海はどうでしたか。昨日の海は綺麗ではありませんでした。",
+        "fullJp": "おとといの海はどうでしたか。おとといの海は綺麗ではありませんでした。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の海はどうでしたか。"
+            "text": "おとといの海はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "laut kemarin tidak indah. Pilih respons B.",
+        "question": "laut kemarin lusa tidak indah. Pilih respons B.",
         "options": [
-          "昨日の海は綺麗でした。",
-          "昨日の海は綺麗ではありません。",
-          "昨日の海は綺麗ではありませんでした。",
-          "昨日の海は綺麗です。"
+          "おとといの海は綺麗でした。",
+          "おとといの海は綺麗ではありません。",
+          "おとといの海は綺麗ではありませんでした。",
+          "おとといの海は綺麗です。"
         ],
-        "answer": "昨日の海は綺麗ではありませんでした。",
-        "answerId": "laut kemarin tidak indah.",
+        "answer": "おとといの海は綺麗ではありませんでした。",
+        "answerId": "laut kemarin lusa tidak indah.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "laut kemarin tidak indah."
+          "laut kemarin lusa tidak indah."
         ]
       },
       {
         "id": "q_b12_439",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Shinkansen lebih cepat daripada taksi.",
-        "reading": "しんかんせんはタクシーよりはやいです。",
+        "translation": "kamera lebih ringan daripada barang bawaan.",
+        "reading": "カメラはにもつよりかるいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "新幹線はタクシーより速いです。",
-        "prompt": "新幹線は＿＿＿速いです。",
+        "fullJp": "カメラは荷物より軽いです。",
+        "prompt": "カメラは＿＿＿軽いです。",
         "options": [
-          "タクシーも",
-          "タクシーと",
-          "タクシーが",
-          "タクシーより"
+          "荷物も",
+          "荷物と",
+          "荷物が",
+          "荷物より"
         ],
-        "answer": "タクシーより"
+        "answer": "荷物より"
       },
       {
         "id": "q_b12_440",
         "type": "choose_translation",
         "instruction": "Pilih kalimat Jepang yang sesuai arti berikut.",
-        "translation": "Antara Shinkansen dan taksi, mana yang lebih cepat? Keduanya cepat.",
-        "reading": "しんかんせんとタクシーとどちらがはやいですか。どちらもはやいです。",
-        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
+        "translation": "Antara kamera dan barang bawaan, mana yang lebih ringan? kamera lebih ringan.",
+        "reading": "カメラとにもつとどちらがかるいですか。カメラのほうがかるいです。",
+        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "新幹線とタクシーとどちらが速いですか。どちらも速いです。",
-        "prompt": "Antara Shinkansen dan taksi, mana yang lebih cepat? Keduanya cepat.",
+        "fullJp": "カメラと荷物とどちらが軽いですか。カメラのほうが軽いです。",
+        "prompt": "Antara kamera dan barang bawaan, mana yang lebih ringan? kamera lebih ringan.",
         "options": [
-          "新幹線とタクシーとどちらが速いですか。どちらも速いです。",
-          "新幹線とタクシーとどちらが速いですか。どちらより速いです。",
-          "新幹線とタクシーとどちらが速いですか。どちらが速いです。",
-          "新幹線とタクシーとどちらが速いですか。どちらと速いです。"
+          "カメラと荷物とどちらが軽いですか。カメラのほうが軽いです。",
+          "カメラと荷物とどちらが軽いですか。荷物より軽いです。",
+          "カメラと荷物とどちらが軽いですか。荷物のほうが軽いです。",
+          "カメラと荷物とどちらが軽いですか。カメラより軽いです。"
         ],
-        "answer": "新幹線とタクシーとどちらが速いですか。どちらも速いです。"
+        "answer": "カメラと荷物とどちらが軽いですか。カメラのほうが軽いです。"
       },
       {
         "id": "q_b12_441",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah bunga kemarin merah? (kasual)",
-        "reading": "きのうのはな、あかかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah bunga besok merah? (kasual)",
+        "reading": "あしたのはな、あかい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 明日 (besok) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の花、赤かった？",
-        "prompt": "昨日の花、＿＿＿",
+        "fullJp": "明日の花、赤い？",
+        "prompt": "明日の花、＿＿＿",
         "options": [
-          "赤い？",
           "赤かった？",
+          "赤い？",
           "赤くない？",
           "赤くなかった？"
         ],
-        "answer": "赤かった？"
+        "answer": "赤い？"
       },
       {
         "id": "q_b12_442",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kemeja hari ini biru? (kasual)",
-        "reading": "きょうのシャツ、あおい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kemeja besok lusa biru? (kasual)",
+        "reading": "あさってのシャツ、あおい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal あさって (besok lusa) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のシャツ、青い？",
-        "prompt": "今日のシャツ、＿＿＿",
+        "fullJp": "あさってのシャツ、青い？",
+        "prompt": "あさってのシャツ、＿＿＿",
         "options": [
           "青かった？",
           "青くない？",
@@ -10710,112 +10712,112 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_443",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, tempura, daging, apa yang paling mahal? sukiyaki paling mahal.",
-        "reading": "すきやきとてんぷらとにくのなかでなにがいちばんたかいですか。すきやきがいちばんたかいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara toko, kantin, hotel, tempat mana yang paling dekat? kantin paling dekat.",
+        "reading": "みせとしょくどうとホテルのなかでどこがいちばんちかいですか。しょくどうがいちばんちかいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらと肉のなかで何がいちばん高いですか。すき焼きがいちばん高いです。",
-        "prompt": "Di antara sukiyaki, tempura, daging, apa yang paling mahal? sukiyaki paling mahal.",
+        "fullJp": "店と食堂とホテルのなかでどこがいちばん近いですか。食堂がいちばん近いです。",
+        "prompt": "Di antara toko, kantin, hotel, tempat mana yang paling dekat? kantin paling dekat.",
         "tiles": [
           "いちばん",
-          "何が",
-          "すき焼きとてんぷらと肉のなかで",
-          "すき焼きがいちばん高いです。",
-          "高いですか。"
+          "どこが",
+          "店と食堂とホテルのなかで",
+          "食堂がいちばん近いです。",
+          "近いですか。"
         ],
         "answer": [
-          "すき焼きとてんぷらと肉のなかで",
-          "何が",
+          "店と食堂とホテルのなかで",
+          "どこが",
           "いちばん",
-          "高いですか。",
-          "すき焼きがいちばん高いです。"
+          "近いですか。",
+          "食堂がいちばん近いです。"
         ],
-        "audioText": "すき焼きとてんぷらと肉のなかで何がいちばん高いですか。すき焼きがいちばん高いです。"
+        "audioText": "店と食堂とホテルのなかでどこがいちばん近いですか。食堂がいちばん近いです。"
       },
       {
         "id": "q_b12_444",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "kamar hari ini tidak sejuk.",
-        "reading": "きょうのへやはどうですか。きょうのへやはすずしくないです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif.",
+        "translation": "kamar minggu depan tidak sejuk.",
+        "reading": "らいしゅうのへやはどうですか。らいしゅうのへやはすずしくないです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: sekarang negatif. Time signal 来週 (minggu depan) memakai bentuk sekarang/non-lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "今日の部屋はどうですか。今日の部屋は涼しくないです。",
+        "fullJp": "来週の部屋はどうですか。来週の部屋は涼しくないです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "今日の部屋はどうですか。"
+            "text": "来週の部屋はどうですか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "kamar hari ini tidak sejuk. Pilih respons B.",
+        "question": "kamar minggu depan tidak sejuk. Pilih respons B.",
         "options": [
-          "今日の部屋は涼しくなかったです。",
-          "今日の部屋は涼しくないです。",
-          "今日の部屋は涼しかったです。",
-          "今日の部屋は涼しいです。"
+          "来週の部屋は涼しくなかったです。",
+          "来週の部屋は涼しくないです。",
+          "来週の部屋は涼しかったです。",
+          "来週の部屋は涼しいです。"
         ],
-        "answer": "今日の部屋は涼しくないです。",
-        "answerId": "kamar hari ini tidak sejuk.",
+        "answer": "来週の部屋は涼しくないです。",
+        "answerId": "kamar minggu depan tidak sejuk.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "kamar hari ini tidak sejuk."
+          "kamar minggu depan tidak sejuk."
         ]
       },
       {
         "id": "q_b12_445",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "kereta lebih cepat daripada sepeda.",
-        "reading": "でんしゃはじてんしゃよりはやいです。",
+        "translation": "mobil lebih murah daripada jam.",
+        "reading": "くるまはとけいよりやすいです。",
         "explanation": "N1 は N2 より sifat です: N1 memiliki sifat lebih daripada N2; より menandai pembanding.",
         "topic": "より",
         "casual": false,
-        "fullJp": "電車は自転車より速いです。",
-        "prompt": "電車は＿＿＿速いです。",
+        "fullJp": "車は時計より安いです。",
+        "prompt": "車は＿＿＿安いです。",
         "options": [
-          "自転車より",
-          "自転車が",
-          "自転車も",
-          "自転車と"
+          "時計より",
+          "時計が",
+          "時計も",
+          "時計と"
         ],
-        "answer": "自転車より"
+        "answer": "時計より"
       },
       {
         "id": "q_b12_446",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah masakan kemarin enak? (kasual)",
-        "reading": "きのうのりょうり、おいしかった？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah masakan malam ini enak? (kasual)",
+        "reading": "こんばんのりょうり、おいしい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今晩 (malam ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "昨日の料理、おいしかった？",
-        "prompt": "昨日の料理、＿＿＿",
+        "fullJp": "今晩の料理、おいしい？",
+        "prompt": "今晩の料理、＿＿＿",
         "options": [
-          "おいしい？",
-          "おいしくない？",
           "おいしかった？",
+          "おいしくない？",
+          "おいしい？",
           "おいしくなかった？"
         ],
-        "answer": "おいしかった？"
+        "answer": "おいしい？"
       },
       {
         "id": "q_b12_447",
         "type": "complete",
         "instruction": "Lengkapi bagian rumpang sesuai arti dan konteks.",
-        "translation": "Apakah kamera hari ini mahal? (kasual)",
-        "reading": "きょうのカメラ、たかい？",
-        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab.",
+        "translation": "Apakah kamera minggu ini mahal? (kasual)",
+        "reading": "こんしゅうのカメラ、たかい？",
+        "explanation": "Pengenalan kasual: hilangkan です dan gunakan intonasi tanya. Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Untuk kata sifat な, lampau kasual memakai だった. Bentuk sopan tetap menjadi fokus bab. Time signal 今週 (minggu ini) memakai bentuk sekarang/non-lampau.",
         "topic": "kasual",
         "casual": true,
-        "fullJp": "今日のカメラ、高い？",
-        "prompt": "今日のカメラ、＿＿＿",
+        "fullJp": "今週のカメラ、高い？",
+        "prompt": "今週のカメラ、＿＿＿",
         "options": [
           "高い？",
           "高くなかった？",
@@ -10828,87 +10830,87 @@ window.LEVELS_BAB12_DATA = [
         "id": "q_b12_448",
         "type": "arrange",
         "instruction": "Susun dari topik/kelompok, pertanyaan, lalu jawaban jika ada.",
-        "translation": "Antara kereta dan sepeda, mana yang lebih cepat? kereta lebih cepat.",
-        "reading": "でんしゃとじてんしゃとどちらがはやいですか。でんしゃのほうがはやいです。",
-        "explanation": "Jawaban N のほうが sifat です memilih satu dari dua hal yang dibandingkan.",
+        "translation": "Antara mobil dan jam, mana yang lebih murah? Keduanya murah.",
+        "reading": "くるまととけいとどちらがやすいですか。どちらもやすいです。",
+        "explanation": "どちら menanyakan satu dari dua pilihan. どちらも berarti keduanya; tidak diikuti が.",
         "topic": "どちら",
         "casual": false,
-        "fullJp": "電車と自転車とどちらが速いですか。電車のほうが速いです。",
-        "prompt": "Antara kereta dan sepeda, mana yang lebih cepat? kereta lebih cepat.",
+        "fullJp": "車と時計とどちらが安いですか。どちらも安いです。",
+        "prompt": "Antara mobil dan jam, mana yang lebih murah? Keduanya murah.",
         "tiles": [
           "どちらが",
-          "自転車と",
-          "電車と",
-          "電車のほうが速いです。",
-          "速いですか。"
+          "時計と",
+          "車と",
+          "どちらも安いです。",
+          "安いですか。"
         ],
         "answer": [
-          "電車と",
-          "自転車と",
+          "車と",
+          "時計と",
           "どちらが",
-          "速いですか。",
-          "電車のほうが速いです。"
+          "安いですか。",
+          "どちらも安いです。"
         ]
       },
       {
         "id": "q_b12_449",
         "type": "listening",
         "instruction": "Dengarkan lalu susun kalimat.",
-        "translation": "Di antara sukiyaki, tempura, daging, apa yang paling murah? sukiyaki paling murah.",
-        "reading": "すきやきとてんぷらとにくのなかでなにがいちばんやすいですか。すきやきがいちばんやすいです。",
-        "explanation": "のなかで menentukan kelompok. が menandai subjek; いちばん berarti paling. Pilih kata tanya sesuai kategori.",
+        "translation": "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling sibuk? tahun depan paling sibuk.",
+        "reading": "きょねんとらいねんとことしのなかでいつがいちばんいそがしいですか。らいねんがいちばんいそがしいです。",
+        "explanation": "N のなかで membatasi kelompok; kata tanya + がいちばん menanyakan yang paling. Jawaban memakai N がいちばん sifat です.",
         "topic": "いちばん",
         "casual": false,
-        "fullJp": "すき焼きとてんぷらと肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。",
-        "prompt": "Di antara sukiyaki, tempura, daging, apa yang paling murah? sukiyaki paling murah.",
+        "fullJp": "去年と来年と今年のなかでいつがいちばん忙しいですか。来年がいちばん忙しいです。",
+        "prompt": "Di antara tahun lalu, tahun depan, tahun ini, waktu mana yang paling sibuk? tahun depan paling sibuk.",
         "tiles": [
-          "何が",
-          "すき焼きとてんぷらと肉のなかで",
-          "すき焼きがいちばん安いです。",
-          "安いですか。",
+          "いつが",
+          "去年と来年と今年のなかで",
+          "来年がいちばん忙しいです。",
+          "忙しいですか。",
           "いちばん"
         ],
         "answer": [
-          "すき焼きとてんぷらと肉のなかで",
-          "何が",
+          "去年と来年と今年のなかで",
+          "いつが",
           "いちばん",
-          "安いですか。",
-          "すき焼きがいちばん安いです。"
+          "忙しいですか。",
+          "来年がいちばん忙しいです。"
         ],
-        "audioText": "すき焼きとてんぷらと肉のなかで何がいちばん安いですか。すき焼きがいちばん安いです。"
+        "audioText": "去年と来年と今年のなかでいつがいちばん忙しいですか。来年がいちばん忙しいです。"
       },
       {
         "id": "q_b12_450",
         "type": "short_conversation",
         "instruction": "Baca percakapan, lalu pilih respons sesuai konteks.",
-        "translation": "masakan kemarin tidak pedas.",
-        "reading": "きのうのりょうりはどうでしたか。きのうのりょうりはからくなかったです。",
-        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif.",
+        "translation": "masakan minggu lalu tidak pedas.",
+        "reading": "せんしゅうのりょうりはどうでしたか。せんしゅうのりょうりはからくなかったです。",
+        "explanation": "Kata sifat い: lepas い lalu tambahkan かった／くない／くなかった, diikuti です. Target: lampau negatif. Time signal 先週 (minggu lalu) memakai bentuk lampau.",
         "topic": "bentuk",
         "casual": false,
-        "fullJp": "昨日の料理はどうでしたか。昨日の料理は辛くなかったです。",
+        "fullJp": "先週の料理はどうでしたか。先週の料理は辛くなかったです。",
         "dialogue": [
           {
             "speaker": "A",
-            "text": "昨日の料理はどうでしたか。"
+            "text": "先週の料理はどうでしたか。"
           },
           {
             "speaker": "B",
             "text": "＿＿＿"
           }
         ],
-        "question": "masakan kemarin tidak pedas. Pilih respons B.",
+        "question": "masakan minggu lalu tidak pedas. Pilih respons B.",
         "options": [
-          "昨日の料理は辛かったです。",
-          "昨日の料理は辛くないです。",
-          "昨日の料理は辛くなかったです。",
-          "昨日の料理は辛いです。"
+          "先週の料理は辛かったです。",
+          "先週の料理は辛くないです。",
+          "先週の料理は辛くなかったです。",
+          "先週の料理は辛いです。"
         ],
-        "answer": "昨日の料理は辛くなかったです。",
-        "answerId": "masakan kemarin tidak pedas.",
+        "answer": "先週の料理は辛くなかったです。",
+        "answerId": "masakan minggu lalu tidak pedas.",
         "dialogueId": [
           "Konfirmasi sesuai konteks.",
-          "masakan kemarin tidak pedas."
+          "masakan minggu lalu tidak pedas."
         ]
       }
     ]
