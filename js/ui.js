@@ -2,8 +2,10 @@
 // Pengelolaan Tampilan UI Aplikasi (Home, Level Map, Stats, Badges, History, Chapter Switch)
 
 (function (global) {
-  // Daftar bab yang tersedia di aplikasi (Bab 11 = bab terbaru)
+  // Daftar bab yang tersedia di aplikasi (Bab 13 = bab terbaru)
   const CHAPTERS = [
+    { id: 'bab13', label: 'Bab 13',
+      sub: '30 Level · 450 Soal · ほしい · たい · Tujuan Kegiatan · いつか／だれか／なにか／どこか' },
     { id: 'bab12', label: 'Bab 12',
       sub: '30 Level · 450 Soal · Lampau & Negatif · より · どちら／どちらも · いちばん' },
     { id: 'bab11', label: 'Bab 11',
@@ -18,10 +20,11 @@
       sub: '50 Level · 1000 Soal · あげます / もらいます · 貸します / 借ります · もう / まだ' }
   ];
 
-  const DEFAULT_CHAPTER = 'bab12';
+  const DEFAULT_CHAPTER = 'bab13';
 
   // Pemetaan bab -> data level (untuk jumlah level & tier peta)
   const CHAPTER_LEVEL_DATA = {
+    bab13: 'LEVELS_BAB13_DATA',
     bab12: 'LEVELS_BAB12_DATA',
     bab11: 'LEVELS_BAB11_DATA',
     bab10: 'LEVELS_BAB10_DATA',
@@ -34,7 +37,7 @@
     return (key && global[key]) || [];
   }
   function chapterTotalLevels(chapterId) {
-    return chapterLevels(chapterId).length || (['bab11', 'bab12'].includes(chapterId) ? 30 : 50);
+    return chapterLevels(chapterId).length || (['bab11', 'bab12', 'bab13'].includes(chapterId) ? 30 : 50);
   }
 
   function getChapterMeta(chapterId) {
@@ -51,8 +54,10 @@
   function renderHomeScreen(progress) {
     const activeChapter = progress.activeChapter || DEFAULT_CHAPTER;
     const meta = getChapterMeta(activeChapter);
-    const material = document.getElementById('bab12-material');
-    if (material) material.hidden = activeChapter !== 'bab12';
+    const material = document.getElementById('bab13-material');
+    if (material) material.hidden = activeChapter !== 'bab13';
+    const material12 = document.getElementById('bab12-material');
+    if (material12) material12.hidden = activeChapter !== 'bab12';
 
     // Highlight Chapter Toggle Buttons (Bab 9 / Bab 8 / Bab 7)
     CHAPTERS.forEach(c => {

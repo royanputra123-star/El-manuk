@@ -6,12 +6,12 @@
   const STORAGE_KEY = 'nihongo_app_progress_v2';
   /* Semua bab yang dikenal aplikasi. Data lama tetap aman: bab baru cukup
    * ditambahkan ke daftar ini, progres bab lain tidak dihapus. */
-  const CHAPTERS = ['bab7', 'bab8', 'bab9', 'bab10', 'bab11', 'bab12'];
-  const DEFAULT_CHAPTER = 'bab12';
+  const CHAPTERS = ['bab7', 'bab8', 'bab9', 'bab10', 'bab11', 'bab12', 'bab13'];
+  const DEFAULT_CHAPTER = 'bab13';
 
   function getDefaultProgress() {
     return {
-      activeChapter: 'bab12',
+      activeChapter: 'bab13',
       xp: 0,
       totalCorrect: 0,
       totalWrong: 0,
@@ -21,7 +21,8 @@
         bab9: {},
         bab10: {},
         bab11: {},
-        bab12: {}
+        bab12: {},
+        bab13: {}
       },
       lastLevel: {
         bab7: 1,
@@ -29,7 +30,8 @@
         bab9: 1,
         bab10: 1,
         bab11: 1,
-        bab12: 1
+        bab12: 1,
+        bab13: 1
       },
       history: [],
       badges: []
@@ -74,7 +76,7 @@
       progress.levelsDone[ch][levelNum] = scorePercent;
     }
 
-    const maxLevels = { bab11: 30, bab12: 30 };
+    const maxLevels = { bab11: 30, bab12: 30, bab13: 30 };
     progress.lastLevel[ch] = Math.min(maxLevels[ch] || 50, levelNum + 1);
     progress.xp = (progress.xp || 0) + xpGained;
     progress.totalCorrect = (progress.totalCorrect || 0) + correctCount;

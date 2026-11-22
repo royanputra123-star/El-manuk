@@ -60,7 +60,7 @@
       { jp: '近く', id: 'dekat' }, { jp: '間', id: 'di antara' },
     ];
     const map = new Map();
-    ['VOCAB_BAB12_DATA', 'VOCAB_BAB11_DATA', 'VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
+    ['VOCAB_BAB13_DATA', 'VOCAB_BAB12_DATA', 'VOCAB_BAB11_DATA', 'VOCAB_BAB10_DATA', 'VOCAB_BAB9_DATA', 'VOCAB_BAB7_DATA', 'VOCAB_DATA'].forEach(key => {
       const arr = global[key];
       if (!Array.isArray(arr)) return;
       arr.forEach(v => {
@@ -132,6 +132,8 @@
     if (Array.isArray(q.answer)) return q.answer.join('');
     if (q.type === 'complete') return fillBlank(q.prompt, q.answer);
     if (q.fullSentenceText) return q.fullSentenceText;
+    /* Bab 13 menyimpan kalimat utuh di fullJp: jadikan rujukan utama. */
+    if (q.fullJp) return q.fullJp;
     if (typeof q.answer === 'string') return q.answer;
     return '';
   }

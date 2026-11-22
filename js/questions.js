@@ -233,7 +233,8 @@
       b.addEventListener('click', () => {
         if (b.classList.contains('matched')) return;
         speakWithFeedback(item.jp, b);
-        Object.values(leftButtons).forEach(x => x.classList.remove('selected'));
+        Object.values(leftButtons).forEach(x => x.classList.remove('selected', 'shake-wrong'));
+        Object.values(rightButtons).forEach(x => x.classList.remove('selected', 'shake-wrong'));
         b.classList.add('selected');
         selectedLeft = item;
         tryMatch();
@@ -248,7 +249,8 @@
       b.dataset.vocabId = item.vocabId;
       b.addEventListener('click', () => {
         if (b.classList.contains('matched')) return;
-        Object.values(rightButtons).forEach(x => x.classList.remove('selected'));
+        Object.values(rightButtons).forEach(x => x.classList.remove('selected', 'shake-wrong'));
+        Object.values(leftButtons).forEach(x => x.classList.remove('shake-wrong'));
         b.classList.add('selected');
         selectedRight = item;
         tryMatch();
@@ -290,15 +292,21 @@
 
     return {
       isComplete: () => matchedCount === q.pairs.length,
-      checkCorrect: () => mistakes === 0,
+      checkCorrect: () => matchedCount === q.pairs.length && mistakes === 0,
       reveal: (isCorrect) => {
         if (!isCorrect) {
           leftItems.forEach(item => {
             const lb = leftButtons[item.vocabId];
             const rb = rightButtons[item.vocabId];
-            lb.classList.add('matched');
-            rb.classList.add('matched');
+            if (lb && rb) {
+              lb.classList.remove('shake-wrong', 'selected');
+              rb.classList.remove('shake-wrong', 'selected');
+              lb.classList.add('matched');
+              rb.classList.add('matched');
+            }
           });
+          wrap.appendChild(el('div', 'answer-reveal',
+            'Pasangan benar: ' + leftItems.map(p => `${p.jp} = ${p.id}`).join(' · ')));
         }
       },
       onExit: () => AudioManager && AudioManager.stopAudio(),
@@ -421,6 +429,9 @@
           if (b.textContent === q.answer) b.classList.add('option-correct');
           else if (b.textContent === selected && !isCorrect) b.classList.add('option-wrong');
         });
+        if (!isCorrect && q.answer) {
+          wrap.appendChild(el('div', 'answer-reveal', 'Jawaban benar: ' + q.answer));
+        }
       },
       onExit: () => AudioManager && AudioManager.stopAudio(),
     };
