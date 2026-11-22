@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-<title>NihonGo! — Belajar Bahasa Jepang Bab 12, 11, 10, 9, 8 & 7</title>
-<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 12, 11, 10, 9, 8 & 7. 30–50 level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
+<title>NihonGo! — Belajar Bahasa Jepang Bab 13, 12, 11, 10, 9, 8 & 7</title>
+<meta name="description" content="Belajar Bahasa Jepang berbasis Minna no Nihongo I Bab 13, 12, 11, 10, 9, 8 & 7. 30–50 level per bab, TTS Web Speech API, terjemahan setelah menjawab, progress tersimpan otomatis." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🀄</text></svg>" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -27,7 +27,8 @@
 
   <!-- Chapter Switcher -->
   <div class="chapter-switcher">
-    <button id="btn-chap-bab12" class="chap-btn active">Bab 12 (Baru)</button>
+    <button id="btn-chap-bab13" class="chap-btn active">Bab 13 (Baru)</button>
+    <button id="btn-chap-bab12" class="chap-btn">Bab 12</button>
     <button id="btn-chap-bab11" class="chap-btn">Bab 11</button>
     <button id="btn-chap-bab10" class="chap-btn">Bab 10</button>
     <button id="btn-chap-bab9" class="chap-btn">Bab 9</button>
@@ -36,10 +37,31 @@
   </div>
 
   <div class="home-hero">
-    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 12</div>
-    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 12</h1>
-    <p class="hero-sub" id="hero-sub">30 Level · 450 Soal · Lampau & Negatif · より · どちら／どちらも · いちばん</p>
+    <div id="hero-badge-ch" class="hero-badge">Minna no Nihongo I — Bab 13</div>
+    <h1 class="hero-title" id="hero-title">Kuasai Pola Kalimat<br/>Bahasa Jepang Bab 13</h1>
+    <p class="hero-sub" id="hero-sub">30 Level · 450 Soal · ほしい · たい · Tujuan Kegiatan · いつか／だれか／なにか／どこか</p>
   </div>
+
+  <details id="bab13-material" class="q-prompt-card">
+    <summary><strong>📖 Ringkasan tata bahasa Bab 13</strong></summary>
+    <p><strong>Keinginan benda</strong>: N が ほしいです — ingin memiliki N. ほしい berubah seperti kata sifat い:<br/>
+    ほしいです → ほしくないです → ほしかったです → ほしくなかったです。<br/>
+    <ruby>車<rt>くるま</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいです。— Saya ingin mobil.／<ruby>今<rt>いま</rt></ruby>は<ruby>欲<rt>ほ</rt></ruby>しくないです。— Sekarang tidak ingin.</p>
+    <p><strong>Keinginan kegiatan</strong>: ます-stem + たいです — ingin melakukan. Objeknya memakai を (boleh が untuk menekankan).<br/>
+    <ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいです。— Ingin pergi ke Jepang.／<ruby>食<rt>た</rt></ruby>べたくないです。— Tidak ingin makan.<br/>
+    たい juga berubah: たいです · たくないです · たかったです · たくなかったです.</p>
+    <p><strong>Tujuan kegiatan</strong>: 場所 へ (objek を) ます-stem に 行きます／来ます／帰ります。<br/>
+    <ruby>図書館<rt>としょかん</rt></ruby>へ<ruby>勉強<rt>べんきょう</rt></ruby>しに行きます。— Pergi ke perpustakaan untuk belajar.<br/>
+    <ruby>日本<rt>にほん</rt></ruby>へ<ruby>友達<rt>ともだち</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>えに来ました。— Datang ke Jepang untuk menjemput teman.<br/>
+    <ruby>国<rt>くに</rt></ruby>へ<ruby>家族<rt>かぞく</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いに帰ります。— Pulang ke negara saya untuk bertemu keluarga.</p>
+    <p><strong>Kata tidak tentu</strong>: kata tanya + か = “suatu …”.<br/>
+    いつか — suatu hari nanti · だれか — seseorang · なにか — sesuatu · どこか — suatu tempat.<br/>
+    <ruby>何<rt>なに</rt></ruby>か<ruby>飲<rt>の</rt></ruby>みたいです。— Ingin minum sesuatu.／<ruby>誰<rt>だれ</rt></ruby>かいますか。— Apakah ada orang?<br/>
+    Bentuk negatif: なにも … ません (tidak … apa-apa) · だれも … ません · どこも … ません.</p>
+    <p><strong>Menawarkan</strong>: いかがですか。— Bagaimana kalau …?／ませんか。— Mau …?<br/>
+    <ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか。<ruby>是非<rt>ぜひ</rt></ruby>。— Mau pergi bersama? Tentu/pastinya.</p>
+    <p><strong>Pengenalan kasual (30 soal)</strong>: のど渇いた？／なにか買った？／だれか来た？ Tanpa です, intonasi tanya naik. Fokus utama tetap bentuk sopan.</p>
+  </details>
 
   <details id="bab12-material" class="q-prompt-card">
     <summary><strong>📖 Ringkasan tata bahasa Bab 12</strong></summary>
@@ -270,6 +292,8 @@
   </div>
 </div>
 
+<script src="js/data/vocab_bab13.js"></script>
+<script src="js/data/levels_bab13.js"></script>
 <script src="js/data/vocab_bab12.js"></script>
 <script src="js/data/levels_bab12.js"></script>
 <script src="js/data/vocab_bab11.js"></script>
