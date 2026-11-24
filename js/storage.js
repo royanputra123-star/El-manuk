@@ -34,7 +34,8 @@
         bab13: 1
       },
       history: [],
-      badges: []
+      badges: [],
+      randomQuiz: {}
     };
   }
 
@@ -46,6 +47,7 @@
       if (!data.levelsDone) data.levelsDone = {};
       if (!data.lastLevel) data.lastLevel = {};
       if (!data.activeChapter || !CHAPTERS.includes(data.activeChapter)) data.activeChapter = DEFAULT_CHAPTER;
+      if (!data.randomQuiz) data.randomQuiz = {};
       // Data lama (sebelum Bab 10) tetap aman: lengkapi bab yang belum ada tanpa menghapus progres.
       CHAPTERS.forEach(ch => {
         if (!data.levelsDone[ch]) data.levelsDone[ch] = {};
@@ -96,6 +98,46 @@
     // Evaluasi Badge Baru
     const earnedBadge = checkNewBadges(progress);
 
+    saveProgress(progress);
+    return { progress, earnedBadge };
+  }
+
+  /* Hasil Random Quiz: menambah XP, statistik, dan riwayat memakai sistem yang
+   * sama, TANPA menyentuh levelsDone/lastLevel (progres level tidak berubah).
+   * Disimpan di progress.randomQuiz[chapter] sebagai ringkasan sesi terbaik. */
+  function recordRandomQuiz(chapter, scorePercent, xpGained, correctCount, wrongCount, totalQuestions) {
+    const progress = getProgress();
+    const ch = chapter || progress.activeChapter || DEFAULT_CHAPTER;
+
+    if (!progress.randomQuiz) progress.randomQuiz = {};
+    if (!progress.randomQuiz[ch]) {
+      progress.randomQuiz[ch] = { played: 0, bestScore: 0, lastScore: 0, lastDate: '', totalQuestions: 0 };
+    }
+    const stats = progress.randomQuiz[ch];
+    stats.played += 1;
+    stats.lastScore = scorePercent;
+    stats.lastDate = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+    stats.totalQuestions = totalQuestions || stats.totalQuestions || 0;
+    if (scorePercent > stats.bestScore) stats.bestScore = scorePercent;
+
+    progress.xp = (progress.xp || 0) + xpGained;
+    progress.totalCorrect = (progress.totalCorrect || 0) + correctCount;
+    progress.totalWrong = (progress.totalWrong || 0) + wrongCount;
+
+    if (!progress.history) progress.history = [];
+    progress.history.unshift({
+      id: Date.now(),
+      chapter: ch,
+      level: 'random',
+      mode: 'random',
+      totalQuestions: totalQuestions || 0,
+      score: scorePercent,
+      xp: xpGained,
+      date: stats.lastDate
+    });
+    if (progress.history.length > 50) progress.history.pop();
+
+    const earnedBadge = checkNewBadges(progress);
     saveProgress(progress);
     return { progress, earnedBadge };
   }
@@ -158,6 +200,7 @@
     getProgress,
     saveProgress,
     markLevelComplete,
+    recordRandomQuiz,
     resetProgress,
     setActiveChapter
   };
