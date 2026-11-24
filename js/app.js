@@ -12,6 +12,11 @@
   let currentController = null;
   let isAnswerChecked = false;
 
+  /* --- Mode Random Quiz (15 soal acak dari seluruh level bab aktif) --- */
+  let isRandomQuiz = false;
+  let randomChapter = null;
+  let randomResumeState = null; // { idx, correct, wrong, lives } saat melanjutkan sesi
+
   const DEFAULT_CHAPTER = 'bab13';
 
   // Pemetaan bab -> data bank soal (Bab 10 = bab terbaru)
@@ -56,6 +61,8 @@
       UIManager.renderHomeScreen(progress);
     } else if (screenId === 'screen-map') {
       UIManager.renderLevelMap(progress, (lvl) => startQuiz(lvl));
+    } else if (screenId === 'screen-result') {
+      renderResultScreen();
     } else if (screenId === 'screen-stats') {
       UIManager.renderStatsScreen(progress);
     } else if (screenId === 'screen-badges') {
@@ -77,6 +84,9 @@
       return;
     }
 
+    isRandomQuiz = false;
+    randomChapter = null;
+    randomResumeState = null;
     currentLevelNum = levelNum;
     currentQuestions = levelData.questions;
     currentQuestionIdx = 0;
@@ -89,6 +99,110 @@
     renderActiveQuestion();
   }
 
+  /* ==================== 🎲 RANDOM QUIZ (15 SOAL) ==================== */
+
+  function getChapterBank(chapter) {
+    const key = CHAPTER_LEVEL_DATA[chapter];
+    const bank = key && global[key];
+    return Array.isArray(bank) ? bank : [];
+  }
+
+  function chapterLabel(chapter) {
+    const meta = global.UIManager && UIManager.getChapterMeta
+      ? UIManager.getChapterMeta(chapter)
+      : null;
+    return meta ? meta.label : String(chapter || '').toUpperCase();
+  }
+
+  // Mulai sesi Random Quiz baru (selalu mengacak ulang 15 soal).
+  function startRandomQuiz() {
+    const progress = StorageManager.getProgress();
+    const chapter = progress.activeChapter || DEFAULT_CHAPTER;
+    const bank = getChapterBank(chapter);
+
+    if (!global.RandomQuiz) {
+      UIManager.showToast('Modul Random Quiz belum tersedia.');
+      return;
+    }
+
+    const questions = RandomQuiz.pickQuestions(bank, RandomQuiz.SESSION_SIZE);
+    if (!questions.length) {
+      UIManager.showToast('Bank soal bab ini tidak ditemukan.');
+      return;
+    }
+
+    RandomQuiz.saveSession({
+      chapter: chapter,
+      ids: questions.map((q, i) => q.id || 'anon_' + i),
+      startedAt: Date.now()
+    });
+
+    isRandomQuiz = true;
+    randomChapter = chapter;
+    randomResumeState = null;
+    currentLevelNum = 0;
+    currentQuestions = questions;
+    currentQuestionIdx = 0;
+    correctCount = 0;
+    wrongCount = 0;
+    currentLives = 3;
+
+    showScreen('screen-quiz');
+    updateHeartsUI();
+    renderActiveQuestion();
+    UIManager.showToast(`🎲 Random Quiz ${chapterLabel(chapter)} — ${questions.length} soal acak`);
+  }
+
+  // Lanjutkan sesi Random Quiz yang tersimpan (dipakai setelah refresh).
+  function resumeRandomQuiz() {
+    const saved = global.RandomQuiz && RandomQuiz.loadSession();
+    if (!saved) return false;
+
+    const chapter = saved.chapter;
+    const questions = RandomQuiz.resolveSession(saved, getChapterBank(chapter));
+    if (!questions || !questions.length) {
+      RandomQuiz.clearSession();
+      return false;
+    }
+
+    const st = saved.state || {};
+    isRandomQuiz = true;
+    randomChapter = chapter;
+    randomResumeState = {
+      idx: Math.min(Math.max(0, st.idx || 0), questions.length - 1),
+      correct: Math.max(0, st.correct || 0),
+      wrong: Math.max(0, st.wrong || 0),
+      lives: typeof st.lives === 'number' ? st.lives : 3
+    };
+    currentLevelNum = 0;
+    currentQuestions = questions;
+    currentQuestionIdx = randomResumeState.idx;
+    correctCount = randomResumeState.correct;
+    wrongCount = randomResumeState.wrong;
+    currentLives = randomResumeState.lives;
+
+    showScreen('screen-quiz');
+    updateHeartsUI();
+    renderActiveQuestion();
+    UIManager.showToast(`🎲 Melanjutkan Random Quiz ${chapterLabel(chapter)} — soal ${currentQuestionIdx + 1}/${questions.length}`);
+    return true;
+  }
+
+  function persistRandomProgress() {
+    if (!isRandomQuiz || !global.RandomQuiz) return;
+    RandomQuiz.saveSession({
+      chapter: randomChapter,
+      ids: currentQuestions.map((q, i) => q.id || 'anon_' + i),
+      startedAt: Date.now(),
+      state: {
+        idx: currentQuestionIdx,
+        correct: correctCount,
+        wrong: wrongCount,
+        lives: currentLives
+      }
+    });
+  }
+
   function updateHeartsUI() {
     const heartsEl = document.getElementById('quiz-lives');
     if (heartsEl) heartsEl.textContent = currentLives;
@@ -99,11 +213,22 @@
     if (!fill) return;
     const pct = (currentQuestionIdx / currentQuestions.length) * 100;
     fill.style.width = `${pct}%`;
+
+    const modeEl = document.getElementById('quiz-mode-label');
+    if (modeEl) {
+      if (isRandomQuiz) {
+        modeEl.textContent = `🎲 Soal ${Math.min(currentQuestionIdx + 1, currentQuestions.length)}/${currentQuestions.length}`;
+        modeEl.classList.remove('hidden');
+      } else {
+        modeEl.classList.add('hidden');
+      }
+    }
   }
 
   function renderActiveQuestion() {
     isAnswerChecked = false;
     updateQuizProgressBar();
+    persistRandomProgress();
 
     const q = currentQuestions[currentQuestionIdx];
     const container = document.getElementById('quiz-body');
@@ -189,6 +314,11 @@
   function finishQuiz() {
     if (global.AudioManager) AudioManager.stopAudio();
 
+    if (isRandomQuiz) {
+      finishRandomQuiz();
+      return;
+    }
+
     const totalQuestions = currentQuestions.length;
     const scorePct = Math.round((correctCount / totalQuestions) * 100);
     const xpGained = correctCount * 10 + (scorePct >= 80 ? 50 : 0);
@@ -237,6 +367,98 @@
     showScreen('screen-result');
   }
 
+  /* -------------------- Hasil Random Quiz 15 soal -------------------- */
+
+  function finishRandomQuiz() {
+    const totalQuestions = currentQuestions.length;
+    const scorePct = totalQuestions ? Math.round((correctCount / totalQuestions) * 100) : 0;
+    const xpGained = correctCount * 10 + (scorePct >= 80 ? 50 : 0);
+    const chapter = randomChapter || StorageManager.getProgress().activeChapter || DEFAULT_CHAPTER;
+
+    // Hasil Random Quiz ikut tercatat di XP, statistik, badge, dan riwayat —
+    // memakai fungsi penyimpanan yang sama, tanpa mengubah progres level.
+    const { earnedBadge } = StorageManager.recordRandomQuiz(
+      chapter,
+      scorePct,
+      xpGained,
+      correctCount,
+      wrongCount,
+      totalQuestions
+    );
+
+    RandomQuiz.clearSession();
+    randomResumeState = null;
+
+    const elSub = document.getElementById('result-subtitle');
+    if (elSub) elSub.textContent = `🎲 Random Quiz — ${chapterLabel(chapter)} · ${totalQuestions} soal`;
+
+    const badgeBox = document.getElementById('result-badge-earned');
+    const badgeName = document.getElementById('result-badge-name');
+    if (earnedBadge && badgeBox && badgeName) {
+      badgeName.textContent = `${earnedBadge.icon} ${earnedBadge.name}`;
+      badgeBox.classList.remove('hidden');
+    } else if (badgeBox) {
+      badgeBox.classList.add('hidden');
+    }
+
+    if (scorePct >= 60) {
+      try { if (global.fireConfetti) fireConfetti(); } catch (e) { /* efek visual opsional */ }
+      try { if (global.SoundFx) SoundFx.playFanfare(); } catch (e) { /* audio opsional */ }
+    }
+
+    renderResultScreen();
+    showScreen('screen-result');
+  }
+
+  // Isi angka-angka di layar hasil (dipakai kuis level maupun Random Quiz).
+  function renderResultScreen() {
+    const totalQuestions = currentQuestions.length || 1;
+    const scorePct = Math.round((correctCount / totalQuestions) * 100);
+    const xpGained = correctCount * 10 + (scorePct >= 80 ? 50 : 0);
+    const isPerfect = totalQuestions > 1 && correctCount === totalQuestions;
+
+    const elPct = document.getElementById('result-percentage');
+    const elCorr = document.getElementById('result-correct');
+    const elWrong = document.getElementById('result-wrong');
+    const elXp = document.getElementById('result-xp');
+    const elScore = document.getElementById('result-score');
+    const elTitle = document.getElementById('result-title');
+    const elEmblem = document.getElementById('result-emblem');
+
+    if (elPct) elPct.textContent = `${scorePct}%`;
+    if (elCorr) elCorr.textContent = correctCount;
+    if (elWrong) elWrong.textContent = wrongCount;
+    if (elXp) elXp.textContent = `+${xpGained}`;
+    if (elScore) elScore.textContent = scorePct;
+
+    if (elTitle) {
+      if (isRandomQuiz) elTitle.textContent = scorePct >= 60 ? 'Random Quiz Selesai!' : 'Random Quiz Selesai';
+      else elTitle.textContent = 'Level Selesai!';
+    }
+    if (elEmblem) elEmblem.textContent = scorePct >= 80 ? '🏆' : (scorePct >= 60 ? '🎉' : '💪');
+
+    const retry = document.getElementById('btn-result-retry');
+    if (retry) retry.textContent = isRandomQuiz ? '🎲 Ulangi Random Quiz' : '🔄 Ulangi Level';
+
+    const next = document.getElementById('btn-result-next');
+    if (next) {
+      if (isRandomQuiz) {
+        next.textContent = 'Kembali ke Halaman Bab';
+        next.classList.remove('hidden');
+      } else {
+        const chapter = StorageManager.getProgress().activeChapter || DEFAULT_CHAPTER;
+        const bank = getChapterBank(chapter);
+        const total = bank.length || 50;
+        next.textContent = currentLevelNum >= total ? 'Kembali ke Halaman Bab' : 'Lanjut ▶';
+        next.classList.remove('hidden');
+      }
+    }
+
+    const home = document.getElementById('btn-result-home');
+    if (home) home.textContent = isRandomQuiz ? 'Kembali ke Home' : 'Kembali ke Home';
+  }
+
+
   /* ==================== INITIALIZATION & EVENT LISTENERS ==================== */
 
   function initApp() {
@@ -283,22 +505,43 @@
     // Quiz Control Buttons
     document.getElementById('btn-quiz-check')?.addEventListener('click', handleCheckAnswer);
     document.getElementById('btn-quiz-exit')?.addEventListener('click', () => {
-      if (confirm('Apakah kamu yakin ingin keluar dari kuis? Progress level ini tidak disimpan.')) {
+      const msg = isRandomQuiz
+        ? 'Apakah kamu yakin ingin keluar dari Random Quiz? Sesi ini bisa dilanjutkan lagi nanti.'
+        : 'Apakah kamu yakin ingin keluar dari kuis? Progress level ini tidak disimpan.';
+      if (confirm(msg)) {
+        if (isRandomQuiz) persistRandomProgress();
         showScreen('screen-home');
       }
     });
 
     // Result Buttons
-    document.getElementById('btn-result-retry')?.addEventListener('click', () => startQuiz(currentLevelNum));
+    document.getElementById('btn-result-retry')?.addEventListener('click', () => {
+      if (isRandomQuiz) startRandomQuiz();
+      else startQuiz(currentLevelNum);
+    });
     document.getElementById('btn-result-next')?.addEventListener('click', () => {
+      if (isRandomQuiz) { showScreen('screen-home'); return; }
       const p = StorageManager.getProgress();
       const ch = p.activeChapter || DEFAULT_CHAPTER;
       const bank = global[CHAPTER_LEVEL_DATA[ch]] || [];
       const total = bank.length || 50;
-      const nextLvl = Math.min(total, currentLevelNum + 1);
-      startQuiz(nextLvl);
+      if (currentLevelNum >= total) {
+        showScreen('screen-home');
+        return;
+      }
+      startQuiz(currentLevelNum + 1);
     });
     document.getElementById('btn-result-home')?.addEventListener('click', () => showScreen('screen-home'));
+
+    // 🎲 Random Quiz — tombol di halaman bab
+    document.getElementById('btn-random-quiz')?.addEventListener('click', () => {
+      if (global.SoundFx) SoundFx.playClick();
+      startRandomQuiz();
+    });
+    document.getElementById('btn-random-resume')?.addEventListener('click', () => {
+      if (global.SoundFx) SoundFx.playClick();
+      if (resumeRandomQuiz()) showScreen('screen-quiz');
+    });
 
     // Reset Progress Dialog
     const btnReset = document.getElementById('btn-reset-progress');
@@ -336,9 +579,30 @@
 
     // Initial Screen Load
     showScreen('screen-home');
+
+    // Setelah refresh: bila ada sesi Random Quiz yang belum selesai,
+    // beri tahu pengguna bahwa sesi bisa dilanjutkan (tombol "Lanjutkan Sesi").
+    const saved = global.RandomQuiz && RandomQuiz.loadSession();
+    if (saved) {
+      const questions = RandomQuiz.resolveSession(saved, getChapterBank(saved.chapter));
+      const idx = (saved.state && saved.state.idx) || 0;
+      if (questions && questions.length && idx < questions.length) {
+        UIManager.showToast(`🎲 Sesi Random Quiz tersimpan (soal ${idx + 1}/${questions.length}). Tekan "Lanjutkan Sesi".`);
+      } else if (!questions) {
+        RandomQuiz.clearSession();
+      }
+    }
   }
 
   document.addEventListener('DOMContentLoaded', initApp);
 
-  global.App = { startQuiz, showScreen };
+  global.App = {
+    startQuiz,
+    showScreen,
+    startRandomQuiz,
+    resumeRandomQuiz,
+    isRandomMode: () => isRandomQuiz,
+    // Dipakai oleh tes otomatis untuk memeriksa isi sesi Random Quiz.
+    __randomQuestions: () => currentQuestions.slice()
+  };
 })(window);

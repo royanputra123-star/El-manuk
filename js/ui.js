@@ -88,6 +88,68 @@
     if (heroBadge) heroBadge.textContent = `Minna no Nihongo I — ${meta.label}`;
     if (heroTitle) heroTitle.innerHTML = `Kuasai Pola Kalimat<br/>Bahasa Jepang ${meta.label}`;
     if (heroSub) heroSub.textContent = meta.sub;
+
+    renderRandomQuizCard(activeChapter);
+  }
+
+  /* 🎲 Kartu Random Quiz di halaman bab (15 soal acak dari seluruh level) */
+  function renderRandomQuizCard(chapterId) {
+    const card = document.getElementById('random-quiz-card');
+    if (!card) return;
+
+    const levels = chapterLevels(chapterId);
+    const totalLevels = levels.length;
+
+    const totalQuestions = global.RandomQuiz
+      ? RandomQuiz.countPool(levels)
+      : levels.reduce((sum, l) => sum + ((l.questions || []).length), 0);
+
+    const sessionSize = (global.RandomQuiz && RandomQuiz.SESSION_SIZE) || 15;
+
+    const title = document.getElementById('random-quiz-title');
+    const sub = document.getElementById('random-quiz-sub');
+    const meta1 = document.getElementById('random-quiz-meta');
+
+    if (title) title.textContent = `Random Quiz (${sessionSize} Soal)`;
+    if (sub) {
+      sub.textContent = `Latihan acak dari seluruh ${totalLevels} level ${getChapterMeta(chapterId).label} — ${totalQuestions.toLocaleString('id-ID')} soal tersedia.`;
+    }
+
+    if (meta1) {
+      const stats = (progressRandomStats(chapterId));
+      meta1.textContent = stats.played
+        ? `Sesi dimainkan: ${stats.played} · Skor terbaik: ${stats.bestScore}%`
+        : `Soal diacak ulang setiap sesi, tanpa duplikat.`;
+    }
+
+    // Tombol "Lanjutkan Sesi" hanya tampil bila ada sesi tersimpan untuk bab ini.
+    const resumeBtn = document.getElementById('btn-random-resume');
+    if (resumeBtn) {
+      let showResume = false;
+      let resumeLabel = '';
+      if (global.RandomQuiz) {
+        const saved = RandomQuiz.loadSession();
+        if (saved && saved.chapter === chapterId) {
+          const qs = RandomQuiz.resolveSession(saved, chapterLevels(chapterId));
+          const idx = (saved.state && saved.state.idx) || 0;
+          if (qs && qs.length && idx < qs.length) {
+            showResume = true;
+            resumeLabel = `▶ Lanjutkan Sesi (soal ${idx + 1}/${qs.length})`;
+          }
+        }
+      }
+      resumeBtn.classList.toggle('hidden', !showResume);
+      if (showResume) resumeBtn.textContent = resumeLabel;
+    }
+  }
+
+  function progressRandomStats(chapterId) {
+    try {
+      const p = global.StorageManager && StorageManager.getProgress();
+      return (p && p.randomQuiz && p.randomQuiz[chapterId]) || { played: 0, bestScore: 0 };
+    } catch (e) {
+      return { played: 0, bestScore: 0 };
+    }
   }
 
   const TIER_LABEL = { mudah: 'Mudah', sedang: 'Sedang', kalimat: 'Kalimat', campuran: 'Campuran', acak: 'Acak' };
@@ -241,7 +303,11 @@
       const row = el('div', 'history-item');
 
       const infoBox = el('div', 'history-info');
-      const title = el('strong', null, `Level ${item.level} (${item.chapter ? item.chapter.toUpperCase() : 'BAB 8'})`);
+      const chLabel = item.chapter ? item.chapter.toUpperCase() : 'BAB 8';
+      const titleText = item.mode === 'random' || item.level === 'random'
+        ? `🎲 Random Quiz (${chLabel})${item.totalQuestions ? ` · ${item.totalQuestions} soal` : ''}`
+        : `Level ${item.level} (${chLabel})`;
+      const title = el('strong', null, titleText);
       const date = el('small', null, item.date);
       infoBox.appendChild(title);
       infoBox.appendChild(date);

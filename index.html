@@ -109,6 +109,22 @@
     <button id="btn-continue" class="btn btn-primary btn-lg">Lanjutkan ▶</button>
   </div>
 
+  <!-- 🎲 Random Quiz: 15 soal acak dari seluruh level bab aktif -->
+  <div class="random-quiz-card" id="random-quiz-card">
+    <div class="random-quiz-head">
+      <span class="random-quiz-emoji" aria-hidden="true">🎲</span>
+      <div class="random-quiz-text">
+        <h2 id="random-quiz-title" class="random-quiz-title">Random Quiz (15 Soal)</h2>
+        <p id="random-quiz-sub" class="random-quiz-sub">Latihan acak dari seluruh level bab ini.</p>
+      </div>
+    </div>
+    <p class="random-quiz-meta" id="random-quiz-meta">Soal diacak ulang setiap sesi, tanpa duplikat.</p>
+    <div class="random-quiz-actions">
+      <button id="btn-random-quiz" class="btn btn-primary btn-block">🎲 Mulai Random Quiz (15 Soal)</button>
+      <button id="btn-random-resume" class="btn btn-secondary btn-block hidden">▶ Lanjutkan Sesi</button>
+    </div>
+  </div>
+
   <nav class="home-menu">
     <button id="btn-go-map" class="menu-tile">
       <span class="menu-tile-icon">🗺️</span>
@@ -155,6 +171,7 @@
     <button class="icon-btn" id="btn-quiz-exit" aria-label="Keluar dari level">
       <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 1 0 5.7 7.11L10.59 12 5.7 16.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"/></svg>
     </button>
+    <div id="quiz-mode-label" class="quiz-mode-label hidden">🎲 Soal 1/15</div>
     <div class="quiz-progress-track">
       <div id="quiz-progress-fill" class="quiz-progress-fill" style="width:0%"></div>
     </div>
@@ -306,6 +323,7 @@
 <script src="js/data/levels_bab7.js"></script>
 <script src="js/data/vocab.js"></script>
 <script src="js/data/levels.js"></script>
+<script src="js/randomQuiz.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/sound.js"></script>
 <script src="js/audioManager.js"></script>

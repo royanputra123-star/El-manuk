@@ -7,6 +7,41 @@ Bab 11 berisi **30 Level × 15 Soal (450 soal)**; bab lain **50 Level × 20 Soal
 
 ## Pembaruan Terbaru
 
+### 0. 🎲 Random Quiz — 15 Soal Acak per Bab (`js/randomQuiz.js`)
+
+Setiap bab kini punya latihan tambahan **Random Quiz (15 Soal)** di halaman utama bab
+(kartu tepat di bawah kartu "Lanjut dari Level terakhir", sebelum Peta Level).
+
+- **15 soal per sesi**, diambil dari **seluruh level** bab aktif (bukan hanya Level 1).
+  Contoh: Bab 7 punya 50 level × 20 soal → sesi diambil dari ±719 soal yang bisa dirender
+  (Bab 10: 1.000 soal, Bab 11–13: 450 soal).
+- **Adil antar level & bervariasi**: tiap ronde memilih level secara acak, lalu satu soal
+  dari tiap level (round-robin) dan tipe soal yang paling jarang terpakai;
+  hasil akhir diacak lagi → 15 level berbeda ikut menyumbang.
+- **Fisher-Yates Shuffle**: urutan soal diacak ulang **setiap** sesi baru (tombol
+  "Ulangi Random Quiz" juga mengacak ulang), tidak memakai urutan yang sudah ditentukan.
+- **Tanpa duplikat**: dicek lewat `id` soal *dan* sidik isi soal.
+- **Sesi bisa dilanjutkan setelah refresh**: daftar soal, posisi, benar/salah, dan nyawa
+  disimpan di `localStorage` (`nihongo_random_quiz_session_v1`); tombol
+  **"▶ Lanjutkan Sesi"** muncul di kartu bila ada sesi yang belum selesai.
+- **Pengerjaan sama seperti kuis level**: satu soal satu waktu, semua 7 tipe soal
+  (`arrange`, `translate`, `complete`, `match`, `short_conversation`, `choose_translation`,
+  `listening`), tombol Periksa, nyawa ❤️, umpan balik + terjemahan.
+  Hanya soal dengan tipe yang punya renderer yang diambil (Bab 7: 719 soal — soal
+  `true_false`/`multiple_choice` lama tetap dilewati).
+- **Progres**: label **"🎲 Soal 3/15"** di topbar kuis.
+- **Hasil**: jumlah benar, jumlah salah, akurasi %, XP, skor, tombol
+  **🎲 Ulangi Random Quiz** (15 soal baru) dan **Kembali ke Halaman Bab**.
+  XP/statistik/badge/riwayat memakai sistem yang sama
+  (`StorageManager.recordRandomQuiz`), tetapi **tidak** mengubah progres level,
+  dan riwayat tercatat sebagai "🎲 Random Quiz (BAB X) · 15 soal".
+- **Tidak mengubah** bank soal, struktur level, atau fitur lain; kartu menampilkan
+  "Sesi dimainkan · Skor terbaik" per bab.
+- **Uji otomatis**: `node tools/test_random_quiz.js` (jsdom) — memeriksa kartu di 7 bab,
+  6 sesi per bab (15 soal, 15 level, tanpa duplikat, kombinasi berbeda), main penuh
+  15/15 di semua bab (semua tipe soal), jalur jawaban salah, lanjut sesi setelah refresh,
+  serta regresi kuis level & peta level.
+
 ### 1. Bab 11 (Comprehensible Input) — Bank Soal Baru (`js/data/levels_bab11.js` + `js/data/vocab_bab11.js`)
 
 Generator: **`tools/generate_bab11.js`** → 30 level, 450 soal (`q_b11_1` … `q_b11_450`), 211 kosakata
@@ -177,6 +212,13 @@ node tools/generate_bab10.js   # → js/data/vocab_bab10.js & js/data/levels_bab
 node tools/audit_bab10.js      # memeriksa hasil generate (exit 1 bila ada masalah)
 node tools/generate_bab9.js    # → js/data/vocab_bab9.js  & js/data/levels_bab9.js
 node tools/generate.js         # → js/data/vocab.js       & js/data/levels.js (Bab 8)
+```
+
+Menguji fitur Random Quiz (butuh jsdom, hanya untuk tes):
+
+```bash
+npm install --prefix /tmp/nihongo-test jsdom
+NODE_PATH=/tmp/nihongo-test/node_modules node tools/test_random_quiz.js
 ```
 
 ## Fitur Lain
